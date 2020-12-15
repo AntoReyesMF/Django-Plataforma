@@ -9,6 +9,25 @@
 
 </head>
 <body>
+<!-- Menu hamburguesa, mich 14-12-2020 -->
+<nav role="navigation">
+  <div id="menuToggle">
+<input type="checkbox" />
+<span></span>
+    <span></span>
+    <span></span>
+<ul id="menu">
+      <a href="#"><li>Makerplace</li></a>
+      <a href="#"><li>Perfil</li></a>
+      <a href="#"><li>Mis proyectos</li></a>
+      <a href="#"><li>Nuevo proyecto</li></a>
+      <a href="#"><li>Soporte</li></a>
+      <a href="#"><li>Ajustes</li></a>
+      <a href="{% url 'logout' %}"><li>Cerras sesión</li></a>
+      
+    </ul>
+  </div>
+</nav>
 
 <div class="container">
   <div id="title">
@@ -88,7 +107,7 @@
 <input type="checkbox" id="check2" name="checkboxes">
     <label for="check2">Personal</label> <br>
 
-    <a href="perfil.html">
+    <a href="{% url 'market' %}">
         <input type="button" class="col-md-6" value="Seguir">   
         </a>  
     
