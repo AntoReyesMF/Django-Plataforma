@@ -2,4 +2,6 @@
 core/__pycache__
 registration/__pycache__
 mk/__pycache__
-
+*.pyc
+venv/*
+.idea/

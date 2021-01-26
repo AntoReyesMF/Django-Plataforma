@@ -19,8 +19,10 @@ from core import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home),
+    path('', include('core.urls')),
     # Path de Auth
     path('accounts/', include('django.contrib.auth.urls')),
     path('accounts/', include('registration.urls')),
+    
+    path('market/', include('market.urls')),
 ]

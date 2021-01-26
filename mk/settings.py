@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core',
+    'market',
+    
 ]
 
 MIDDLEWARE = [
@@ -127,5 +129,5 @@ STATIC_URL = '/static/'
 
 # Auth redirects
 
-LOGIN_REDIRECT_URL = ''
+LOGIN_REDIRECT_URL = 'perfil'
 LOGOUT_REDIRECT_URL = 'home'

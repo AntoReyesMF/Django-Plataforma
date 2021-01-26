@@ -1,0 +1,121 @@
+{% load static %}
+{% block title %}{% endblock %}
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <title>Preferencias</title>
+<link rel='stylesheet' href="{% static 'core/css/preferencias.css' %}">
+
+</head>
+<body>
+<!-- Menu hamburguesa, mich 14-12-2020 -->
+<nav role="navigation">
+  <div id="menuToggle">
+<input type="checkbox" />
+<span></span>
+    <span></span>
+    <span></span>
+<ul id="menu">
+      <a href="#"><li>Makerplace</li></a>
+      <a href="#"><li>Perfil</li></a>
+      <a href="#"><li>Mis proyectos</li></a>
+      <a href="#"><li>Nuevo proyecto</li></a>
+      <a href="#"><li>Soporte</li></a>
+      <a href="#"><li>Ajustes</li></a>
+      <a href="{% url 'logout' %}"><li>Cerras sesión</li></a>
+      
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <div id="title">
+    <h2>Conocerte nos ayudará a guiarte y saber <br> que herramientas necesitas</h2>    
+  </div>
+  <div class="form col-md-12">
+			<form>	
+      
+        <legend>¿Estudias o trabajas?</legend>
+    <input type="checkbox" id="check1" name="checkboxes" >
+    <label for="check1">Estudio</label>
+    <input type="checkbox" id="check2" name="checkboxes">
+    <label for="check2">Trabajo</label>
+    <input type="checkbox" id="check3" name="checkboxes">
+    <label for="check3">Ambos</label>
+        
+        <legend>¿Tienes algun proyecto o idea en mente?</legend>
+				<input type="checkbox" id="check1" name="checkboxes" >
+    <label for="check1">Si</label>
+    <input type="checkbox" id="check2" name="checkboxes">
+    <label for="check2">No</label>
+
+<legend>¿Qué problema estoy tratando de resolver con mi idea?</legend> <br>
+    <textarea name="textarea" id="textarea" placeholder="  Cuentános sobre el..."></textarea>
+
+    <legend>¿A quién (quiénes) afecta el problema que he identificado? </legend> <br>
+    <select name="menu">
+  <option value="0"> ...</option>
+  <option value="1">Un Grupo</option>
+  <option value="2">Una Comunidad</option>
+  <option value="3">Un Estado</option>
+</select>
+
+<legend>Rango de Edades</legend> 
+<input type="checkbox" id="check1" name="checkboxes" >
+    <label for="check1">Menos de 10 a 17</label>
+    <input type="checkbox" id="check2" name="checkboxes">
+    <label for="check2">18 a 25</label>
+    <input type="checkbox" id="check3" name="checkboxes">
+    <label for="check3">26 a 35</label>
+    <input type="checkbox" id="check3" name="checkboxes">
+    <label for="check4">Más de 36</label>
+
+    <legend>Genero</legend> 
+    <select name="menu">
+  <option value="0"> ...</option>
+  <option value="1">Hombre</option>
+  <option value="2">Mujeres</option>
+  <option value="4">Otros</option>
+  <option value="5">Todos</option>
+</select>
+
+<legend>¿El público que identifiqué reconoce el problema? ¿Qué opina al respecto?</legend>
+    <textarea name="textarea" id="textarea" placeholder="  Cuentános sobre el..."></textarea>
+
+    <legend>¿Qué solución (es) propongo para resolver el problema identificado?</legend>
+    <textarea name="textarea" id="textarea" placeholder="  Cuentános sobre el..."></textarea>
+
+<legend><legend>¿Qué quiero lograr con mi idea? ¿Cómo planeo lograrlo?</legend>
+    <textarea name="textarea" id="textarea" placeholder="  Cuentános sobre el..."></textarea></legend> 
+
+    <legend>¿Mi idea seguirá funcionando después de un año? </legend>
+        <input type="checkbox" id="check1" name="checkboxes" >
+    <label for="check1">Si</label>
+    <input type="checkbox" id="check2" name="checkboxes">
+    <label for="check2">No</label>
+
+    <legend>¿Qué necesito para implementar mi idea? </legend>
+        <input type="checkbox" id="check1" name="checkboxes">
+    <label for="check1">Fondos</label>
+    <input type="checkbox" id="check2" name="checkboxes">
+    <label for="check2">Asesoria</label>
+    <input type="checkbox" id="check2" name="checkboxes">
+    <label for="check2">Capacitación</label>
+    <input type="checkbox" id="check2" name="checkboxes">
+    <label for="check2">Contactos</label>
+<input type="checkbox" id="check2" name="checkboxes">
+    <label for="check2">Personal</label> <br>
+
+    <a href="{% url 'market' %}">
+        <input type="button" class="col-md-6" value="Seguir">   
+        </a>  
+    
+			</form>
+		</div>
+	</div>
+
+  
+</body>
+</html>
+ 

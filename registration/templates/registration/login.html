@@ -1,49 +1,40 @@
-
 {% load static %}
 {% block title %}{% endblock %}
-{% block content %}
-<style>.errorlist{color:red;}</style>
-<link rel="stylesheet" href="{% static 'core/vendor/css/bootstrap.min.css' %}" rel="stylesheet">
-
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="{% static 'core/css/registro.css'%}">
-
-    <!-- script
-    ================================================== -->
-    <script src="{% static 'core/js/modernizr.js' %}%"></script>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Making Friends</title>
+	<link rel="stylesheet" href="{% static 'core/css/registro.css' %}">
+</head>
+<body>
 <div class='bold-line'></div>
 <div class='container'>
   <div class='window'>
     <div class='overlay'></div>
     <div class='content'>
-      <div class='welcome'>¡Bienvenido!</div>
-      {% if 'registrer' in request.GET %}
-      <p style="color:green;"> Usuario registrado correctamente </p>
-      {% endif %}
-        <form action="" method="post">{% csrf_token %}
-          <h3 class="mb-4">Iniciar sesión</h3>
-          {% if form.non_field_errors %}
+      {% if 'register' in request.GET %}
+          <p style="color:green;">Usuario registrado correctamente, ya puedes identificarte.</p>
+        {% endif %}
+      <div class='welcome'>Accede a tu cuenta</div>
+      <div class='input-fields'>
+      <form action="" method="post">{% csrf_token %}
+      {% if form.non_field_errors %}
             <p style="color:red">Usuario o contraseña incorrectos, prueba de nuevo.</p>
-          {% endif %}
-          <p>
-            <input type="text" class='input-line full-width' name="username" autofocus maxlength="254" required
-              id="id_username" class="form-control" placeholder="Nombre de Usuario"/>
-          </p>
-          <p>
-            <input type="password" class='input-line full-width' name="password" required
-              id="id_password" class="form-control" placeholder="Contraseña"/>
-          </p>
-          <p><input type="submit" class='ghost-round full-width' value="Acceder"></p>
-        </form>
-      
-      <div><button class='ghost-round full-width' ><a href="{% url 'signup' %}" style="color: white;">Crear Cuenta</a></button></div>
+        {% endif %}
+        <input type='text' placeholder='Nombre de usuario' required name="username" class='input-line full-width'></input>
+        <input type='password' placeholder='Contraseña' required name="password" id="id_password" class='input-line full-width'></input>
+      </div>
+      <div class='spacing'> continua con <span class='facebook'>Facebook</span></div>
+      <div class='spacing'> continua con <span class='google'>Google</span></div>
+      <a href="makerplace.html">
+      <div><input type="submit" class='ghost-round full-width' value="Acceder"></div>
+      </form>
     </a>
+    <p>
+          ¿Ha olvidado su clave? Puede restaurarla <a href="{% url 'password_reset' %}">aquí</a>.
+        </p>
     </div>
   </div>
 </div>
-{% endblock %}
+</body>
+</html>
