@@ -1,6 +1,7 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
+from .models import Profile
 
 
 class UserCreationFormWithEmail(UserCreationForm):
@@ -16,6 +17,17 @@ class UserCreationFormWithEmail(UserCreationForm):
             raise forms.ValidationError("El email ya está registrado, prueba con otro.")
         return email
 
+
+class ProfileForm(forms.ModelForm):
+    class Meta:
+        model = Profile
+        fields = ['nombre', 'apellido', 'fecha', 'genero', 'direcccion']
+        widgets = {
+            'nombre': forms.TextInput(attrs={'class':'col-md-6'}),
+            'apellido': forms.TextInput(attrs={'class':'col-md-6'}),
+            'fecha': forms.DateInput(attrs={'class':'col-md-6','type':"date"}),
+            'direcccion': forms.Textarea(attrs={'class':'col-md-6','rows': 4}),
+        }
 
 
 

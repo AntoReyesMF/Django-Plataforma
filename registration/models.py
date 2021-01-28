@@ -12,6 +12,7 @@ class Profile(models.Model):
     nombre = models.CharField(null=True, blank=True, max_length=50)
     apellido = models.CharField(null=True, blank=True, max_length=50)
     fecha = models.DateField(null=True, blank=True)
+    genero = models.CharField(null=True,blank=True,max_length=50)
     direcccion = models.TextField(null=True, blank=True)
     
 

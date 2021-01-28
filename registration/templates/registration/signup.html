@@ -2,45 +2,47 @@
 {% load static %}
 {% block title %}{% endblock %}
 {% block content %}
-<style>.errorlist{color:red;} label{display:none}</style>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Making Friends</title>
+	<link rel="stylesheet" href="{% static 'core/css/login.css' %}">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
+  <link rel="stylesheet" href="{% static 'core/css/editarperfil.css' %}">
+</head>
 
-<link rel="stylesheet" href="{% static 'core/vendor/css/bootstrap.min.css' %}" rel="stylesheet">
-
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="{% static 'core/css/registro.css'%}">
-
-    <!-- script
-    ================================================== -->
-    <script src="{% static 'core/js/modernizr.js' %}%"></script>
-
-<div class='bold-line'></div>
-<div class='container'>
-  <div class='window'>
-    <div class='overlay'></div>
-    <div class='content'>
-      <div class='welcome'>Crea una cuenta</div>
-      
-      <div class='input-fields'>
+<div class="container">
+  <div id="title">
+    <h2>Crear Cuenta</h2>    
+  </div>
+  <div class="form col-md-12">
       <form action="" method="post">{% csrf_token %}
-        
+        <h3>Nombre de Usuario</h3>
         {{form.username}}
-        {{form.email}}       
+        {{form.username.errors}}
+        <h3>Correo electronico</h3>
+        {{form.email}} 
+        {{form.email.errors}}  
+         <h3>Contraseña</h3>   
         {{form.password1}}
+        {{form.password1.errors}} 
+        <h3>Confirma tu contraseña</h3>
         {{form.password2}}
+        {{form.password2.errors}}
       </div>
-      <div class='spacing'> continua con <span class='facebook'>Facebook</span></div>
-      <div class='spacing'> continua con <span class='google'>Google</span></div>
-      <a href="makerplace.html">
-      <div><input type="submit" class='ghost-round full-width' value="Enviar" ></div>
+      <label>Acepto la Política de privacidad y Términos de uso de Making Friends</label>
+        <input type="checkbox" class="inch"/> <br>
+     <a href="{% url 'login'%}"> 
+        <input type="button"  class="col-md-6" value="Ya tengo una">  
+        </a>
+      <div><input type="submit" class="col-md-6" value="Crear Cuenta" ></div>
     </a>
     </form>
     </div>
   </div>
-</div>
+<!-- partial -->
+  
+</body>
+</html>
 
 {% endblock %}

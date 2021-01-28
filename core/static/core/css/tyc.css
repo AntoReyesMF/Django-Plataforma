@@ -1,0 +1,33 @@
+body{
+	text-align: justify;
+	font-family: montserrat;
+	margin-left: 20rem;
+	margin-right: 20rem;
+}
+
+.titulo{
+	text-align: center;
+	color: #000000;
+	padding-bottom: 4rem;
+	margin-top: 4rem;
+}
+
+.subtitulo{
+	font-weight: bold;
+	color: #DE2276;
+	font-size: 1.5rem;
+	margin-top:1rem;
+}
+
+p#pre  {
+  white-space: pre;
+  }
+
+
+
+  .foot{
+	color: #DE2276;
+	margin-top:3rem;
+	margin-bottom: 4rem;
+text-align: center;
+  }

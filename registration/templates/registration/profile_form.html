@@ -1,54 +1,32 @@
-
+<!DOCTYPE html>
 <html lang="en" >
 <head>
   <title>Editar perfil</title>
   {% load static %}
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'><link rel="stylesheet" href="{% static 'core/css/you.css'%}">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
+<link rel="stylesheet" href="{% static 'core/css/editarperfil.css'%}">
 
 </head>
 <body>
-
-<!-- Menu hamburguesa, mich 14-12-2020 -->
-<nav role="navigation">
-  <div id="menuToggle">
-<input type="checkbox" />
-<span></span>
-    <span></span>
-    <span></span>
-<ul id="menu">
-      <a href="#"><li>Makerplace</li></a>
-      <a href="#"><li>Perfil</li></a>
-      <a href="#"><li>Mis proyectos</li></a>
-      <a href="#"><li>Nuevo proyecto</li></a>
-      <a href="#"><li>Soporte</li></a>
-      <a href="#"><li>Ajustes</li></a>
-      <a href="{% url 'logout' %}"><li>Cerras sesión</li></a>
-      
-    </ul>
-  </div>
-</nav>
-
 <!-- partial:index.partial.html -->
 <div class="container">
   <div id="title">
     <h2>Editar mi perfil</h2>    
   </div>
   <div class="form col-md-12">
-			<form>		
+			<form action="" method="post">{% csrf_token %}		
         <h3>Nombre(s)</h3>
-				<input type="text" class="col-md-6" >
+				{{ form.nombre }}
         <h3>Apellidos</h3>
-				<input type="text" class="col-md-6" >
+				{{ form.apellido }}
         <h3>Fecha de nacimiento</h3>
-				<input type="date" class="col-md-6" >
+				{{ form.fecha }}
 				<h3>Género</h3>
-        <input type="radio" name="hm" value="h" required> Hombre
-  <input type="radio" name="hm" value="m" required> Mujer
-				<input type="text1" class="col-md-6" placeholder="Otro">
-        <h3>Direcciónn</h3>
-				<input type="text" class="col-md-6" ><br>
-        <a href="{% url 'preferencias' %}">
-				<input type="button" class="col-md-6" value="Seguir">		
+        {{ form.genero }}
+        <h3>Dirección</h3>
+        {{ form.direcccion }}
+        <a href="preferencias.html">
+				<input type="submit" class="col-md-6" value="Seguir">		
         </a>	
 			</form>
 		</div>

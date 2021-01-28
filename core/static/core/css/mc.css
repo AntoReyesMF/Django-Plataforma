@@ -1,0 +1,196 @@
+body {
+  background-color: #ECEFF1;
+  color: #37474F;
+  font-family: 'montserrat';
+  font-weight: 300;
+  font-size: 16px;
+  margin: 0rem;
+}
+.portada{
+  text-align: center;
+  background-size: cover;
+  width: 100%;
+  margin: top;
+}
+
+.btn{
+  border-color: #DE2276;
+    color: #ffffff;
+    width: 20rem;
+    border-radius: 300px;
+    background-color:#DE2276;
+    margin: 4rem;
+    cursor: pointer;
+    line-height: 1.5em;
+    font-size: 1rem;
+    width: 14rem;
+}
+
+
+.descrip{
+  font-family: montserrat;
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-align: center;
+  margin-right: 15rem;
+  margin-left: 15rem;
+  padding-top: 4rem;
+}
+
+
+h1{
+  font-size: 2.5rem;
+  color: #DD2676;
+  text-align: center;
+  line-height: 1.2;
+  padding-top: 5rem;
+  margin-bottom: 0;
+}
+
+h2{
+  font-size: 1rem;
+  color: #DD2676;
+  text-align: center;
+  line-height: 1.2;
+  margin: 0rem;
+  padding-top: 1rem;
+}
+
+h3{
+  font-size: 1.5rem;
+  color: #000000;
+  text-align: center;
+  line-height: 1.2;
+  margin-top: 0rem;
+}
+
+p{
+  font-size: 3rem;
+  color: #000000;
+  text-align: center;
+  margin: 0rem;
+}
+
+h5{
+	font-size: 2rem;
+	font-weight: normal;
+}
+
+h6{
+	font-size: 1rem;
+	margin-left: 20rem;
+	margin-right: 20rem;
+	font-weight: normal;
+}
+
+.preguntas{
+  text-align: center;
+  cursor: pointer;
+}
+
+
+#faqs{
+	display: none;
+}
+
+.numeralia{
+  max-width: 100%;
+}
+
+.cursos{
+  background-color: #000000;
+  display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.card {
+  width: 320px;
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+
+.image {
+  height: 200px;
+}
+
+.image img {
+  display: block;
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+}
+
+.content {
+  padding: 2rem 1.8rem;
+}
+
+h4 {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+
+.numeralia{
+  width: 100%;
+  margin: auto;
+}
+
+.wrapper1, .wrapper2, .wrapper3 {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+.wrapper3 {
+  overflow: hidden;
+}
+
+.wrapper1 {
+  position: relative;
+  right: 33.3%;
+}
+
+.wrapper2 {
+  position: relative;
+  right: 33.3%;
+}
+
+
+.col1, .col2, .col3 {
+  float: left;
+  width: 27.3%;
+  padding: 3%;
+  position: relative;
+  left: 66.6%;
+}
+
+
+.marca{
+  text-align: center;
+  color: #ffffff;
+  background-color: #323232;
+  padding-top: 2rem;
+}
+
+.footer_end{
+  list-style: none;
+    font-size: 1rem;
+    line-height: 4.8rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+ul li {
+  display: inline-block;
+  margin: 8px 16px;

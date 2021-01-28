@@ -5,3 +5,5 @@ mk/__pycache__
 *.pyc
 venv/*
 .idea/
+registration/templates/registration/debug.log
+market/templates/market/debug.log

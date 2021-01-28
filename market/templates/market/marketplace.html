@@ -8,203 +8,134 @@
   <title>Makerplace</title>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css'>
 <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
-<link rel="stylesheet" href="{% static 'core/css/market.css'%}">
+<link rel="stylesheet" href="{% static 'core/css/market.css' %}">
 
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<!-- Colocar aqui el menu hamburguesa -->
-<nav role="navigation">
-    <div id="menuToggle">
-  <input type="checkbox" />
-  <span></span>
-      <span></span>
-      <span></span>
-  <ul id="menu">
-        <a href="#"><li>Makerplace</li></a>
-        <a href="#"><li>Perfil</li></a>
-        <a href="#"><li>Mis proyectos</li></a>
-        <a href="#"><li>Nuevo proyecto</li></a>
-        <a href="#"><li>Soporte</li></a>
-        <a href="#"><li>Ajustes</li></a>
-        <a href="{% url 'logout' %}"><li>Cerras sesión</li></a>
-        
-      </ul>
-    </div>
-  </nav>
-
-
-    <div class="page-header">
-        <h6>¿Qué haremos hoy Mogu?</h6>
-    </div>
-</section>
-<section class="card-area" style="background-color:#000000" >
-    <div class="container">
-    <div class="row active-with-click">
-        <div class="col-md-4 col-sm-6 col-xs-12">
-            <article class="material-card Red">
-                <h2>
-                    <span>MiCochinito.com</span>
-                
-                    <strong>
-                        Crowdfunding
-                    </strong>
-                </h2>
-                <div class="mc-content">
-                    <div class="img-container">
-                    <img class="img-logo" src="https://blog.micochinito.com/wp-content/uploads/2017/02/logo_blanco_flor.png">
+    <!-- partial:index.partial.html -->
+    <nav role="navigation">
+      <div id="menuToggle">
+    <input type="checkbox" />
+    <span></span>
+        <span></span>
+        <span></span>
+    <ul id="menu">
+          <a href="#"><li>Makerplace</li></a>
+          <a href="#"><li>Perfil</li></a>
+          <a href="#"><li>Mis proyectos</li></a>
+          <a href="#"><li>Nuevo proyecto</li></a>
+          <a href="#"><li>Soporte</li></a>
+          <a href="#"><li>Ajustes</li></a>
+          <a href="{% url 'logout' %}"><li>Cerras sesión</li></a>
+          
+        </ul>
+      </div>
+    </nav>
+    
+    
+        <div class="page-header">
+            <h6>¿Qué haremos hoy {{user.get_username}}?</h6>
+        </div>
+    </section>
+    <section class="card-area" style="background-color:#000000" >
+        <div class="container">
+        <div class="row active-with-click">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <article class="material-card Red">
+                    <h2>
+                        <span>
+                            <a href="{% url 'home' %}">
+                        MiCochinito.com
+                        </a> 
+                    </span>
+                    
+                        <strong>
+                            Crowdfunding
+                        </strong>
+                    </h2>
+                    <div class="mc-content">
+                        <div class="img-container">
+                        <img class="img-logo" src="https://blog.micochinito.com/wp-content/uploads/2017/02/logo_blanco_flor.png">
+                        </div>
+                        <div class="mc-description">
+                            Utilizamos crowdfunding, como instrumento base para que diversas iniciativas puedan conseguir el capital que necesitan a travez de rempensas
+                        </div>
                     </div>
-                    <div class="mc-description">
-                        Utilizamos crowdfunding, como instrumento base para que diversas iniciativas puedan conseguir el capital que necesitan a los padrinos reciben recompensas 
-                    </div>
-                </div>
-                <a class="mc-btn-action">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <div class="mc-footer">
-                    <a href="MC.html">                                                                     
-                    <button class="btn">Ver más</button>
+                    <a class="mc-btn-action">
+                        <i class="fa fa-bars"></i>
                     </a>
-                    
-                </div>
-            </article>
-        </div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
-            <article class="material-card Red">
-                <h2>
-                    <span>CETIEM SC</span>
-                    <strong>
-                      Aceleradora
-                    </strong>
-                </h2>
-                <div class="mc-content">
-                    <div class="img-container">
-                        <img class="img-logo" src="https://home-statics.boletia.com/uploads/sponsor/logo/11492/Cetiem.png">
+                    <div class="mc-footer">
+                        <a href="{% url 'home' %}">                                                                     
+                        <button class="btn">Ver más</button>
+                        </a>                  
                     </div>
-                    <div class="mc-description">
-                        Una sociedad civil que busca promover el desarrollo de potenciales emprendedores universitarios, con el propósito de generar empresas de alto impacto en México.
+                </article>
+            </div>
+    
+            
+            
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <article class="material-card Red">
+                    <h2>
+                        <span>Vexi</span>
+                        <strong>
+                            
+                            Fintech 
+                        </strong>
+                    </h2>
+                    <div class="mc-content">
+                        <div class="img-container">
+                            <img class="img-logo" src="https://vexi.mx/assets/images/logoVexiBlanco.png">
+                        </div>
+                        <div class="mc-description">
+                            Somos una tarjeta de crédito 100% mexicana y administrada directamente desde nuestra app.
+    
+                            Vexi NO tiene anualidad de por vida, ni comisión por no uso, solo realizas un pago único por apertura.
+                        </div>
                     </div>
-                </div>
-                <a class="mc-btn-action">
-                    <i class="fa fa-bars"></i>
-                </a>
+                    <a class="mc-btn-action">
+                        <i class="fa fa-bars"></i>
+                    </a>
                 <div class="mc-footer">
-                    <button class="btn">Ver más</button>
-                    
-                </div>
-                
-            </article>
-        </div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
-            <article class="material-card Red">
-                <h2>
-                    <span>Comena 41</span>
-                    <strong>
-                        Social
-                    </strong>
-                </h2>
-                <div class="mc-content">
-                    <div class="img-container">
-                        <img class="img-responsive" src="http://www.colmena41.com/img/Logo-colmena41.png">
-                    </div>
-                    <div class="mc-description">
-                        Hacemos investigación sobre la comunidad LGBT+ en México como herramienta para educar, comunicar y crear políticas públicas.
-                    </div>
-                </div>
-                <a class="mc-btn-action">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <div class="mc-footer">
-                    <button class="btn">Ver más</button>
-                    
-                </div>
-            </article>
-        </div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
-            <article class="material-card Red">
-                <h2>
-                    <span>Origami Creativa</span>
-                    <strong>
+                        <button class="btn">Ver más</button>
                         
-                        Diseño 
-                    </strong>
-                </h2>
-                <div class="mc-content">
-                    <div class="img-container">
-                        <img class="img-logo" src="https://origamicreativa.com/wp-content/themes/origami-theme/img/origami.png">
                     </div>
-                    <div class="mc-description">
-                        Somos una agencia creativa enfocada a diseñar estrategias que respondan a las necesidades de cada proyecto, seleccionamos los medios, el diseño y la línea para tu marca.
+                </article>
+            </div>
+    
+    
+    <div class="col-md-4 col-sm-6 col-xs-12">
+                <article class="material-card Red">
+                    <h2>
+                        <span>CETIEM SC</span>
+                        <strong>
+                            Emprendimiento
+                        </strong>
+                    </h2>
+                    <div class="mc-content">
+                        <div class="img-logo">
+                            <img class="img-responsive" src="https://cetiem.com/wp-content/uploads/2018/12/CETIEM-SC_Oficiales_1000x400pxB.png">
+                        </div>
+                        <div class="mc-description">
+                           buscamos promover el desarrollo de potenciales emprendedores universitarios, con el propósito de generar empresas de alto impacto en México
+                        </div>
                     </div>
-                </div>
-                <a class="mc-btn-action">
-                    <i class="fa fa-bars"></i>
-                </a>
-            <div class="mc-footer">
-                    <button class="btn">Ver más</button>
-                    
-                </div>
-            </article>
-        </div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
-            <article class="material-card Red">
-                <h2>
-                    <span>Bnext</span>
-                    <strong>
+                    <a class="mc-btn-action">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <div class="mc-footer">
+                        <button class="btn">Ver más</button>
                         
-                        Fintech 
-                    </strong>
-                </h2>
-                <div class="mc-content">
-                    <div class="img-container">
-                        <img class="img-logo" src="https://d31dn7nfpuwjnm.cloudfront.net/images/valoraciones/0035/4178/que-bnext-que-ofrece-mexicanos.png?1570826608">
                     </div>
-                    <div class="mc-description">
-                        Neobanco y fintech española especializada en servicios bancarios y financieros completamente en línea, que ofrece productos de terceros.
+                        
                     </div>
-                </div>
-                <a class="mc-btn-action">
-                    <i class="fa fa-bars"></i>
-                </a>
-            <div class="mc-footer">
-                    <button class="btn">Ver más</button>
-                    
-                </div>
-            </article>
-        </div>
-
-
-<div class="col-md-4 col-sm-6 col-xs-12">
-            <article class="material-card Red">
-                <h2>
-                    <span>Avocate</span>
-                    <strong>
-                        Artistico
-                    </strong>
-                </h2>
-                <div class="mc-content">
-                    <div class="img-logo">
-                        <img class="img-responsive" src="https://avocate.com.mx/wp-content/uploads/2018/05/artist-bass-close-up-542553-01-1-300x106.png">
-                    </div>
-                    <div class="mc-description">
-                       Productora musical y audiovisual que se rifa por la escena independiente.
-                    </div>
-                </div>
-                <a class="mc-btn-action">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <div class="mc-footer">
-                    <button class="btn">Ver más</button>
-                    
-                </div>
-                    
-                </div>
-
-</div>
-</section>
-
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
-
-</body>
-</html>
+    
+    </div>
+    </section>
+    
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+    
+    </body>
+    </html>
+    

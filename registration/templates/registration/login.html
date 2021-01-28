@@ -4,37 +4,38 @@
 <html>
 <head>
 	<title>Making Friends</title>
-	<link rel="stylesheet" href="{% static 'core/css/registro.css' %}">
+	<link rel="stylesheet" href="{% static 'core/css/login.css' %}">
 </head>
 <body>
-<div class='bold-line'></div>
-<div class='container'>
-  <div class='window'>
-    <div class='overlay'></div>
-    <div class='content'>
-      {% if 'register' in request.GET %}
+
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div id="title">
+    <img src="{% static 'core/img/LOGOS/mf.png' %}"  height="200" width="200" style="padding-top: 2rem;">
+     {% if 'register' in request.GET %}
           <p style="color:green;">Usuario registrado correctamente, ya puedes identificarte.</p>
         {% endif %}
-      <div class='welcome'>Accede a tu cuenta</div>
-      <div class='input-fields'>
-      <form action="" method="post">{% csrf_token %}
+    <h2>Accede a tu cuenta</h2>    
+  </div>
+  <div class="form col-md-12">
+      <form action="" method="post">{% csrf_token %}   
       {% if form.non_field_errors %}
             <p style="color:red">Usuario o contraseña incorrectos, prueba de nuevo.</p>
-        {% endif %}
-        <input type='text' placeholder='Nombre de usuario' required name="username" class='input-line full-width'></input>
-        <input type='password' placeholder='Contraseña' required name="password" id="id_password" class='input-line full-width'></input>
-      </div>
-      <div class='spacing'> continua con <span class='facebook'>Facebook</span></div>
-      <div class='spacing'> continua con <span class='google'>Google</span></div>
-      <a href="makerplace.html">
-      <div><input type="submit" class='ghost-round full-width' value="Acceder"></div>
+        {% endif %} 
+        <h3>Nombre de Usuario</h3>
+        <input type='text' placeholder='Nombre de usuario' required name="username" class="col-md-6" >
+        <h3>Contraseña</h3>
+        <input type='password' placeholder='Contraseña' required name="password" id="id_password" class="col-md-6" >
+        <h3>Olvidé mi contraseña</h3>
+        </a>
+        <a href="makerplace.html"> 
+        <div><input type="submit" class='ghost-round full-width' value="Acceder"></div> 
+        </a>
       </form>
-    </a>
-    <p>
-          ¿Ha olvidado su clave? Puede restaurarla <a href="{% url 'password_reset' %}">aquí</a>.
-        </p>
     </div>
   </div>
-</div>
+<!-- partial -->
+  
 </body>
 </html>
+

@@ -1,13 +1,13 @@
+{% load static %}
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html>
 <head>
 
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
     <title>Making Friends</title>
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'core/vendor/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <!-- mobile specific metas
     ================================================== -->
@@ -15,19 +15,17 @@
 
     <!-- CSS
     ================================================== -->
-    <link rel="stylesheet" href="{% static 'core/css/base.css'%}">
-    <link rel="stylesheet" href="{% static 'core/css/main.css'%}">
+    <link rel="stylesheet" href="{% static 'core/css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/main.css' %}">
 
     <!-- script
     ================================================== -->
-    <script src="{% static 'core/js/modernizr.js' %}%"></script>
+    <script src="{% static 'core/js/modernizr.js' %}"></script>
 
     <!-- favicons
     ================================================== -->
-    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'core/img/Logo B1.png'%}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'core/img/favicon16.png'%}">
-   <!-- <link rel="manifest" href="site.webmanifest"> -->
-
+    <link rel="icon" type="image/png" sizes="40x40" href="{% static 'core/img/Logo B1.png' %}">
+  
 </head>
 
 <body id="top">
@@ -49,16 +47,16 @@
 
         <div class="header-logo">
             <a class="site-logo" href="index.html">
-                <img src="{% static 'core/img/Logo B1.png'%}" alt="Homepage">
+                <img src="{% static 'core/img/Logo B1.png' %}" alt="Homepage">
             </a>
         </div>
 
         <nav class="header-nav-wrap">
             <ul class="header-nav">
-                <li class="current"><a href="{% url 'nosotros' %}" title="Home">Nosotros</a></li>
-                <li><a href="about.html" title="About">Makers</a></li>
-                <li><a href="events.html" title="Services">Friends</a></li>
-                <li><a href="contact.html" title="Contact us">Contacto</a></li>	
+                <li class="current"><a href="nosotros.html" title="Home">Nosotros</a></li>
+                <li><a href="registro.html" title="About">Makers</a></li>
+                <li><a href="friends.html" title="Services">Friends</a></li>
+                <li><a href="{% url 'contacto' %}" title="Contact us">Contacto</a></li>	
             </ul>
         </nav>
 
@@ -68,48 +66,36 @@
 
     <!-- hero
     ================================================== -->
-    <section class="s-hero" data-parallax="scroll" data-image-src="{% static 'core/img/desarmador.jpg'%}" data-natural-width=4000 data-natural-height=4000 data-position-y=center>
-
-        <div class="hero-left-bar"></div>
+    <section class="s-hero" data-parallax="scroll" data-image-src="{% static 'core/img/desarmador.jpg' %}" data-natural-width=4000 data-natural-height=3500 data-position-y=top>
 
         <div class="row hero-content">
 
             <div class="column large-full hero-content__text">
                 
-
+              
                 <h1>
-                    <img src="{% static 'core/img/Logo BN.png' %}" alt="Smiley face" height="800" width="600"> <br>
-                    Somos una comunidad de clusters donde los jóvenes generan soluciones a problemáticas sociales a través de conocimiento, herramientas y el apoyo de una red empresarial y profesional
+                    <img src="{% static 'core/img/Logo BN.png' %}"  height="700" width="500"> <br><br>
+                    Somos una comunidad que crea espacios para generar soluciones a problemáticas sociales, a través de conocimientos, herramientas y el apoyo de una red de organizaciones
                 </h1>
-                
+                 
                 <div>
-                     <a href="{% url 'signup' %}">
-                    <button class="btn">Registro</button> 
+                     <a href="{% url 'login' %}">
+                    <button class="btn">Iniciar sesión</button> 
                     </a>
-                    <a href="{% url 'login' %}">
-                    <button class="btn">Iniciar sesión</button>
+                    <a href="{% url 'signup' %}">
+                    <button class="btn">Registro</button>
                 </a>
                  </div>
+
             </div> <!-- end hero-content__text -->
 
         </div> <!-- end hero-content -->
-
-        <ul class="hero-social">
-            <li class="hero-social__title">Síguenos</li>
-            <li>
-                <a href="#0" title="">Facebook</a>
-            </li>
-            <li>
-                <a href="#0" title="">Instagram</a>
-            </li>
-        </ul> <!-- end hero-social -->
 
         <div class="hero-scroll">
             <a href="#about" class="scroll-link smoothscroll">
                 Scroll Para más
             </a>
         </div> <!-- end hero-scroll -->
-
     </section> <!-- end s-hero -->
 
 
@@ -119,282 +105,93 @@
 
  <div class="row">
   <div class="col-md-6">
-      <h3>SER JOVEN EN MÉXICO <br> ES UNA CARRERA DE <br> RESISTENCIA</h3>
+                 <h3>
+                    ¿Qué hacemos?
+                    <img src="{% static 'core/img/perico.jpg' %}"  height="900" width="700">
+                </h3>
     </div>
 
-<div class="col-md-6">
    <section class="card-sm__container">
     <div class="col-md-6">
-    <!--- START: CARD --->
-    <section class="card-sm" style="background-color:#000000">
+    <!--- START: CARD -->
+    <section class="card-sm">
+
       
-      <h4 class="card__text-lg">EDUCACIÓN SELECTIVA</h4>
+      <h4> DEMOCRATIZAMOS EL CONOCIMIENTO</h4>
       
-      <p class="text-center">Solo 17% logra acceder a la educación superior</p>
+      <p class="text-center">Contenido digital, multidisciplinario que busca el desarrollo para generar proyectos con enfoque social y tecnológico.</p>
       </div>
     
 <div class="col-md-6">
 <section class="card-sm__container">
-    <!--- START: CARD --->
-    <section class="card-sm" style="background-color:#000000">
+    <section class="card-sm">
       
-      <h4 class="card__text-lg">TRABAJO PRECARIO</h4>
+      <h4>FOMENTAMOS EL PENSAMIENTO CREATIVO</h4>
       
-      <p class="text-center">Solo 3 de estos encontrarán un empleo
-relacionado con lo que estudiaron</p>
+      <p class="text-center">Talleres que detonan la creatividad para encontrar soluciones a problemas actuales </p>
 </div>
     
 
 <div class="col-md-6">
 <section class="card-sm__container">
-    <!--- START: CARD --->
-    <section class="card-sm" style="background-color:#000000">
+    <section class="card-sm">
       
-      <h4 class="card__text-lg">AUTOEMPLEO</h4>
+      <h4>CREAMOS ESPACIOS ABIERTOS</h4>
       
-      <p class="text-center">Solo 1 logra concretar un emprendimiento,
-sin la seguridad de que funcion</p>
+      <p class="text-center">Eventos, festivales y exposiciones que llevan las herramientas y el conocimiento a donde se encuentra la creatividad mexicana </p>
 </div>
 </div>
     </section>
     </section>
 
- <section class="us" style="background-color:#000000">
-<div>
-<h5 class="text-center">En nuestro  complejo creativo se puede crear con libertad y enfoque, a través de una iniciativa multidisciplinar accesible para todos los jóvenes que quieren iniciar un proyecto o solucionar un problema de su comunidad
-</h5>
+ <section style="background-color:#000000">
+<h3>¿Quieres formar parte? </h3>
+<div class="row">
+  <div class="col-md-6">
+  <section class="maker">
+    <h5>Make to create</h5>
+    <h6>Jóvenes con interés en la creación de soluciones y proyectos que requieren orientación y desarrollo de habilidades.</h6>
+    <a href="{% url 'signup' %}">
+                    <button class="btn">Sé un Maker</button> 
+                    </a>
+  </div>
+  <div class="col-md-6">
+    <section class="friend">
+  <h5>Friend to create</h5>
+    <h6>Alianzas especializadas que ayudan a la construcción de estos proyectos a través de un acuerdo de beneficio mutuo.</h6>
+    <a href="friends.html">
+                    <button class="btn">Sé un Friend</button> 
+                    </a>
+</div>
 </div>
 </section>
 
-<section class="card-area" style="background-color:#000000" >   
-      <!-- Card: City -->
-        <section class="card-section">
-            <div class="card">
-                <div class="flip-card">
-                    <div class="flip-card__container">
-                         <div class="card-front">
-                             <div class="card-front__tp card-front__tp--city">
+<section style="background-color:#000000">
+<h3>Conoce a nuestros aliados </h3>
 
-                             <img src="{% static 'core/img/think.png'%}" width="100" height="80" style="padding-bottom: 50px" >
-                                                             
-                               <h2 class="card-front__heading" align="text-center">
-                                FOMENTAMOS EL PENSAMIENTO CREATIVO
-                                  </h2>
-                                </div>
+<ul class="partners">
+  <a><img src="{% static 'core/img/friends/vexi.png' %}"  height="200" width="200"></a>
+  <a><img src="{% static 'core/img/friends/cetiem.png' %}"  height="250" width="250"></a>
+  <a><img src="{% static 'core/img/friends/cochinitob.png' %}"  height="150" width="150"></a>
+  <a><img src="{% static 'core/img/friends/tesicafe.png' %}"  height="150" width="150"></a>
+</ul>
 
-                                <div class="card-front__bt">
-                                    <p class="card-front__text-view card-front__text-view--city">
-                                        Ver más
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card-back">
-                                <video class="video__container" autoplay muted loop>
-                                    <source class="video__media" src="{% static 'core/Video/maquina.mp4'%}">
-                                </video>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="inside-page">
-                        <div class="inside-page__container">
-                            
-                            <p class="inside-page__text">
-                               Talleres que detonan la creatividad para encontrar soluciones a problemas actuales 
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-  
-      <!-- Card: City -->
-        <section class="card-section">
-            <div class="card">
-                <div class="flip-card">
-                    <div class="flip-card__container">
-                         <div class="card-front">
-                             <div class="card-front__tp card-front__tp--city">
-
-                             <img src="{% static 'core/img/book.png'%}" width="100" height="80" style="padding-bottom: 50px" >
-                                                             
-                               <h2 class="card-front__heading" align="text-center">
-                                DEMOCRATIZAMOS EL CONOCIMIENTO
-                                  </h2>
-                                </div>
-
-                                <div class="card-front__bt">
-                                    <p class="card-front__text-view card-front__text-view--city">
-                                        Ver más
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card-back">
-                                <video class="video__container" autoplay muted loop>
-                                    <source class="video__media" src="{% static 'core/Video/computer.mp4'%}">
-                                </video>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="inside-page">
-                        <div class="inside-page__container">
-                            
-                            <p class="inside-page__text">
-                               Contenido digital, multidisciplinario que busca el desarrollo para generar proyectos con enfoque social y tecnológico.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-  
-      <!-- Card: City -->
-        <section class="card-section">
-            <div class="card">
-                <div class="flip-card">
-                    <div class="flip-card__container">
-                         <div class="card-front">
-                             <div class="card-front__tp card-front__tp--city">
-
-                             <img src="{% static 'core/img/key.png'%}" width="100" height="80" style="padding-bottom: 50px" >
-                                                             
-                               <h2 class="card-front__heading" align="text-center">
-                                CREAMOS ESPACIOS ABIERTOS
-                                  </h2>
-                                </div>
-
-                                <div class="card-front__bt">
-                                    <p class="card-front__text-view card-front__text-view--city">
-                                        Ver más
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card-back">
-                                <video class="video__container" autoplay muted loop>
-                                    <source class="video__media" src="{% static 'core/Video/door.mp4'%}">
-                                </video>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="inside-page">
-                        <div class="inside-page__container">
-                            
-                            <p class="inside-page__text">
-Eventos, festivales y exposiciones que
-llevan las herramientas y el conocimiento a
-donde se encuentra la verdadera
-creatividad mexicana                             </p>
-                        </div>
-                    </div>
-                </div>
-
-
-            </section>
-</section>
-
-
-
-<footer class="page-footer font-small indigo">
-
-
-  <div class="container">
-
-    
-    <div class="row text-center d-flex justify-content-center pt-5 mb-3">
-
-      <div class="col-md-2 mb-3">
-        <h6 class="text-uppercase font-weight-bold">
-          <a href="{% url 'nosotros' %}">Nosotros</a>
-        </h6>
-      </div>
-      
-      <div class="col-md-2 mb-3">
-        <h6 class="text-uppercase font-weight-bold">
-          <a href="#!">Makers</a>
-        </h6>
-      </div>
-      
-
-      
-      <div class="col-md-2 mb-3">
-        <h6 class="text-uppercase font-weight-bold">
-          <a href="#!">Friends</a>
-        </h6>
-      </div>
-    
-      <div class="col-md-2 mb-3">
-        <h6 class="text-uppercase font-weight-bold">
-          <a href="#!">Contacto</a>
-        </h6>
-      </div>
-      
-
-    </div>
-    
-    <hr class="rgba-white-light" style="margin: 0 15%;">
-
-    
-    <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
-
-      
-      <div class="col-md-8 col-12 mt-5">
-        <p style="line-height: 1.7rem">Somos una comunidad de clusters donde los jóvenes generan soluciones a problemáticas sociales a través de conocimiento, herramientas y el apoyo de una red empresarial y profesional</p>
-      </div>
-      
-
-    </div>
-  
-    <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
-
-   
-    <div class="row pb-3">
-
-      
-      <div class="col-md-12">
-
-        <div class="mb-5 flex-center">
-
-          <a class="fb-ic">
-            <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
-          </a>
-          
-          <a class="tw-ic">
-            <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
-          </a>
-         
-          <a class="gplus-ic">
-            <i class="fab fa-google-plus-g fa-lg white-text mr-4"> </i>
-          </a>
-          
-          <a class="li-ic">
-            <i class="fab fa-linkedin-in fa-lg white-text mr-4"> </i>
-          </a>
-          
-          <a class="ins-ic">
-            <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
-          </a>
-          
-          <a class="pin-ic">
-            <i class="fab fa-pinterest fa-lg white-text"> </i>
-          </a>
-
-        </div>
-
-      </div>
-      
-
-    </div>
-    
-
-  </div>
-  
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href=""> LINADI</a>
-  </div>
+<footer class="marca">
+  <h7> CREA HASTA QUE TODOS CREAN</h7>
+  <ul class="footer_end">
+  <li class="glitch-item">
+    <a href="{% url 'tyc' %}">Términos y condiciones</a>
+  </li>
+  <li class="glitch-item">
+    <a>Privacidad</a>
+  </li>
+  <li class="glitch-item">
+    <a>Nosotros</a>
+  </li>
+  <li class="glitch-item">
+    <a href="{% url 'contacto' %}">Contacto</a>
+  </li>
 </footer>
-</section>
 
     <script src="{% static 'core/js/jquery-3.2.1.min.js' %}"></script>
     <script src="{% static 'core/js/plugins.js' %} "></script>
