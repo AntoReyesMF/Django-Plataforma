@@ -15,3 +15,6 @@ class TyCPageView(TemplateView):
     
 class ContactoPageView(TemplateView):
     template_name = "core/contacto.html"    
+
+class FriendPageView(TemplateView):
+    template_name = "core/friends.html"    

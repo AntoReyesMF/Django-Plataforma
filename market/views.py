@@ -7,5 +7,8 @@ class MarketPageView(TemplateView):
     
     template_name= "market/marketplace.html"
 
+class MCPageView(TemplateView):
+    template_name = "market/MC.html"    
+
 
 
