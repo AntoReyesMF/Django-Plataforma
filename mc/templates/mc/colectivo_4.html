@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Financiamiento colectivo - Making Friends</title>
+  {% load static %}
+	<link rel="stylesheet" href="{% static 'core/css/colectivo_4.css' %}">   <!-- css agregado m.r.a -->
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
+  
+</head>
+<body>
+
+
+  <div class="logo_friend">
+    <a href="{% url 'mc' %}">             
+      <img src="{% static 'core/img/friends/mc1.png' %}" style="width: 8rem;"> 
+  	</a>
+  </div>
+</nav>
+<body>
+<section class="titulo">
+  Creación de campaña
+
+  <div class="subtitulo">Define cuánto dinero vas a pedir</div>
+
+  <div class="descipción">Antes de hacer tu campaña de crowdfunding debes saber cuánto dinero pedir. No debe ser una cifra muy baja o muy elevada, sino un número que sea posible alcanzar. </div>
+  </section>
+
+<section class="barr_c">
+<input id="slider" name="slider" type="range" value=0>
+<label for="slider">$0</label>
+</section>
+<script  src="{% static 'core/js/barr_mc.js' %}"></script> 
+
+<div class="ejercicio">¿Qué tengo que hacer?</div>
+
+<div class="descipción">Toma en cuenta a familiares, amigos y vecinos, compañeros de trabajo o escuela, tus contactos de redes sociales y súmalos.  </div>
+
+<div class="tema">
+  <h1> Multiplica el el total de tu red de contactos por 0.5</h1>
+  <p> Este será el porcentaje de personas que donarán a tu campaña (tus padrinos). </p>
+</div>
+
+<div class="tema">
+  <h1> Multiplica el total de aportaciones por $500 </h1>
+  <p> Esta es la aportación promedio que realizan las personas a una campaña</p>
+</div>
+
+<div class="descipción"> ya tienes la cantidad de dinero que vas a pedir en tu campaña  </div>
+
+
+</div>
+
+  <div class="product-slider">
+     <button class="prev" style="">
+      <a  href="{% url 'colectivo_3' %}">
+        <span class="icon_prev">
+          <svg class="icon-arrow-left"><use xlink:href="#icon-arrow-left"></use></svg>
+        </span>
+      </button>
+
+      <button class="next">
+        <a  href="{% url 'colectivo_5' %}">
+        <span class="icon">
+          <svg class="icon icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg></a>
+        </span>
+      </button>
+
+
+  

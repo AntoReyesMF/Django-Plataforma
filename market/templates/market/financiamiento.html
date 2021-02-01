@@ -20,7 +20,7 @@
       <a href="../../../profiles/templates/profiles/nuevoproyecto.html"><li>Nuevo proyecto</li></a>
       <a href="#"><li>Soporte</li></a>
       <a href="#"><li>Ajustes</li></a>
-      <a href="#"><li>Cerrar sesión</li></a>
+      <a href="{% url 'logout' %}"><li>Cerrar sesión</li></a>
       
     </ul>
   </div>
@@ -58,7 +58,8 @@
             Certificado
           </div>
    <div class="aprender"> 
-   	<a href="https://wa.me/525545897787?text=Hola%20MiCochinito%20...">
+   	{% comment %} <a href="https://wa.me/525545897787?text=Hola%20MiCochinito%20..."> {% endcomment %}
+	   <a href="{% url 'colectivo'%}">
                     <button class="btn">Empezar</button>
                 </a></div>				
 </section>

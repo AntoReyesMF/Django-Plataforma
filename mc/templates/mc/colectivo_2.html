@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Financiamiento colectivo - Making Friends</title>
+  {% load static %}
+	<link rel="stylesheet" href="{% static 'core/css/colectivo_2.css' %}">   <!-- css agregado m.r.a -->
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
+</head>
+<body>
+
+<nav role="navigation">
+  <div id="menuToggle">
+<input type="checkbox" />
+<span></span>
+    <span></span>
+    <span></span>
+<ul id="menu">
+      <a href="{% url 'market' %}"><li>Makerplace</li></a>
+      <a href="miperfil.html"><li>Perfil</li></a>
+      <a href="#"><li>Mis proyectos</li></a>
+      <a href="nuevoproyecto.html"><li>Nuevo proyecto</li></a>
+      <a href="#"><li>Soporte</li></a>
+      <a href="#"><li>Ajustes</li></a>
+      <a href="{% url 'logout' %}"><li>Cerras sesión</li></a> <!-- ruta agregada m.r.a -->
+      
+    </ul>
+  </div>
+  <div class="logo_friend">
+    <a href="{% url 'mc' %}">             
+      <img src="{% static 'core/img/friends/mc1.png' %}" style="width: 8rem;"> 
+  	</a>
+  </div>
+</nav>
+<body>
+<section class="titulo">
+	¿Qué es una campaña y que necesito?
+	<div class="descipción">Graba un video atractivo que te ayudará a promocionar tu campaña. Esta será tu principal carta de presentación y a través de la cual convencerás a las personas de donar a tu proyecto. <br>
+
+Te compartimos un video con algunos consejos para tener un resultado de calidad>
+</div>
+	</section>
+
+<section class="video_derecha">
+   <iframe width="700" height="400" src="https://www.youtube.com/embed/Ar95ZTfpfIc?controls=0">
+</iframe>
+ 
+
+<div class="product-slider">
+     <button class="prev" style="">
+      <a  href="{% url 'colectivo_1' %}">
+        <span class="icon_prev">
+          <svg class="icon-arrow-left"><use xlink:href="#icon-arrow-left"></use></svg>
+        </span>
+      </button>
+
+      <button class="next">
+        <a  href="{% url 'colectivo_3' %}">
+        <span class="icon">
+          <svg class="icon icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg></a>
+        </span>
+      </button>

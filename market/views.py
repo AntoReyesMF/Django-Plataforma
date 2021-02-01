@@ -10,5 +10,8 @@ class MarketPageView(TemplateView):
 class MCPageView(TemplateView):
     template_name = "market/MC.html"    
 
+class FinancPageView(TemplateView):
+    template_name = "market/financiamiento.html"    
+
 
 
