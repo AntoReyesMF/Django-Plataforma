@@ -7,3 +7,4 @@ venv/*
 .idea/
 registration/templates/registration/debug.log
 market/templates/market/debug.log
+nohup.out
