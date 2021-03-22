@@ -8,6 +8,9 @@
     <meta charset="utf-8">
     <title>Making Friends</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+	  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'>
 
     <!-- mobile specific metas
     ================================================== -->
@@ -17,6 +20,12 @@
     ================================================== -->
     <link rel="stylesheet" href="{% static 'core/css/base.css' %}">
     <link rel="stylesheet" href="{% static 'core/css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/nosotros.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/tyc.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/contacto.css' %}">
+  
+
+    
 
     <!-- script
     ================================================== -->
@@ -46,7 +55,7 @@
     <header class="s-header">
 
         <div class="header-logo">
-            <a class="site-logo" href="index.html">
+            <a class="site-logo" href="{% url 'home' %}">
                 <img src="{% static 'core/img/Logo B1.png' %}" alt="Homepage">
             </a>
         </div>
@@ -63,139 +72,32 @@
         <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
 
     </header> <!-- end s-header -->
-
-    <!-- hero
-    ================================================== -->
-    <section class="s-hero" data-parallax="scroll" data-image-src="{% static 'core/img/desarmador.jpg' %}" data-natural-width=4000 data-natural-height=3500 data-position-y=top>
-
-        <div class="row hero-content">
-
-            <div class="column large-full hero-content__text">
-                
-              
-                <h1>
-                    <img src="{% static 'core/img/Logo BN.png' %}"  height="700" width="500"> <br><br>
-                    Somos una comunidad que crea espacios para generar soluciones a problemáticas sociales, a través de conocimientos, herramientas y el apoyo de una red de organizaciones
-                </h1>
-                 
-                <div>
-                     <a href="{% url 'login' %}">
-                    <button class="btn">Iniciar sesión</button> 
-                    </a>
-                    <a href="{% url 'signup' %}">
-                    <button class="btn">Registro</button>
-                </a>
-                 </div>
-
-            </div> <!-- end hero-content__text -->
-
-        </div> <!-- end hero-content -->
-
-        <div class="hero-scroll">
-            <a href="#about" class="scroll-link smoothscroll">
-                Scroll Para más
-            </a>
-        </div> <!-- end hero-scroll -->
-    </section> <!-- end s-hero -->
+      <!-- Contenido dinamico                            -->
+      {% block content %}{% endblock %}
+      <!-- Fin Contenido dinamico                        -->
 
 
-    <!-- about
-    ================================================== -->
-    <section class="about">
-
- <div class="row">
-  <div class="col-md-6">
-                 <h3>
-                    ¿Qué hacemos?
-                    <img src="{% static 'core/img/perico.jpg' %}"  height="900" width="700">
-                </h3>
-    </div>
-
-   <section class="card-sm__container">
-    <div class="col-md-6">
-    <!--- START: CARD -->
-    <section class="card-sm">
-
-      
-      <h4> DEMOCRATIZAMOS EL CONOCIMIENTO</h4>
-      
-      <p class="text-center">Contenido digital, multidisciplinario que busca el desarrollo para generar proyectos con enfoque social y tecnológico.</p>
-      </div>
-    
-<div class="col-md-6">
-<section class="card-sm__container">
-    <section class="card-sm">
-      
-      <h4>FOMENTAMOS EL PENSAMIENTO CREATIVO</h4>
-      
-      <p class="text-center">Talleres que detonan la creatividad para encontrar soluciones a problemas actuales </p>
-</div>
-    
-
-<div class="col-md-6">
-<section class="card-sm__container">
-    <section class="card-sm">
-      
-      <h4>CREAMOS ESPACIOS ABIERTOS</h4>
-      
-      <p class="text-center">Eventos, festivales y exposiciones que llevan las herramientas y el conocimiento a donde se encuentra la creatividad mexicana </p>
-</div>
-</div>
-    </section>
-    </section>
-
- <section style="background-color:#000000">
-<h3>¿Quieres formar parte? </h3>
-<div class="row">
-  <div class="col-md-6">
-  <section class="maker">
-    <h5>Make to create</h5>
-    <h6>Jóvenes con interés en la creación de soluciones y proyectos que requieren orientación y desarrollo de habilidades.</h6>
-    <a href="{% url 'signup' %}">
-                    <button class="btn">Sé un Maker</button> 
-                    </a>
-  </div>
-  <div class="col-md-6">
-    <section class="friend">
-  <h5>Friend to create</h5>
-    <h6>Alianzas especializadas que ayudan a la construcción de estos proyectos a través de un acuerdo de beneficio mutuo.</h6>
-    <a href="{% url 'friend' %}">
-                    <button class="btn">Sé un Friend</button> 
-                    </a>
-</div>
-</div>
-</section>
-
-<section style="background-color:#000000">
-<h3>Conoce a nuestros aliados </h3>
-
-<ul class="partners">
-  <a><img src="{% static 'core/img/friends/vexi.png' %}"  height="200" width="200"></a>
-  <a><img src="{% static 'core/img/friends/cetiem.png' %}"  height="250" width="250"></a>
-  <a><img src="{% static 'core/img/friends/cochinitob.png' %}"  height="150" width="150"></a>
-  <a><img src="{% static 'core/img/friends/tesicafe.png' %}"  height="150" width="150"></a>
-</ul>
-
-<footer class="marca">
-  <h7> CREA HASTA QUE TODOS CREAN</h7>
-  <ul class="footer_end">
-  <li class="glitch-item">
-    <a href="{% url 'tyc' %}">Términos y condiciones</a>
-  </li>
-  <li class="glitch-item">
-    <a>Privacidad</a>
-  </li>
-  <li class="glitch-item">
-    <a>Nosotros</a>
-  </li>
-  <li class="glitch-item">
-    <a href="{% url 'contacto' %}">Contacto</a>
-  </li>
-</footer>
-
+    <footer class="marca">
+      <h7> CREA HASTA QUE TODOS CREAN</h7>
+      <ul class="footer_end">
+      <li class="glitch-item">
+        <a href="{% url 'tyc' %}">Términos y condiciones</a>
+      </li>
+      <li class="glitch-item">
+        <a>Privacidad</a> 
+      </li>
+      <li class="glitch-item">
+        <a>Nosotros</a>
+      </li>
+      <li class="glitch-item">
+        <a href="{% url 'contacto' %}">Contacto</a>
+      </li>
+    </footer>
+    <!-- Script js para ultima carga                       -->
     <script src="{% static 'core/js/jquery-3.2.1.min.js' %}"></script>
     <script src="{% static 'core/js/plugins.js' %} "></script>
     <script src="{% static 'core/js/main.js' %}"></script>
+    <script  src="{% static 'core/js/contacto.js' %}"></script>
 
 
 </body>

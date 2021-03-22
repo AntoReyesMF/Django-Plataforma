@@ -1,25 +1,7 @@
 
-<!DOCTYPE html>
-<html>
-<head>
- {% load static %}
-  
- <!-- Modificacion michell 26-01-2021 -->
-  <title>Nosotros</title>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-	<link rel="stylesheet" href="{% static 'core/css/nosotros.css' %}">
-<!-- Modificacion michell 26-01-2021 -->
-
-</head>
-<body>
-
-  <header>
-    <div class="container">
-      <a class="site-logo" href="{% url 'home'%}">
-      <img src="{% static 'core/img/Logo B1.png' %}" class="logo"/></div>
-      </a>
-  </header>
-  
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
   
   <div class="jumbotron">
     
@@ -207,22 +189,5 @@
   
   </section>
   
-  <footer class="marca">
-    <h7> CREA HASTA QUE TODOS CREAN</h7>
-    <ul class="footer_end">
-    <li class="glitch-item">
-      <a>Términos y condiciones</a>
-    </li>
-    <li class="glitch-item">
-      <a>Privacidad</a>
-    </li>
-    <li class="glitch-item">
-      <a>Nosotros</a>
-    </li>
-    <li class="glitch-item">
-      <a>Contacto</a>
-    </li>
-  </footer>
-   
-  </body>
-  </html>
+
+  {% endblock %}

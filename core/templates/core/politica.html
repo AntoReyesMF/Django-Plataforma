@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Política de privacidad - Making Friends</title>
-		{% load static %}
-	<link rel="stylesheet" href="{% static 'core/css/tyc.css' %}">
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
-</head>
-<body>
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+
 
 
 <div class="titulo">
@@ -67,5 +62,4 @@ Las prácticas y políticas incluidas en esta Política de privacidad reemplazan
 Esta Política de Privacidad se aplica solamente a las prácticas de recopilación, protección, utilización y transferencia de información revelada a Making Friends para los fines mencionados.
 </p>
 
-</body>
-</html>
+{% endblock %}

@@ -1,20 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title> Términos y condiciones - Making Friends</title>
-	{% load static %}
-  <link rel="stylesheet" href="{% static 'core/css/tyc.css' %}">
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
-</head>
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
 
-<header>
-	<div class="container">
-		<a class="site-logo" href="{% url 'home'%}">
-			<img src="{% static '/core/img/Logo B1.png' %}" class="logo"/></div>
-	  	</a>
-</header>
-
-<body>
 
 <div class="titulo">
 	<h1>TERMINOS Y CONDICIONES DE USO</h1>
@@ -90,5 +77,4 @@
 
 <div class="foot">© Todos los derechos reservados. Enero 2021. LINADI S.A.S </div>
 
-</body>
-</html>
+{% endblock %}

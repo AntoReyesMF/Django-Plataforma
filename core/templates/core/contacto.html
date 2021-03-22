@@ -1,21 +1,9 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Contacto - Making Friends</title>
-  {% load static %}
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'><link rel="stylesheet" href="{% static 'core/css/contacto.css' %}">
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
 
-</head>
-<header>
-  <div class="container">
-  	<a class="site-logo" href="{% url 'home'%}">
-    <img src="{% static '/core/img/Logo B1.png' %}" class="logo"/></div>
-    </a>
-</header>
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
 
-<body>
+
 <h1>Preguntas Frecuentes</h1>
 
 <div class="faqs-container">
@@ -127,5 +115,4 @@
 <!-- partial -->
   <script  src="{% static 'core/js/contacto.js' %}"></script>
 
-</body>
-</html>
+{% endblock %}
