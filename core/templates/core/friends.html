@@ -1,29 +1,18 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Friends</title>
-  {% load static %}
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Libre+Franklin:400,300'><link rel="stylesheet" href="{% static 'core/css/friends.css' %}">
 
-</head>
-<body>
-<header>
-  <div class="container">
-  	<a class="site-logo" href="{% url 'home'%}">
-    <img src="{% static 'core/img/Logo B1.png' %}" class="logo"/></div>
-    </a>
+ {% extends 'core/base.html' %}
+ {% load static %}
+ {% block content %}
 
-    
+  <!-- No supe que hacerle 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'> -->
 
-</header>
+<!-- titulo  @Lalo
+<title>Friends</title>
+	Flavicon
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon16.png">>-->
+
 <div class="jumbotron">
-  
-  <div id="black"></div>
   
     <div class="container-fluid">
       <div class="col-md-5 col-md-offset-1">
@@ -51,7 +40,7 @@
 <li><p class="">Tendrás la oportunidad de participar en cada evento que organicemos nosotros o nuestros aliados</p></li>
 <li><p class="">Cualquier empresa o startup tiene un un lugar sin importar su tamaño, ciudad, o giro </p></li>
 </ul>
-    </div><!-- /. End White Box 0-->
+    </div>
     
     <p class="final-cta">EFICIENTAMOS EL PROCESO DE CONECTAR RECURSOS CON QUIÉN LOS NECESITA</p>    
   </div>
@@ -71,8 +60,10 @@
     </div>
   </div>  
 </div>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><script  src="{% static 'core/js/friends.js' %}"></script>
+<!-- partial 
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script> -->
 
 </body>
 </html>
+
+{% endblock %}

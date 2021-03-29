@@ -12,31 +12,12 @@ body{
 	margin: 0;
 	padding: 0;
 }
-* {
-	box-sizing: border-box;
-}
-
-body {
-	background-color: #f0f0f0;
-	font-family: 'Muli', sans-serif;
-}
-
 h1 {
 	margin: 50px 0 30px;
 	text-align: center;
 }
 
-header {
-	background: #1a1d25;
-	padding: 10px 0;
-	background-color: #000000;
-}
-header .logo {
-	max-width: 90px;
-}
-
-
-.faqs-container {
+.contacto_contenedor {
 	margin: 0 auto;
 	max-width: 600px;
 }
@@ -52,14 +33,14 @@ header .logo {
 	transition: 0.3s ease;
 }
 
-.faq.active {
+.contacto_cont_preg {
 	background-color: #fff;
 	box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
 }
 
 
 
-.faq-title {
+.preg-texto{
 	margin: 0 35px 0 0;
 	color: #DE2276;
 }
