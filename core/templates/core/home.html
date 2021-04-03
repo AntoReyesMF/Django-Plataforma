@@ -2,116 +2,101 @@
 {% load static %}
 {% block content %}
 
+
    <!-- hero
     ================================================== -->
-    <section class="s-hero" data-parallax="scroll" data-image-src="{% static 'core/img/desarmador.jpg' %}" data-natural-width=4000 data-natural-height=3500 data-position-y=top>
+<div class="home_cont_ background" data-parallax="scroll" data-image-src="{% static 'core/img/desarmador.jpg' %}" data-natural-width=4000 data-natural-height=3500 data-position-y=top>
 
-        <div class="row hero-content">
-
-            <div class="column large-full hero-content__text">
-                
+        <div class="home_cont_principal">
+          <img src="{% static 'core/img/Logo BN.png' %}"> <br><br>
+            <h1 class="home_h1">
+              Somos una comunidad que crea espacios para generar soluciones a problemáticas sociales, a través de conocimientos, herramientas y el apoyo de una red de organizaciones
+            </h1> 
+           <div>
+              <a class="home_a" href="{% url 'login' %}">
+               <button class="home_btn">Iniciar sesión</button></a>
               
-                <h1>
-                    <img src="{% static 'core/img/Logo BN.png' %}"  height="700" width="500"> <br><br>
-                    Somos una comunidad que crea espacios para generar soluciones a problemáticas sociales, a través de conocimientos, herramientas y el apoyo de una red de organizaciones
-                </h1>
-                 
-                <div>
-                     <a href="{% url 'login' %}">
-                    <button class="btn">Iniciar sesión</button> 
-                    </a>
-                    <a href="{% url 'signup' %}">
-                    <button class="btn">Registro</button>
-                </a>
-                 </div>
-
-            </div> <!-- end hero-content__text -->
-
-        </div> <!-- end hero-content -->
-
-        <div class="hero-scroll">
-            <a href="#about" class="scroll-link smoothscroll">
-                Scroll Para más
-            </a>
-        </div> <!-- end hero-scroll -->
-    </section> <!-- end s-hero -->
-
-
-    <!-- about
-    ================================================== -->
-    <section class="about">
-
- <div class="row">
-  <div class="col-md-6">
-                 <h3>
-                    ¿Qué hacemos?
-                    <img src="{% static 'core/img/perico.jpg' %}"  height="900" width="700">
-                </h3>
+              <a class="home_a" href="{% url 'signup' %}">
+                <button class="home_btn">Registro</button>
+              </a>
+          </div>
+        </div>  
+        <div class="home-scroll">
+              Scroll para más
     </div>
+</div> 
 
-   <section class="card-sm__container">
-    <div class="col-md-6">
-    <!--- START: CARD -->
-    <section class="card-sm">
+     <!-- info
+      ================================================== -->
+<div class="home_info">
+  <div class="home_row_info">
+            <div class="home_col-md-6">
+                 <h2 class="home_h2">
+                    ¿Qué hacemos?
+                    <img class="home_img" src="{% static 'core/img/perico.jpg' %}"  height="600" width="700">
+                </h2>
+             </div>
 
-      
-      <h4> DEMOCRATIZAMOS EL CONOCIMIENTO</h4>
-      
-      <p class="text-center">Contenido digital, multidisciplinario que busca el desarrollo para generar proyectos con enfoque social y tecnológico.</p>
-      </div>
-    
-<div class="col-md-6">
-<section class="card-sm__container">
-    <section class="card-sm">
-      
-      <h4>FOMENTAMOS EL PENSAMIENTO CREATIVO</h4>
-      
-      <p class="text-center">Talleres que detonan la creatividad para encontrar soluciones a problemas actuales </p>
-</div>
-    
-
-<div class="col-md-6">
-<section class="card-sm__container">
-    <section class="card-sm">
-      
-      <h4>CREAMOS ESPACIOS ABIERTOS</h4>
-      
-      <p class="text-center">Eventos, festivales y exposiciones que llevan las herramientas y el conocimiento a donde se encuentra la creatividad mexicana </p>
-</div>
-</div>
-    </section>
-    </section>
-
- <section style="background-color:#000000">
-<h3>¿Quieres formar parte? </h3>
-<div class="row">
-  <div class="col-md-6">
-  <section class="maker">
-    <h5>Make to create</h5>
-    <h6>Jóvenes con interés en la creación de soluciones y proyectos que requieren orientación y desarrollo de habilidades.</h6>
-    <a href="{% url 'signup' %}">
-                    <button class="btn">Sé un Maker</button> 
-                    </a>
+  <div class="home_cont_info">
+            <div class="home_col-md-6">
+               <div class="home_card_info">
+                    <h3 class="home_h3"> DEMOCRATIZAMOS EL CONOCIMIENTO</h3>
+                       <p class="home_txt-centro">Contenido digital, multidisciplinario que busca el desarrollo para generar proyectos con enfoque social y tecnológico.</p>
+                 </div>
+                </div>
+              
+  <div class="home_cont_info">           
+            <div class="home_col-md-6">
+              <div class="home_card_info">    
+                    <h3 class="home_h3">FOMENTAMOS EL PENSAMIENTO CREATIVO</h3>
+                      <p class="home_txt-centro">Talleres que detonan la creatividad para encontrar soluciones a problemas actuales </p>
+                 </div>
+                </div>
+  
+  <div class="home_cont_info">
+          <div class="home_col-md-6">
+            <div class="home_card_info">
+                  <h3 class="home_h3">CREAMOS ESPACIOS ABIERTOS</h3>
+                    <p class="home_txt-centro">Eventos, festivales y exposiciones que llevan las herramientas y el conocimiento a donde se encuentra la creatividad mexicana </p>
+                 </div>
+                </div>   
   </div>
-  <div class="col-md-6">
-    <section class="friend">
-  <h5>Friend to create</h5>
-    <h6>Alianzas especializadas que ayudan a la construcción de estos proyectos a través de un acuerdo de beneficio mutuo.</h6>
-    <a href="{% url 'friend' %}">
-                    <button class="btn">Sé un Friend</button> 
-                    </a>
 </div>
 </div>
-</section>
+</div>
+  
+<!-- -------------Formar Parte-------------- -->
+<div class="home_parte">
+    <h2 class="home_h2">¿Quieres formar parte? </h2>
+      <div class="home_row_parte">
+          <div class="home_col-md-6">
+            <div class="home_maker">
+                   <h4 class="home_h4">Make to create</h4>
+                       <h5 class="home_h5">Jóvenes con interés en la creación de soluciones y proyectos que requieren orientación y desarrollo de habilidades.</h5>
+                          <a href="{% url 'signup' %}">
+                             <button class="home_btn">Sé un Maker</button> 
+                               </a>
+                         </div>
+                        </div>
 
-<section style="background-color:#000000">
-<h3>Conoce a nuestros aliados </h3>
+ <div class="home_col-md-6">
+    <div class="home_friend">
+            <h4 class="home_h4">Friend to create</h4>
+              <h5 class="home_h5">Alianzas especializadas que ayudan a la construcción de estos proyectos a través de un acuerdo de beneficio mutuo.</h5>
+                 <a href="{% url 'friend' %}">
+                    <button class="home_btn">Sé un Friend</button> 
+                       </a>
+                </div>
+</div></div></div>
 
-<ul class="partners">
-  <a><img src="{% static 'core/img/friends/vexi.png' %}"  height="200" width="200"></a>
-  <a><img src="{% static 'core/img/friends/cetiem.png' %}"  height="250" width="250"></a>
-  <a><img src="{% static 'core/img/friends/cochinitob.png' %}"  height="150" width="150"></a>
-  <a><img src="{% static 'core/img/friends/tesicafe.png' %}"  height="150" width="150"></a>
+<!-- -------------Aliados-------------- -->
+<div class="home_aliados" style="background-color:#000000">
+<h2 class="home_h2">Conoce a nuestros aliados </h2>
+
+<ul class="home_partners">
+  <a><img class="home_img_aliados" src="{% static 'core/img/friends/vexi.png' %}" ></a>
+  <a><img class="home_img_aliados"src="{% static 'core/img/friends/cochinitob.png' %}"  height="150" width="150"></a>
+  <a><img class="home_img_aliados" src="{% static 'core/img/friends/tesicafe.png' %}"  height="150" width="150"></a>
 </ul>
 
 
