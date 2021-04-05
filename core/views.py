@@ -8,7 +8,7 @@ class HomePageView(TemplateView):
 
 
 class NosotrosPageView(TemplateView):
-    template_name = "core/nostros.html"
+    template_name = "core/nosotros.html"
 
 class TyCPageView(TemplateView):
     template_name = "core/tyC.html"
