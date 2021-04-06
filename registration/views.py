@@ -54,3 +54,6 @@ class preferenciasView(TemplateView):
    
 class perfilView(TemplateView):
     template_name = "registration/perfil.html"
+
+class perfil2View(TemplateView):
+    template_name = "registration/perfil2.html"    
