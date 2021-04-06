@@ -1,7 +1,4 @@
 /* fonts */
-font-family: Montserrat-Bold;
-font-family: Montserrat-Medium;
-
 .contacto_contenedor{
 	text-align: center;
 	height: 250px;
@@ -16,6 +13,7 @@ font-family: Montserrat-Medium;
 	  font-weight: normal;
 	  font-size: 1.3rem;
 	  padding-top: 5rem;
+	  font-family: Montserrat;
   }
   
   .contacto-info{
@@ -26,6 +24,7 @@ font-family: Montserrat-Medium;
   .contacto-info ul {
 	  list-style: none;
 	  padding: 2rem;
+	  font-family: montserrat;
   }
   
   .contacto-info li {
@@ -55,6 +54,7 @@ font-family: Montserrat-Medium;
 	  margin-left: 12.33333333%;
 	  width: 33.66666667%;
 	  position: relative;
+	  font-family: montserrat;
   }
   
   .contacto-row h2{
@@ -68,7 +68,7 @@ font-family: Montserrat-Medium;
   .contacto_texto{
 	  text-align: center;
 	  font-size: 2rem;
-	  font-weight: 2rem;
+	  font-family: montserrat;
   }
 	 
 	.contacto_col1, .contacto_col2, .contacto_col3 {

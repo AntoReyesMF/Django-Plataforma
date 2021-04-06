@@ -1,27 +1,17 @@
-body{
+.terminos_contenedor{
 	text-align: justify;
 	font-family: montserrat;
 	margin-left: 20rem;
 	margin-right: 20rem;
 }
-
-header {
-	background: #1a1d25;
-	padding: 10px 0;
-	background-color: #000000;
-}
-header .logo {
-	max-width: 90px;
-}
-
-.titulo{
+.terminos_titulo{
 	text-align: center;
 	color: #000000;
 	padding-bottom: 4rem;
 	margin-top: 4rem;
 }
 
-.subtitulo{
+.terminos_subtitulo{
 	font-weight: bold;
 	color: #DE2276;
 	font-size: 1.5rem;
@@ -32,9 +22,7 @@ p#pre  {
   white-space: pre;
   }
 
-
-
-  .foot{
+  .terminos_foot{
 	color: #DE2276;
 	margin-top:3rem;
 	margin-bottom: 4rem;
