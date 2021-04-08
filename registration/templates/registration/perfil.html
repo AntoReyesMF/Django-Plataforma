@@ -7,60 +7,36 @@
 	<link rel="stylesheet" href="{% static 'core/css/perfil.css' %}">
 </head>
 
-<body>
 
-  <nav role="navigation">
-  <div id="menuToggle">
-<input type="checkbox" />
-<span></span>
-    <span></span>
-    <span></span>
-<ul id="menu">
-      <a href="#"><li>Makerplace</li></a>
-      <a href="{% url 'perfil' %}"><li>Perfil</li></a>
-      <a href="#"><li>Mis proyectos</li></a>
-      <a href="../../../profiles/templates/profiles/nuevoproyecto.html"><li>Nuevo proyecto</li></a>
-      <a href="#"><li>Soporte</li></a>
-      <a href="#"><li>Ajustes</li></a>
-      <a href="{% url 'logout' %}"><li>Cerrar sesión</li></a>
-      
-    </ul>
-  </div>
-</nav>
+   <div class="inicio_contenedor">¡Bienvenid@ {{user.get_username}} !</div>
+   <h1 class="inicio_h1">¿EMPEZAMOS?</h1>
 
-   <header>¡Bienvenid@ {{user.get_username}} !</header>
-   <h1>Necesitamos conocerte para brindarte la mejor experiencia </h1>
-   <h2>¿EMPEZAMOS?</h2>
-
-<section class="card-area" >   
-        <section class="card-section">                 
-                         <div class="card-front">
-                             <div class="card-front__tp">   
-                             <a href="{% url 'profile' %}">                                                                     
-                               <h2 class="card-front__heading" align="text-center">
+<div class="inicio_card" >   
+        <div class="inicio_card-seccion">                         
+                             <div class="inicio_card_frente">   
+                             <a class= "inicio_a" href="{% url 'profile' %}">                                                                     
+                               <h2 class="inicio_h2">
                                 Crea tu perfil</h2>
                               </a>
                                 </div>
-                                 </section>
+                              </div>
       
-        <section class="card-section">
-                <div class="card-front">
-                   <div class="card-front__tp">
-                                <a href="{% url 'preferencias' %}">                              
-                               <h2 class="card-front__heading" align="text-center">
+        <div class="inicio_card-seccion">
+                   <div class="inicio_card_frente">
+                                <a class= "inicio_a" href="{% url 'preferencias' %}">                              
+                               <h2 class="inicio_h2" >
                                 Cuentanos sobre ti
                                   </h2>
                                   </a>
                                 </div>
-                               </section>
+                              </div>
 
   
      
-        <section class="card-section">
-                         <div class="card-front">
-                             <div class="card-front__tp">
-                            <a href="{% url 'market' %}">
-                               <h2 class="card-front__heading" align="text-center">
+        <div class="inicio_card-seccion">
+                             <div class="inicio_card_frente">
+                            <a class= "inicio_a" href="{% url 'market' %}">
+                               <h2 class="inicio_h2" >
                                 Empieza a explorar
                                   </h2>
                                 </a>
