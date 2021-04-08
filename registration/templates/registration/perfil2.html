@@ -3,11 +3,33 @@
 {% load static %}
 {% block content %}
 
-    <div class="portada" style="background-image: url(images/pref/pexels-anni-roenkae-3109816.jpg"></div>
-    <div class="profile">
-        <img class="profile-photo" src="images/equipo/mogu.png">
-      <h1>Juan Mogu</h1>
-      <p>Co-fundador y Director ejecutivo <br> de Making Friends</p>
+<div class="perfil_contendor">
+  <div class="perfil2_coverpage">
+    <div class="perfil2_cover_page">
+      <img clas="perfil2_img"src="{% static 'core/img/fondo.jpg' %}">
+      <div class="perfil2_btn">
+        <div class="perfil2_btn_upload">
+          <label for="InpUploadCoverPage" class="perfil2_btn_accion"><span>Editar </span></label>
+          <input type="file" id="InpUploadCoverPage" class="perfil_control_hidden">          
+        </div>
+      </div>
+    </div>    
+      <div class="perfil2_avatar">
+        <div class="perfil2_avatar_upload">
+            <div class="perfil2avatar_edit">
+                <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                <label for="imageUpload" style="background-image: url({% static 'core/img/lapiz.png' %}); background-repeat: no-repeat; background-position: center" ></label>
+            </div>
+            <div class="perfil2_avatar_preview">
+                <div id="imagePreview" style="background-image: url({% static 'core/img/perfilH.png' %})">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1 class="perfil2_h1">{{user.get_username}}</h1>
+      <p class="perfil2_p">Co-fundador y Director ejecutivo <br> de Making Friends</p>
       </div>
 
       <div class="flexslider-controls">
@@ -102,16 +124,5 @@
           </li>
       </ul>
   </div>
-{% comment %} <!-- partial -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='https://rawgithub.com/woothemes/FlexSlider/master/jquery.flexslider-min.js'></script>
-<script  src="js/perfil.js"></script>
-
-<!-- partial test -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/jquery-ui.min.js"></script>
-<!-- partial -->
-  <script  src="js/nav.js"></script>
- {% endcomment %}
-
+</div>
 {% endblock %}
