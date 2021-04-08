@@ -17,9 +17,11 @@
     ================================================== -->
     <link rel="stylesheet" href="{% static 'core/css/base.css' %}">
     <link rel="stylesheet" href="{% static 'core/css/home.css' %}">
-    <!-- <link rel="stylesheet" href="{% static 'core/css/nosotros.css' %}">-->
-    <link rel="stylesheet" href="{% static 'core/css/tyc.css' %}"> 
-    <link rel="stylesheet" href="{% static 'core/css/contacto.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/tyc.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/privacidad.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'core/css/nosotros.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/tyc.css' %}"> -->
+    <!-- <link rel="stylesheet" href="{% static 'core/css/contacto.css' %}"> -->
     <!-- <link rel="stylesheet" href="{% static 'core/css/friends.css' %}"> -->
     <!-- favicons
     ================================================== -->
@@ -69,41 +71,45 @@
 
     <!--  ================================================== FOOTER ================================================== -->
     <footer>
-      <div id="footer_central">
+        <div id="footer_central">
 
-          <div id="foo_cont1">
-              <h2>CREA  HASTA  QUE  TODOS  CREAN</h2>
-          </div>
+            <div id="foo_cont1">
+                <h2>CREA  HASTA  QUE  TODOS  CREAN</h2>
+            </div>
 
-          <div id="foo_cont2">
+            <div id="foo_cont2">
 
-              <div id="foo_info">
-                  <div class="foo_info_a">
-                      <a href="{% url 'tyc' %}">Términos y condiciones</a>
-                  </div>
-                  <div class="foo_info">
-                      <a href="{% url 'home' %}">Privacidad</a>
-                  </div>
-                  <div class="foo_info">
-                      <a href="{% url 'nosotros' %}">Nosotros</a>
-                  </div>
-                  <div class="foo_info">
-                      <a href="{% url 'contacto' %}">Contacto</a>
-                  </div>
+                <div id="foo_info">
+                    <div class="foo_info_a">
+                        <a href="{% url 'tyc' %}">Términos y condiciones</a>
+                    </div>
+                    <div class="foo_info">
+                        <a href="{% url 'privacidad' %}">Privacidad</a>
+                    </div>
+                    <div class="foo_info">
+                        <a href="{% url 'nosotros' %}">Nosotros</a>
+                    </div>
+                    <div class="foo_info">
+                        <a href="{% url 'contacto' %}">Contacto</a>
+                    </div>
 
-              </div>
+                </div>
 
-              <div id="foo_img">
-                  <div id="foo_img_central">
+                <div id="foo_img">
+                    <div id="foo_img_central">
                       <a href="{% url 'home' %}">
                           <img src="{% static 'core/img/nuevo_logo.png' %}" alt="">
                       </a>
-                  </div>
-              </div>
+                    </div>
+                </div>
 
-          </div>
+            </div>
 
-      </div>
+            <div id="foo_cont3">
+                 <p><a id="derechos" href="{% url 'privacidad' %}">© Todos los derechos reservados. Enero 2021. LINADI S.A.S</a></p>
+            </div>
+
+         </div>
     </footer>
     <!--  ================================================== FOOTER ================================================== -->
 

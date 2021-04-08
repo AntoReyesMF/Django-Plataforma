@@ -1,4 +1,4 @@
-#tyc_cont_central{
+#politica_cont_central{
     width: 70%;
     height: auto;
     margin: auto;
@@ -6,35 +6,35 @@
     padding-bottom: 20px;
 }
 h1{
-	font-family: Montserrat-Medium ;
+    font-family: Montserrat-Medium ;
     text-align: center;
     color: #DE2276;
     font-size: 35px;
 }
 h2{
-	font-family: Montserrat-Regular;
+    font-family: Montserrat-Regular;
     text-align: center;
     color: #DE2276;
     margin-bottom: 90px;
     font-size: 30px;
 }
 h3{
-	font-family: Montserrat-Regular;
+    font-family: Montserrat-Regular;
     color: #DE2276;
     font-size: 25px;
     margin-bottom: 20px;
 }
 p{
-	font-family: Montserrat-Light ;
+    font-family: Montserrat-Light ;
     text-align: justify;
-	line-height: 25px;
     margin-bottom: 60px;
 }
-ul{
-	font-family: Montserrat-Light ;
+#info_personal{
+    font-family: Montserrat-Light ;
+    margin-bottom: 20px;
 }
 ul li{
-	font-family: Montserrat-Light ;
+    font-family: Montserrat-Light ;
     text-align: justify;
     margin-bottom: 15px;
 }
