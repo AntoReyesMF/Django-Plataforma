@@ -3,7 +3,7 @@
 {% load static %}
 {% block content %}
 
-  <div class="perfil2_coverpage">
+<div class="perfil2_contenedor">
     <div class="perfil2_cover_page">
       <img clas="perfil2_img"src="{% static 'core/img/fondo.jpg' %}">
       <div class="perfil2_btn">
@@ -24,15 +24,15 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
+          
+     <div class="perfil2_presentacion">
       <h1 class="perfil2_h1">{{user.get_username}}</h1>
-      <p class="perfil2_p">Co-fundador y Director ejecutivo <br> de Making Friends</p>
+      <p class="perfil2_p">Cuentános en una brede descripción de quíen eres, qué haces o qué te gusta</p>
       </div>
+    </div>
 
-      <div class="flexslider-controls">
-        <ol class="flex-control-nav">
+      <div class="perfil2_flexslider-controls">
+        <ol class="perfil2_flex-control-nav">
             <li>Editar perfil</li>
             <li>Cuenta</li>
             <li>Historial de cursos</li>
@@ -43,31 +43,30 @@
     <div class="flexslider">
       <ul class="slides">
           <li>
-            <div class="perfil" width="800" height="504">
+            <div class="perfil2_perfil" width="800" height="504">
               <div id="title">
-                <h2>Editar mi perfil</h2>    
+                <h2 class="perfil2_h2">Editar mi perfil</h2>    
               </div>
-              <div class="form col-md-12">
+              <div class="perfil2_form">
                   <form>		
-                    <h3>Nombre(s)</h3>
+                    <h3 class="perfil2_h3">Nombre(s)</h3>
                     <input type="text" class="col-md-6" >
-                    <h3>Apellidos</h3>
+                    <h3 class="perfil2_h3">Apellidos</h3>
                     <input type="text" class="col-md-6" >
-                    <h3>Fecha de nacimiento</h3>
+                    <h3 class="perfil2_h3">Fecha de nacimiento</h3>
                     <input type="date" class="col-md-3" >
-                    <h3>Género</h3>
+                    <h3 class="perfil2_h3">Género</h3>
                     <input type="checkbox" class="gen"  name="hm" value="h" required> Hombre
                     <input type="checkbox"  name="hm" value="m" required> Mujer
                     <input type="text1" class="otro" placeholder="Otro">
-                    <h3>Descripción</h3>
-                    <input type="text" class="col-md-6" ><br>
-                    <input type="submit" value="Submit">		
+                    <br><br>
+                    <input class="perfil2_btn" type="submit" value="Submit" >		
                   </form>
                 </div>
               </div>
           </li>
           <li>
-            <div class="perfil" width="800" height="504">
+            <div class="perfil2_perfil" width="800" height="504">
               <div id="title">
                 <h2>Información de inicio de sesión</h2>    
               </div>
@@ -82,7 +81,7 @@
                     <input type="text" class="col-md-6" >
           </li>
           <li>
-            <div class="perfil" width="800" height="504">
+            <div class="perfil2_perfil" width="800" height="504">
               <div id="title">
                 <h2>Visto recientemente</h2>    
               </div>
