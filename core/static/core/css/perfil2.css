@@ -103,13 +103,13 @@
     object-fit: cover;
   }
   
-  .perfil2_cover_page .perfil2_btn .perfil2_btn_upload{
+  .perfil2_cover_page .perfil2_btn_cover .perfil2_btn_upload{
     position: absolute;
     top: 30px;
     right: 25px;
   }
   
-  .perfil2_btn .perfil2_btn_upload .perfil2_btn_accion{
+  .perfil2_btn_cover .perfil2_btn_upload .perfil2_btn_accion{
     padding: 10px 16px 10px;
     background: rgba(0,0,0,0.6);  
     font-size: 15px;
@@ -121,19 +121,19 @@
     transition: all .25s ease-in-out;
   }
   
-  .perfil2_btn .perfil2_btn_upload .perfil2_btn_accion i{
+  .perfil2_btn_cover .perfil2_btn_upload .perfil2_btn_accion i{
     margin-right: 6px;
     font-size: 20px;
     vertical-align: middle;
   }
   
-  .perfil2_btn .perfil2_btn_upload .perfil_control_hidden{
+  .perfil2_btn_cover .perfil2_btn_upload .perfil_control_hidden{
     display: none;
     width: 100%;
     height: 100%;
   }
   
-  .perfil2_btn:hover > .perfil2_btn_upload .perfil2_btn_accion{
+  .perfil2_btn_cover:hover > .perfil2_btn_upload .perfil2_btn_accion{
     color: rgba(255,255,255,.9);
     box-shadow: 0 2px 10px 0px rgba(0, 0, 0, .5);
   }
@@ -264,12 +264,11 @@
   margin-left: 20.3rem;
   margin-right: 18rem;
   padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
-.cuenta {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+.perfil2_cuenta {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
 }
 
 .perfil2_h2{
@@ -284,12 +283,12 @@
   font-size: .8rem;
 }
 
-h4{
+.perfil2_h4{
   color: #000000;
   font-size: .6rem;
 }
 
-.col-md-6{
+.perfil2_col-md-6{
   border-radius: 30px;
   border-color: #DE2276;
   width: 17rem;
@@ -298,7 +297,7 @@ h4{
   border-style: solid;
 }
 
-.col-md-3{
+.perfil2_col-md-3{
   border-radius: 30px;
   border-color: #DE2276;
   width: 10rem;
@@ -319,7 +318,6 @@ h4{
   height: 2rem;
   text-align: center;
   border-style: solid;
-  margin-bottom: 2rem;
 }
 
 .perfil2_btn{
@@ -329,21 +327,29 @@ h4{
   margin-top: 1rem;
   height: 2rem;
   width: 6rem;
+  margin-bottom: 1rem;
+}
+a{
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
 
-.historial{
+.perfil2_img_hist{
+  width: 350px;
+  height: 300px;
+}
+
+/* En caso de tener historial
+
+
+.perfil2_historial_si{
   margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   
 }
 
-a{
-    cursor: pointer;
-    text-decoration: none;
-    color: black;
-}
-
-.wrapper {
+.perfil2_wrapper {
   margin: 5% auto;
   display: block;
   width: 96%;
@@ -351,12 +357,12 @@ a{
   padding: 0;
 }
 
-.wrapper_inner {
+.perfil2_wrapper_inner {
   padding: 0.2em;
   margin: 0;
 }
 
-.gallery_item {
+.perfil2_gallery_item {
   width: 24.59%;
   display: inline-block;
   margin: 0 auto;
@@ -374,7 +380,7 @@ a{
 }
 
 
-.gallery_item_preview a {
+.perfil2_gallery_item_preview a {
   position: relative;
   display: inline-block;
   padding: 0;
@@ -387,14 +393,14 @@ a{
   transition: all 0.5s ease;
 }
 
-.gallery_item_preview a:hover {
+.perfil2_gallery_item_preview a:hover {
   color: #777;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-.gallery_item_preview a svg.gallery_top{
+.perfil2_gallery_item_preview a svg.gallery_top{
   position:absolute;
   top:0;
   left:0;
@@ -406,7 +412,7 @@ a{
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-.gallery_item_preview a:hover  svg.gallery_top{
+.perfil2_gallery_item_preview a:hover  svg.gallery_top{
   top:-10em;
   
   -webkit-transition: all 0.5s ease;
@@ -414,7 +420,7 @@ a{
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-.gallery_hide_top{
+.perfil2_gallery_hide_top{
   top:-10em !important;
   
   -webkit-transition: all 0.5s ease;
@@ -423,7 +429,7 @@ a{
   transition: all 0.5s ease;
 }
 
-.gallery_item_preview a:before {
+.perfil2_gallery_item_preview a:before {
   content: "Click para ver";
   position: absolute;
   top: 0.5em;
@@ -442,7 +448,7 @@ a{
   border-radius: 30px;
 }
 
-.gallery_item_preview a:hover:before {
+.perfil2_gallery_item_preview a:hover:before {
   left: 0.5em;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
@@ -450,12 +456,12 @@ a{
   transition: all 1s ease;
 }
 
-.gallery_item_preview a h3 {
+.perfil2_gallery_item_preview a h3 {
   color: #DE2276;
   font-weight: bold;
 }
 
-.gallery_item_preview a img {
+.perfil2_gallery_item_preview a img {
   display: block;
   width: 100%;
   height: 150px;
@@ -466,7 +472,7 @@ a{
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
-}
+} */
 
 .explorar{
   margin-top: 3rem;
