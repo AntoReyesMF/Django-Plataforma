@@ -261,8 +261,8 @@
 
 .perfil2_perfil{
   background: #ffff;
-  margin-left: 20.3rem;
-  margin-right: 18rem;
+  margin-left: 19.5rem;
+  margin-right: 17rem;
   padding-top: 2rem;
 }
 
@@ -474,11 +474,12 @@ a{
   transition: all 0.5s ease;
 } */
 
-.explorar{
+.perfil2_certificados{
   margin-top: 3rem;
   margin-bottom: 5rem;
 }
 
-.exp-2{
-  margin: 2rem;
+.perfil2_img_cert{
+  width: 350px;
+  height: 300px;
 }
