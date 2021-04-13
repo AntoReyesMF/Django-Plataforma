@@ -8,10 +8,11 @@
 <div class="home_cont_ background" data-parallax="scroll" data-image-src="{% static 'core/img/desarmador.jpg' %}" data-natural-width=4000 data-natural-height=3500 data-position-y=top>
 
         <div class="home_cont_principal">
-          <img src="{% static 'core/img/Logo BN.png' %}"> <br><br>
+          
             <h1 class="home_h1">
-              Somos una comunidad que crea espacios para generar soluciones a problemáticas sociales, a través de conocimientos, herramientas y el apoyo de una red de organizaciones
+              Te enseñamos lo que no aprendes en la escuela
             </h1> 
+            <p class="home_p_principal">Somos un hub de educación que en colaboración con una red de organizaciones te brinda conocimiento y herramientas que te sirven en la vida diaria </p>
            <div>
               <a class="home_a" href="{% url 'login' %}">
                <button class="home_btn">Iniciar sesión</button></a>
@@ -71,7 +72,19 @@
       <div class="home_row_parte">
           <div class="home_col-md-6">
             <div class="home_maker">
-                   <h4 class="home_h4">Make to create</h4>
+              <div class="content_colores">
+                <div class="content__container">
+                  <h4 class="content__container__texto">
+                    Makers to
+                  </h4>
+                  <ul class="content__container__list">
+                    <li class="content__container__list__item">world !</li>
+                    <li class="content__container__list__item">bob !</li>
+                    <li class="content__container__list__item">users !</li>
+                    <li class="content__container__list__item">everybody !</li>
+                  </ul>
+                </div>
+              </div>
                        <h5 class="home_h5">Jóvenes con interés en la creación de soluciones y proyectos que requieren orientación y desarrollo de habilidades.</h5>
                           <a href="{% url 'signup' %}">
                              <button class="home_btn">Sé un Maker</button> 
@@ -81,7 +94,19 @@
 
  <div class="home_col-md-6">
     <div class="home_friend">
-            <h4 class="home_h4">Friend to create</h4>
+      <div class="content_colores_friends">
+        <div class="content__container_friends">
+          <h4 class="content__container__texto_friends">
+            Friends to
+          </h4>
+          <ul class="content__container__list_friends">
+            <li class="content__container__list__item">world !</li>
+            <li class="content__container__list__item">bob !</li>
+            <li class="content__container__list__item">users !</li>
+            <li class="content__container__list__item">everybody !</li>
+          </ul>
+        </div>
+      </div>
               <h5 class="home_h5">Alianzas especializadas que ayudan a la construcción de estos proyectos a través de un acuerdo de beneficio mutuo.</h5>
                  <a href="{% url 'friend' %}">
                     <button class="home_btn">Sé un Friend</button> 
