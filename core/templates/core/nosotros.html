@@ -3,196 +3,176 @@
 {% load static %}
 {% block content %}
 
-<!-- titulo  @Lalo
-<title>Nosotros - Making Friends</title>
-	Flavicon
-<link rel="icon" type="image/png" sizes="16x16" href="images/favicon16.png">>-->
-  
-  <div class="jumbotron">
-    
-    <div id="black"></div>
-    
-      <div class="container-fluid">
-        <div class="col-md-5 col-md-offset-1">
-          
-        <h1>Crea hasta que todos crean</h1>
-        <hr style="width:55%;text-align:left;margin:30px 0; border:2.5px solid #fff;"/>
-        </div>
-       
-  
-      </div>
+<div id="nosotros_titulo"> 
+  <div id="nos_t_cont_central">
+    <div>
+      <h1>CREA HASTA QUE TODOS <br> CREAN</h1>
     </div>
-  </div>
-  
-  <section>
-    <h2>¿Quienes somos?<br> <br></h2>
-  
-  <h3>Imaginar es fácil, lo dificíl es que te apoyen, la educación y el trabajo no siempre son accesibles, haciendo que la falta de oportunidades sea la realidad de muchas personas. Por esta razón, nace Making Friends con el objetivo de proporcionar herramientas y conocimiento para crear con libertad sin importar si tienes recursos o no. Queremos ser la persona que te gustaría tener para ayudarte con tus ideas. </h3>
-  </section>
-  
-  <section class="equipo" >
-  <h2>Nosotros te guiaremos</h2>
-  <section class="container">
-  <aside class="profile-card">
-  
-    <section class="card">
-  
-      <!-- here’s the avatar -->
-        <img src="{% static 'core/img/equipo/mogu.png' %}">
-      </a>
-  
-      <!-- the username -->
-      <h5>Juan Mogu</h5>
-  
-      <!-- and role or location -->
-      <h6>Director Ejecutivo</h6>
-  
-    </section>
-  
-    <!-- bit of a bio; who are you? -->
-    <div class="profile-bio">
-  
-      
-      <p>Sociólogo de carrera, creador por convicción y soñador de nacimiento. Mi interés por la tecnología y la innovación me llevarona desarrollar proyectos enfocados en resolver problemas sociales a través de la energía, educación y creatividad.</p>
-  
-    </div>
-  </aside>
-  
-  <aside class="profile-card1">
-  
-    <section class="card">
-  
-      <!-- here’s the avatar -->
-        <img src="{% static 'core/img/equipo/anto.png' %}">
-      </a>
-  
-      <!-- the username -->
-      <h5>Antonio Reyes</h5>
-  
-      <!-- and role or location -->
-      <h6>Director Operativo</h6>
-  
-    </section>
-  
-    <!-- bit of a bio; who are you? -->
-    <div class="profile-bio">
-  
-      
-      <p>Me gusta mucho la programación, la divulgación científico-tecnológica y el teatro. Creo en que las cosas se deben hacer de forma ética en pro de mejorar nuestro entorno. Por eso apuesto por el talento de aquellos que nunca dejan de crear y creer.</p>
-  
-    </div>
-  </aside>
-  
-  <aside class="profile-card2">
-  
-    <section class="card">
-  
-      <!-- here’s the avatar -->
-        <img src="{% static 'core/img/equipo/nan.png' %}">
-      </a>
-  
-      <!-- the username -->
-      <h5>Nancy Sanchez</h5>
-  
-      <!-- and role or location -->
-      <h6>Directora de Educación</h6>
-  
-    </section>
-  
-    <!-- bit of a bio; who are you? -->
-    <div class="profile-bio">
-  
-      
-      <p>Creo en el respeto por las raíces, por lo que he implementado proyectos comunitarios. Con preparaciones en la Universidad Hebrea de Jerusalem y la Technion de Tel Aviv. Promuevo el empoderamiento de la sociedad en la toma de decisiones. 
-  </p>
-  
-    </div>
-  </aside>
-  
-  
-  </section>
-  
-  <section class="container">
-  <aside class="profile-card3">
-  
-    <section class="card">
-  
-      <!-- here’s the avatar -->
-        <img src="{% static 'core/img/equipo/ara.png' %}">
-      </a>
-  
-      <!-- the username -->
-      <h5>Araceli Molina</h5>
-  
-      <!-- and role or location -->
-      <h6>Directora de Comunicación</h6>
-  
-    </section>
-  
-    <!-- bit of a bio; who are you? -->
-    <div class="profile-bio">
-  
-      
-      <p>Coolhunter, comunicóloga, y una gran apasionada de la moda, el diseño y la fotografía
-  He colaborado en revistas de moda, proyectos de feminismo, arte contemporáneo asi como  trabajar para marcas de nacionales e internacionales como ejecutiva de cuentas y strategic planner</p>
-  
-    </div>
-  </aside>
-  
-  <aside class="profile-card4">
-  
-    <section class="card">
-  
-      <!-- here’s the avatar -->
-        <img src="{% static 'core/img/equipo/jc.png' %}">
-      </a>
-  
-      <!-- the username -->
-      <h5>Carlos Ayala</h5>
-  
-      <!-- and role or location -->
-      <h6>Director de Growth</h6>
-  
-    </section>
-  
-    <!-- bit of a bio; who are you? -->
-    <div class="profile-bio">
-  
-      
-      <p>Comunicólogo organizacional de profesión y mago desde hace 9 años. Obsesionado con el desarrollo humano y el pensamiento creativo ha formado parte de varios proyectos dentro del ecosistema emprendedor, mismo que le ha permitido aplicar sus conocimientos en distintas áreas y a diferentes niveles</p>
-  
-    </div>
-  </aside>
-  
-  <aside class="profile-card6">
-  
-    <section class="card">
-  
-      <!-- here’s the avatar -->
-        <img src="{% static 'core/img/equipo/lalo.png' %}">
-      </a>
-  
-      <!-- the username -->
-      <h5>Eduardo Cadena</h5>
-  
-      <!-- and role or location -->
-      <h6>Director de IT</h6>
-  
-    </section>
-  
-    <!-- bit of a bio; who are you? -->
-    <div class="profile-bio">
-  
-      
-      <p>Ingeniero Geofísico  pero desarrollador de software por vocación, también soy cofundador de “RCM” un proyecto de reaprovechamiento de residuos plásticos.
-  Chilango gamer, viajero biker, músico autodidacta y apasionado del baile. Pienso en la educación como herramienta de cambio social.
-  
-  </p>
-  
-    </div>
-  </aside>
-  
-  </section>
-  
+    <div id="nos_t_cont_central_linea"></div>
 
-  {% endblock %}
+  </div>
+</div>
+
+<div id="nos_cont_general">
+
+  <div id="nos_cont_general_cont1">
+
+    <h3 class="nos_h3">
+      ¿Quienes somos?
+    </h3>
+    <p id="nos_p">
+      Imaginar es fácil, lo dificíl es que te apoyen, la educación y el trabajo no siempre son accesibles, haciendo que la falta de oportunidades sea la realidad de muchas personas. Por esta razón, nace Making Friends con el objetivo de proporcionar herramientas y conocimiento para crear con libertad sin importar si tienes recursos o no. Queremos ser la persona que te gustaría tener para ayudarte con tus ideas.
+    </p>
+
+  </div>
+
+  <div id="nos_cont_general_cont2">
+    <div>
+      <h3 class="nos_h3">
+        Nosotros te guiaremos
+      </h3>
+    </div>
+
+    <div id="nos_cont_general_cont2_equipo">
+
+      <div id="nos_cont2_equipo1">
+        <!-- Juan -->
+        <div id="nos_juan">
+
+          <div id="nos_juan_foto"> <!-- mostrar foto de juan --> </div>
+
+          <h4 class="nos_h4">
+            Juan Mogu
+          </h4>
+
+          <h5 class="nos_h5">
+            Director Ejecutivo
+          </h5>
+
+          <p class="nos_equipo_p">
+            Sociólogo de carrera, creador por convicción y soñador de nacimiento. Mi interés por la tecnología y la innovación me llevarona desarrollar proyectos enfocados en resolver problemas sociales a través de la energía, educación y creatividad.
+          </p>
+
+        </div>
+        <!-- Juan -->
+
+        <!-- Araceli -->
+        <div id="nos_araceli">
+
+          <div id="nos_araceli_foto"> <!-- mostrar foto de Araceli --> </div>
+
+          <h4 class="nos_h4">
+            Araceli Molina
+          </h4>
+
+          <h5 class="nos_h5">
+            Directora de Comunicación
+          </h5>
+
+          <p class="nos_equipo_p">
+            Coolhunter, comunicóloga, y una gran apasionada de la moda, el diseño y la fotografía. <br> He colaborado en revistas de moda, proyectos de feminismo, arte contemporáneo asi como  trabajar para marcas de nacionales e internacionales como ejecutiva de cuentas y strategic planner
+
+          </p>
+        </div>
+
+        <!-- Araceli -->
+      </div>
+
+      <!-- Equipo2 -->
+      <div id="nos_cont2_equipo2">
+
+        <!-- Antonio Reyes -->
+        <div id="nos_antonio">
+
+          <div id="nos_antonio_foto"> <!-- mostrar foto de antonio --> </div>
+
+          <h4 class="nos_h4">
+            Antonio Reyes
+          </h4>
+
+          <h5 class="nos_h5">
+            Director Operativo
+          </h5>
+
+          <p class="nos_equipo_p">
+            Me gusta mucho la programación, la divulgación científico-tecnológica y el teatro. Creo en que las cosas se deben hacer de forma ética en pro de mejorar nuestro entorno. Por eso apuesto por el talento de aquellos que nunca dejan de crear y creer.
+          </p>
+
+        </div>
+        <!-- Antonio Reyes -->
+
+        <!-- Carlos Ayala -->
+        <div id="nos_carlos">
+
+          <div id="nos_carlos_foto"> <!-- mostrar foto de carlos --> </div>
+
+          <h4 class="nos_h4">
+            Carlos Ayala
+          </h4>
+
+          <h5 class="nos_h5">
+            Director de Growth
+          </h5>
+
+          <p class="nos_equipo_p">
+            Comunicólogo organizacional de profesión y mago desde hace 9 años. Obsesionado con el desarrollo humano y el pensamiento creativo ha formado parte de varios proyectos dentro del ecosistema emprendedor, mismo que le ha permitido aplicar sus conocimientos en distintas áreas y a diferentes niveles
+          </p>
+        </div>
+
+        <!-- Carlos Ayala -->
+        
+      </div>
+
+      <!-- Equipo3 -->
+      <div id="nos_cont2_equipo3">
+
+        <!-- Nancy -->
+        <div id="nos_nancy">
+
+          <div id="nos_nancy_foto"> <!-- mostrar foto de nancy --> </div>
+
+          <h4 class="nos_h4">
+            Nancy Sanchez
+          </h4>
+
+          <h5 class="nos_h5">
+            Directora de Educación
+          </h5>
+
+          <p class="nos_equipo_p">
+            Creo en el respeto por las raíces, por lo que he implementado proyectos comunitarios. Con preparaciones en la Universidad Hebrea de Jerusalem y la Technion de Tel Aviv. Promuevo el empoderamiento de la sociedad en la toma de decisiones.
+          </p>
+
+        </div>
+        <!-- nancy -->
+
+        <!-- eduardo -->
+        <div id="nos_eduardo">
+
+          <div id="nos_eduardo_foto"> <!-- mostrar foto de eduardo --> </div>
+
+          <h4 class="nos_h4">
+            Eduardo Cadena
+          </h4>
+
+          <h5 class="nos_h5">
+            Director de TI
+          </h5>
+
+          <p class="nos_equipo_p">
+            Ingeniero Geofísico  pero desarrollador de software por vocación, también soy cofundador de “RCM” un proyecto de reaprovechamiento de residuos plásticos. <br>
+            Chilango gamer, viajero biker, músico autodidacta y apasionado del baile. Pienso en la educación como herramienta de cambio social.
+
+          </p>
+        </div>
+
+        <!-- Araceli -->
+        
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+{% endblock %}
