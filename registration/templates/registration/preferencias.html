@@ -1,120 +1,132 @@
+{% extends 'registration/base_login.html' %}
 {% load static %}
-{% block title %}{% endblock %}
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <title>Preferencias</title>
-<link rel='stylesheet' href="{% static 'core/css/preferencias.css' %}">
-<script src="{% static 'core/js/preguntas.js' %}"></script>
+{% block content %}
 
-</head>
-<body>
 
-<div class="container">
+<div class="preferencias_container">
   <div id="title">
-    <h2>Conocerte nos ayudará a guiarte y saber <br> que herramientas necesitas</h2>    
-  </div>
-  <div class="form col-md-12">	
-      
-        <legend>¿Estudias o trabajas?</legend>
-
-    <input type="checkbox" id="check1" name="checkboxes" >
-    <label for="check1">Estudio</label>
-    <input type="checkbox" id="check2" name="checkboxes">
-    <label for="check2">Trabajo</label>
-    <input type="checkbox" id="check3" name="checkboxes">
-    <label for="check3">Ambos</label>
-        
-        <legend>¿Tienes algun proyecto o idea en mente?</legend>
-<section class="preguntas" style="background-color:#ffffff" >
-<button onclick="funtion()" >Si</button> 
-  <button onclick="funtion1()"> No</button>
-<div id="si">
-
-<legend>¿Qué problema estoy tratando de resolver con mi idea?</legend> <br>
-    <textarea name="textarea" id="textarea" placeholder="  Cuentános sobre el..."></textarea>
-
-    <legend>¿A quién (quiénes) afecta el problema que he identificado? </legend> <br>
-    <select name="menu">
-  <option value="0"> ...</option>
-  <option value="1">Un Grupo</option>
-  <option value="2">Una Comunidad</option>
-  <option value="3">Un Estado</option>
-</select>
-
-<legend>Rango de Edades</legend> 
-<input type="checkbox" id="check1" name="checkboxes" >
-    <label for="check1">Menos de 10 a 17</label>
-    <input type="checkbox" id="check2" name="checkboxes">
-    <label for="check2">18 a 25</label>
-    <input type="checkbox" id="check3" name="checkboxes">
-    <label for="check3">26 a 35</label>
-    <input type="checkbox" id="check3" name="checkboxes">
-    <label for="check4">Más de 36</label>
-
-    <legend>Genero</legend> 
-    <select name="menu">
-  <option value="0"> ...</option>
-  <option value="1">Hombre</option>
-  <option value="2">Mujeres</option>
-  <option value="4">Otros</option>
-  <option value="5">Todos</option>
-</select>
-
-<legend>¿El público que identifiqué reconoce el problema? ¿Qué opina al respecto?</legend>
-    <textarea name="textarea" id="textarea" placeholder="  Cuentános sobre el..."></textarea>
-
-    <legend>¿Qué solución (es) propongo para resolver el problema identificado?</legend>
-    <textarea name="textarea" id="textarea" placeholder="  Cuentános sobre el..."></textarea>
-
-<legend><legend>¿Qué quiero lograr con mi idea? ¿Cómo planeo lograrlo?</legend>
-    <textarea name="textarea" id="textarea" placeholder="  Cuentános sobre el..."></textarea></legend> 
-
-    <legend>¿Mi idea seguirá funcionando después de un año? </legend>
-        <input type="checkbox" id="check1" name="checkboxes" >
-    <label for="check1">Si</label>
-    <input type="checkbox" id="check2" name="checkboxes">
-    <label for="check2">No</label>
-
-    <legend>¿Qué necesito para implementar mi idea? </legend>
-        <input type="checkbox" id="check1" name="checkboxes">
-    <label for="check1">Fondos</label>
-    <input type="checkbox" id="check2" name="checkboxes">
-    <label for="check2">Asesoria</label>
-    <input type="checkbox" id="check2" name="checkboxes">
-    <label for="check2">Capacitación</label>
-    <input type="checkbox" id="check2" name="checkboxes">
-    <label for="check2">Contactos</label>
-<input type="checkbox" id="check2" name="checkboxes">
-    <label for="check2">Personal</label> <br>
-
-    <a href="{% url 'market'%}">
-        <input type="button" class="col-md-6" value="Seguir">   
-        </a>  
-
-		</div>
-	</div>
-</div>
-
-<div id="no">
-<section class="preguntas2" style="background-color:#ffffff" >
-  <legend>¿Qué te gustaría aprender? </legend>
-        <input type="checkbox" id="check1" name="checkboxes">
-    <label for="check1">Social</label>
-    <input type="checkbox" id="check2" name="checkboxes">
-    <label for="check2">LGBT+</label>
-    <input type="checkbox" id="check2" name="checkboxes">
-    <label for="check2">Fintech</label>
-    <input type="checkbox" id="check2" name="checkboxes">
-    <label for="check2">Negocios</label>
-<input type="checkbox" id="check2" name="checkboxes">
-    <label for="check2">Salud</label> <br>
-    <a href="{% url 'market'%}">
-        <input type="button" class="col-md-6" value="Seguir">   
-        </a>  
-</div>
-</section>
-</section>
+    <h1 class="preferencias_h1">Conocerte nos ayudará a guiarte y saber <br> que herramientas necesitas</h1>    
   
-</body>
-</html>
+    <div class="preferencias_formulario">
+      <div class="pref_control-group">
+        <h2 class="preferencias_h2">¿Estudias <br> o  trabajas?</h2>
+        <label class="control control--radio">Estudio
+          <input type="radio" name="radio" checked="checked"/>
+          <div class="control__indicator"></div>
+        </label>
+        <label class="control control--radio">Trabajo
+          <input type="radio" name="radio"/>
+          <div class="control__indicator"></div>
+        </label>
+        <label class="control control--radio">Ambos
+          <input type="radio" name="radio" checked="checked"/>
+          <div class="control__indicator"></div>
+        </label>
+      </div>
+    
+        <div class="pref_control-group">
+          <h2 class="preferencias_h2" >¿Tienes algún proyecto o idea?</h2>
+          <label class="control control--radio">Si
+            <input type="radio" name="radio" checked="checked"/>
+            <div class="control__indicator"></div>
+          </label>
+          <label class="control control--radio">No
+            <input type="radio" name="radio"/>
+            <div class="control__indicator"></div>
+          </label>
+          <label class="control control--radio">No sé
+            <input type="radio" name="radio" checked="checked"/>
+            <div class="control__indicator"></div>
+          </label>
+        </div>
+      </div>
+
+      <div class="pref_subt">¿Qué te gustaría aprender? </div>
+
+      <section class="pref_opciones">
+        <div class="pref_grid">
+          <label class="pref_card">
+            <input class="card__input" type="checkbox"/>
+            <div class="card__body">
+              <div class="card__body-cover"><img class="card__body-cover-image" src="{% static 'core/img/undraw_education_f8ru.png' %}"/><span class="card__body-cover-checkbox"> 
+                  <svg class="card__body-cover-checkbox--svg" viewBox="0 0 12 10">
+                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                  </svg></span></div>
+              <header class="card__body-header">
+                <h3 class="card__body-header-title">Educación</h3>
+              </header>
+            </div>
+          </label>
+          <label class="pref_card">
+            <input class="card__input" type="checkbox"/>
+            <div class="card__body">
+              <div class="card__body-cover"><img class="card__body-cover-image" src="{% static 'core/img/undraw_collab_8oes.png' %}"/><span class="card__body-cover-checkbox"> 
+                  <svg class="card__body-cover-checkbox--svg" viewBox="0 0 12 10">
+                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                  </svg></span></div>
+              <header class="card__body-header">
+                <h3 class="card__body-header-title">Social</h3>
+              </header>
+            </div>
+          </label>
+          <label class="pref_card">
+            <input class="card__input" type="checkbox"/>
+            <div class="card__body">
+              <div class="card__body-cover"><img class="card__body-cover-image" src="{% static 'core/img/undraw_metrics_re_6g90.png' %}"/><span class="card__body-cover-checkbox"> 
+                  <svg class="card__body-cover-checkbox--svg" viewBox="0 0 12 10">
+                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                  </svg></span></div>
+              <header class="card__body-header">
+                <h3 class="card__body-header-title">Negocios</h3>
+              </header>
+            </div>
+          </label>
+          <label class="pref_card">
+            <input class="card__input" type="checkbox"/>
+            <div class="card__body">
+              <div class="card__body-cover"><img class="card__body-cover-image" src="{% static 'core/img/undraw_discoverable_xwsc.png' %}"/><span class="card__body-cover-checkbox"> 
+                  <svg class="card__body-cover-checkbox--svg" viewBox="0 0 12 10">
+                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                  </svg></span></div>
+              <header class="card__body-header">
+                <h3 class="card__body-header-title">Diseño</h3>
+              </header>
+            </div>
+          </label>
+          <label class="pref_card">
+            <input class="card__input" type="checkbox"/>
+            <div class="card__body">
+              <div class="card__body-cover"><img class="card__body-cover-image" src="{% static 'core/img/undraw_web_developer_p3e5.png' %}"/><span class="card__body-cover-checkbox"> 
+                  <svg class="card__body-cover-checkbox--svg" viewBox="0 0 12 10">
+                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                  </svg></span></div>
+              <header class="card__body-header">
+                <h3 class="card__body-header-title">Programación</h3>
+              </header>
+            </div>
+          </label>
+        
+          <label class="pref_card">
+            <input class="card__input" type="checkbox"/>
+            <div class="card__body">
+              <div class="card__body-cover"><img class="card__body-cover-image" src="{% static 'core/img/undraw_business_analytics_re_tfh3.png' %}"/><span class="card__body-cover-checkbox"> 
+                  <svg class="card__body-cover-checkbox--svg" viewBox="0 0 12 10">
+                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                  </svg></span></div>
+              <header class="card__body-header">
+                <h3 class="card__body-header-title">Finanzas</h3>
+              </header>
+            </div>
+          </label>
+        </section>
+
+        <a href="marketplace.html">
+          <button class="btn">Siguiente</button>
+      </a>
+    
+      <a href="marketplace.html">
+        <button class="btn">Saltar</button>
+    </a>
+
+
+{% endblock %}
