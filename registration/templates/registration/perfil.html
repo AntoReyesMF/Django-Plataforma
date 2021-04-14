@@ -1,47 +1,33 @@
+{% extends 'registration/base_login.html' %}
 {% load static %}
-{% block title %}{% endblock %}
+{% block content %}
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Perfil</title>
-	<link rel="stylesheet" href="{% static 'core/css/perfil.css' %}">
-</head>
+<link rel="stylesheet" href="{% static 'core/css/perfil.css' %}">
 
+<div class="inicio_contenedor">
+      <div class="inicio_bienvenida">¡Nos alegra verte {{user.get_username}}!</div>
+         <h1 class="inicio_h1">¿EMPEZAMOS?</h1>
 
-   <div class="inicio_contenedor">¡Bienvenid@ {{user.get_username}} !</div>
-   <h1 class="inicio_h1">¿EMPEZAMOS?</h1>
-
-<div class="inicio_card" >   
-        <div class="inicio_card-seccion">                         
-                             <div class="inicio_card_frente">   
-                             <a class= "inicio_a" href="{% url 'profile' %}">                                                                     
-                               <h2 class="inicio_h2">
-                                Crea tu perfil</h2>
-                              </a>
-                                </div>
-                              </div>
-      
-        <div class="inicio_card-seccion">
-                   <div class="inicio_card_frente">
-                                <a class= "inicio_a" href="{% url 'preferencias' %}">                              
-                               <h2 class="inicio_h2" >
-                                Cuentanos sobre ti
-                                  </h2>
-                                  </a>
-                                </div>
-                              </div>
-
-  
-     
-        <div class="inicio_card-seccion">
-                             <div class="inicio_card_frente">
-                            <a class= "inicio_a" href="{% url 'market' %}">
-                               <h2 class="inicio_h2" >
-                                Empieza a explorar
-                                  </h2>
-                                </a>
-                                </div>
-                              
-  
-</body>
+<div class="inicio_card" >                         
+        <div class="inicio_card_frente">   
+                <a class= "inicio_a" href="{% url 'perfil2' %}">                                                                     
+                    <h2 class="inicio_h2">Crea tu perfil</h2>
+                </a>
+       
+      </div>
+        <div class="inicio_card_frente">
+                <a class= "inicio_a" href="{% url 'preferencias' %}">                              
+                      <h2 class="inicio_h2" >Cuentanos sobre ti</h2>
+                </a>
+        
+       </div>
+        <div class="inicio_card_frente">
+                  <a class= "inicio_a" href="{% url 'market' %}">
+                      <h2 class="inicio_h2" >Empieza a explorar</h2>
+                  </a>
+                </div>
+              </div>                
 </html>
+{% endblock %}s
