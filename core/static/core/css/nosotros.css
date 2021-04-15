@@ -6,6 +6,8 @@
   height: auto;
   padding-top: 20px;
   padding-bottom: 60px;
+  /* background-image: url(https://images.unsplash.com/photo-1503792574895-6074f691cc6a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1333&q=80) ;
+  background-size:cover; */
   background-color: RGB(21,23,30);
 }
 #nos_t_cont_central{
@@ -119,7 +121,8 @@
   overflow: hidden;
   margin: auto;
   border-radius: 50%;
-  background-image: url(../img/equipo/fotografia-naturaleza-HD.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+  rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1510100831744-b8d7fea7ca2e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
   background-size: 400px;
   background-size:cover;
   transition: all 600ms;
@@ -153,7 +156,9 @@
   margin: auto;
   margin-top: 50px;
   border-radius: 50%;
-  background-image: url(../img/equipo/Sunrises_and_sunsets_Fog_Clouds_Trees_Grass_556563_1280x867.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+  rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1587449156852-c191c00da9b3?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTA0fHxuZW9ufGVufDB8fDB8&auto=format&fit=crop&w=500&q=60);
+  
   background-size: 400px;
   background-size:cover;
   transition: all 600ms;
@@ -193,7 +198,8 @@
   overflow: hidden;
   margin: auto;
   border-radius: 50%;
-  background-image: url(../img/equipo/screen-0.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+  rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1542204165-65bf26472b9b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80);
   background-size: 400px;
   background-size:cover;
   transition: all 600ms;
@@ -227,7 +233,8 @@
   margin: auto;
   margin-top: 50px;
   border-radius: 50%;
-  background-image: url(../img/equipo/Sunrises_and_sunsets_Fog_Clouds_Trees_Grass_556563_1280x867.jpg);
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.6),
+  rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1606228643612-2f6071e04dc1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80);
   background-size: 400px;
   background-size:cover;
   transition: all 600ms;
@@ -266,7 +273,8 @@
   overflow: hidden;
   margin: auto;
   border-radius: 50%;
-  background-image: url(../img/equipo/59-593310_kerala-gods-own-country-hd.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+  rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1570729892175-6ebda965e864?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=514&q=80);
   background-size: 400px;
   background-size:cover;
   transition: all 600ms;
@@ -300,7 +308,8 @@
   margin: auto;
   margin-top: 50px;
   border-radius: 50%;
-  background-image: url(../img/equipo/Sunrises_and_sunsets_Fog_Clouds_Trees_Grass_556563_1280x867.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+  rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1542047078441-229be3aa1f12?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=700&q=80);
   background-size: 400px;
   background-size:cover;
   transition: all 600ms;
