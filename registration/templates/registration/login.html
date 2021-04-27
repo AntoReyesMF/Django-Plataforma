@@ -1,12 +1,6 @@
+{% extends 'core/base.html' %}
 {% load static %}
-{% block title %}{% endblock %}
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Making Friends</title>
-	<link rel="stylesheet" href="{% static 'core/css/login.css' %}">
-</head>
-<body>
+{% block content %}
 
 <!-- partial:index.partial.html -->
 <div class="container">
@@ -22,20 +16,31 @@
       {% if form.non_field_errors %}
             <p style="color:red">Usuario o contraseña incorrectos, prueba de nuevo.</p>
         {% endif %} 
-        <h3>Nombre de Usuario</h3>
+        <h3>Nombre de Usuarioo</h3>
         <input type='text' placeholder='Nombre de usuario' required name="username" class="col-md-6" >
         <h3>Contraseña</h3>
         <input type='password' placeholder='Contraseña' required name="password" id="id_password" class="col-md-6" >
         <h3>Olvidé mi contraseña</h3>
         </a>
-        <a href="makerplace.html"> 
-        <div><input type="submit" class='ghost-round full-width' value="Acceder"></div> 
+        <a href=""> 
+        <div><input type="submit" name='submit' class='ghost-round full-width' value="Acceder"></div> 
         </a>
       </form>
     </div>
   </div>
 <!-- partial -->
-  
-</body>
-</html>
 
+  <h2>Sign up</h2>
+    
+  <form method="post">
+    {% csrf_token %}
+
+   {% comment %} {{ form.as_p}} {% endcomment %}
+  <label>nombre de ususario</label>
+   {{form.username}}
+
+    <button type="submit" name='submit' value="signup">Sign up</button>
+  </form>
+
+
+{% endblock %}

@@ -42,7 +42,10 @@
         <a href="marketplace.html"><li class="PRIORITY" style="background-image: url({% static 'core/img/find.png' %})"><span>DESCUBRIR</span></li></a>
         <a href="marketplace.html"><li class="COLLECTIONS" style="background-image: url({% static 'core/img/question.png' %})"><span>SOPORTE</span></li></a>
         <a href="marketplace.html"><li class="STATS" style="background-image: url({% static 'core/img/settings.png' %})"><span>AJUSTES</span></li></a>
-        <a href="#"><li class="SETTINGS" style="background-image: url({% static 'core/img/logout.png' %})"><span>CERRAR SESIÓN</span></li></a>        
+         {% if user.is_authenticated %}
+        <a href="{% url 'logout' %}"><li class="SETTINGS" style="background-image: url({% static 'core/img/logout.png' %})"><span>CERRAR SESIÓN</span></li></a>        
+        {% else %}
+        {% endif %}
         </ul>
     </div>
     </nav>
