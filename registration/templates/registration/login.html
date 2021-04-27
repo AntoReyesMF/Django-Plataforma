@@ -34,10 +34,15 @@
     
   <form method="post">
     {% csrf_token %}
-
-   {% comment %} {{ form.as_p}} {% endcomment %}
-  <label>nombre de ususario</label>
-   {{form.username}}
+  <label>username</label>
+   {{ form.username}}
+   <label>email</label>
+   {{ form.email}}
+   <label>password</label>
+   {{ form.password1}}
+   <label>confirma pasword</label>
+   {{ form.password2}}
+ 
 
     <button type="submit" name='submit' value="signup">Sign up</button>
   </form>

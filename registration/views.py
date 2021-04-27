@@ -77,7 +77,7 @@ def login_request(request):
                 username = forms.cleaned_data.get('username')
                 raw_password = forms.cleaned_data.get('password')
                 user = authenticate(username=username, password=raw_password)
-                login(request, user,backend='django.contrib.auth.backends.ModelBackend')
+                login(request, user, backend='django.contrib.auth.backends.ModelBackend')
                 return redirect('login')
             else:
                 form = UserCreationFormWithEmail()
