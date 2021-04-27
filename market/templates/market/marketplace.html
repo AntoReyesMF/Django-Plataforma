@@ -1,141 +1,113 @@
 
+{% extends 'registration/base_login.html' %}
 {% load static %}
-{% block title %}{% endblock %}
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Makerplace</title>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css'>
-<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
-<link rel="stylesheet" href="{% static 'core/css/market.css' %}">
+{% block content %}
 
+<div class="market_header">
+    ¿Qué haremos hoy {{user.get_username}}?
+</div>
 
-</head>
-<body>
-    <!-- partial:index.partial.html -->
-    <nav role="navigation">
-      <div id="menuToggle">
-    <input type="checkbox" />
-    <span></span>
-        <span></span>
-        <span></span>
-    <ul id="menu">
-          <a href="#"><li>Makerplace</li></a>
-          <a href="#"><li>Perfil</li></a>
-          <a href="#"><li>Mis proyectos</li></a>
-          <a href="#"><li>Nuevo proyecto</li></a>
-          <a href="#"><li>Soporte</li></a>
-          <a href="#"><li>Ajustes</li></a>
-          <a href="{% url 'logout' %}"><li>Cerras sesión</li></a>
-          
-        </ul>
-      </div>
-    </nav>
-    
-    
-        <div class="page-header">
-            <h6>¿Qué haremos hoy {{user.get_username}}?</h6>
+<div class="market_card">
+<div class="market_container">
+<div class="market_row active-with-click">
+    <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="material-card nombre">
+            <h2>
+                <span>
+                    <a class="friends_link" href="#">
+                MiCochinito.com
+                </a> 
+            </span>
+            
+                <strong>
+                    Crowdfunding
+                </strong>
+            </h2>
+            <div class="market_card-content">
+                <div class="market_img-container">
+                <img class="market_img-logo" src="{% static 'core/img/friends/mc1.png' %}">
+                </div>
+                <div class="market_mc-description">
+                    Utilizamos crowdfunding, como instrumento base para que diversas iniciativas puedan conseguir el capital que necesitan a travez de rempensas
+                </div>
+            </div>
+            <a class="mc-btn-action">
+                <i class="fa fa-bars"></i>
+            </a>
+            <div class="mc-footer">
+                <a href="#">                                                                     
+                <button class="btn">Ver más</button>
+                </a>                  
+            </div>
         </div>
-    </section>
-    <section class="card-area" style="background-color:#000000" >
-        <div class="container">
-        <div class="row active-with-click">
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <article class="material-card Red">
-                    <h2>
-                        <span>
-                            <a href="{% url 'mc' %}">
-                        MiCochinito.com
-                        </a> 
-                    </span>
-                    
-                        <strong>
-                            Crowdfunding
-                        </strong>
-                    </h2>
-                    <div class="mc-content">
-                        <div class="img-container">
-                        <img class="img-logo" src="https://blog.micochinito.com/wp-content/uploads/2017/02/logo_blanco_flor.png">
-                        </div>
-                        <div class="mc-description">
-                            Utilizamos crowdfunding, como instrumento base para que diversas iniciativas puedan conseguir el capital que necesitan a travez de rempensas
-                        </div>
-                    </div>
-                    <a class="mc-btn-action">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                    <div class="mc-footer">
-                        <a href="{% url 'home' %}">                                                                     
-                        <button class="btn">Ver más</button>
-                        </a>                  
-                    </div>
-                </article>
-            </div>
-    
-            
-            
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <article class="material-card Red">
-                    <h2>
-                        <span>Vexi</span>
-                        <strong>
-                            
-                            Fintech 
-                        </strong>
-                    </h2>
-                    <div class="mc-content">
-                        <div class="img-container">
-                            <img class="img-logo" src="https://vexi.mx/assets/images/logoVexiBlanco.png">
-                        </div>
-                        <div class="mc-description">
-                            Somos una tarjeta de crédito 100% mexicana y administrada directamente desde nuestra app.
-    
-                            Vexi NO tiene anualidad de por vida, ni comisión por no uso, solo realizas un pago único por apertura.
-                        </div>
-                    </div>
-                    <a class="mc-btn-action">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                <div class="mc-footer">
-                        <button class="btn">Ver más</button>
-                        
-                    </div>
-                </article>
-            </div>
+    </div>
+
     
     
     <div class="col-md-4 col-sm-6 col-xs-12">
-                <article class="material-card Red">
-                    <h2>
-                        <span>CETIEM SC</span>
-                        <strong>
-                            Emprendimiento
-                        </strong>
-                    </h2>
-                    <div class="mc-content">
-                        <div class="img-logo">
-                            <img class="img-responsive" src="https://cetiem.com/wp-content/uploads/2018/12/CETIEM-SC_Oficiales_1000x400pxB.png">
-                        </div>
-                        <div class="mc-description">
-                           buscamos promover el desarrollo de potenciales emprendedores universitarios, con el propósito de generar empresas de alto impacto en México
-                        </div>
-                    </div>
-                    <a class="mc-btn-action">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                    <div class="mc-footer">
-                        <button class="btn">Ver más</button>
-                        
-                    </div>
-                        
-                    </div>
-    
+        <article class="material-card nombre">
+            <h2>
+                <span>
+                    <a class="friends_link" href="#">
+                 Vexi
+                 </a> 
+                </span>
+                <strong>
+                    
+                    Fintech 
+                </strong>
+            </h2>
+            <div class="market_card-content">
+                <div class="market_img-container">
+                    <img class="market_img-logo" src="{% static 'core/img/friends/logovexi.png' %}">
+                </div>
+                <div class="market_mc-description">
+                    Somos una tarjeta de crédito 100% mexicana y administrada directamente desde nuestra app.
+
+                    NO tiene anualidad de por vida, ni comisión por no uso, solo realizas un pago único por apertura.
+                </div>
+            </div>
+            <a class="mc-btn-action">
+                <i class="fa fa-bars"></i>
+            </a>
+        <div class="mc-footer">
+            <a href="#">                                                                     
+                <button class="btn">Ver más</button>
+                </a>             
+            </div>
+        </article>
     </div>
-    </section>
-    
-      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
-    
-    </body>
-    </html>
-    
+
+    <div class="col-md-4 col-sm-6 col-xs-12">
+        <article class="material-card nombre">
+            <h2>
+                <span>
+                <a a class="friends_link" href="#">
+                 Tesicafé
+                 </a> 
+                </span>
+                <strong>
+                    
+                    Educación 
+                </strong>
+            </h2>
+            <div class="market_card-content">
+                <div class="market_img-container">
+                    <img class="market_img-logo" src="{% static 'core/img/friends/Tesicafecolor.png' %}">
+                </div>
+                <div class="market_mc-description">
+                    Somos un espacio interdisciplinario para la elaboración y aplicación  de proyectos de investigación, basados en una metodología 4.0.
+                </div>
+            </div>
+            <a class="mc-btn-action">
+                <i class="fa fa-bars"></i>
+            </a>
+        <div class="mc-footer">
+            <a href="#">                                                                     
+                <button class="btn">Ver más</button>
+                </a>             
+            </div>
+        </article>
+ </div>
+
+ {% endblock %}
