@@ -10,12 +10,13 @@ background-color: #050505;
 
 .home_h1{
 text-align: center;
-font-size: 4rem;
+font-size: 2rem;
 font-weight: bold;
 color: #ffffff;
 padding-right: 15rem;
 padding-left: 15rem;
 font-family: Montserrat;
+margin-top: 6rem;
 }
 
 .home_p_principal{
@@ -23,6 +24,7 @@ font-family: Montserrat;
   padding-right: 18rem;
   padding-left: 18rem;
   text-align: center;
+  margin-bottom: 0;
 }
 
 .home_cont_principal{
