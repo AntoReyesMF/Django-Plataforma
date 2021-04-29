@@ -49,18 +49,20 @@ padding: 0;
 }
 
 .home_btn{
-border-color: #DE2276;
-color: #ffffff;
-width: 11rem;
-border-radius: 30px;
-background-color: transparent;
-cursor: pointer;
-line-height: 1.5em;
-font-size: 1rem;
-border-width: .1rem;
-margin: 2rem;
+  border-radius: 20px;
+  border: 1px solid #DE2276;
+  background-color: #DE2276;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 12px 45px;
+  margin-top: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 2rem;
 
 }
+
 .home_btn:hover{
 background-color: #DD2676;
 }
@@ -169,7 +171,7 @@ padding-top: 8rem;
 }
 .content__container__list, .content__container__list_friends {
   margin-top: 0;
-  padding-left: 180px;
+  padding-left: 220px;
   text-align: left;
   list-style: none;
   -webkit-animation-name: change;

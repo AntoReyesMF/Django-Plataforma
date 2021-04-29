@@ -4,7 +4,8 @@
 
 
 <div class="registro2_container" id="registro2_container">
-  <div class="form-container sign-up-container">
+  <div class="form-container sign-in-container"> 
+  
      {% if 'register' in request.GET %}
           <p style="color:green;">Usuario registrado correctamente, ya puedes identificarte.</p>
         {% endif %}
@@ -18,12 +19,12 @@
         <h2 class="registro2_h2">Olvidé mi contraseña</h2>
         </a>
         <a href=""> 
-          <button type="submit" name='submit' value="Acceder">Acceder</button>
+          <button class="registro2_btn" type="submit" name='submit' value="Acceder">Acceder</button>
         </a>
       </form>
     </div>
 
-    <div class="form-container sign-in-container"> 
+    <div class="form-container sign-up-container">   
 <form method="post">
     {% csrf_token %}
     <h1 class="registro2_h1_inicio">Crea tu cuenta</h1>
@@ -45,7 +46,7 @@
    {{ form.password2}} {% endcomment %}
  
 
-    <button type="submit" name='submit' value="signup">Crear cuenta</button>
+    <button class="registro2_btn" type="submit" name='submit' value="signup">Crear cuenta</button>
   </form> 
 
 </div>
