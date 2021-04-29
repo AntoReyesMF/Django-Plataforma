@@ -118,7 +118,7 @@ a{
   padding-bottom: 2rem;
 }
 
-h3 {
+.card__body-header-title {
   font-family: montserrat;
   font-weight: normal;
   margin-top: 0;
