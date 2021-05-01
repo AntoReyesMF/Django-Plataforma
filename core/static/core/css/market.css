@@ -1,6 +1,5 @@
 
 /* inicio de market */
-
 .market_header{
   font-size: 3rem;
   text-align:center;
@@ -52,7 +51,7 @@ margin-left: -15px;
   position: absolute;
   top: calc(100% - 16px);
   left: 0;
-  width: 90%;
+  width: 100%;
   padding: 10px 16px;
   color: #fff;
   font-size: 1.4em;
@@ -107,7 +106,6 @@ margin-left: -15px;
   -moz-border-radius: 50%;
   border-radius: 50%;
   width: 54px;
-  height: 47px;
   line-height: 44px;
   text-align: center;
   color: #ffffff;
@@ -194,7 +192,7 @@ margin-left: -15px;
 
 .market_img-logo{
   padding-top: 10rem;
-  width: 100%
+  width: 90%
 }
 
 
@@ -240,7 +238,7 @@ margin-left: -15px;
   top: calc(100% - 16px);
   left: 16px;
   right: 0;
-  height: 70px;
+  height: 100px;
   padding-left: 93px;
 }
 .material-card.mc-active .mc-footer a {
