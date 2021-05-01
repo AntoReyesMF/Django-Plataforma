@@ -1,0 +1,121 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Making Friends</title>
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="{% static 'core/css/base.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'core/css/nosotros.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/tyc.css' %}"> -->
+    <!-- <link rel="stylesheet" href="{% static 'core/css/contacto.css' %}"> -->
+    <!-- <link rel="stylesheet" href="{% static 'core/css/friends.css' %}"> -->
+    <!-- favicons
+    ================================================== -->
+<!--  ================================================== MENU ================================================== -->
+
+    <header>
+
+      <nav id="menu">
+
+        <div id="logo">
+
+            <div id="imagen_logo">
+                <a href="{% url 'home' %}">
+                    <img src="{% static 'core/img/nuevo_logo.png' %}" alt="making friends">
+                </a>
+            </div>
+
+        </div>
+
+        <div id="contenido">
+            <div id="cont_menu">
+
+                <div class="menu">
+                    <a href="{% url 'nosotros' %}">NOSOTROS</a>
+                </div>
+                <div class="menu">
+                    <a href="{% url 'signup' %}">MAKERS</a>
+                </div>
+                <div class="menu">
+                    <a href="{% url 'friend'%}">FRIENDS</a>
+                </div>
+                <div class="menu">
+                    <a href="{% url 'contacto' %}">CONTACTO</a>
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+        
+    </header> 
+    <!--  ================================================== MENU ================================================== -->
+
+      <!-- Contenido dinamico                            -->
+      {% block content %}{% endblock %}
+      <!-- Fin Contenido dinamico                        -->
+
+    <!--  ================================================== FOOTER ================================================== -->
+    <footer>
+        <div id="footer_central">
+
+            <div id="foo_cont1">
+                <h2>CREA  HASTA  QUE  TODOS  CREAN</h2>
+            </div>
+
+            <div id="foo_cont2">
+
+                <div id="foo_info">
+                    <div class="foo_info_a">
+                        <a href="{% url 'tyc' %}">Términos y condiciones</a>
+                    </div>
+                    <div class="foo_info">
+                        <a href="{% url 'privacidad' %}">Privacidad</a>
+                    </div>
+                    <div class="foo_info">
+                        <a href="{% url 'nosotros' %}">Nosotros</a>
+                    </div>
+                    <div class="foo_info">
+                        <a href="{% url 'contacto' %}">Contacto</a>
+                    </div>
+
+                </div>
+
+                <div id="foo_img">
+                    <div id="foo_img_central">
+                      <a href="{% url 'home' %}">
+                          <img src="{% static 'core/img/nuevo_logo.png' %}" alt="">
+                      </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="foo_cont3">
+                 <p><a id="derechos" href="{% url 'privacidad' %}">© Todos los derechos reservados. Enero 2021. LINADI S.A.S</a></p>
+            </div>
+
+         </div>
+    </footer>
+    <!--  ================================================== FOOTER ================================================== -->
+
+    <!-- Script js para ultima carga                       -->
+    
+    <script src="{% static 'core/js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'core/js/plugins.js' %} "></script>
+    <script  src="{% static 'core/js/contacto.js' %}"></script>
+    <script  src="{% static 'core/js/friends.js' %}"></script>
+
+</body>
+</html>

@@ -3,8 +3,7 @@ from django.views.generic.base import TemplateView
 
 
 # Create your views here.
-class MarketPageView(TemplateView):
-    
+class marketPageView(TemplateView):
     template_name= "market/marketplace.html"
 
 class MCPageView(TemplateView):

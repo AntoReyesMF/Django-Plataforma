@@ -106,3 +106,5 @@ class perfilView(TemplateView):
 
 class perfil2View(TemplateView):
     template_name = "registration/perfil2.html"
+
+
