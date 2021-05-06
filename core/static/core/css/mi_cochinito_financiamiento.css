@@ -1,0 +1,211 @@
+#mc_fin_cont_general{
+    width: 100%;
+    height: auto;
+    background-color: RGB(246,245,245);
+}
+#mc_fin_cont1{
+    display: flex;
+    width: 100%;
+    height:auto;
+    padding-top: 30px;
+    /* background-color: aqua; */
+}
+#mc_fin_cont1_espaciador{
+    width: 85%;
+    height: auto;
+    /* background-color: lightcyan; */
+}
+#mc_fin_cont1_img{
+    width: 15%;
+    height: auto;
+    /* background-color: lightgreen; */
+}
+#mc_fin_cont1_img img{
+    width: 60%;
+    height: auto;
+}
+/*----------------------------------------------------------------------*/
+#mc_fin_cont2_central{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* background-color: chartreuse; */
+}
+#mc_fin_cont2_h1{
+    color: RGB(222,34,118);
+    font-family: Montserrat-Bold;
+    margin-bottom: 40px;
+    font-size: 40px;
+    text-align: center;
+}
+#mc_fin_cont2_p{
+    font-family: Montserrat-Regular;
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+
+#mc_fin_cont2_cont_black{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    border-radius: 30px;
+    padding-bottom: 20px;
+    background-color: black;
+}
+#mc_fin_cont2_cont_black_conts{
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* background-color: yellow; */
+}
+.mc_fin_cont2_cont_black_conts{
+    width: 25%;
+    height: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    /* background-color: blue; */
+}
+.mc_fin_cont2_cont_black_p_pink{
+    color: RGB(222,34,118);
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: Montserrat-SemiBold;
+    font-size: 30px;
+}
+.mc_fin_cont2_cont_black_p_white{
+    color: white;
+    text-align: center;
+    font-family: Montserrat-Medium;
+    font-size: 20px;
+}
+#mc_fin_cont2_cont_black_conts_img{
+    width: 66px;
+    height: auto;
+    margin: auto;
+    /* background-color: black; */
+}
+#mc_fin_cont2_cont_black_boton{
+    
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* background-color: black; */
+}
+#mc_fin_cont2_cont_black_boton_empezar{
+    display: block;
+    width: 180px;
+    height: 50px;
+    margin: auto;
+    border-radius: 25px;
+    background-color: RGB(222,34,118); 
+}
+
+#mc_fin_cont2_cont_black_boton_empezar a p{
+    display: block;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-family: Montserrat-Medium;
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+/*----------------------------------------------------------------------*/
+
+#mc_fin_cont3{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* background-color: lightcyan; */
+}
+#mc_fin_cont3_cont_central{
+    display: flex;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+#mc_fin_cont3_cont1_h2{
+    text-align: center;
+    font-family: Montserrat-SemiBold;
+    font-size: 30px;
+    letter-spacing: 4px;
+    margin-bottom: 50px;
+}
+.mc_fin_cont3_h5{
+    font-family: Montserrat-Medium;
+    font-size: 20px;
+    color: RGB(222,34,118);
+    margin-bottom: 20px;
+}
+.mc_fin_cont3_cont_p{
+    width: 100%;
+    height: auto;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: RGB(213,212,212);
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: Montserrat-Light;
+    letter-spacing: 3px;
+}
+
+#mc_fin_cont3_cont1{
+    width: 50%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* background-color: lightgreen; */
+}
+
+#mc_fin_cont3_cont2{
+    width: 50%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* background-color: lightsalmon; */
+}
+
+#mc_fin_cont3_cont2_video{
+    width: 500px;
+    height: 400px;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+#mc_fin_cont3_cont2_boton{
+    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+    /* background-color: limegreen; */
+}
+#mc_fin_cont3_cont2_boton_empezar{
+    display: block;
+    width: 180px;
+    height: 50px;
+    margin: auto;
+    border-radius: 25px;
+    background-color: RGB(222,34,118);
+}
+#mc_fin_cont3_cont2_boton_empezar a p{
+    display: block;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-family: Montserrat-Medium;
+    font-size: 15px;
+    letter-spacing: 3px;
+}

@@ -2,11 +2,59 @@
 {% load static %}
 {% block content %}
 
-<h1>hola_mundo taller 8</h1>
+<div id="mc_taller_cont_general_taller8"> 
+
+    <div id="mc_fin_cont1_taller8">
+        <div id="mc_fin_taller8_cont1_espaciador"></div>
+        <div id="mc_fin_taller8_cont1_img">
+            <img src="{% static 'core/img/friends/mc1.png' %}" alt="">
+        </div>
+    </div>
 
 
 
 
+    <div id="mc_fin_taller8">
+        
+        <!-- Lateral 1-->
+        <div id="mc_fin_taller8_lateral1">
+    
+            <div id="mc_fin_taller8_lateral1_boton1">
+    
+               <a href="{% url 'mi_cochinito_taller7' %}"><p><</p></a>
+    
+            </div>
+    
+        </div>
+        <!-- Lateral 1-->
+        <!-- central-->
+        <div id="mc_fin_taller8_central">
+    
+            <h1 id="mc_fin_taller8_central_h1">Creación de campaña</h1>
+            <h2 id="mc_fin_taller8_central_h2">Difusión de mi campaña</h2>
+            <p class="mc_fin_taller8_central_p">
+                Graba un video atractivo que te ayudará a promocionar tu campaña. Esta será tu principal carta de presentación y a través de la cual convencerás a las personas de donar a tu proyecto.
+                <br>
+                <br>
+                Te compartimos un video con algunos consejos para tener un resultado de calidad.
+            </p>
 
+            <div id="mc_fin_taller8_video">
+                <iframe width="700" height="400" src="https://www.youtube.com/embed/J6CP8ziU4pQ?controls=0"></iframe>
+            </div>
+    
+        </div>
+        <!-- central-->
+        <!-- Lateral 2-->
+        <div id="mc_fin_taller8_lateral2">
+            <div id="mc_fin_taller8_lateral2_boton2">
+                <a href="{% url 'mi_cochinito_taller9' %}"><p>></p></a>
+            </div>
+        </div>
+        <!-- Lateral 2-->
+    
+    </div>
+
+</div>
 
 {% endblock %}

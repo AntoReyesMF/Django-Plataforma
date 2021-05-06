@@ -1,12 +1,76 @@
 {% extends 'registration/base_login.html' %}
 {% load static %}
 {% block content %}
+<div id="mc_taller_cont_general_taller5"> 
 
-<h1>hola_mundo taller 5</h1>
+    <div id="mc_fin_cont1_taller5">
+        <div id="mc_fin_taller5_cont1_espaciador"></div>
+        <div id="mc_fin_taller5_cont1_img">
+            <img src="{% static 'core/img/friends/mc1.png' %}" alt="">
+        </div>
+    </div>
 
 
 
 
+    <div id="mc_fin_taller5">
+        
+        <!-- Lateral 1-->
+        <div id="mc_fin_taller5_lateral1">
+    
+            <div id="mc_fin_taller5_lateral1_boton1">
+    
+               <a href="{% url 'mi_cochinito_taller4' %}"><p><</p></a>
+    
+            </div>
+    
+        </div>
+        <!-- Lateral 1-->
+        <!-- central-->
+        <div id="mc_fin_taller5_central">
+        
+            <h1 id="mc_fin_taller5_central_h1">Creación de campaña</h1>
+            <h2 id="mc_fin_taller5_central_h2">Define cuánto dinero vas a pedir</h2>
+            <p class="mc_fin_taller5_central_p">
+                Antes de hacer tu campaña de crowdfunding debes saber cuánto dinero pedir. No debe ser una cifra muy baja o muy elevada, sino un número que sea posible alcanzar.
+            </p>
 
+            <div id="mc_fin_taller5_cochinito">
+
+            </div>
+
+
+            <h4 class="mc_fin_taller5_central_h4">¿Qué tengo que hacer?</h4>
+            <p class="mc_fin_taller5_central_p">
+                Toma en cuenta a familiares, amigos y vecinos, compañeros de trabajo o escuela, tus contactos de redes sociales y súmalos.
+            </p>
+            
+            <h4 class="mc_fin_taller5_central_h4">Multiplica el el total de tu red de contactos por 0.5 .</h4>
+            <p class="mc_fin_taller5_central_p">
+                Este será el porcentaje de personas que donarán a tu campaña (tus padrinos).
+            </p>
+
+            <h4 class="mc_fin_taller5_central_h4">Multiplica el total de aportaciones por $500.</h4>
+            <p class="mc_fin_taller5_central_p">
+                Esta es la aportación promedio que realizan las personas a una campaña.
+            </p>
+            <p class="mc_fin_taller5_central_p">
+                ya tienes la cantidad de dinero que vas a pedir en tu campaña.
+            </p>
+           
+    
+        </div>
+        <!-- central-->
+        <!-- Lateral 2-->
+        <div id="mc_fin_taller5_lateral2">
+            <div id="mc_fin_taller5_lateral2_boton2">
+                <a href="{% url 'mi_cochinito_taller6' %}"><p>></p></a>
+            </div>
+        </div>
+        <!-- Lateral 2-->
+    
+    </div>
+
+</div>
 
 {% endblock %}
