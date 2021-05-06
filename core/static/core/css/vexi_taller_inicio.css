@@ -1,0 +1,237 @@
+ .vexi_inicio{
+     background-color: #f6f5f5;
+ }
+
+ /* Portada */
+
+ .vexi_cover_page{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .vexi_cover_page img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .vexi_cover_page .vexi_btn {
+    position: absolute;
+    top: 30px;
+    right: 25px;
+  }
+  
+  .vexi_btn {
+    padding: 10px 16px 10px;
+    background: #DE2276;  
+    font-size: .7rem;
+    font-weight: 400;  
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: all .25s ease-in-out;
+  }
+  
+  .vexi_btn .vexi_btn_upload {
+    display: none;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .vexi_logo{
+    margin-top: -200px;
+  }
+  
+  .vexi_logo_content .vexi_logo_img {
+    width: 290px;
+    height: 240px;
+    position: relative;
+    background-color: #fff;
+    left: 220px;
+  }
+  .vexi_logo_content .vexi_logo_img .vexi_img {
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .vexi_bar{
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .vexi_bar_content{
+    margin-left: 33rem;
+  }
+  
+  .vexi_btn_bar{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1.5rem;
+    cursor: pointer;
+  }
+  .vexi_btn_bar:hover{
+    color: #DE2276;
+  }
+  
+  /* Contenido general */
+  
+  .vexi_info{
+  background-color: #f6f5f5;
+  color: #000;
+  text-align: center;
+  margin-top: 0;
+  }
+  
+  .vexi_h1{
+  margin-top: 5rem;
+  color: #DE2276;
+  }
+  
+  .vexi_p{
+  text-align: center;
+  padding-left: 17rem;
+  padding-right: 17rem;
+  font-size: 1.2rem;
+  }
+  
+  .vexi_cursos{
+  display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+  
+.vexi_card {
+  width: 320px;
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  
+  }
+  
+  
+.vexi_card_image {
+  height: 200px;
+  }
+  
+  .vexi_card_image img {
+  display: block;
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+  }
+  
+  .vexi_card_content {
+  padding: 2rem 1.8rem;
+  
+  }
+  
+  .vexi_h2 {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: bold;
+  }
+  
+  .vexi_card_description{
+  font-size: 1rem;
+  line-height: 1.4rem;
+  }
+  
+  /* numeralia */
+  
+  .vexi_numeralia{
+  background-color: #000;
+  }
+  
+  .vexi_h3{
+  color: #fff;
+  font-size: 2rem;
+  padding-top: 4rem;
+  }
+  
+  .vexi_seccion_numeros{
+  padding: 4rem;
+  }
+  
+  .vexi_numeralia_contenido{
+  display: flex;
+  text-align: center;
+  padding-left: 28rem;
+  
+  }
+  
+  .vexi_h4{
+  color: #DE2276;
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 0;
+  }
+  
+  .vexi_h5{
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  }
+  
+  .vexi_preguntas{
+  text-align: center;
+  cursor: pointer;
+  padding-left: 1rem;
+  
+  }
+  
+  .vexi_h6{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin: 0;
+  padding-bottom: 3rem;
+  }
+  
+  #faqs{
+  display: none;
+  }
+  
+  .vexi_pregunta{
+  color: #DE2276;
+  font-weight: bold;
+  }
+  
+  .vexi_respuesta{
+  color: #fff;
+  padding-top: 2rem;
+  padding-right: 20rem;
+  padding-left: 20rem;
+  padding-bottom: 2rem;
+  }
+  
+  .vexi_btn_final{
+    background-color: #DE2276;
+    margin-bottom: 5rem;
+    border-radius: 30px;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1.5rem;
+    cursor: pointer;
+    }
+  
+  .vexi_btn_final:hover{
+  color: #fff;
+  }
