@@ -9,6 +9,9 @@ class mi_cochinito_basePageView(TemplateView):
 class mi_cochinito_inicioPageView(TemplateView):
     template_name = 'mc/mi_cochinito_inicio.html'
 
+class mi_cochinito_financiamientoPageView(TemplateView):
+    template_name = 'mc/mi_cochinito_financiamiento.html'
+
 class mi_cochinito_taller1PageView(TemplateView):
     template_name = 'mc/mi_cochinito_taller1.html'
 

@@ -8,7 +8,7 @@ from django.views.generic.edit import UpdateView
 from django.utils.decorators import method_decorator
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
-from django.urls import reverse_lazy
+from django.urls import reverse_lazy, reverse
 from django import forms
 from .forms import UserCreationFormWithEmail, ProfileForm
 from .models import Profile
@@ -75,16 +75,18 @@ def login_request(request):
             if forms.is_valid():
                 forms.save()
                 username = forms.cleaned_data.get('username')
-                raw_password = forms.cleaned_data.get('password')
+                raw_password = forms.cleaned_data.get('password1')
                 user = authenticate(username=username, password=raw_password)
                 login(request, user, backend='django.contrib.auth.backends.ModelBackend')
-                return redirect('login')
+                #us = {'example':'hola'}
+                messages.success(request, 'Profile details updated.')
+                return redirect('perfil')
             else:
                 form = UserCreationFormWithEmail()
 
     form = UserCreationFormWithEmail()
-
-    return render(request=request, template_name="registration/login.html",context={"form": form})# context={"form": form}
+    us = {'example':'hola'}
+    return render(request=request, template_name="registration/login.html",context={"us": us})# context={"form": form}
 
 
 def logout_request(request):

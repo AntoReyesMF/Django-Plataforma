@@ -2,11 +2,62 @@
 {% load static %}
 {% block content %}
 
-<h1>hola_mundo taller 7</h1>
+<div id="mc_taller_cont_general_taller7"> 
+
+    <div id="mc_fin_cont1_taller7">
+        <div id="mc_fin_taller7_cont1_espaciador"></div>
+        <div id="mc_fin_taller7_cont1_img">
+            <img src="{% static 'core/img/friends/mc1.png' %}" alt="">
+        </div>
+    </div>
 
 
 
 
+    <div id="mc_fin_taller7">
+        
+        <!-- Lateral 1-->
+        <div id="mc_fin_taller7_lateral1">
+    
+            <div id="mc_fin_taller7_lateral1_boton1">
+    
+               <a href="{% url 'mi_cochinito_taller6' %}"><p><</p></a>
+    
+            </div>
+    
+        </div>
+        <!-- Lateral 1-->
+        <!-- central-->
+        <div id="mc_fin_taller7_central">
+        
+            <h1 id="mc_fin_taller7_central_h1">Creación de campaña</h1>
+            <h2 id="mc_fin_taller7_central_h2">Planea tu calendario de actividades</h2>
+            <p class="mc_fin_taller7_central_p">
+                Una campaña de crowdfunding requiere tiempo y mucha organización para tener el mayor alcance posible y lograr el éxito de la recaudación. Llena un calendario con las actividades que realizarás durante el mes de duración de la campaña.
+                <br>
+                <br>
+                 Sé realista con los tiempos que dispones para invertir en la promoción. Puedes guiarte del siguiente ejemplo:
+            </p>
+            <p class="mc_fin_taller7_central_p">
+                <br>
+                Arrastra los cuadros en el calendario.
+            </p>
+            <div id="mc_fin_taller7_calendario">
 
+            </div>
+    
+        </div>
+        <!-- central-->
+        <!-- Lateral 2-->
+        <div id="mc_fin_taller7_lateral2">
+            <div id="mc_fin_taller7_lateral2_boton2">
+                <a href="{% url 'mi_cochinito_taller8' %}"><p>></p></a>
+            </div>
+        </div>
+        <!-- Lateral 2-->
+    
+    </div>
+
+</div>
 
 {% endblock %}
