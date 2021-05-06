@@ -6,6 +6,9 @@ from django.views.generic.base import TemplateView
 class vexi_inicioPageView(TemplateView):
     template_name = 'vexi/vexi_inicio.html'
 
+class vexi_edufinPageView(TemplateView):
+    template_name = 'vexi/vexi_edufin.html'
+
 class vexi_taller1PageView(TemplateView):
     template_name = 'vexi/vexi_taller1.html'
 
