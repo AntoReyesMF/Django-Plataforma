@@ -5,26 +5,26 @@
     padding-top: 20px;
     padding-bottom: 20px;
 }
-h1{
+.polit_h1{
     font-family: Montserrat-Medium ;
     text-align: center;
     color: #DE2276;
     font-size: 35px;
 }
-h2{
+.polit_h2{
     font-family: Montserrat-Regular;
     text-align: center;
     color: #DE2276;
     margin-bottom: 90px;
     font-size: 30px;
 }
-h3{
+.polit_h3{
     font-family: Montserrat-Regular;
     color: #DE2276;
     font-size: 25px;
     margin-bottom: 20px;
 }
-p{
+.polit_p{
     font-family: Montserrat-Light ;
     text-align: justify;
     margin-bottom: 60px;

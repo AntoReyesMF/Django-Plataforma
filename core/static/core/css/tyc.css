@@ -5,26 +5,26 @@
     padding-top: 20px;
     padding-bottom: 20px;
 }
-h1{
+.tyc_h1{
 	font-family: Montserrat-Medium ;
     text-align: center;
     color: #DE2276;
     font-size: 35px;
 }
-h2{
+.tyc_h2{
 	font-family: Montserrat-Regular;
     text-align: center;
     color: #DE2276;
     margin-bottom: 90px;
     font-size: 30px;
 }
-h3{
+.tyc_h3{
 	font-family: Montserrat-Regular;
     color: #DE2276;
     font-size: 25px;
     margin-bottom: 20px;
 }
-p{
+.tyc_p{
 	font-family: Montserrat-Light ;
     text-align: justify;
 	line-height: 25px;

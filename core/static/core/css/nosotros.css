@@ -4,8 +4,8 @@
 #nosotros_titulo{
   width: 100%;
   height: auto;
-  padding-top: 20px;
-  padding-bottom: 60px;
+  padding-top: 50px;
+  padding-bottom: 150px;
   /* background-image: url(https://images.unsplash.com/photo-1503792574895-6074f691cc6a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1333&q=80) ;
   background-size:cover; */
   background-color: RGB(21,23,30);
@@ -26,7 +26,6 @@
 
 #nos_t_cont_central_linea{
   width: 60%;
-  height: 3px;
   border: 2px solid white;
 }
 /*
@@ -42,14 +41,17 @@
   margin: auto;
 }
 #nos_cont_general .nos_h3{
-  font-family: Montserrat-Medium;
+  font-family: Montserrat;
   font-size: 35px;
+  font-weight: bold;
   text-align: center;
   letter-spacing: 4px;
+  color: RGB(222,34,118);
+  margin-top: 3rem;
 }
 #nos_cont_general #nos_p{
   margin-top: 50px;
-  font-family: Montserrat-Regular;
+  font-family: Montserrat;
   font-size: 20px;
   letter-spacing: 2px;
   line-height: 35px;
@@ -95,22 +97,24 @@
 
 .nos_h4{
   font-family:  Montserrat-Bold;
-  font-size: 20px;
+  font-size: 25px;
   color: RGB(222,34,119);
   text-align: center;
+  margin-top: 2rem;
 }
 .nos_h5{
   font-family:  Montserrat-Regular;
   font-size: 17px;
   color: RGB(222,34,119);
   text-align: center;
+  margin-top: 1rem;
 }
 .nos_equipo_p{
   font-family:  Montserrat-Medium;
-  font-size: 10px;
-  letter-spacing: 2px;
+  font-size: 15px;
   color: white;
   text-align: center;
+  margin-top: 1rem;
 }
 /* Juan*/
 

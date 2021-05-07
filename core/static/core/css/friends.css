@@ -5,7 +5,7 @@
 	width: 100%;
 	height: auto;
 	padding-top: 20px;
-	padding-bottom: 60px;
+	padding-bottom: 75px;
 	background-image:linear-gradient(rgba(0, 0, 0, 0.6),
 	rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1503791774117-08c379dd7f7c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1336&q=80') ;
 	background-position: -50px -150px;
@@ -27,7 +27,6 @@ line-height: 60px;
 
 #friends_t_cont_central_linea{
 width: 60%;
-height: 3px;
 border: 2px solid white;
 }
 /*
@@ -59,13 +58,18 @@ border: 2px solid white;
 }
 
 #friends_contenido_1 #friends_h3{
-	font-family: Montserrat-Medium;
-	font-size: 25px;
+	font-family: Montserrat-bold;
+	font-size: 30px;
 	color: black;
+	font-weight: 700;
 }
 #friends_contenido_1 #friends_p{
+	font-family: Montserrat;
 	text-align: start;
 	line-height: 30px;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	font-size: 1rem;
 }
 
 #friends_contenido_1 ul li{
@@ -77,14 +81,15 @@ border: 2px solid white;
 #friends_cont1_li{
 	width: 100%;
 	height: auto;
-	padding-top: 20px;
-	padding-bottom: 7px;
+	padding:25px;
+	margin: 25px -20px;
 	background-color: white;
 	box-shadow: 0px 0px 3px 2px rgb(212, 212, 212);
 }
 #friends_contenido_1 #friends_h4{
 	font-family: Montserrat-Medium;
 	margin-top: 40px;
+	font-size: 20px;
 }
 
 
@@ -97,31 +102,35 @@ border: 2px solid white;
 #friends_contenido_central  #friends_contenido_2 #friends_contenido2_form{
 	width: 75%;
 	height: auto;
-	margin: auto;
+	margin-top: -150px;
 	padding: 10px;
 	border-radius: 25px;
 	background-color: white;
 	box-shadow: 0px 0px 3px 2px rgb(212, 212, 212);
+	margin-left: 25.33333333%;
 }
+
 #friends_contenido2_form h4{
 font-family: Montserrat-Medium;
 font-size: 20px;
 color:RGB(222,34,119) ;
 text-align: center;
+padding: 1rem;
 }
+
+
 #form_friends #nombre{
 width: 100%;
 height: 35px;
 text-align: center;
 font-size: 15px;
 border: none;
+padding: 0;
+margin: 0;
+border-radius: 0;
 border-bottom: 1px solid RGB(222,34,119);
 margin-bottom: 20px;
-}
-#form_friends input[type=text]:focus{
-background-color: black;
-color: white;
-font-size: 15px;
+font-family: Montserrat;
 }
 
 #form_friends #apellidos{
@@ -130,8 +139,12 @@ height: 35px;
 text-align: center;
 font-size: 15px;
 border: none;
+padding: 0;
+margin: 0;
+border-radius: 0;
 border-bottom: 1px solid RGB(222,34,119);
 margin-bottom: 20px;
+font-family: Montserrat;
 }
 
 #form_friends #email{
@@ -140,13 +153,12 @@ height: 35px;
 text-align: center;
 font-size: 15px;
 border: none;
+padding: 0;
+margin: 0;
+border-radius: 0;
 border-bottom: 1px solid RGB(222,34,119);
 margin-bottom: 20px;
-}
-#form_friends input[type=email]:focus{
-background-color: black;
-color: white;
-font-size: 15px;
+font-family: Montserrat;
 }
 
 #form_friends #startup{
@@ -155,18 +167,24 @@ height: 35px;
 text-align: center;
 font-size: 15px;
 border: none;
+padding: 0;
+margin: 0;
+border-radius: 0;
 border-bottom: 1px solid RGB(222,34,119);
 margin-bottom: 20px;
+font-family: Montserrat;
 }
 
 #form_friends #cuentanos{
 width: 100%;
-min-height: 150px;
+height: 100px;
 text-align: center;
 font-size: 15px;
 border: none;
 border-bottom: 1px solid RGB(222,34,119);
-margin-bottom: 20px;
+padding: 0;
+margin: 0;
+font-family: Montserrat;
 }
 
 #form_friends #friends_enviar{

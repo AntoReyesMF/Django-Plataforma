@@ -189,7 +189,6 @@ table {
  footer{
     width: 100%;
     height: auto;
-    margin-top: 20px;
     padding-top: 20px;
     padding-bottom: 5px;
     background-color: black;
@@ -205,10 +204,11 @@ table {
     text-align: center;
     margin-bottom: 30px;
 }
-#footer_central #foo_cont1 h2{
+#footer_central #foo_cont1 .foo_h2{
     font-family: Montserrat-Light;
     letter-spacing: 2px;
     color: RGB(222,34,119);
+    font-size: 2rem;
 }
 #footer_central #foo_cont2{
     display: flex;
@@ -299,6 +299,7 @@ table {
     font-family: Montserrat-Light;
     text-decoration: none;
     color: RGB(222,34,119);
+    padding-top: 10px;
 }
 
  /*-----------------------------------FOOTER---------------------------------------------------------------------------*/
