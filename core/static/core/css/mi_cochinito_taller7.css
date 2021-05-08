@@ -90,11 +90,7 @@
     line-height: 25px;
     font-family: Montserrat-Regular;
 }
-#mc_fin_taller7_calendario{
-    width: 100%;
-    height: 450px;
-    background-color: yellowgreen;
-}
+
 /* ------------------------------Central------------------------------ */
 /* ------------------------------Lateral2------------------------------ */
 #mc_fin_taller7_lateral2{
@@ -120,3 +116,86 @@
     font-size: 40px;    
 }
 /* ------------------------------Lateral2------------------------------ */
+
+/* ------------------------------Calendario------------------------------ */
+#mc_fin_taller7_calendario{
+    width: 100%;
+    background-color: white;
+    margin-top: 6em;
+}
+
+  .box, .box2, .box3 {
+    width: 150px;
+    height: 50px;
+    left: -webkit-calc( 50% - 250px );
+    top: 20%;
+    position: absolute;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .primero {
+    background-color: #DE2276;
+    text-align: center;
+    top: 60%;
+    left: 35%;
+  }
+  
+  .segundo {
+    background-color: #DE2276;
+    text-align: center;
+    top: 60%;
+    left: 45%;
+  }
+  
+  .tercero{
+    background-color: #DE2276;
+    text-align: center;
+    top: 60%;
+    left: 55%;
+  }
+  
+  
+  .content {
+    color: white;
+    font-size: .8rem;
+    text-align: center;
+  }
+  
+  .calendar__week,
+  .calendar__header {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); 
+  }
+  .calendar__week {
+    grid-auto-rows: 50px;
+    text-align: right;
+  }
+  
+  .calendar__header {
+    grid-auto-rows: 60px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .calendar__day {
+    padding: 10px;
+  }
+  
+  .calendar__header > div {
+    text-transform: uppercase;
+    font-size: 0.5em;
+    font-weight: bold;
+  }
+  
+  .calendar__day {
+    border-right: 1px solid #e1e1e1;
+    border-top: 1px solid #e1e1e1;
+    font-size: 1rem;
+  }
+  
+  .calendar__day:last-child {
+    border-right: 0;
+  } 

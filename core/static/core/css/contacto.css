@@ -18,8 +18,9 @@
   
   .contacto-info{
 	  background-color: rgba(222, 215, 215, 0.44);
-	  margin-left: 15rem;
-	  margin-right: 15rem;
+	  margin-left: 20rem;
+	  margin-right: 20rem;
+	  margin-bottom:3rem ;
   }
   .contacto-info ul {
 	  list-style: none;
@@ -28,7 +29,7 @@
   }
   
   .contacto-info li {
-	  font-size: 1rem;
+	  font-size: 1.5rem;
 	  padding: 2rem;
 	  text-align: center;
   }
@@ -69,6 +70,8 @@
 	  text-align: center;
 	  font-size: 2rem;
 	  font-family: montserrat;
+	  margin-bottom: 3rem;
+	  margin-top: 3rem;
   }
 	 
 	.contacto_col1, .contacto_col2, .contacto_col3 {
