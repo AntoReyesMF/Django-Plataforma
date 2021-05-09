@@ -183,9 +183,10 @@
 
 .perfil2_perfil{
   background: #ffff;
-  margin-left: 19.5rem;
-  margin-right: 17rem;
-  padding-top: 2rem;
+  margin-left: 23rem;
+  margin-right: 23rem;
+  margin-top: 1rem;
+  padding-top: 5rem;
 }
 
 .perfil2_cuenta {
@@ -203,11 +204,13 @@
 .perfil2_h3{
   color: #000000;
   font-size: .8rem;
+  padding: 15px;
 }
 
 .perfil2_h4{
   color: #000000;
   font-size: .6rem;
+  padding: 5px;
 }
 
 .perfil2_col-md-6{

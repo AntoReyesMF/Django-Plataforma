@@ -133,23 +133,31 @@ form {
 }
 
 .registro2_h1 {
+	font-family: Montserrat;
 	font-weight: bold;
+	font-size: 2rem;
 	margin-bottom: 15px;
     color: #fff;
 }
 
 .registro2_h1_inicio{
   color: #000;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
   
 }
 
 .registro2_h2{
+  font-family: Montserrat;
   color: #000;
   font-size: 1rem;
   margin: 1rem;
 }
 
 .registro2_p {
+	font-family: Montserrat;
 	font-size: 14px;
 	font-weight: normal;
 	line-height: 20px;
