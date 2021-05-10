@@ -21,8 +21,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('core.urls')),
     # Path de Auth
-    path('accounts/', include('django.contrib.auth.urls')),
-    path('accounts/', include('registration.urls')),
-    path('micochinito/',include('mc.urls')),
+    #path('accounts/', include('django.contrib.auth.urls')),
+    path('registration/', include('registration.urls')),
+    path('mc/',include('mc.urls')),
     path('market/', include('market.urls')),
+    path('vexi/', include('vexi.urls')),
 ]

@@ -1,231 +1,346 @@
-body{
-font-family: montserrat;
-margin: 0rem;
-}
-
-header {
-  background: #1a1d25;
-  padding: 10px 0;
-  background-color: #000000;
-}
-header .logo {
-  max-width: 90px;
-}
-
-
-.jumbotron {
+/*
+--------------------------------titulo--------------------------------
+*/
+#nosotros_titulo{
   width: 100%;
-  min-height: 450px;
-  background: url('https://images.unsplash.com/photo-1503792574895-6074f691cc6a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1333&q=80') center center;
-  background-size: cover;
-  opacity: 1;
-  display: table;
-  width: 100%;
-  position: relative;
-  border-radius: 0px;
-  color: white;
-  text-transform: uppercase;
-  margin: 0;
-  -webkit-clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 85%);
-  
-}
-.jumbotron h1 {
-  font-size: 55px;
-  color: #DE2276;
-  font-weight: 700;
-}
-.jumbotron h2 {
-  font-size: 18px;
-  margin: 0;
-}
-
-#black {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: auto;
-  min-width: 100%;
   height: auto;
-  min-height: 100%;
-  background: rgba(26,29,37,0.8);
+  padding-top: 50px;
+  padding-bottom: 150px;
+  /* background-image: url(https://images.unsplash.com/photo-1503792574895-6074f691cc6a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1333&q=80) ;
+  background-size:cover; */
+  background-color: RGB(21,23,30);
+}
+#nos_t_cont_central{
+  width: 40%;
+  height: auto;
+  margin-left: 200px;
 }
 
+#nos_t_cont_central h1{
+  text-align: start;
+  color: RGB(222,34,118);
+  font-family: Montserrat-Medium;
+  font-size: 45px;
+  line-height: 60px;
+}
 
-h2{
-  color:#000000;
-  text-align: center;
+#nos_t_cont_central_linea{
+  width: 60%;
+  border: 2px solid white;
+}
+/*
+--------------------------------titulo--------------------------------
+*/
+/*
+--------------------------------Contenido central--------------------------------
+*/
+#nos_cont_general{
+  width: 65%;
+  min-height: 600px;
+  /* background-color: aqua; */
+  margin: auto;
+}
+#nos_cont_general .nos_h3{
+  font-family: Montserrat;
+  font-size: 35px;
   font-weight: bold;
-  font-size: 2.5em;
-  padding-top: 1rem;
-
-}
-
-h3 {
-  color:#000000;
   text-align: center;
-  font-size: 2.5rem;
-  font-weight: normal; 
-  padding-left: 30rem;
-  padding-right: 30rem;
-  padding-bottom: 5rem;
-
+  letter-spacing: 4px;
+  color: RGB(222,34,118);
+  margin-top: 3rem;
 }
-
-
-.equipo{
-  padding-top: 1rem;
-  
-}
-
-section .container{
-  display:flex;    
-  align-items:initial;
-  padding: 1rem;
-  text-align: center;
-  padding-top: 8rem;
-}
-
-.card img {
-  border-radius: 100%;
-  margin: 20px auto;
-  display: block;
-  width: 200px;
-}
-
-
-aside {
-  border-radius: 50%;
-  margin: 0 auto;
-  display: block;
-  height: 250px;
-  width: 250px;
-  background-size: cover;
-  overflow: hidden;
-  transition: all ease 0.3s;
-}
-
-aside:hover  {
-  border-radius: 32px;
-  height: 550px;
-  width: 350px;
-}
-
-
-section h5 {
-  position: relative;
-  color: #fff;
+#nos_cont_general #nos_p{
+  margin-top: 50px;
+  font-family: Montserrat;
   font-size: 20px;
-  text-decoration:none;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-
+  letter-spacing: 2px;
+  line-height: 35px;
+  text-align: center;
+}
+/*-------------------------*/
+#nos_cont_general_cont2{
+  width: 100%;
+  height: auto;
+  /* background-color: bisque; */
 }
 
+#nos_cont_general_cont2_equipo{
+  display: flex;
+  width: 100%;
+  margin-top: 100px;
+  min-height: 600px;
+  /* background-color: black; */
+}
+#nos_cont2_equipo1{
+  width: 33.333%;
+  min-height: 600px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* background-color: lightpink; */
+}
+#nos_cont2_equipo2{
+  width: 33.333%;
+  min-height: 600px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* background-color: lightgreen; */
+}
+#nos_cont2_equipo3{
+  width: 33.333%;
+  min-height: 600px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* background-color: lightblue; */
+}
+/*equipo dinamico*/
+/* Equipo 1*/
 
-section h6 {
+.nos_h4{
+  font-family:  Montserrat-Bold;
+  font-size: 25px;
+  color: RGB(222,34,119);
   text-align: center;
-  color: #DE2276;
+  margin-top: 2rem;
+}
+.nos_h5{
+  font-family:  Montserrat-Regular;
   font-size: 17px;
-  font-weight: bold;
-  line-height: 0px;
-  margin: 0;
-
-}
-
-
-.profile-bio {
-  margin-top: 20px;
-  padding: 1px 20px 10px 20px !important;
-  color: #ffffff;
-}
-
-aside:hover .profile-bio {
-  opacity: 1;
-}
-
-.profile-bio {
+  color: RGB(222,34,119);
   text-align: center;
-  font-size: 16px
-  color:#ffffff;
+  margin-top: 1rem;
 }
-
-.profile-card{
-background-image: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)),
-    url(https://images.unsplash.com/photo-1510100831744-b8d7fea7ca2e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
-}
-
-.profile-card1{
-background-image: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)),
-    url(https://images.unsplash.com/photo-1542204165-65bf26472b9b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80);
-}
-
-.profile-card2{
-background-image: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)),
-    url(https://images.unsplash.com/photo-1570729892175-6ebda965e864?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=514&q=80);
-}
-
-.profile-card3{
-background-image: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)),
-    url(https://images.unsplash.com/photo-1587449156852-c191c00da9b3?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTA0fHxuZW9ufGVufDB8fDB8&auto=format&fit=crop&w=500&q=60);
-}
-
-.profile-card4{
-background-image: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)),
-    url(https://images.unsplash.com/photo-1606228643612-2f6071e04dc1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80);
-}
-
-.profile-card6{
-background-image: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)),
-    url(https://images.unsplash.com/photo-1542047078441-229be3aa1f12?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=700&q=80);
-}
-
-
-.marca{
+.nos_equipo_p{
+  font-family:  Montserrat-Medium;
+  font-size: 15px;
+  color: white;
   text-align: center;
-  color: #ffffff;
-  background-color: #323232;
-  padding-top: 1rem;
+  margin-top: 1rem;
+}
+/* Juan*/
+
+#nos_juan{
+  display: block;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 50%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+  rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1510100831744-b8d7fea7ca2e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+  background-size: 400px;
+  background-size:cover;
+  transition: all 600ms;
+}
+#nos_juan:hover{
+  width: 350px;
+  height: 550px;
+  border-radius: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-size:cover;
+}
+#nos_juan #nos_juan_foto{
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  margin-top: 25px;
+  border-radius: 50%;
+  background-image: url(../img/equipo/mogu.png);
+  background-size:cover;
+  background-position-x: 800px;
+}
+/* Juan*/
+
+/* Araceli*/
+#nos_araceli{
+  display: block;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 50%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+  rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1587449156852-c191c00da9b3?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTA0fHxuZW9ufGVufDB8fDB8&auto=format&fit=crop&w=500&q=60);
+  
+  background-size: 400px;
+  background-size:cover;
+  transition: all 600ms;
+}
+#nos_araceli:hover{
+  width: 350px;
+  height: 550px;
+  border-radius: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-size:cover;
+}
+#nos_araceli #nos_araceli_foto{
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  margin-top: 25px;
+  border-radius: 50%;
+  background-image: url(../img/equipo/ara.png);
+  background-size:cover;
+  background-position-x: 800px;
 }
 
-.footer_end{
-  list-style: none;
-    font-size: 1rem;
-    line-height: 4.8rem;
-    text-align: center;
-    color: #ffffff;
-    margin-bottom: 0;
-}
+/* Araceli*/
 
-ul li {
-  display: inline-block;
-  margin: 8px 16px;
-  text-decoration: none;
-}
+/* Equipo 1*/
 
-li a{
-  text-decoration: none;
-  color: #ffff;
-  cursor: pointer;
+/*///////////////////////////////////////*/
+
+/* Equipo 2*/
+/*equipo dinamico*/
+/* Antonio */
+#nos_antonio{
+  display: block;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 50%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+  rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1542204165-65bf26472b9b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80);
+  background-size: 400px;
+  background-size:cover;
+  transition: all 600ms;
 }
-li a:hover{
-  text-decoration: none;
-  color:#ffffff;
+#nos_antonio:hover{
+  width: 350px;
+  height: 550px;
+  border-radius: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-size:cover;
 }
+#nos_antonio #nos_antonio_foto{
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  margin-top: 25px;
+  border-radius: 50%;
+  background-image: url(../img/equipo/anto.png);
+  background-size:cover;
+  background-position-x: 800px;
+}
+/* Antonio */
+
+/* Carlos */
+#nos_carlos{
+  display: block;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 50%;
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.6),
+  rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1606228643612-2f6071e04dc1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80);
+  background-size: 400px;
+  background-size:cover;
+  transition: all 600ms;
+}
+#nos_carlos:hover{
+  width: 350px;
+  height: 550px;
+  border-radius: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-size:cover;
+}
+#nos_carlos #nos_carlos_foto{
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  margin-top: 25px;
+  border-radius: 50%;
+  background-image: url(../img/equipo/jc.png);
+  background-size:cover;
+  background-position-x: 800px;
+}
+/* Carlos */
+
+/* Equipo 2*/
+
+/*///////////////////////////////////////*/
+
+/* Equipo 3*/
+
+/* Nancy */
+#nos_nancy{
+  display: block;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 50%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+  rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1570729892175-6ebda965e864?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=514&q=80);
+  background-size: 400px;
+  background-size:cover;
+  transition: all 600ms;
+}
+#nos_nancy:hover{
+  width: 350px;
+  height: 550px;
+  border-radius: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-size:cover;
+}
+#nos_nancy #nos_nancy_foto{
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  margin-top: 25px;
+  border-radius: 50%;
+  background-image: url(../img/equipo/nan.png);
+  background-size:cover;
+  background-position-x: 800px;
+}
+/* Nancy */
+
+/* Eduardo */
+#nos_eduardo{
+  display: block;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 50%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+  rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1542047078441-229be3aa1f12?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=700&q=80);
+  background-size: 400px;
+  background-size:cover;
+  transition: all 600ms;
+}
+#nos_eduardo:hover{
+  width: 350px;
+  height: 550px;
+  border-radius: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-size:cover;
+}
+#nos_eduardo #nos_eduardo_foto{
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  margin-top: 25px;
+  border-radius: 50%;
+  background-image: url(../img/equipo/lalo.png);
+  background-size:cover;
+  background-position-x: 800px;
+}
+/* Eduardo */
+
+/* Equipo 3*/
+
+
+/*
+--------------------------------Contenido central--------------------------------
+*/

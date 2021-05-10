@@ -1,0 +1,90 @@
+{% extends 'registration/base_login.html' %}
+{% load static %}
+{% block content %}
+
+<div id="mc_taller_cont_general_taller2"> 
+
+    <div id="mc_fin_cont1_taller2">
+        <div id="mc_fin_taller2_cont1_espaciador"></div>
+        <div id="mc_fin_taller2_cont1_img">
+            <img src="{% static 'core/img/friends/mc1.png' %}" alt="">
+        </div>
+    </div>
+
+
+
+
+    <div id="mc_fin_taller2">
+        
+        <!-- Lateral 1-->
+        <div id="mc_fin_taller2_lateral1">
+    
+            <div id="mc_fin_taller2_lateral1_boton1">
+    
+               <a href="{% url 'mi_cochinito_taller1' %}"><p><</p></a>
+    
+            </div>
+    
+        </div>
+        <!-- Lateral 1-->
+        <!-- central-->
+        <div id="mc_fin_taller2_central">
+    
+            <h1 id="mc_fin_taller2_central_h1">¿Qué es MiCochinito.com?</h1>
+            <p class="mc_fin_taller2_central_p">Creada a finales de 2015, somos una plataforma de crowdfunding basada en recompensas y donaciones Nuestra filosofía es que cada persona que tenga un proyecto debería al menos tener la oportunidad de probarlo. Y la tecnología puede ayudarlos a juntar el dinero para lograrlo, incluso, si no tienen una cuenta en el banco.</p>
+            <h2 id="mc_fin_taller2_central_h2">Beneficios de usar la plataforma</h2>
+
+
+            <div id="mc_fin_taller2_central_cont_flex">
+
+                <div class="mc_fin_taller2_flex">
+
+                    <p class="mc_taller2_flex_p">Basado en recompensas</p>
+                    <div class="mc_taller2_flex_img">
+                        <img src="{% static 'core/img/mc/premium1.png' %}" alt="">
+                    </div>
+
+                </div>
+
+                <div class="mc_fin_taller2_flex">
+
+                    <p class="mc_taller2_flex_p">Sin comisiones</p>
+                    <div class="mc_taller2_flex_img">
+                        <img src="{% static 'core/img/mc/no-money.png' %}" alt="">
+                    </div>
+
+                </div>
+
+                <div class="mc_fin_taller2_flex">
+
+                    <p class="mc_taller2_flex_p">No generas deudas</p>
+                    <div class="mc_taller2_flex_img">
+                        <img src="{% static 'core/img/mc/no-debt.png' %}" alt="">
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <p class="mc_fin_taller2_central_p">En las primeras etapas para impulsar un proyecto, la mayoría se acerca a los bancos para pedir un prestamos (que este muchas veces es rechazado) y endeudarse no es la mejor opción, es por eso que  la  plataforma  te  brinda  la  oportunidad  de fondear tu proyecto y no generar una deuda. </p>
+
+    
+        </div>
+        <!-- central-->
+        <!-- Lateral 2-->
+        <div id="mc_fin_taller2_lateral2">
+            <div id="mc_fin_taller2_lateral2_boton2">
+                <a href="{% url 'mi_cochinito_taller3' %}"><p>></p></a>
+            </div>
+        </div>
+        <!-- Lateral 2-->
+    
+    </div>
+
+</div>
+
+
+
+
+{% endblock %}

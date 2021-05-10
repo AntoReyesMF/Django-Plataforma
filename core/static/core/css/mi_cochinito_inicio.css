@@ -1,0 +1,317 @@
+#mc_inicio_header_img{
+    width: 100%;
+    height: 350px;
+    margin: auto;
+    background-image: url(../img/banderas.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: -350px;
+}
+#mc_inicio_header_menu{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+}
+#mc_inicio_header_menu_cont{
+    display: flex;
+    width: 40%;
+    height: 60px;
+    margin: auto;
+    
+}
+.mc_inicio_menu{
+    
+    width: 33%;
+    height: 50px;
+    margin-top: 5px;
+    line-height: 50px;
+    text-align: center;
+    transition: all 300ms;
+}
+
+.mc_inicio_menu a{
+    display: block;
+    font-family: Montserrat-Medium;
+    font-size: 15px;
+    color: white;
+    letter-spacing: 3px;
+    transition: all 300ms;
+}
+.mc_inicio_menu a:hover{
+    transform: scale(1.2,1.2);
+    color: #DE2276;
+}
+
+#mc_img_micochinito{
+    position: absolute;
+    top: 250px;
+    left: 200px;
+    width: 300px;
+    height: 250px;
+    background-color: white;
+    box-shadow: 0px 0px 3px 2px gray;
+}
+#mc_img_micochinito img{
+    width: 100%;
+    margin-top: 50px;
+}
+/*----------------------------------------------------------------------------------------------------------*/
+.mc_h1_cont_central{
+    text-align: center;
+    font-family: Montserrat-SemiBold;
+    font-size: 35px;
+    color: RGB(222,34,118);
+}
+.mc_cont_central{
+    text-align: center;
+    font-family: Montserrat-Medium;
+    letter-spacing: 2px;
+    font-size: 20px;
+    line-height: 30px;
+}
+.mc_h3_cont_tex{
+    text-align: center;
+    font-family: Montserrat-SemiBold;
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: RGB(222,34,118);
+}
+.mc_p_cont_text{
+    text-align: center;
+    font-family: Montserrat-Light;
+    font-size: 17px;
+    line-height: 30px;
+}
+/*----------------------------------------------------------------------------------------------------------*/
+#mc_inicio_cont_central{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: RGB(246,245,245);
+}
+#mc_inicio_cont_central1{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 130px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* border: 1px solid black; */
+}
+/* #mc_inicio_cont_central1_cont1{
+    background-color: lightslategray;
+} */
+
+#mc_inicio_cont_central1_cont2{
+   
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    /* background-color: lightseagreen; */
+}
+
+#mc_central_conts{
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    /* background-color: lightcoral; */
+}
+#mc_inicio_cont_central1_cont2_cont1{
+    width: 50%;
+    min-height: 400px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    /* background-color: lightgreen; */
+}
+.mc_cont2_contenidos{
+    width: 50%;
+    height: 500px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 4px gainsboro;
+    /* border:1px solid red; */
+}
+
+.mc_cont2_cont1_img{
+    width: 100%;
+    height:250px;
+    border-radius: 10px;
+    
+}
+
+.mc_cont2_cont1_img a img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+}
+
+.mc_cont2_cont1_text{
+    width: 100%;
+    height: 250px;
+    padding-top: 20px;
+    /* background-color: sandybrown; */
+}
+
+#mc_inicio_cont_central1_cont2_cont2{
+    width: 50%;
+    min-height: 400px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    /* background-color: lightblue; */
+}
+#mc_cont2_cont2_img{
+    width: 100%;
+    height:250px;
+    
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+}
+#mc_cont2_cont2_img a img{
+    width: 100% ;
+    
+    border-radius: 10px 10px 0px 0px;
+}
+#mc_cont2_cont2_text{
+    width: 100%;
+    height: 250px;
+    padding-top: 20px;
+    /* background-color: sandybrown; */
+}
+/*----------------------------------------------------------------------------------------------------------*/
+#mc_inicio_cont_final{
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: black;
+}
+#mc_final_cont_central{
+    width: 75%;
+    height: auto;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* background-color: white; */
+}
+/*--------------------------------------*/
+#mc_final_central_cont1{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 50px;
+    /* background-color: lightcoral; */
+}
+#mc_final_central_cont1 h2{
+    text-align: center;
+    font-family: Montserrat-SemiBold;
+    font-size: 35px;
+    color: white;
+}
+/*--------------------------------------*/
+#mc_final_central_cont2{
+    display: flex;
+    width: 100%;
+    height: auto;
+    /* background-color: lightcyan; */
+}
+.mc_final_cont2_datos{
+    width: 33.33%;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.mc_p_datos{
+    text-align: center;
+    color: RGB(222,34,118);
+    font-family: Montserrat-Bold;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.mc_p_datos_text{
+    text-align: center;
+    font-family: Montserrat-SemiBold;
+    font-size: 20px;
+    color: white;
+}
+/*----------------------------------------------------------------------------------------------------------*/
+#mc_final_central_cont3{
+    width: 85%;
+    margin: auto;
+    min-height: 100px;
+    /* background-color: lightpink; */
+    padding-top: 60px;
+    cursor: pointer;
+}
+#mc_h2_cont3{
+    text-align: center;
+    margin-top: 15px;
+    font-family: Montserrat-SemiBold;
+    font-size: 30px;
+    color: white;
+}
+#mc_p_cont3{
+    text-align: center;
+    margin-top: 20px;
+    font-family: Montserrat-SemiBold;
+    font-size: 30px;
+    color: RGB(222,34,118);
+}
+
+#mc_cont3_pf{
+    display: none; 
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding-top: 50px;
+    /* background-color: lightskyblue; */
+    
+}
+#mc_final_central_cont3:hover #mc_cont3_pf{
+    display: block;
+    
+}
+.mc_h5_cont3_pfs{
+    margin-top: 20px;
+    text-align: center;
+    color: RGB(222,34,118);
+    font-family: Montserrat-Medium;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+.mc_p_cont3_ps{
+    margin-top: 15px;
+    text-align: center;
+    color: white;
+    font-family: Montserrat-Regular;
+    font-size: 15px;
+    letter-spacing: 3px;
+    line-height: 20px;
+}
+/*----------------------------------------------------------------------------------------------------------*/
+#mc_final_central_cont4{
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* background-color: yellowgreen; */
+}
+#mc_final_central_cont4_boton{
+    width: 230px;
+    height: 70px;
+    margin: auto;
+    border-radius: 50px;
+    background-color: RGB(222,34,118);
+}
+#mc_a_cont4_boton{
+    text-decoration: none;
+    text-align: center;
+    margin: auto;
+    color: white;
+    line-height: 70px;
+    font-family: Montserrat-Medium;
+    font-size: 17px;
+}
+/*----------------------------------------------------------------------------------------------------------*/

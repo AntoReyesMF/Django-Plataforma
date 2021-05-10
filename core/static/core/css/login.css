@@ -1,48 +1,238 @@
-body {
-  background-color: #ffffff;
+.registro2_container {
+	background-color: #fff;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 768px;
+	max-width: 100%;
+	min-height: 480px;
+  left: 20%;
+  margin: 6rem;
+}
+
+.form-container {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	transition: all 0.6s ease-in-out;
+}
+.sign-in-container {
+	left: 0;
+	width: 50%;
+	z-index: 2;
+}
+
+.registro2_container.right-panel-active .sign-in-container {
+	transform: translateX(100%);
+}
+
+.sign-up-container {
+	left: 0;
+	width: 50%;
+	opacity: 0;
+	z-index: 1;
+}
+
+.registro2_container.right-panel-active .sign-up-container {
+	transform: translateX(100%);
+	opacity: 1;
+	z-index: 5;
+	animation: show 0.6s;
+}
+
+@keyframes show {
+	0%, 49.99% {
+		opacity: 0;
+		z-index: 1;
+	}
+	
+	50%, 100% {
+		opacity: 1;
+		z-index: 5;
+	}
+}
+
+
+form {
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+
+.overlay-container {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+	transition: transform 0.6s ease-in-out;
+	z-index: 100;
+}
+
+.registro2_container.right-panel-active .overlay-container{
+	transform: translateX(-100%);
+}
+
+.overlay {
+	background: url(https://images.unsplash.com/photo-1518821703881-9da5a9f42038?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjR8fHBpbmslMjBkZWZlbmNlfGVufDB8fDB8&auto=format&fit=crop&w=600&q=60);
+	background: url(https://images.unsplash.com/photo-1518821703881-9da5a9f42038?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjR8fHBpbmslMjBkZWZlbmNlfGVufDB8fDB8&auto=format&fit=crop&w=600&q=60);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+	color: #FFFFFF;
+	position: relative;
+	left: -100%;
+	height: 100%;
+	width: 200%;
+  	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+.registro2_container.right-panel-active .overlay {
+  	transform: translateX(50%);
+}
+
+.overlay-panel {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+    margin-bottom: 15px;
+}
+
+.overlay-left {
+	transform: translateX(-20%);
+}
+
+.registro2_container.right-panel-active .overlay-left {
+	transform: translateX(0);
+}
+
+.overlay-right {
+	right: 0;
+	transform: translateX(0);
+}
+
+.registro2_container.right-panel-active .overlay-right {
+	transform: translateX(20%);
+}
+
+.registro2_h1 {
+	font-family: Montserrat;
+	font-weight: bold;
+	font-size: 2rem;
+	margin-bottom: 15px;
+    color: #fff;
+}
+
+.registro2_h1_inicio{
+  color: #000;
   font-family: Montserrat;
-}
-
-.container {
-  text-align: center;
-  color: #000000;
-
-}
- h2 {
-  padding: 20px;
   font-weight: bold;
-  color: #000000;
-  margin-top: 0rem;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  
 }
 
-h3 {
-  color: #000000;
+.registro2_h2{
+  font-family: Montserrat;
+  color: #000;
   font-size: 1rem;
+  margin: 1rem;
+}
+
+.registro2_p {
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 20px 0 30px;
+  text-align:center ;
+}
+
+.registro2_btn {
+	border-radius: 20px;
+	border: 1px solid #DE2276;
+	background-color: #DE2276;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	margin-top: 5px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+	cursor: pointer;
+}
+
+.ghost{
+    border-radius: 20px;
+	border: 1px solid #DE2276;
+	background-color: #DE2276;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+    text-align: center;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+.registro2_btn:active {
+	transform: scale(0.95);
+}
+
+.registro2_btn:focus {
+	outline: none;
+}
+
+.ghost {
+	background-color: transparent;
+	border-color: #FFFFFF;
+}
+
+.ghost:hover{
+	background-color: #fff;
+	color: #000;
+	cursor: pointer;
+}
+
+form {
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
 }
 
 input {
-  background-color: transparent;
-  border: 2px solid #DE2276;
-  margin: 10px;
-  padding: 15px;
-  border-radius: 2rem;
+	background-color: #ffffff;
+	border-radius: 30px;
+	border-color: #DE2276;
+    border-style: solid;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 75%;
+	text-align: center;
 }
 
-
-input[type=button] {
-  color: #ffffff;
-  background-color: #DE2276;
-  color: #ffffff;
-  width: 10rem;
-}
-
-
-input[type=date] {
-  text-align: center;
-  max-width: 50%;
-}
-
-input[type=text1] {
-  text-align: center;
-  max-width: 20%;
-}

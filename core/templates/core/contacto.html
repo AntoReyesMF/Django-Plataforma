@@ -1,131 +1,49 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Contacto - Making Friends</title>
-  {% load static %}
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'><link rel="stylesheet" href="{% static 'core/css/contacto.css' %}">
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
 
-</head>
-<header>
-  <div class="container">
-  	<a class="site-logo" href="{% url 'home'%}">
-    <img src="{% static '/core/img/Logo B1.png' %}" class="logo"/></div>
-    </a>
-</header>
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
 
-<body>
-<h1>Preguntas Frecuentes</h1>
 
-<div class="faqs-container">
-	<div class="faq active">
-		<h3 class="faq-title">
-			Cómo funciona Making Friends?
-		</h3>
-		<p class="faq-text">
-			Es una plataforma de educación gratuita, donde una red de aliados proporciona herramientas y conocimiento con el objetivo de proporcionar herramientas y conocimiento para crear con libertad sin importar si tienes recursos o no. Queremos ser la persona que te gustaría tener para ayudarte con tus ideas.
+<!-- titulo  @Lalo
+<title>Contacto - Makign Friends</title>
+	Flavicon
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon16.png">>-->
 
-		</p>
-		<button class="faq-toggle">
-			<i class="fas fa-chevron-down"></i>
-			<i class="fas fa-times"></i>
-		</button>
-	</div>
-	
-	<div class="faq">
-		<h3 class="faq-title">
-			Qué necesito para empezar?
-		</h3>
-		<p class="faq-text">
-			Es necesario tener una cuenta Making Friends y completar los primeros 3 pasos para identificar que herramientas y aliados necesitas
-		</p>
-		<button class="faq-toggle">
-			<i class="fas fa-chevron-down"></i>
-			<i class="fas fa-times"></i>
-		</button>
-	</div>
-	
-	<div class="faq">
-		<h3 class="faq-title">
-			Necesito pagar una suscripción?
-		</h3>
-		<p class="faq-text">
-			Para nada, es totalmente gratis
-		</p>
-		<button class="faq-toggle">
-			<i class="fas fa-chevron-down"></i>
-			<i class="fas fa-times"></i>
-		</button>
-	</div>
-	
-	<div class="faq">
-		<h3 class="faq-title">
-		Qué son los Friends?
-		</h3>
-		<p class="faq-text">
-			Son Startups o empresas de cualquier tamaño, cuidad o giro que nos brindan sus herramientas que tu o tu proyecto necesita
-		</p>
-		<button class="faq-toggle">
-			<i class="fas fa-chevron-down"></i>
-			<i class="fas fa-times"></i>
-		</button>
-	</div>
+<div class="contacto_contenedor">
+	  <h1>Contacto Making Friends</h1>
+	  <hr style="width:20%;text-align:left;margin-left: 191px; border:2.5px solid #fff; position: relative;">
+	  
+  </div>
+  <div class="contacto_info_contenedor">
+	  ¿Tienes alguna duda? seguro la podemos contestar a través de:
+  
+	  <div class="contacto-row">
+				  <div class="contacto_col1">
+					  <img class="contacto_ilustr" src="{% static 'core/img/redes.png' %}">
+					<h2>MakingFriends.MX</h2>
+				  </div>
+				  <div class="contacto_col2">
+					  <img class="contacto_ilustr" src="{% static 'core/img/mail.png' %}"> 
+					<h2>contacto@makingfriends.com.mx</h2>       
+				  </div>
+				  <div class="contacto_col3">
+					  <img class="contacto_ilustr" src="{% static 'core/img/chat.png' %}">
+					<h2>Chatea con nosotros</h2>
+				  </div>
+				</div>
+			  </div>
+			</div>
+	  </div>
+  </div>
+  
+  <h3 class="contacto_texto">Te puede interesar</h3>
+  <div class="contacto-info"> 
+	  <ul>
+		  <a href="{% url '' %}"><li >Consulta nuestras preguntas frecuentes</li></a>
+		  <a href=""><li >¿Quieres formar parte de nuestros Friends o aliados?</li></a>
+		  <li >¿Buscas unirte a nuestro equipo?</li>
+		  <li >Más información</li>     
+	  </ul>
+  </div>
 
-	<div class="faq">
-		<h3 class="faq-title">
-		Qué son los Makers?
-		</h3>
-		<p class="faq-text">
-			Eres tu, con interés en la creación de soluciones y proyectos que requieren orientación y desarrollo de habilidades.
-		</p>
-		<button class="faq-toggle">
-			<i class="fas fa-chevron-down"></i>
-			<i class="fas fa-times"></i>
-		</button>
-	</div>
-	
-	<div class="faq">
-		<h3 class="faq-title">
-			Es necesario tener un proyecto?
-		</h3>
-		<p class="faq-text">
-			Making friends te ayuda a concectarte a con lo que necesita proyecto, pero no es obligatorio tener uno ya que tienes la libertad de aprender loq ue más te interese
-		</p>
-		<button class="faq-toggle">
-			<i class="fas fa-chevron-down"></i>
-			<i class="fas fa-times"></i>
-		</button>
-	</div>
-</div>
-
-<!-- SOCIAL PANEL HTML -->
-<div class="social-panel-container">
-	<div class="social-panel">
-		<ul>
-			<li>
-				<a href="" target="_blank">
-					<i class="fab fa-twitter"></i>
-				</a>
-			</li>
-			<li>
-				<a href="" target="_blank">
-					<i class="fab fa-facebook"></i>
-				</a>
-			</li>
-			<li>
-				<a href="" target="_blank">
-					<i class="fab fa-instagram"></i>
-				</a>
-			</li>
-		</ul>
-	</div>
-</div>
-<button class="floating-btn">
-	Contáctanos
-</button>
-<!-- partial -->
-  <script  src="js/contacto.js"></script>
-
-</body>
-</html>
+{% endblock %}

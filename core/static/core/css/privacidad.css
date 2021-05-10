@@ -1,0 +1,43 @@
+#politica_cont_central{
+    width: 70%;
+    height: auto;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.polit_h1{
+    font-family: Montserrat-Medium ;
+    text-align: center;
+    color: #DE2276;
+    font-size: 35px;
+}
+.polit_h2{
+    font-family: Montserrat-Regular;
+    text-align: center;
+    color: #DE2276;
+    margin-bottom: 90px;
+    font-size: 30px;
+}
+.polit_h3{
+    font-family: Montserrat-Regular;
+    color: #DE2276;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.polit_p{
+    font-family: Montserrat-Light ;
+    text-align: justify;
+    margin-bottom: 60px;
+}
+#info_personal{
+    font-family: Montserrat-Light ;
+    margin-bottom: 20px;
+}
+ul li{
+    font-family: Montserrat-Light ;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+ul li:last-child{
+    margin-bottom: 60px;
+}

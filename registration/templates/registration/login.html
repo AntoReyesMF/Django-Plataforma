@@ -1,41 +1,72 @@
+{% extends 'core/base.html' %}
 {% load static %}
-{% block title %}{% endblock %}
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Making Friends</title>
-	<link rel="stylesheet" href="{% static 'core/css/login.css' %}">
-</head>
-<body>
+{% block content %}
 
-<!-- partial:index.partial.html -->
-<div class="container">
-  <div id="title">
-    <img src="{% static 'core/img/LOGOS/mf.png' %}"  height="200" width="200" style="padding-top: 2rem;">
-     {% if 'register' in request.GET %}
+{% comment %} {% if 'password2' in request.POST %}
           <p style="color:green;">Usuario registrado correctamente, ya puedes identificarte.</p>
-        {% endif %}
-    <h2>Accede a tu cuenta</h2>    
-  </div>
-  <div class="form col-md-12">
+{% endif %} {% endcomment %}
+<div class="registro2_container" id="registro2_container">
+  <div class="form-container sign-in-container"> 
       <form action="" method="post">{% csrf_token %}   
       {% if form.non_field_errors %}
             <p style="color:red">Usuario o contraseña incorrectos, prueba de nuevo.</p>
         {% endif %} 
-        <h3>Nombre de Usuario</h3>
-        <input type='text' placeholder='Nombre de usuario' required name="username" class="col-md-6" >
-        <h3>Contraseña</h3>
-        <input type='password' placeholder='Contraseña' required name="password" id="id_password" class="col-md-6" >
-        <h3>Olvidé mi contraseña</h3>
+        <h1 class="registro2_h1_inicio">Inicia sesión</h1>
+        <input type='text' placeholder='Nombre de usuario' required name="username">
+        <input type='password' placeholder='Contraseña' required name="password" id="id_password">
+        <h2 class="registro2_h2">Olvidé mi contraseña</h2>
         </a>
-        <a href="makerplace.html"> 
-        <div><input type="submit" class='ghost-round full-width' value="Acceder"></div> 
+        <a href=""> 
+          <button class="registro2_btn" type="submit" name='submit' value="Acceder">Acceder</button>
         </a>
       </form>
     </div>
-  </div>
-<!-- partial -->
-  
-</body>
-</html>
 
+    <div class="form-container sign-up-container">   
+<form method="post">
+    {% csrf_token %}
+    <h1 class="registro2_h1_inicio">Crea tu cuenta</h1>
+  <input type='text' placeholder='Nombre de usuario' required name="username" >
+  <input type='email' placeholder='Email' required name="email">
+  <input type='password' placeholder='Contraseña' required name="password1" id="id_password1">
+  <input type='password' placeholder='Confirma tu contraseña' required name="password2" id="id_password2">
+
+    
+  {% comment %} <form method="post">
+    {% csrf_token %}
+  <label>username</label>
+   {{ form.username}}
+   <label>email</label>
+   {{ form.email}}
+   <label>password</label>
+   {{ form.password1}}
+   <label>confirma pasword</label>
+   {{ form.password2}} {% endcomment %}
+ 
+
+    <button class="registro2_btn" type="submit" name='submit' value="signup">Crear cuenta</button>
+  </form> 
+
+</div>
+
+<div class="overlay-container">
+  <div class="overlay">
+    <div class="overlay-panel overlay-left">
+      <h1 class="registro2_h1">YA TENGO UNA CUENTA</h1>
+      <p class="registro2_p">Inicia sesión con tu información personal</p>
+      <button class="ghost" id="signIn">Iniciar Sesión</button>
+    </div>
+    <div class="overlay-panel overlay-right">
+      <h1 class="registro2_h1">CREA TU CUENTA</h1>
+      <p class="registro2_p">Ingresa tus datos personales y comienza tu viaje con nosotros</p>
+      <button class="ghost" id="signUp">Crear Cuenta</button>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<script  src= "{% static 'core/js/registro.js' %}"></script>
+
+
+{% endblock %}

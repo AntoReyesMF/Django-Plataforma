@@ -1,0 +1,180 @@
+{% extends 'registration/base_login.html' %}
+{% load static %}
+{% block content %}
+<!------------------------------------------------------------------------------------------------------------------>
+<div id="mc_inicio_cont_general">
+
+    <div id="mc_inicio_header_img">
+    </div>
+    <div id="mc_inicio_header_menu">
+
+        <div id="mc_inicio_header_menu_cont">
+
+            <div class="mc_inicio_menu">
+                <a href="https://www.micochinito.com/">Visitanos</a>
+            </div>
+
+            <div class="mc_inicio_menu">
+                <a href="https://www.micochinito.com/">Contáctanos</a>
+            </div>
+
+            <div class="mc_inicio_menu">
+                <a href="{% url 'mi_cochinito_financiamiento' %}">Empezar a aprender</a>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="mc_img_micochinito">
+        <img src="{% static 'core/img/friends/mc1.png' %}">
+        
+    </div>
+
+    <div id="mc_inicio_cont_central">
+
+        <div id="mc_inicio_cont_central1">
+
+            <div id="mc_inicio_cont_central1_cont1">
+
+                <h1 class="mc_h1_cont_central">¿Quiénes somos?</h1>
+    
+                <p class="mc_cont_central">
+                    Somos una agencia para el desarrollo que genera herramientas de accesibilidad financiera para quienes no las tienen.
+                    <br>
+                    <br>
+                    Utilizamos el financiamiento colectivo, o crowdfunding, como instrumento base para que diversas iniciativas puedan conseguir el capital que necesitan a partir de aportaciones de la comunidad. A cambio de estas aportaciones, los padrinos reciben recompensas que fomentan la legitimidad de los proyectos.
+                </p>
+    
+            </div>
+
+            <div id="mc_inicio_cont_central1_cont2">
+
+                <h1 class="mc_h1_cont_central">Nuestro contenido</h1>
+
+                <div id="mc_central_conts">
+
+                    <div id="mc_inicio_cont_central1_cont2_cont1">
+                    
+                        <div class="mc_cont2_contenidos">
+
+                            <div class="mc_cont2_cont1_img">
+                                <a href="{% url 'mi_cochinito_financiamiento' %}" >
+                                    <img src="https://images.unsplash.com/photo-1521897258701-21e2a01f5e8b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="">
+                                </a>
+                            </div>
+
+                            <div class="mc_cont2_cont1_text">
+                                <h3 class="mc_h3_cont_tex">¿Qué es financiamiento colectivo?</h3>
+
+                                <p class="mc_p_cont_text">
+                                    Es un espacio digital para buscar y conseguir recursos monetarios a partir de difundir y convencer a muchas personas para financiar una idea.
+                                </p>
+
+                            </div>
+    
+                        </div>
+
+                    </div>
+
+                    <div id="mc_inicio_cont_central1_cont2_cont2">
+
+                        <div class="mc_cont2_contenidos">
+
+                            <div id="mc_cont2_cont2_img">
+
+                                <a href="#" >
+                                    <img src="https://images.unsplash.com/photo-1561837581-abd854e0ee22?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80" alt="">
+                                </a>
+                                
+                            </div>
+
+                            <div id="mc_cont2_cont2_text">
+                                <h3 class="mc_h3_cont_tex">¿Qué es una alcancía en línea?</h3>
+
+                                <p class="mc_p_cont_text"> 
+                                    Te da el control, la seguridad, la transparencia y la credibilidad que necesitas para tu campaña de recolección de fondos.
+                                </p>
+
+                            </div>
+    
+                        </div>
+    
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+<!------------------------------------------------------------------------------------------------------------------>
+<div id="mc_inicio_cont_final"> 
+
+    <div id="mc_final_cont_central">
+
+        <div id="mc_final_central_cont1">
+            <h2 >Conoce más sobre nosotros</h2>
+        </div>
+
+        <div id="mc_final_central_cont2">
+
+            <div class="mc_final_cont2_datos">
+                <p class="mc_p_datos">595</p>
+                <p class="mc_p_datos_text">Cochinitos</p>
+            </div>
+            <div class="mc_final_cont2_datos">
+                <p class="mc_p_datos">5,599</p>
+                <p class="mc_p_datos_text">Madrinas y padrinos</p>
+            </div>
+            <div class="mc_final_cont2_datos">
+                <p class="mc_p_datos">$4,670,142</p>
+                <p class="mc_p_datos_text">Pesos recaudados</p>
+            </div>
+
+        </div>
+
+        <div id="mc_final_central_cont3">
+            <h2 id="mc_h2_cont3">PREGUNTAS FRECUENTES</h2>
+            <p id="mc_p_cont3">﹀</p>
+            <div id="mc_cont3_pf">
+                <div class="mc_cont3_pfs">
+                    <h5 class="mc_h5_cont3_pfs">¿Qué es una alcancía en línea?</h5>
+                    <p class="mc_p_cont3_ps">Es un espacio digital para buscar y conseguir recursos monetarios a partir de difundir y convencer a muchas personas para financiar una idea, emprendimiento o causa a cambio de algo significativo por las aportaciones recibidas.</p>
+                </div>
+                <div class="mc_cont3_pfs">
+                    <h5 class="mc_h5_cont3_pfs">¿Cómo funciona?</h5>
+                    <p class="mc_p_cont3_ps">Una alcancía en línea te da el control, la seguridad, la transparencia y la credibilidad que necesitas para tu campaña de recolección de fondos. Pueden ser todo tipo de proyectos: tecnológicos, sociales, artísticos, viajes; o, básicamente cualquier idea que quieras volver realidad. Trabajar bajo este esquema te ayuda porque no te endeudas, ya que el dinero recaudado será un donativo. También te sirve para hacer pruebas de mercado, validar tu proyecto, ser transparente y sobre todo generar popularidad.</p>
+                </div>
+                <div class="mc_cont3_pfs">
+                    <h5 class="mc_h5_cont3_pfs">¿Cuánto cobran?</h5>
+                    <p class="mc_p_cont3_ps">No te cobramos absolutamente nada, para ti la oportunidad es clara; puedes subir tu proyecto y pueden pasar dos cosas; recaudar el monto que te propones en el tiempo que definiste y arrancar con tu idea o no recaudar y entonces nosotros regresamos las donaciones originales a sus propietarios, en cualquiera de los escenarios no habras incurrido en ningun cargo por parte nuestro. Lo que sí es que a tus padrinos (donantes) se les hace un cargo adicional por cada transacción del 5% al 20% (ellos eligen).</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="mc_final_central_cont4">
+            <div id="mc_final_central_cont4_boton">
+                <a id="mc_a_cont4_boton" href="{% url 'mi_cochinito_financiamiento' %}">
+
+                     <p>Empezar a aprender</p
+
+                ></a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+{% endblock %}

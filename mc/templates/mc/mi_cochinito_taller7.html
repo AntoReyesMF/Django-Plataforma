@@ -1,0 +1,132 @@
+{% extends 'registration/base_login.html' %}
+{% load static %}
+{% block content %}
+
+<div id="mc_taller_cont_general_taller7"> 
+
+    <div id="mc_fin_cont1_taller7">
+        <div id="mc_fin_taller7_cont1_espaciador"></div>
+        <div id="mc_fin_taller7_cont1_img">
+            <img src="{% static 'core/img/friends/mc1.png' %}" alt="">
+        </div>
+    </div>
+
+
+
+
+    <div id="mc_fin_taller7">
+        
+        <!-- Lateral 1-->
+        <div id="mc_fin_taller7_lateral1">
+    
+            <div id="mc_fin_taller7_lateral1_boton1">
+    
+               <a href="{% url 'mi_cochinito_taller6' %}"><p><</p></a>
+    
+            </div>
+    
+        </div>
+        <!-- Lateral 1-->
+        <!-- central-->
+        <div id="mc_fin_taller7_central">
+        
+            <h1 id="mc_fin_taller7_central_h1">Creación de campaña</h1>
+            <h2 id="mc_fin_taller7_central_h2">Planea tu calendario de actividades</h2>
+            <p class="mc_fin_taller7_central_p">
+                Una campaña de crowdfunding requiere tiempo y mucha organización para tener el mayor alcance posible y lograr el éxito de la recaudación. Llena un calendario con las actividades que realizarás durante el mes de duración de la campaña.
+                <br>
+                <br>
+                 Sé realista con los tiempos que dispones para invertir en la promoción. Puedes guiarte del siguiente ejemplo:
+            </p>
+            <p class="mc_fin_taller7_central_p">
+                <br>
+                Arrastra los cuadros en el calendario.
+            </p>
+
+              <div id="box1" class="box primero">
+                <div class="content"> Planeación    
+                </div>
+              </div>
+              
+              <div id="box2" class="box2 segundo">
+                <div class="content"> Avisar a mis contactos    
+                </div>
+              </div>
+              
+              <div id="box3" class="box3 tercero">
+                <div class="content"> Lanzar campaña    
+                </div>
+              </div>
+
+              <div id="mc_fin_taller7_calendario">
+                      <div class="calendar__header">
+                        <div>LUN</div>
+                        <div>MAR</div>
+                        <div>MIÉR</div>
+                        <div>JUE</div>
+                        <div>VIE</div>
+                        <div>SAB</div>
+                        <div>DOM</div>
+                      </div>
+                      <div class="calendar__week">
+                        <div class="calendar__day day">1</div>
+                        <div class="calendar__day day">2</div>
+                        <div class="calendar__day day">3</div>
+                        <div class="calendar__day day">4</div>
+                        <div class="calendar__day day">5</div>
+                        <div class="calendar__day day">6</div>
+                        <div class="calendar__day day">7</div>
+                      </div>
+                      <div class="calendar__week">
+                        <div class="calendar__day day">8</div>
+                        <div class="calendar__day day">9</div>
+                        <div class="calendar__day day">10</div>
+                        <div class="calendar__day day">11</div>
+                        <div class="calendar__day day">12</div>
+                        <div class="calendar__day day">13</div>
+                        <div class="calendar__day day">14</div>        
+                      </div>
+                      <div class="calendar__week">
+                        <div class="calendar__day day">15</div>
+                        <div class="calendar__day day">16</div>
+                        <div class="calendar__day day">17</div>
+                        <div class="calendar__day day">18</div>
+                        <div class="calendar__day day">19</div>
+                        <div class="calendar__day day">20</div>
+                        <div class="calendar__day day">21</div>    
+                      </div>
+                      <div class="calendar__week">
+                        <div class="calendar__day day">22</div>
+                        <div class="calendar__day day">23</div>
+                        <div class="calendar__day day">24</div>
+                        <div class="calendar__day day">25</div>
+                        <div class="calendar__day day">26</div> 
+                        <div class="calendar__day day">27</div> 
+                        <div class="calendar__day day">28</div> 
+                      </div>
+                      <div class="calendar__week">
+                        <div class="calendar__day day">29</div>
+                        <div class="calendar__day day">30</div>
+                        <div class="calendar__day day">31</div>
+                        <div class="calendar__day day">1</div>
+                        <div class="calendar__day day">2</div>
+                        <div class="calendar__day day">3</div>
+                        <div class="calendar__day day">4</div>
+                      </div>
+                    </div>
+                  </div>
+  
+        <!-- central-->
+        <!-- Lateral 2-->
+        <div id="mc_fin_taller7_lateral2">
+            <div id="mc_fin_taller7_lateral2_boton2">
+                <a href="{% url 'mi_cochinito_taller8' %}"><p>></p></a>
+            </div>
+        </div>
+        <!-- Lateral 2-->
+    
+    </div>
+
+</div>
+
+{% endblock %}

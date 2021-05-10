@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <link rel="stylesheet" href="css/registro2.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <title>Registro - Makign Friends</title>
+        <link rel="shortcut icon" href="imagenes/supertux.png" type="image/x-icon">
+</head>
+<body>
+
+
+    <!-- partial:index.partial.html -->
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>Crea tu cuenta</h1>
+			<input type="text" placeholder="Tu nombre" />
+			<input type="email" placeholder="Correo electronico" />               
+			<input type="password" placeholder="Contraseña" />
+			<input type="password" placeholder="Confirma tu contraseña" />
+			<button><a href="inicio.html">Crear cuenta</button></a>
+		</form>
+
+	</div>
+	<div class="form-container sign-in-container"> 
+		<form action="#">
+			<h1>Iniciar sesión</h1>
+			<input type="email" placeholder="Correo" />
+			<input type="password" placeholder="Contraseña" />
+			<a href="#"></a>¿Olvidaste tu contraseña?</a>
+			<button><a href="inicio.html">Iniciar</button></a>
+		</form>
+		
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>YA TENGO UNA CUENTA</h1>
+				<p>inicia sesión con tu información personal</p>
+				<button class="ghost" id="signIn">Iniciar sesión</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>CREA TU CUENTA</h1>
+				<p>Ingresa tus datos personales y comienza tu viaje con nosotros</p>
+				<button class="ghost" id="signUp">Crear Cuenta</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- partial -->
+<script  src="js/registro.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+{% extends 'registration/base_login.html' %}
+{% load static %}
+{% block content %}
+
+<div id="mc_taller_cont_general_taller4"> 
+
+    <div id="mc_fin_cont1_taller4">
+        <div id="mc_fin_taller4_cont1_espaciador"></div>
+        <div id="mc_fin_taller4_cont1_img">
+            <img src="{% static 'core/img/friends/mc1.png' %}" alt="">
+        </div>
+    </div>
+
+
+
+
+    <div id="mc_fin_taller4">
+        
+        <!-- Lateral 1-->
+        <div id="mc_fin_taller4_lateral1">
+    
+            <div id="mc_fin_taller4_lateral1_boton1">
+    
+               <a href="{% url 'mi_cochinito_taller3' %}"><p><</p></a>
+    
+            </div>
+    
+        </div>
+        <!-- Lateral 1-->
+        <!-- central-->
+        <div id="mc_fin_taller4_central">
+        
+            <h1 id="mc_fin_taller4_central_h1">Creación de campaña</h1>
+            <h2 id="mc_fin_taller4_central_h2">Describe tu proyecto</h2>
+            <p class="mc_fin_taller4_central_p">
+                Describe en un párrafo de qué trata tu proyecto. Redáctalo de tal forma que cualquier persona pueda comprenderlo. Determina cuál es el objetivo. Piensa: ¿qué vas a hacer?, ¿a quién/quiénes vas a ayudar?, ¿para qué lo harás?, ¿cómo lo harás?, ¿por cuánto tiempo?
+            </p>
+            <h4 id="mc_fin_taller4_central_h3">¿Qué tengo que hacer?</h4>
+            <p class="mc_fin_taller4_central_p">
+                Selecciona la opción correcta que cumpla con las características de una buena descripción.
+            </p>
+
+            <div id="mc_fin_taller4_central_op">
+
+                <div class="mc_final_taller4_central_ops_red">
+                    
+                    <p class="mc_final_taller4_central_ops_p"> 
+                        Soy Diego, junto con mi comunidad queremos reforestar mi colonia, apóyame para conseguir fondos para mi proyecto
+                    </p>
+
+                </div>
+
+                <div class="mc_final_taller4_central_ops_green">
+                    
+                    <p class="mc_final_taller4_central_ops_p green">
+                        Soy Diego y tengo un proyecto para reforestar mi comunidad, pero no contamos con los recursos necesarios. Necesitamos fondos para comprar 100 árboles, tenemos 30 días para lograrlo, si aportas a mi proyecto, te recompensaré con una visita a mi comunidad.
+                    </p>
+
+                </div>
+
+                <div class="mc_final_taller4_central_ops_red">
+                    
+                    <p class="mc_final_taller4_central_ops_p">
+                        Soy Diego y me gustan los árboles, necesito dinero para comprarlos y plantarlos. Apóyame.
+                    </p>
+
+                </div>
+
+            </div>
+    
+        </div>
+        <!-- central-->
+        <!-- Lateral 2-->
+        <div id="mc_fin_taller4_lateral2">
+            <div id="mc_fin_taller4_lateral2_boton2">
+                <a href="{% url 'mi_cochinito_taller5' %}"><p>></p></a>
+            </div>
+        </div>
+        <!-- Lateral 2-->
+    
+    </div>
+
+</div>
+
+{% endblock %}

@@ -4,11 +4,11 @@ from django.views.generic.base import TemplateView
 # Create your views here.
 
 class HomePageView(TemplateView):
-    template_name = "core/base.html"
+    template_name = "core/home.html"
 
 
 class NosotrosPageView(TemplateView):
-    template_name = "core/nostros.html"
+    template_name = "core/nosotros.html"
 
 class TyCPageView(TemplateView):
     template_name = "core/tyC.html"
@@ -17,4 +17,7 @@ class ContactoPageView(TemplateView):
     template_name = "core/contacto.html"    
 
 class FriendPageView(TemplateView):
-    template_name = "core/friends.html"    
+    template_name = "core/friends.html"  
+
+class PrivacidadPageView(TemplateView):
+    template_name = "core/privacidad.html"   

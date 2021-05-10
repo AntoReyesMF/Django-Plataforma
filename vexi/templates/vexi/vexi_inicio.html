@@ -1,0 +1,106 @@
+{% extends 'registration/base_login.html' %}
+{% load static %}
+{% block content %}
+
+<div class="vexi_inicio">
+<div class="vexi_coverpage">
+    <div class="vexi_cover_page">
+      <img clas="vexi_img"src="https://images.unsplash.com/photo-1601597111158-2fceff292cdc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
+      <div class="vexi_btn">
+          <label class="vexi_btn_accion"><span>Regresar</span></label>          
+        </div>
+      </div>
+    </div>
+    <div class="vexi_bar">
+      <div class="vexi_bar_content">
+        <a href="{% url 'vexi_edufin' %}">
+          <button class="vexi_btn_bar">Visitanos</button></a>
+          <a href="https://www.messenger.com/t/vexitarjeta">
+            <button class="vexi_btn_bar">Contactános</button></a>
+            <a href="#">
+              <button class="vexi_btn_bar">Empezar a aprender</button></a>
+      </div>
+  
+    </div>
+    <div class="vexi_logo">
+      <div class="vexi_logo_content">
+          <div class="vexi_logo_img">
+              <div class="vexi_img" style="background-image: url({% static 'core/img/friends/logoVexi.png' %}">
+              </div>
+            </div>
+          </div>
+        </div>
+    
+  <div class="vexi_info">   
+      <div class="vexi_descrip">
+        <h1 class="vexi_h1">¿Quiénes somos?</h1> 
+        <p class="vexi_p">La tarjeta de crédito que siempre quisiste tener! <br>Queremos que nuestros clientes, l@s Vexican@s, aprendan sobre el mundo financiero y obtengan el mayor provecho posible de su Tarjeta de Crédito Vexi, de manera que poco a poco tengan acceso a una gran variedad de productos financieros formales que les permitan potenciar su desarrollo. </p>      
+     </div>
+  
+   <div class="vexi_talleres">
+      <h1 class="vexi_h1">Nuestro contenido</h1>
+  
+      <div class="vexi_cursos">
+      <div class="vexi_card">
+        <a href="#" >               
+        <div class="vexi_card_image">
+          <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="">
+        </div></a>
+        <div class="vexi_card_content">
+          <h2 class="vexi_h2" >Educación financiera con Vexi</h2>
+          <div class="vexi_card_description">
+            Aprende a usar una TDC de manera adecuada sin morir en el intento 
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="vexi_card">
+        <div class="vexi_card_image">
+          <img src="https://vexi.mx/assets/images/tarjetaCarnetAmex2.png" alt="">
+        </div>
+        <div class="vexi_card_content">
+          <h2 class="vexi_h2">Conoce hasta donde puedes llegar con tu tarjeta Vexi.</h2>
+          <div class="vexi_card_description">
+            Vexi te permite iniciar o reconstruir tu historial crediticio ya que al ser una TDC, reporta tu comportamiento crediticio en Circulo de Crédito y Buro de Crédito.  
+          </div>
+        </div>
+      </div>
+    </div>    
+  
+    <div class="vexi_numeralia" >
+      <h3 class="vexi_h3">Conoce más sobre nosotros</h3>
+      <div class="vexi_numeralia_contenido">
+    <div class="vexi_seccion_numeros">
+      <h4 class="vexi_h4">+ 100K</h4>
+      <h5 class="vexi_h5">Vexicanos</h5>
+    </div>
+    
+      <div class="vexi_seccion_numeros">
+        <h4 class="vexi_h4">+ 50K</h4>
+        <h5 class="vexi_h5">TARJETAS ACTIVAS</h5>
+      </div>
+    </div>
+  
+  <div class="vexi_preguntas">
+  <button onclick="funtion()" style="background-color: transparent; border: none; margin-bottom:none" ><h6 class="vexi_h6">Preguntas Frecuentes</h6></button> 
+  <div id="faqs">
+    <div class="vexi_pregunta">Qué es una alcancía en línea?</div>
+    <div class="vexi_respuesta">Es un espacio digital para buscar y conseguir recursos monetarios a partir de difundir y convencer a muchas personas para financiar una idea, emprendimiento o causa a cambio de algo significativo por las aportaciones recibidas.</div>
+  
+    <div class="vexi_pregunta">¿Cómo funciona?</div>
+      <div class="vexi_respuesta">Una alcancía en línea te da el control, la seguridad, la transparencia y la credibilidad que necesitas para tu campaña de recolección de fondos. Pueden ser todo tipo de proyectos: tecnológicos, sociales, artísticos, viajes; o, básicamente cualquier idea que quieras volver realidad. Trabajar bajo este esquema te ayuda porque no te endeudas, ya que el dinero recaudado será un donativo. También te sirve para hacer pruebas de mercado, validar tu proyecto, ser transparente y sobre todo generar popularidad.</div>
+  
+    <div class="vexi_pregunta">¿Cuánto cobran?</div>
+      <div class="vexi_respuesta">No te cobramos absolutamente nada, para ti la oportunidad es clara; puedes subir tu proyecto y pueden pasar dos cosas; recaudar el monto que te propones en el tiempo que definiste y arrancar con tu idea o no recaudar y entonces nosotros regresamos las donaciones originales a sus propietarios, en cualquiera de los escenarios no habras incurrido en ningun cargo por parte nuestro. Lo que sí es que a tus padrinos (donantes) se les hace un cargo adicional por cada transacción del 5% al 20% (ellos eligen).</div>
+  </div>
+  <div>
+                       <a href="#" >
+                      <button class="vexi_btn_final">Empezar a aprender</button> 
+                      </a>
+</div>
+
+
+
+
+{% endblock %}

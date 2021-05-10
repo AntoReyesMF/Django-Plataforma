@@ -1,78 +1,90 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Friends</title>
-  {% load static %}
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Libre+Franklin:400,300'><link rel="stylesheet" href="{% static 'core/css/friends.css' %}">
 
-</head>
-<body>
-<header>
-  <div class="container">
-  	<a class="site-logo" href="{% url 'home'%}">
-    <img src="{% static 'core/img/Logo B1.png' %}" class="logo"/></div>
-    </a>
+ {% extends 'core/base.html' %}
+ {% load static %}
+ {% block content %}
 
-    
+  <!-- No supe que hacerle 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'> -->
 
-</header>
-<div class="jumbotron">
-  
-  <div id="black"></div>
-  
-    <div class="container-fluid">
-      <div class="col-md-5 col-md-offset-1">
-        
-      <h1>Sé un friend<br> contruyamos mutuamente</h1>
-      <hr style="width:55%;text-align:left;margin:30px 0; border:2.5px solid #fff;"/>
+<!-- titulo  @Lalo
+<title>Friends</title>
+	Flavicon
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon16.png">>-->
+
+<div id="friends_titulo"> 
+
+  <div id="friends_t_cont_central">
+
+    <div>
+      <h1>SÉ UN FRIEND <br> CONSTRUYAMOS <BR> MUTUAMENTE </BR></h1>
+    </div>
+
+    <div id="friends_t_cont_central_linea"></div>
+
+  </div>
+
+</div>
+
+<div id="friends_contenido">
+  <div id="friends_contenido_central">
+
+    <div id="friends_contenido_1">
+      <h3 id="friends_h3">TIENES LAS HERRAMIENTAS QUE NECESITAMOS</h3>
+
+      <p id="friends_p">Creemos en la cooperación mutua, es por eso que creamos una plataforma de edcuación gratuita, donde una red de aliados proporciona herramientas y conocimiento para crear con libertad y enfoque, así entre todos desarrollamos e implementamos soluciones que fomentan el cambio.</p>
+
+      <div id="friends_cont1_li">
+        <ul>
+          <li>
+            Te ayudamos a conectarte con nuevos usuarios y aliados para tu beneficio.
+          </li>
+          <li>
+            Entre más usuarios llegues, tienes la oportunidad de aparecer en los primeros de tu categoria.
+          </li>
+          <li>
+            Tendrás la oportunidad de participar en cada evento que organicemos nosotros o nuestros aliados.
+          </li>
+          <li>
+            Cualquier empresa o startup tiene un un lugar sin importar su tamaño, ciudad, o giro.
+          </li>
+        </ul>
       </div>
-     
 
+      <h4 id="friends_h4">EFICIENTAMOS EL PROCESO DE CONECTAR HERRAMIENTAS CON QUIÉN LOS NECESITA</h4>
     </div>
+
+    <div id="friends_contenido_2">
+
+      <div id="friends_contenido2_form">
+
+        <h4>EL PRIMER PASO PARA UNIRTE</h4>
+
+        <form action="" id="form_friends">
+
+          <input class="friends_input" type="text" name="" id="nombre" placeholder="Nombre">
+  
+          <input type="text" name="" id="apellidos" placeholder="Apellidos">
+  
+          <input type="email" name="" id="email" placeholder="Correo electronico">
+  
+          <input type="text" name="" id="startup" placeholder="Nombre de tu StartUp">
+  
+          <textarea name="" id="cuentanos" cols="30" rows="10" placeholder="Cuentanos sobre tu StartUp"></textarea>
+
+          <input type="submit" id="friends_enviar" value="Enviar">
+        </form>
+
+      </div>
+  
+    </div>
+
   </div>
+
 </div>
 
-<div class="container-fluid" id="main-wrapper">
-  <div class="col-md-6 col-md-offset-1 main-content">
-    <h3>Tienes las herramientas que necesitamos</h3>
-    <p>
-    Creemos en la cooperación mutua, es por eso que creamos una plataforma de edcuación gratuita, donde una red de aliados proporciona herramientas y conocimiento para crear con libertad y enfoque, así entre todos desarrollamos e implementamos soluciones que fomentan el cambio.
-</p>
-    
-    <div class="white-box">
-    <ul>
-<li><p class="">Te ayudamos a conectarte con nuevos usuarios y aliados para tu beneficio</p></li>
-<li><p class="">Entre más usuarios llegues, tienes la oportunidad de aparecer en los primeros de tu categoria</p></li>
-<li><p class="">Tendrás la oportunidad de participar en cada evento que organicemos nosotros o nuestros aliados</p></li>
-<li><p class="">Cualquier empresa o startup tiene un un lugar sin importar su tamaño, ciudad, o giro </p></li>
-</ul>
-    </div><!-- /. End White Box 0-->
-    
-    <p class="final-cta">EFICIENTAMOS EL PROCESO DE CONECTAR RECURSOS CON QUIÉN LOS NECESITA</p>    
-  </div>
-  <div class="col-md-3 col-md-offset-1">
-  <div class="form-container">
-    <h4>El primer paso para unirte</h4>
-    <form  method="post" name="frmContentDownload">
-<div><label for="FirstName1">Nombre</label><input class="form-control" name="FirstName1" type="text" value="" /></div>
-<div><label for="LastName1">Apellidos</label><input class="form-control" name="LastName1" type="text" value="" /></div>
-<div><label for="emailAddress">Email</label><input class="form-control" name="emailAddress" type="text" value="" /></div>
-<div><label for="Company1">Nombre de tu Starup</label><input class="form-control" name="Company1" type="text" value="" /></div>
 
-<div><label for="comments">Cuéntanos sobre ti</label><input class="form-control" name="comments" type="text" value="" /></div>
 
-<div><input class="btn btn-primary btn-lg btn-block" type="submit" value="ENVIAR" /></div>
-</form>
-    </div>
-  </div>  
-</div>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><script  src="js/script.js"></script>
 
-</body>
-</html>
+
+{% endblock %}
