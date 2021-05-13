@@ -1,40 +1,31 @@
 #vexi_taller_cont_general{
-    width: 100%;
-    height: auto;
     background-color: RGB(246,245,245);
-}
-#vexi_edu_taller1{
-    display: flex;
-    width: 80%;
-    height: auto;
-    margin: auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    /* background-color: cadetblue; */
-}
-
-/* ------------------------------Laterl------------------------------ */
-#mc_fin_taller1_lateral1{
-    width: 10%;
-    height: 700px;
-    /* background-color: lightpink; */
-}
-#mc_fin_taller1_lateral1_boton1{
-    width: 50px;
-    height: 50px;
-    margin: auto;
-    margin-top: 375px;
-    border-radius: 50%;
-    background-color: #DE2276;
-}
-#mc_fin_taller1_lateral1_boton1 a{
-    text-decoration: none;
-    color: white;
-}
-#mc_fin_taller1_lateral1_boton1 a p{
     text-align: center;
-    line-height: 50px;
-    font-size: 40px;    
+    font-family: montserrat;
 }
 
-/* ------------------------------Lateral1------------------------------ */
+#vexi_edu_taller1_central img{
+    width: 25%;
+    text-align: center;
+    padding-top: 10rem;
+    padding-bottom: 4rem;
+}
+
+#vexi_edu_taller1_central_titulo{
+ text-align: center;
+ padding-left: 30rem;
+ padding-right: 30rem;
+ color: #000000;
+ font-size: 2rem;
+ font-weight: bold;
+}
+
+#vexi_edu_taller1_central_descipción{
+    text-align: center;
+    padding-top: 1rem;
+    color: #000000;
+    font-size: 20px;
+    font-weight: normal;
+    padding-right: 25rem;
+    padding-left: 25rem;
+}
