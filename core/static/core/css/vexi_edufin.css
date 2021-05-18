@@ -1,119 +1,209 @@
-.logo_friend{
-    position: absolute;
-    right: 5rem;
-    top: 3rem;.
-  }
-  
-  .titulo{
-    text-align: center;
-    padding-top: 2rem;
-    color: #DE2276;
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .descipción{
-    text-align: center;
-    padding-top: 1rem;
-    color: #000000;
-    font-size: 1rem;
-    font-weight: normal;
-    padding-right: 18rem;
-    padding-left: 18rem;
-  }
-  
-  .caracteristicas{
-    margin-top: 4rem;
-    background-color: #000000;
-   margin-left: 14rem;
-  margin-right: 13rem;
-  border-radius: 30px;
-  }
-  
-  .werte{
-  color: #fff;
+#vexi_cont_general{
+  width: 100%;
+  height: auto;
+  background-color: RGB(246,245,245);
+}
+#vexi_edufin_cont1{
+  display: flex;
+  width: 100%;
+  height:auto;
+  padding-top: 30px;
+  /* background-color: aqua; */
+}
+#vexi_edufin_cont1_espaciador{
+  width: 85%;
+  height: auto;
+  /* background-color: lightcyan; */
+}
+#vexi_edufin_cont1_img{
+  width: 15%;
+  height: auto;
+  /* background-color: lightgreen; */
+}
+#vexi_edufin_cont1_img img{
+  width: 60%;
+  height: auto;
+}
+/*----------------------------------------------------------------------*/
+#vexi_edu_cont2_central{
+  width: 80%;
+  height: auto;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* background-color: chartreuse; */
+}
+#vexi_edu_cont2_h1{
+  color: RGB(222,34,118);
+  font-family: Montserrat-Bold;
+  margin-bottom: 40px;
+  font-size: 40px;
   text-align: center;
-  font-size: 1.4rem;
-  position: relative;
-  background-color: #000000;
-  padding-bottom: 55px;
-  padding-top: 55px;
-  display: inline-flex;
-  padding-left: 7.5rem;
+}
+#vexi_edu_cont2_p{
+  font-family: Montserrat-Regular;
+  font-size: 20px;
+  letter-spacing: 4px;
+  text-align: center;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+
+#vexi_edu_cont2_cont_black{
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
   border-radius: 30px;
+  padding-bottom: 20px;
+  background-color: black;
+}
+#vexi_edu_cont2_cont_black_conts{
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* background-color: yellow; */
+}
+.vexi_edu_cont2_cont_black_conts{
+  width: 25%;
+  height: auto;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  /* background-color: blue; */
+}
+.vexi_edu_cont2_cont_black_p_pink{
+  color: RGB(222,34,118);
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: Montserrat-SemiBold;
+  font-size: 30px;
+}
+.vexi_edu_cont2_cont_black_p_white{
+  color: white;
+  text-align: center;
+  font-family: Montserrat-Medium;
+  font-size: 20px;
+}
+#vexi_edu_cont2_cont_black_conts_img{
+  width: 66px;
+  height: auto;
+  margin: auto;
+  /* background-color: black; */
+}
+#vexi_edu_cont2_cont_black_boton{
   
-  }
-  
-  .col-lg-4,.col-md-4,.col-sm-4{
-    position: relative;
-  min-height: 1px;
-  }
-  
-  
-  .aprender{
-    text-align: center;
-  }
-  
-  .btn{
-    border-color: #DE2276;
-      color: #ffffff;
-      width: 2rem;
-      border-radius: 300px;
-      background-color:#DE2276;
-      cursor: pointer;
-      margin-bottom: 2rem;
-      line-height: 1.5em;
-      font-size: 1rem;
-      width: 12rem;
-  }
-  
-  .indice_izquerda{
-    margin-top: 5rem;
-    position: relative;
-  }
-  
-  .contenido{
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  .tema{
-    margin-top: 1rem;
-    margin-left: 8rem;
-  }
-  h2{
-    color:#DE2276;
-    font-size: 1rem;
-  }
-  
-  .subtitulo{
-    margin-top: 0rem;
-    margin-left: 8rem;
-    padding: 0;
-  }
-  
-  h3{
-    font-size: 1rem;
-    background-color: #D5D4D4; 
-    padding-left: .5rem;
-    font-weight: normal;
-    margin-right: 53rem;
-    padding: .5rem;
-  }
-  
-  
-  iframe{
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin-top: 45rem;
-  margin-right: 9rem;
-  }
-  
-  .aprender_bajo{
-  position: absolute;
-  right: 0;
-  margin-right: 20rem;
-  margin-top: -20rem;
-  }
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* background-color: black; */
+}
+#vexi_edu_cont2_cont_black_boton_empezar{
+  display: block;
+  width: 180px;
+  height: 50px;
+  margin: auto;
+  border-radius: 25px;
+  background-color: RGB(222,34,118); 
+}
+
+#vexi_edu_cont2_cont_black_boton_empezar a p{
+  display: block;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-family: Montserrat-Medium;
+  font-size: 15px;
+  letter-spacing: 3px;
+}
+/*----------------------------------------------------------------------*/
+
+#vexi_edu_cont3{
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* background-color: lightcyan; */
+}
+#vexi_edu_cont3_cont_central{
+  display: flex;
+  width: 80%;
+  height: auto;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#vexi_edu_cont3_cont1_h2{
+  text-align: center;
+  font-family: Montserrat-SemiBold;
+  font-size: 30px;
+  letter-spacing: 4px;
+  margin-bottom: 50px;
+}
+.vexi_edu_cont3_h5{
+  font-family: Montserrat-Medium;
+  font-size: 20px;
+  color: RGB(222,34,118);
+  margin-bottom: 20px;
+}
+.vexi_edu_cont3_cont_p{
+  width: 100%;
+  height: auto;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: RGB(213,212,212);
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-family: Montserrat-Light;
+  letter-spacing: 3px;
+}
+
+#vexi_edu_cont3_cont1{
+  width: 50%;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* background-color: lightgreen; */
+}
+
+#vexi_edu_cont3_cont2{
+  width: 50%;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* background-color: lightsalmon; */
+}
+
+#vexi_edu_cont3_cont2_video{
+  width: 500px;
+  height: 400px;
+  margin: auto;
+  margin-top: 200px;
+  margin-bottom: 50px;
+}
+#vexi_edu_cont3_cont2_boton{
+  width: 100%;
+  height: 50px;
+  margin-top: 50px;
+  /* background-color: limegreen; */
+}
+#vexi_edu_cont3_cont2_boton_empezar{
+  display: block;
+  width: 180px;
+  height: 50px;
+  margin: auto;
+  border-radius: 25px;
+  background-color: RGB(222,34,118);
+}
+#vexi_edu_cont3_cont2_boton_empezar a p{
+  display: block;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-family: Montserrat-Medium;
+  font-size: 15px;
+  letter-spacing: 3px;
+}

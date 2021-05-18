@@ -1,0 +1,224 @@
+@media(max-width:1850px){
+    /*menu*/
+    /* #menu{
+        background-color: red;
+    } */
+    #menu #contenido #cont_menu{
+        margin-left: 42%;
+    }
+    #menu #contenido #cont_menu .menu{
+        width: 30%;
+        /* background-color: pink; */
+    }
+    /*footer*/
+    #footer_central #foo_cont3{
+        margin-top: 30px;
+        /* background-color: lightpink; */
+    }
+}
+
+@media(max-width:1700px){
+    /* #menu{
+        background-color: lightblue;
+    } */
+    #menu #contenido #cont_menu{
+        margin-left: 40%;
+    }
+    #menu #contenido #cont_menu .menu{
+        width: 40%;
+        /* background-color: rgb(216, 42, 71); */
+    }
+}
+
+@media(max-width:1600px){
+    /*menu*/
+    /* #menu{
+        background-color: lightcoral;
+    } */
+    #menu #contenido #cont_menu{
+        margin-left: 30%;
+    }
+    #menu #contenido #cont_menu .menu{
+        width: 50%;
+        /* background-color: rgb(129, 69, 79); */
+    }
+    
+    /*footer*/
+    #footer_central #foo_cont2 #foo_info{
+        width: 60%;
+    }
+    #footer_central #foo_cont2 #foo_img{
+        width: 40%;
+    }   
+}
+
+@media(max-width:1340px){
+     /*footer*/
+     #footer_central #foo_cont2 #foo_info{
+        width: 70%;
+    }
+    #footer_central #foo_cont2 #foo_img{
+        width: 30%;
+        
+    }
+     /* #footer_central #foo_cont2 #foo_info .foo_info_a{
+       
+        background-color: lightskyblue; 
+    } */
+}
+
+@media(max-width:1200px){
+    /* #menu{
+        background-color: lightgreen; 
+    } */
+    #menu #contenido #cont_menu{
+        margin-left: 20%;
+    }
+    #menu #contenido #cont_menu .menu{
+        width: 70%;
+        /* background-color: rgb(131, 125, 126); */
+    }
+    
+}
+
+@media(max-width:1150px){
+    /*footer*/
+    #footer_central #foo_cont2 #foo_info{
+       width: 80%;
+   }
+   #footer_central #foo_cont2 #foo_img{
+       width: 20%;
+       
+   }
+    /* #footer_central #foo_cont2 #foo_info .foo_info_a{
+      
+       background-color: lightskyblue;
+   } */
+}
+
+@media(max-width:1050px){
+    /* #menu{
+        background-color: lightsalmon;
+    } */
+    #menu #contenido #cont_menu{
+        margin-left: 15%;
+    }
+    #menu #contenido #cont_menu .menu{
+        width: 70%;
+        /* background-color: rgb(36, 62, 110); */
+    }
+   
+     /*footer*/
+     #footer_central #foo_cont1 .foo_h2{
+        font-size: 25px;
+    }
+     #footer_central #foo_cont2{
+        display: flex;
+        flex-direction: column;
+    }
+    #footer_central #foo_cont2 #foo_img{
+        width: 100%;  
+    }
+    #footer_central #foo_cont2 #foo_img{
+        border-right: none;
+     }
+    #footer_central #foo_cont2 #foo_info{
+        width: 100%;
+    }
+}
+
+@media(max-width:950px){
+    /* #menu{
+        background-color: lightcyan;
+    } */
+    #menu #contenido #cont_menu{
+        margin-left: 10%;
+    }
+    #menu #contenido #cont_menu .menu{
+        width: 70%;
+        /* background-color: rgb(38, 153, 9); */
+    }
+}
+
+@media(max-width:900px){
+    /* #menu{
+        background-color: lightseagreen;
+    } */
+    #menu #logo{
+        width: 40%;
+    }
+    #menu #contenido{
+        width: 60%;
+    }
+    #menu #contenido #cont_menu{
+        margin-left: 10%;
+    }
+    #menu #contenido #cont_menu .menu{
+        width: 70%;
+        /* background-color: rgb(153, 226, 16); */
+    }
+    
+}
+@media(max-width:790px){
+    #footer_central #foo_cont1 .foo_h2{
+        font-size: 20px;
+    }
+    #footer_central{
+        width: 70%;
+    }
+}
+
+
+@media(max-width:750px){
+    /* #menu{
+        background-color: lightpink;
+    } */
+    #menu #logo{
+        width: 30%;
+    }
+    #menu #contenido{
+        width: 70%;
+    }
+    #menu #contenido #cont_menu{
+        margin-left: 10%;
+    }
+    #menu #contenido #cont_menu .menu{
+        width: 70%;
+        /* background-color: rgb(216, 174, 59); */
+    }
+    
+}
+
+@media(max-width:680px){
+
+    #footer_central{
+        width: 90%;
+    }
+}
+
+@media(max-width:640px){
+    /* #menu{
+         background-color: lightgoldenrodyellow; 
+    } */
+    #menu #logo{
+        width: 20%;
+    }
+    #menu #contenido{
+        width: 80%;
+    }
+    #menu #contenido #cont_menu{
+        margin-left: 10%;
+    }
+    #menu #contenido #cont_menu .menu{
+        width: 70%;
+        /* background-color: rgb(246, 100, 55); */
+    }
+    #menu #contenido #cont_menu .menu a{
+        text-decoration: none;
+        /* color: black; */
+        font-family: Montserrat-Light;
+        font-size: 13px;
+        letter-spacing: 3px;
+        
+     }
+}

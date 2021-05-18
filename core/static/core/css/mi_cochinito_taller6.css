@@ -101,21 +101,49 @@
     border: 1px solid black; */
 }
 .mc_fin_taller6_reco_flex{
+    display: block;
     width: 33.33%;
-    height: 200px;
+    min-height: 200px;
     /* border-left: 1px solid red;
     background-color: rosybrown; */
 }
 .mc_fin_taller_reco_img{
+    display: block;
     width: 130px;
     height: 130px;
     margin: auto;
     margin-top: 35px;
     /* background-color: white; */
+    cursor: pointer;
 }
 .mc_fin_taller_reco_img img{
     width: 130px;
     height: 130px;
+    margin-bottom: 20px;
+}
+
+.mc_fin_taller_reco_datos{
+    display: none;
+    width: 370px;
+    min-height: 50px;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* border-radius: 5px;
+    box-shadow: 1px 1px 2px 4px gainsboro; */
+    text-align: center;
+}
+.mc_fin_taller_reco_datos p{
+    font-family: Montserrat-Light;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    color: #DE2276;
+}
+
+.mc_fin_taller6_reco_flex:hover .mc_fin_taller_reco_datos{
+    display: block;
+    margin-top: 10px;
 }
 /* ------------------------------Central------------------------------ */
 /* ------------------------------Lateral2------------------------------ */
