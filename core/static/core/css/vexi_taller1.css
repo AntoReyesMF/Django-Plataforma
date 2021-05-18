@@ -1,0 +1,31 @@
+#vexi_taller_cont_general{
+    background-color: RGB(246,245,245);
+    text-align: center;
+    font-family: montserrat;
+}
+
+#vexi_edu_taller1_central img{
+    width: 25%;
+    text-align: center;
+    padding-top: 10rem;
+    padding-bottom: 4rem;
+}
+
+#vexi_edu_taller1_central_titulo{
+ text-align: center;
+ padding-left: 30rem;
+ padding-right: 30rem;
+ color: #000000;
+ font-size: 2rem;
+ font-weight: bold;
+}
+
+#vexi_edu_taller1_central_descipción{
+    text-align: center;
+    padding-top: 1rem;
+    color: #000000;
+    font-size: 20px;
+    font-weight: normal;
+    padding-right: 25rem;
+    padding-left: 25rem;
+}
