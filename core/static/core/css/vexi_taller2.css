@@ -61,36 +61,37 @@
 
 /* ------------------------------Lateral1------------------------------ */
 /* ------------------------------Central------------------------------ */
-#mc_fin_taller2_central{
+#vexi_edu_taller2_central{
     width: 80%;
     height: 700px;
     /* background-color: lightskyblue;  */
 }
 
-#mc_fin_taller2_central_h1{
-    text-align: center;
-    font-size: 30px;
-    font-family: Montserrat-Bold;
+#vexi_edu_taller2_central_h1{
+  text-align: center;
+  font-size: 30px;
+  font-family: Montserrat-Bold;
 }
-.mc_fin_taller2_central_p{
-    text-align: center;
-    font-size: 20px;
-    font-family: Montserrat-Regular;
+.vexi_edu_taller2_central_p{
+  text-align: center;
+  font-size: 20px;
+  font-family: Montserrat-Regular;
 }
-#mc_fin_taller2_central_h2{
-    text-align: center;
-    margin-top: 40px;
-    font-size: 25px;
-    font-family: Montserrat-SemiBold;
-    color: #DE2276;
+#vexi_edu_taller2_central_h2{
+  text-align: center;
+  margin-top: 40px;
+  font-size: 25px;
+  font-family: Montserrat-SemiBold;
+  color: #DE2276;
 }
+
 #vexi_taller_main {
     width: 320px;
     max-height: 450px;
     height: calc(100vh - 60px);
     position: relative;
     overflow: hidden;
-    margin: auto;
+    margin-top: 5rem;
   }
   
   #vexi_taller_main #drag-wrapper{

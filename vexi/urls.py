@@ -14,6 +14,7 @@ urlpatterns = [
     path('vexi_taller8', vexi_taller8PageView.as_view(), name="vexi_taller8"),
     path('vexi_taller9', vexi_taller9PageView.as_view(), name="vexi_taller9"),
     path('vexi_taller10', vexi_taller10PageView.as_view(), name="vexi_taller10"),
+    
 ]
 
 
