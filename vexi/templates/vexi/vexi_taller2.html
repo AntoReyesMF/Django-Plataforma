@@ -2,20 +2,20 @@
 {% load static %}
 {% block content %}
 
-<div id="mc_taller_cont_general"> 
+<div id="vexi_taller_cont_general_taller2"> 
 
-    <div id="mc_fin_cont1">
-        <div id="mc_fin_cont1_espaciador"></div>
-        <div id="mc_fin_cont1_img">
+    <div id="vexi_edu_cont1_taller2">
+        <div id="vexi_edu_taller2_cont1_espaciador"></div>
+        <div id="vexi_edu_taller2_cont1_img">
             <img src="{% static 'core/img/friends/logoVexi.png' %}" alt="">
         </div>
     </div>
-    <div id="mc_fin_taller1">
+    <div id="vexi_edu_taller2">
         
         <!-- Lateral 1-->
-        <div id="mc_fin_taller1_lateral1">
+        <div id="vexi_edu_taller2_lateral1">
     
-            <div id="mc_fin_taller1_lateral1_boton1">
+            <div id="vexi_edu_taller2_lateral1_boton1">
     
                <a href="{% url 'vexi_taller1' %}"><p><</p></a>
     
@@ -24,58 +24,41 @@
         </div>
         <!-- Lateral 1-->
         <!-- central-->
-        <div id="mc_fin_taller1_central">
+        <div id="mc_fin_taller2_central">
     
-            <h3 id="mc_fin_taller1_central_h3_1">Principios de una TDC o TDD </h3>
-            <p id="mc_fin_taller1_central_p">Las instituciones  ofrecen dos tipos de tarjetas, las de débito y las de crédito. Aunque ambos son métodos de pago, tienen distintas características</p>
+            <h3 id="mc_fin_taller2_central_h1">Principios de una TDC o TDD </h3>
+            <p id="mc_fin_taller2_central_p">Las instituciones  ofrecen dos tipos de tarjetas, las de débito y las de crédito. Aunque ambos son métodos de pago, tienen distintas características</p>
     
-            <h3 id="mc_fin_taller1_central_h3_2">Diferencias entre tarjetas</h3>
+            <h3 id="mc_fin_taller2_central_h2">Diferencias entre tarjetas</h3>
     
-            <div id="mc_fin_taller1_central_conts">
-    
-                <div class="mc_fin_taller1_central_conts_conts">
-    
-                    <div class="mc_fin_taller_central_cont_finan">
-    
-                        <div class="mc_fin_taller_central_financieros">
+            <main id="vexi_taller_main">
+                <div id="drag-wrapper">
+                            <div class="tarjeta_negra">
+                              <div class="details">
+                                <div class="number">1234 5678 9876 5432</div>
+                                <div class="bottom">
+                                  <div class="name">JOHN WICK</div>
+                                  <div class="expiry">04/24</div>
+                                </div>
+                              </div>
+                            </div>
                             
-                                
-                            <p class="mc_fin_taller_central_p_financieros">Financieros</p>
-                        </div>
-    
-                        <div class="mc_fin_taller_central_financieros_2">
-                            <p>Con determinado límite, te permite usar el dinero que aún no tienes en tu cuenta, mismo que se supone que tendrás disponible en un plazo corto de tiempo, generalmente un mes (Es como pedirle dinero a tu mamá y prometerle que tú yo del futuro próximo se lo pagará cuando te caiga la quincena).
-                            </p>
-                        </div>
-    
+                    
+                    <div class="drag-item"></div>
+                    <div class="drag-item">
+                        <p>Con determinado límite, te permite usar el dinero que aún no tienes en tu cuenta, mismo que se supone que tendrás disponible en un plazo corto de tiempo, generalmente un mes (Es como pedirle dinero a tu mamá y prometerle que tú yo del futuro próximo se lo pagará cuando te caiga la quincena).
+                        </p>
+                        
                     </div>
-    
                 </div>
-    
-                <div class="mc_fin_taller1_central_conts_conts">
-    
-                    <div class="mc_fin_taller_central_cont_finan">
-    
-                        <div class="mc_fin_taller_central_financieros">
-                            
-                            <p class="mc_fin_taller_central_p_financieros">No Financieros</p>
-                        </div>
-    
-                        <div class="mc_fin_taller_central_financieros_2">
-                            <p>Una cuenta que resguarda tu dinero, por lo que todas las compras que realiza con esta se cargan directamente a tu cuenta bancaria y dependen por completo del monto que tengas guardado en ella. Puedes gastar sólo lo que tienes. 
-                            </p>
-                        </div>
-    
-                    </div>
-    
-                </div>
-            </div>
+            </main>
+            
     
         </div>
         <!-- central-->
         <!-- Lateral 2-->
         <div id="vexi_edu_taller2_lateral2">
-            <div id="vexi_edu_taller1_lateral2_boton2">
+            <div id="vexi_edu_taller2_lateral2_boton2">
                 <a href="{% url 'vexi_taller3' %}"><p>></p></a>
             </div>
         </div>
