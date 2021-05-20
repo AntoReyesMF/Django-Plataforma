@@ -58,6 +58,7 @@
     font-size: 40px;    
   }
   
+  
   /* ------------------------------Lateral1------------------------------ */
   /* ------------------------------Central------------------------------ */
   #vexi_edu_taller9_central{
@@ -84,6 +85,115 @@
   color: #DE2276;
   }
   
+.vexi_taller9_beneficios_ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.vexi_taller9_beneficios_ul:hover .cute-bit {
+  opacity: 0.5;
+}
+
+.vexi_taller9_beneficios_ul:hover .cute-bit:hover {
+  opacity: 1;
+}
+
+.vexi_taller9_beneficios {
+  position: relative;
+  text-align: center;
+  font-size: 1vw;
+  color: #fff;
+}
+.vexi_taller9_beneficios_img{
+  display: block;
+  width: 30em;
+  margin: 0 auto;
+  margin-top:6rem;
+}
+.vexi_taller9_beneficios .cute-bit {
+  position: absolute;
+  min-width: 15em;
+  transition: all 0.25s ease-out;
+}
+
+.vexi_taller9_beneficios_h2{
+  color: #DE2276;
+}
+
+.vexi_taller9_beneficios_p{
+color: #000;
+}
+
+.vexi_taller9_beneficios .cute-bit:hover {
+  min-width: 21em !important;
+}
+.vexi_taller9_beneficios .cute-bit.grow-left {
+  text-align: left;
+}
+.vexi_taller9_beneficios .cute-bit.grow-left h2 {
+  padding-right: 1em;
+}
+.vexi_taller9_beneficios .cute-bit.grow-left h2:after {
+  right: 0;
+  transform: translate(50%, 50%);
+}
+.vexi_taller9_beneficios .cute-bit.grow-right {
+  text-align: right;
+}
+.vexi_taller9_beneficios .cute-bit.grow-right h2 {
+  padding-left: 1em;
+}
+.vexi_taller9_beneficios .cute-bit.grow-right h2:after {
+  left: 0;
+  transform: translate(-50%, 50%);
+}
+.vexi_taller9_beneficios .cute-bit h2 {
+  position: relative;
+  padding: 0 0 0.4em;
+  border-bottom: solid 0.2em;
+  margin: 0 0 0.4em;
+  text-shadow: 0 0 1em 1em rgba(0, 0, 0, 0.1);
+}
+.vexi_taller9_beneficios .cute-bit h2:after {
+  position: absolute;
+  bottom: -0.1em;
+  content: "";
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background: #fff;
+}
+.vexi_taller9_beneficios .cute-bit p {
+  margin: 0;
+  padding: 0;
+  text-shadow: 0 0 1em 1em rgba(0, 0, 0, 0.1);
+}
+.vexi_taller9_beneficios .cute-bit.cute-ears {
+  right: 50%;
+  top: 8%;
+  min-width: 12em;
+}
+.vexi_taller9_beneficios .cute-bit.cute-eyes {
+  right: 58%;
+  top: 44%;
+}
+.vexi_taller9_beneficios .cute-bit.cute-paws {
+  left: 60%;
+  bottom: 10%;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
   /* ------------------------------Central------------------------------ */
   /* ------------------------------Lateral2------------------------------ */
   #vexi_edu_taller9_lateral2{
