@@ -38,3 +38,12 @@ class vexi_taller9PageView(TemplateView):
 
 class vexi_taller10PageView(TemplateView):
     template_name = 'vexi/vexi_taller10.html'
+
+class vexi_taller11PageView(TemplateView):
+    template_name = 'vexi/vexi_taller11.html'
+
+class vexi_taller12PageView(TemplateView):
+    template_name = 'vexi/vexi_taller12.html'
+
+class vexi_taller13PageView(TemplateView):
+    template_name = 'vexi/vexi_taller13.html'

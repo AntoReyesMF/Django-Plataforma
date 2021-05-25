@@ -138,7 +138,7 @@ color: #DE2276;
   position: absolute;
 }
 
-.content, .content_2, .contnet_3 {
+.vexi_taller4_content, .vexi_taller4_content_2, .vexi_taller4_contnet_3 {
   max-height: 20px;
   padding: 50px 20px 0;
   border-color: transparent;
@@ -148,7 +148,7 @@ color: #DE2276;
   position: relative;
 }
 
-.content p,.content_2 p{
+.vexi_taller4_content p,.vexi_taller4_content_2 p{
   max-height: 0;
   color: transparent;
   text-align: justify;
@@ -159,7 +159,7 @@ color: #DE2276;
 }
 
 
-.content_3 p{
+.vexi_taller4_content_3 p{
   max-height: 0;
   color: transparent;
   text-align: justify;
@@ -187,13 +187,13 @@ label, .label_2, .label_3 {
   cursor: auto;
   transform: translateX(42px);
 }
-.vexi_taller4_radio:checked ~ .content {
+.vexi_taller4_radio:checked ~ .vexi_taller4_content {
   max-height: 180px;
   margin-right: 20px;
   transform: translateX(20px);
   transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
 }
-.vexi_taller4_radio:checked ~ .content p {
+.vexi_taller4_radio:checked ~ .vexi_taller4_content p {
   max-height: 200px;
   transition: color 0.3s linear 0.3s;
 }
@@ -205,14 +205,14 @@ label, .label_2, .label_3 {
   transform: translateX(42px);
 }
 
-.radio_2:checked ~ .content_2 {
+.radio_2:checked ~ .vexi_taller4_content_2 {
   max-height: 180px;
   margin-right: 20px;
   transform: translateX(20px);
   transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
 }
 
-.radio_2:checked ~ .content_2 p {
+.radio_2:checked ~ .vexi_taller4_content_2 p {
   max-height: 200px;
   transition: color 0.3s linear 0.3s;
 }
@@ -225,14 +225,14 @@ label, .label_2, .label_3 {
 }
 
 
-.radio_3:checked ~ .content_3 {
+.radio_3:checked ~ .vexi_taller4_content_3 {
   max-height: 180px;
   margin-right: 20px;
   transform: translateX(20px);
   transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
 }
 
-.radio_3:checked ~ .content_3 p {
+.radio_3:checked ~ .vexi_taller4_content_3 p {
   max-height: 200px;
   transition: color 0.3s linear 0.3s;
   padding-top: 3.5rem;
