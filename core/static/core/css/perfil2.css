@@ -125,7 +125,56 @@
   margin-left:20rem;
   margin-right:20rem;
 }
+/* nickname */
+#perfil2_presentacion_username{
+  width: 100%;
+  min-height: auto;
+  background-color: lightblue;
+}
+#perfil2_presentacion_username_1{
+  display: flex;
+  width: fit-content;
+  min-height: fit-content;
+  margin: auto;
+  background-color: lightgoldenrodyellow;
+}
+#perfil2_username_edit{
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+}
+#perfil2_username_edit_button{
+  background-image: url(../img/lapiz.png);
+  width: 100%;
+  height: 100%;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #DE2276;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/* nickname */
+/* editar nickname */
+#perfil2_presentacion_username_2{
+  background-color: lightgreen;
+}
 
+#perfil2_presentacion_username_2 form{
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  background-color: lightgrey;
+}
+#perfil2_username_descripcion_botones{
+  width: fit-content;
+  height: fit-content;
+  background-color: lightpink;
+  margin: auto;
+  margin-top: 10px;
+}
+/* editar nickname */
 .perfil2_h1{
       color:#DE2276 ;
       font-weight: bold;
