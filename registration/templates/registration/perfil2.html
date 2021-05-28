@@ -97,7 +97,21 @@
                 <h2 class="perfil2_h2">Editar mi perfil</h2>    
               </div>
               <div class="perfil2_form">
-                  <form>		
+                  <form>
+                    <h3 class="perfil2_h3">Nombre de usuario</h3>
+                    <div class="vexi_help">
+                      <div class="tooltip">
+                        <div class="tooltip-spacing">
+                          <div class="tooltip-bg1"></div>
+                          <div class="tooltip-bg2"></div>
+                          <div class="tooltip-text">?</div>
+                        </div>
+                      </div>
+                      <div class="popup-text">
+                        Es el usuario con el que inicias sesión: {{user.get_username}}
+                      </div>
+                    </div>
+                    <input type="text" class="perfil2_col-md-6" >		
                     <h3 class="perfil2_h3">Nombre(s)</h3>
                     <input type="text" class="perfil2_col-md-6" >
                     <h3 class="perfil2_h3">Apellidos</h3>
