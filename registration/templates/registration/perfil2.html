@@ -41,7 +41,7 @@
 
             <div id="perfil2_username_edit">
 
-              <button id="perfil2_username_edit_button"></button>
+              <button id="perfil2_username_edit_button" onclick="edit_nickname();"></button>
 
             </div>
 
@@ -68,7 +68,41 @@
         <!-- ------------------------------------------------------ -->
         <div id="perfil2_presentacion_descipcion">
 
-          <p class="perfil2_p">Cuentános en una breve descripción sobre quíen eres, qué haces o qué te gusta</p>
+          <div id="perfil2_presentacion_descipcion1">
+
+            <div id="perfil2_presentacion_edit">
+
+              <p class="perfil2_p">Cuentános en una breve descripción sobre quíen eres, qué haces o qué te gusta.</p>
+  
+            </div>
+  
+            <div id="perfil2_presentacion_edit_1">
+  
+              <button id="perfil2_presentacion_edit_button" onclick="edit_descripcion();"></button>
+  
+            </div>
+
+          </div>
+          
+
+        </div>
+        
+        <div id="perfil2_presentacion_descripcion_edit">
+
+          <form action="">
+
+            <div id="input_cont_text_edit">
+              <textarea name="" id="input_text_edit" placeholder="Agrega una breve descripción..."></textarea>
+            </div>
+
+            <div id="perfil2_presentacion_descipcion_edit_botones">
+
+              <input type="submit" value="Actualizar">
+              <input type="reset" value="Cancelar">
+
+            </div>
+
+          </form>
 
         </div>
 

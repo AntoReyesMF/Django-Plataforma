@@ -176,6 +176,65 @@
   margin-top: 10px;
 }
 /* editar nickname */
+/* Cuentanos sobre ti */
+#perfil2_presentacion_descipcion{
+  width: 100%;
+  min-height: 30px;
+  margin-top: 15px;
+  background-color: lawngreen;
+}
+#perfil2_presentacion_descipcion1{
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  line-height: 30px;
+  margin: auto;
+  background-color: lightcoral;
+}
+#perfil2_presentacion_edit_1{
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+}
+#perfil2_presentacion_edit_button{
+  background-image: url(../img/lapiz.png);
+  width: 100%;
+  height: 100%;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #DE2276;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/* edit flex none*/
+#perfil2_presentacion_descripcion_edit{
+  display: none;
+  width: 100%;
+  height: fit-content;
+  margin-top: 20px;
+  background-color: lightpink;
+}
+#input_cont_text_edit{
+  width: 80%;
+  height: fit-content;
+  margin: auto;
+}
+#input_text_edit{
+  width: 100%;
+  min-height: 100px;
+  margin: auto;
+}
+#perfil2_presentacion_descipcion_edit_botones{
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  margin-top: 10px;
+  background-color: lightgoldenrodyellow;
+}
+/* edit flex none*/
+/* Cuentanos sobre ti */
 .perfil2_h1{
       color:#DE2276 ;
       font-weight: bold;
