@@ -57,6 +57,7 @@
     line-height: 50px;
     font-size: 40px;    
   }
+
   
   /* ------------------------------Lateral1------------------------------ */
   /* ------------------------------Central------------------------------ */
@@ -85,6 +86,52 @@
   color: #DE2276;
   }
   
+  .vexi_taller11_generator {
+    margin-top: 50px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .vexi_taller11_generate {
+    border-radius: 3px;
+    border: 0;
+    padding: 7px;
+    background-color: #de2276;
+    font-family: montserrat;
+    font-size: 1.5rem;
+    color: #fff;
+    width: 200px;
+    height: 100px;
+  }
+  
+  .vexi_taller11_wrapper {
+    width: 50%;
+    margin: 20px auto 20px auto;
+  }
+  
+  .quotes {
+    background: #DBDBDB;
+    border-radius: 10px;
+  }
+  .quote{
+    font: 2em "Slabo 27px", serif;
+    padding: 10px;
+  }
+  
+  .vexi_taller11_h2{
+    color:#de2276;
+    font-family: montserrat;
+    font-size: 6rem;
+    font-weight: bold;
+    padding-top: 3rem;
+  }
+  
+  .vexi_taller11_generate:hover{
+    cursor:pointer;
+    background-color: black;
+    color: #de2276;
+    
+  }
+
   /* ------------------------------Central------------------------------ */
   /* ------------------------------Lateral2------------------------------ */
   #vexi_edu_taller11_lateral2{

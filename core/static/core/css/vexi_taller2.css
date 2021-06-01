@@ -85,82 +85,156 @@
   color: #DE2276;
 }
 
-#vexi_taller_main {
-    width: 320px;
-    max-height: 450px;
-    height: calc(100vh - 60px);
-    position: relative;
-    overflow: hidden;
-    margin-top: 5rem;
-  }
-  
-  #vexi_taller_main #drag-wrapper{
-    max-width: 100%;
-    height: 100%;
-    white-space: nowrap;
-  }
-  main #drag-wrapper .drag-item {
-    width: 100%;
-    display: inline-flex;
-    height: 100%;
-    white-space: normal;
-    vertical-align: top;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  main #drag-wrapper .drag-item p {
-    font-size: 1.2em;
-    color:#000;
-    line-height: 1.5;
-    margin-top: 0;
-  }
-  
+.vexi_taller2_tarjetas{
+width: 80%;
+height: 80%;
+}
 
-  .tarjeta_negra{
-  background: radial-gradient(at top left, #5c5c5c, #000);
+.vexi_taller2_flip_card_one {
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  display: block;
+  width: 300px;
+  height: 200px;
   position: absolute;
-  width: 270px;
-  height: 150px;
-  margin-top: 60px;
-  padding: 0.7rem;
-  border-radius: 0.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  flex-direction: column;
-  box-shadow: 3px 3px 6px 0 rgba(10, 0, 10, 0.3);
-  }
-  
-  .details{
-  width: 100%;
-  padding-top: 20px;
-  letter-spacing: 1px;
-  }
-  
-  .number{
-    color: #fff;
-  text-shadow: 2px 2px 2px #000;
-  -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);
-  -webkit-mask-size: 200%;
-  animation: shine 3s linear infinite;
-  }
-  
-  .bottom{
-    display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top: 5px;
-  }
-  
-  .name , .expiry{
-    color: #f7f7f7;
-    font-size: 9px;
-  }
-  
-  .expiry{
-    margin-left: 10px;
-  }
+  left: 60%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
 
+.vexi_taller2_flip_card_two {
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  display: block;
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.vexi_taller2_card, .vexi_taller2_card_two {
+  position: relative;
+  height: 100%;
+  width: 110%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
+  z-index: 20;
+}
+
+.vexi_taller2_card div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(at top left, #5c5c5c, #000);
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 15px;
+}
+
+.vexi_taller2_card .vexi_taller2_back {
+  background: #fff;
+  color: #000;
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+  font-size: 15px;
+}
+
+.vexi_taller2_card_two div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(at top left, #a3a3a3, rgb(254, 254, 255));
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 15px;
+}
+
+.vexi_taller2_card_two .vexi_taller2_back {
+  background: #fff;
+  color: #000;
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+  font-size: 15px;
+}
+
+.vexi_taller2_h1{
+  color: #fff;
+  text-shadow: 2px 2px 2px #000;
+  font-size: 15px;
+  letter-spacing: 4px;
+  padding-top: 90px;
+  margin-right: 63px;
+  font-weight: normal;
+}
+
+.vexi_taller2_h2{
+  color: #fff;
+  text-shadow: 2px 2px 2px #000;
+  font-size: 10px;
+  letter-spacing: 4px;
+  margin-right: 180px;
+  font-weight: normal;
+}
+
+.vexi_taller2_h3{
+  font-size: 15px;
+  font-weight: normal;
+  padding: 10px;
+}
+
+label:hover .vexi_taller2_card {
+  -webkit-transform: rotateX(20deg);
+  transform: rotateX(20deg);
+  box-shadow: 0 20px 20px rgba(50, 50, 50, 0.2);
+}
+
+.vexi_taller2_input {
+  display: none;
+}
+
+label:hover :checked + .vexi_taller2_card {
+  transform: rotateX(160deg);
+  -webkit-transform: rotateX(160deg);
+  box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2);
+}
+
+label:hover .vexi_taller2_card {
+  -webkit-transform: rotateX(20deg);
+  transform: rotateX(20deg);
+  box-shadow: 0 20px 20px rgba(50, 50, 50, 0.2);
+}
+
+
+:checked + .vexi_taller2_card_two {
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+}
+
+label:hover :checked + .vexi_taller2_card_two {
+  transform: rotateX(160deg);
+  -webkit-transform: rotateX(160deg);
+  box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2);
+}
+
+label:hover .vexi_taller2_card_two {
+  -webkit-transform: rotateX(20deg);
+  transform: rotateX(20deg);
+  box-shadow: 0 20px 20px rgba(50, 50, 50, 0.2);
+}
 /* ------------------------------Central------------------------------ */
 /* ------------------------------Lateral2------------------------------ */
 #vexi_edu_taller2_lateral2{
