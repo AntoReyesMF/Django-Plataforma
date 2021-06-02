@@ -76,11 +76,11 @@
                 <div class="thumbs"><img src="{% static 'core/img/delete.png' %}"></div>
             </div> 
             <ul>
-              <a class="" href="#"><li class="PERFIL"><span>PERFIL</span></li></a>
-              <a href="#"><li class="USERS"><span>HISTORIAL</span></li></a>
-              <a href="marketplace.html"><li class="PRIORITY"><span>DESCUBRIR</span></li></a>
-              <a href="marketplace.html"><li class="COLLECTIONS"><span>SOPORTE</span></li></a>
-              <a href="marketplace.html"><li class="STATS"><span>AJUSTES</span></li></a>
+              <a class="" href="{% url 'perfil2' %}"><li class="PERFIL"><span>PERFIL</span></li></a>
+              <a href="{% url 'perfil2' %}"><li class="USERS"><span>HISTORIAL</span></li></a>
+              <a href="{% url 'market' %}"><li class="PRIORITY"><span>DESCUBRIR</span></li></a>
+              <a href="{% url 'contacto' %}"><li class="COLLECTIONS"><span>SOPORTE</span></li></a>
+              <a href="{% url 'perfil2' %}"><li class="STATS"><span>AJUSTES</span></li></a>
               <a href="{% url 'logout' %}"><li class="SETTINGS"><span>CERRAR SESIÓN</span></li></a>        
             </ul>
         </div>
@@ -125,6 +125,8 @@
    <script  src= "{% static 'core/js/registro.js' %}"></script>
 
    <script  src="{% static 'core/js/barr_mc.js' %}"></script>
+
+   <script  src="{% static 'core/js/perfil2.js' %}"></script>
   
    <script  src="{% static 'core/js/calendar.js' %}"></script>
 
@@ -134,7 +136,6 @@
 
    <script  src="{% static 'core/js/vexi_taller7.js' %}"></script>
 
-<<<<<<< HEAD
    <script  src="{% static 'core/js/vexi_taller8.js' %}"></script>
 
    <script  src="{% static 'core/js/vexi_taller10.js' %}"></script>
@@ -144,9 +145,6 @@
    <script  src="{% static 'core/js/vexi_taller12.js' %}"></script>
 
 
-=======
-   <script  src="{% static 'core/js/perfil2.js' %}"></script>
->>>>>>> 025d7bb386f710d4e04135999e1224f0eafc239e
 
 </body>
 </html>
