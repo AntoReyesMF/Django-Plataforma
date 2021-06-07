@@ -169,7 +169,7 @@ color: #DE2276;
   color: #DE2276;
 }
 
-label, .label_2, .label_3 {
+.vexi_edu_taller4_label1, .vexi_edu_taller4_label2, .vexi_edu_taller4_label3, .vexi_edu_taller4_label4 {
   font-size: 1.3em;
   position: absolute;
   z-index: 100;
@@ -200,7 +200,7 @@ label, .label_2, .label_3 {
 
 /* label right 2 */
 
-.radio_2:checked + .relative_2 .label_2 {
+.radio_2:checked + .relative_2 .vexi_edu_taller4_label3 {
   cursor: auto;
   transform: translateX(42px);
 }

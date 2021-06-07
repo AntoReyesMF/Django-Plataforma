@@ -16,7 +16,7 @@
     display: flex;
     width: 40%;
     height: 60px;
-    margin: auto;
+    margin-left: 550px;
     
 }
 .mc_inicio_menu{
@@ -45,7 +45,7 @@
 #mc_img_micochinito{
     position: absolute;
     top: 250px;
-    left: 200px;
+    left: 255px;
     width: 300px;
     height: 250px;
     background-color: white;
@@ -65,7 +65,7 @@
 .mc_cont_central{
     text-align: center;
     font-family: Montserrat-Medium;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-size: 20px;
     line-height: 30px;
 }

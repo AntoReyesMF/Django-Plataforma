@@ -43,7 +43,7 @@
 #mc_fin_cont2_p{
     font-family: Montserrat-Regular;
     font-size: 20px;
-    letter-spacing: 4px;
+    letter-spacing: 1px;
     text-align: center;
     line-height: 30px;
     margin-bottom: 40px;
@@ -160,7 +160,7 @@
     margin-bottom: 20px;
     font-size: 18px;
     font-family: Montserrat-Light;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
 }
 
 #mc_fin_cont3_cont1{

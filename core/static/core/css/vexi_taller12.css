@@ -85,6 +85,216 @@
   color: #DE2276;
   }
   
+  .vexi_taller12_container {
+    position: relative;
+    height: 540px;
+    width: 300px;
+    margin: auto;
+  }
+  
+  .vexi_taller12_phone {
+    height: 100%;
+    width: 100%;
+    background: #000;
+    border-radius: 30px;
+  }
+  
+  .vexi_taller12_screen {
+    top: 2%;
+    left: 3%;
+    height: 96%;
+    width: 94%;
+    border-radius: 17px;
+    overflow: hidden;
+  }
+  
+  .vexi_taller12_screen:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4%;
+    background: #ffffff;
+  }
+  
+  .vexi_taller12_home-screen {
+    top: 4%;
+    height: 96%;
+    width: 100%;
+    background: white;
+  }
+  
+  
+  .vexi_taller12_home-button {
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    height: 8%;
+    width: 15%;
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: 10px;
+    z-index: 1
+  }
+  
+  .tweet-screen,
+  .message-screen {
+    top: 110%;
+    height: 100%;
+    width: 100%;
+    background: white;
+  }
+  
+  .vexi_taller12_tweet-icon_img{
+  width: 100%;
+  height: 100%;
+  }
+  
+  .tweet-screen__img{
+    width: 45%;
+    height: 90%;
+    margin-left: 85px;
+    }
+  
+  
+  .tweet-screen {
+    background: white;
+  }
+  .tweet-screen .vexi_taller12_top-bar {
+    height: 10%;
+    width: 100%;
+    background: #000;
+  }
+  
+  .vexi_taller12_tweet-screen_img{
+  width: 40%;
+  height: 65%;
+  margin-left: 84px;
+  margin-top: 8px;
+  }
+  
+  .vexi_taller12_tweet-screen-text{
+  color: #000;
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 1rem;
+  font-family: Montserrat;
+  font-weight: 500;
+  }
+  
+  
+  .message-screen {
+    background: white;
+    color: #212F3D;
+  }
+  
+  .message-screen .vexi_taller12_message-person-text {
+    height: 10%;
+    width: 100%;
+    background: #000;
+    padding: 10px 110px 0 110px;
+    color: #ffffff;
+    font-weight: 500;
+  }
+  
+  .message-screen .vexi_taller12_tweet-person-text {
+    height: 10%;
+    width: 100%;
+    background: #f8f6f6;
+    padding: 10px 110px 0 110px;
+    color: #212F3D;
+    font-weight: 500;
+  }
+  
+  
+  
+  .vexi_taller12_large-text-bubble {
+    left: 5%;
+    width: 80%;
+    border-radius: 15px;
+    padding: 15px;
+    font-weight: 200;
+    margin-top: 3rem;
+  }
+  .vexi_taller12_large-text-bubble {
+    height: 25%;
+  }
+  
+  .vexi_taller12_status-bar {
+    height: 4%;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .vexi_taller12_status-bar_img{
+  height: 70%;
+  margin-left: 13rem;
+  }
+  
+  .vexi_taller12_message-icon-back,
+  .vexi_taller12_tweet-icon-back
+   {
+    height: 11%;
+    width: 20%;
+    border-radius: 10px;
+    animation-name: pulse;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+  }
+  
+  .vexi_taller12_message-icon-back {
+    top: 7%;
+    left: 10%;
+    background: #f1c1b4;
+  }
+  
+  .icon {
+    height: 11%;
+    width: 20%;
+    border-radius: 10px;
+  }
+  
+  
+  .message-icon,
+  .tweet-icon,
+  .vexi_taller12_home-button {
+    cursor: pointer;
+  }
+  
+  
+  .message-icon {
+    top: 7%;
+    left: 10%;
+    background: #E07A5F;
+  }
+  
+  .vexi_taller12_speech {
+    top: 25%;
+    left: 15%;
+    height: 50%;
+    width: 70%;
+    color: #ffffff;
+  
+  }
+  
+  .tweet-icon {
+    top: 7%;
+    left: 40%;
+    background: #000;
+    overflow: hidden;
+  }
+  
+  .vexi_taller12_tweet-icon-back {
+    top: 7%;
+    left: 40%;
+    background: #575757;
+  }
+  
+  .vexi_taller12_phone, .vexi_taller12_screen, .icon, .vexi_taller12_home-screen, .message-icon, .tweet-icon, .tweet-screen, .message-screen, .front, .vexi_taller12_speech,.vexi_taller12_status-bar, .vexi_taller12_message-icon-back, .vexi_taller12_tweet-icon-back,.vexi_taller12_large-text-bubble, .vexi_taller12_message-person-text {
+    position: absolute;
+  }
+
+
   /* ------------------------------Central------------------------------ */
   /* ------------------------------Lateral2------------------------------ */
   #vexi_edu_taller12_lateral2{
