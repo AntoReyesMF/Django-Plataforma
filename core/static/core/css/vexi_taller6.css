@@ -1,4 +1,4 @@
-#vexi_taller_cont_general_taller6{
+ #vexi_taller_cont_general_taller6{
     width: 100%;
     height: auto;
     background-color: RGB(246,245,245);
@@ -85,11 +85,10 @@
   }
   
   .vexi_taller6_wrap {
-    margin-top: -10px;
+    margin-top: 65px;
   }
   ul.tabs {
     width: 600px;
-    height: 80px;
     margin: 0 auto;
     list-style: none;
     overflow: hidden;
@@ -148,7 +147,7 @@
   }
   ul.tabs li a.active {
     margin: 30px 0 0 0;
-    padding: 10px 0 10px 0;
+    padding: 10px 0 30px 0;
     background: #DE2276;
     color: #ffffff;
     /*color: #ff6831;*/
