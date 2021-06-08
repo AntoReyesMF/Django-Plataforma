@@ -89,7 +89,7 @@
     list-style-type: none;
     padding: 0;
     max-width: 34em;
-    margin: 20% auto 0;
+    margin: 145px auto 0;
   }
   .vexi_taller8_card {
     position: absolute;
@@ -162,7 +162,7 @@
     position: relative;
     z-index: 10;
     opacity: 1;
-    background: #EEE;
+    background:#fff;
     transform: rotate(-1deg) translateX(0%) scale(1);
   }
 

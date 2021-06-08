@@ -109,8 +109,11 @@
   }
   
   .quotes {
-    background: #DBDBDB;
+    font-family: montserrat;
     border-radius: 10px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #de2276;
   }
   .quote{
     font: 2em "Slabo 27px", serif;
@@ -122,7 +125,6 @@
     font-family: montserrat;
     font-size: 6rem;
     font-weight: bold;
-    padding-top: 3rem;
   }
   
   .vexi_taller11_generate:hover{
