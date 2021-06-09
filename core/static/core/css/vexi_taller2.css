@@ -85,12 +85,15 @@
   color: #DE2276;
 }
 
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .vexi_taller2_tarjetas{
-width: 80%;
-height: 80%;
+  width: 100%;
+  height: 50%;
+  /* background-color: cadetblue; */
 }
-
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .vexi_taller2_flip_card_one {
+
   -webkit-perspective: 1000px;
   perspective: 1000px;
   -webkit-transform-style: preserve-3d;
@@ -104,6 +107,10 @@ height: 80%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   cursor: pointer;
+}
+
+.vexi_taller2_front{
+  background-color: red;
 }
 
 .vexi_taller2_flip_card_two {
@@ -133,7 +140,7 @@ height: 80%;
   z-index: 20;
 }
 
-.vexi_taller2_card div {
+.vexi_taller2_card .vexi_taller2_front {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -240,7 +247,7 @@ label:hover .vexi_taller2_card_two {
 #vexi_edu_taller2_lateral2{
     width: 10%;
     height: 700px;
-    /* background-color: lightgreen;  */
+    /* background-color: lightgreen;   */
 }
 #vexi_edu_taller2_lateral2_boton2{
     width: 50px;

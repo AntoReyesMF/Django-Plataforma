@@ -89,6 +89,10 @@ color: #DE2276;
   width: 40%;
   margin: auto;
   font-family: montserrat;
+
+
+  background-color: lightcoral; /*-------------------------------------------------------------->*/
+
 }
 
 
@@ -99,6 +103,9 @@ color: #DE2276;
   list-style: none;
   margin: 50px 0 30px 120px;
   border-left: 10px solid #DE2276;
+
+  background-color: aquamarine; /*------------------------------------>*/
+
 }
 #timeline li {
   margin: 40px 0;
