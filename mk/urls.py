@@ -26,4 +26,5 @@ urlpatterns = [
     path('mc/',include('mc.urls')),
     path('market/', include('market.urls')),
     path('vexi/', include('vexi.urls')),
+    path('tesi_cafe/', include('tesi_cafe.urls')),
 ]

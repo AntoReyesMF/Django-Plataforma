@@ -1,0 +1,66 @@
+{% extends 'registration/base_login.html' %}
+{% load static %}
+{% block content %}
+
+<body id="body_tesicafe">
+
+    <div id="tesi_cafe_cont_general_taller1">
+
+        <div id="tesi_cafe_cont_central_taller1">
+    
+            <div id="tesi_cafe_central_encabezado_taller1">
+                
+                <h1>Encabezado</h1>
+                <h2>tesicafe taller1</h2>
+
+            </div>
+            
+           
+
+            <div id="tesi_cafe_central_contenido_taller1">
+            
+             <!-- Lateral 1 -->
+
+                <div id="tesi_cafe_central_lateral1_taller1">
+    
+                    <div id="tesi_cafe_central_lateral1_boton1_taller1">
+    
+                        <a href="{% url 'tesi_cafe_inicio' %}"><p><</p></a>
+             
+                    </div>
+    
+                </div>
+
+            <!-- Lateral 1 -->
+
+            <!-- Central -->
+
+                <div id="tesi_cafe_central_central_taller1">
+    
+                </div>
+
+            <!-- Central -->
+            <!-- Lateral 2 -->
+            
+                <div id="tesi_cafe_central_lateral2_taller1">
+
+                    <div id="tesi_cafe_central_lateral2_boton2_taller1">
+    
+                        <a href="{% url 'tesi_cafe_taller2' %}"><p>></p></a>
+                
+                    </div>
+    
+                </div>
+
+            <!-- Lateral 2 -->
+            </div>
+    
+        </div>
+    
+    </div>
+
+</body>
+
+
+{% endblock %}
+
