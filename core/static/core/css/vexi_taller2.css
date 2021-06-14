@@ -102,8 +102,8 @@
   width: 300px;
   height: 200px;
   position: absolute;
-  left: 60%;
-  top: 50%;
+  left: 63%;
+  top: 65%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   cursor: pointer;
@@ -122,8 +122,8 @@
   width: 300px;
   height: 200px;
   position: absolute;
-  left: 30%;
-  top: 50%;
+  left: 38%;
+  top: 65%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   cursor: pointer;
@@ -140,7 +140,7 @@
   z-index: 20;
 }
 
-.vexi_taller2_card .vexi_taller2_front {
+.vexi_taller2_card div {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -163,7 +163,7 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  background: radial-gradient(at top left, #a3a3a3, rgb(254, 254, 255));
+  background: radial-gradient(at top left, #f1f1f1, rgb(93, 188, 252));
   text-align: center;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -203,12 +203,6 @@
   padding: 10px;
 }
 
-label:hover .vexi_taller2_card {
-  -webkit-transform: rotateX(20deg);
-  transform: rotateX(20deg);
-  box-shadow: 0 20px 20px rgba(50, 50, 50, 0.2);
-}
-
 .vexi_taller2_input {
   display: none;
 }
@@ -219,10 +213,9 @@ label:hover :checked + .vexi_taller2_card {
   box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2);
 }
 
-label:hover .vexi_taller2_card {
-  -webkit-transform: rotateX(20deg);
-  transform: rotateX(20deg);
-  box-shadow: 0 20px 20px rgba(50, 50, 50, 0.2);
+:checked + .vexi_taller2_card_ {
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
 }
 
 
@@ -237,11 +230,6 @@ label:hover :checked + .vexi_taller2_card_two {
   box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2);
 }
 
-label:hover .vexi_taller2_card_two {
-  -webkit-transform: rotateX(20deg);
-  transform: rotateX(20deg);
-  box-shadow: 0 20px 20px rgba(50, 50, 50, 0.2);
-}
 /* ------------------------------Central------------------------------ */
 /* ------------------------------Lateral2------------------------------ */
 #vexi_edu_taller2_lateral2{

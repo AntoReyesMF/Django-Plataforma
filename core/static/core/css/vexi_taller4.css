@@ -84,14 +84,18 @@ font-family: Montserrat-SemiBold;
 color: #DE2276;
 }
 
+.vexi_contenedor_timeline{
+  height: 100%;
+  width: 100%;
+  margin-left: 5rem;
+}
+
 .vexi_timeline{
   position: relative;
   width: 40%;
   margin: auto;
   font-family: montserrat;
-
-
-  background-color: lightcoral; /*-------------------------------------------------------------->*/
+/*-------------------------------------------------------------->*/
 
 }
 
@@ -103,8 +107,7 @@ color: #DE2276;
   list-style: none;
   margin: 50px 0 30px 120px;
   border-left: 10px solid #DE2276;
-
-  background-color: aquamarine; /*------------------------------------>*/
+ /*------------------------------------>*/
 
 }
 #timeline li {
@@ -184,6 +187,10 @@ color: #DE2276;
   top: 20px;
   transition: transform 0.2s linear;
   color: #000;
+}
+
+.vexi_edu_taller4_label1, .vexi_edu_taller4_label3{
+  margin-left: 25px;
 }
 
 .vexi_taller4_radio, .radio_2, .radio_3 {
