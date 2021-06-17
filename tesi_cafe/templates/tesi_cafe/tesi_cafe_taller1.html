@@ -2,64 +2,48 @@
 {% load static %}
 {% block content %}
 
-<body id="body_tesicafe">
+<div id="vexi_taller_cont_general_taller1"> 
 
-    <div id="tesi_cafe_cont_general_taller1">
-
-        <div id="tesi_cafe_cont_central_taller1">
+    <div id="vexi_edu_taller1">
+        
+        <!-- Lateral 1-->
+        <div id="vexi_edu_taller1_lateral1">
     
-            <div id="tesi_cafe_central_encabezado_taller1">
-                
-                <h1>Encabezado</h1>
-                <h2>tesicafe taller1</h2>
-
-            </div>
-            
-           
-
-            <div id="tesi_cafe_central_contenido_taller1">
-            
-             <!-- Lateral 1 -->
-
-                <div id="tesi_cafe_central_lateral1_taller1">
+            <div id="vexi_edu_taller1_lateral1_boton1">
     
-                    <div id="tesi_cafe_central_lateral1_boton1_taller1">
+               <a href="{% url 'tesi_cafe_inicio' %}"><p><</p></a>
     
-                        <a href="{% url 'tesi_cafe_inicio' %}"><p><</p></a>
-             
-                    </div>
-    
-                </div>
-
-            <!-- Lateral 1 -->
-
-            <!-- Central -->
-
-                <div id="tesi_cafe_central_central_taller1">
-    
-                </div>
-
-            <!-- Central -->
-            <!-- Lateral 2 -->
-            
-                <div id="tesi_cafe_central_lateral2_taller1">
-
-                    <div id="tesi_cafe_central_lateral2_boton2_taller1">
-    
-                        <a href="{% url 'tesi_cafe_taller2' %}"><p>></p></a>
-                
-                    </div>
-    
-                </div>
-
-            <!-- Lateral 2 -->
             </div>
     
         </div>
+        <!-- Lateral 1-->
+        <!-- central-->
+        <div id="vexi_edu_taller1_central">
+          <div id="vexi_edu_taller1_central_img">
+            <img id="vexi_edu_img1" src="{% static 'core/img/friends/tesicafecolor.png' %}" alt="">
+            <img id="vexi_edu_img2"src="{% static 'core/img/logos/Negro.png' %}" alt="">
+        </div>
+            <p class="vexi_edu_taller1_central_p">Al desarrollar una tesis nos cuestionamos por donde empezar, y quién me puede ayudar, estás en el lugar adecuado. Hemos creado en conjunto un curso con todo lo necesario para hacer más que una tesis. <br> <br>
+
+                Tesicafé en un espacio interdisciplinario para la elaboración y aplicación  de proyectos de investigación, basados en una metodología 4.0.  Según datos de la UNAM, con un acompañamiento en tesis se puede mejorar el doble de posibilidades de terminarla. 
+               
+              
+              
+               </p>
+    
+        </div>
+        <!-- central-->
+        <!-- Lateral 2-->
+        <div id="vexi_edu_taller1_lateral2">
+            <div id="vexi_edu_taller1_lateral2_boton2">
+                <a href="{% url 'vexi_taller2' %}"><p>></p></a>
+            </div>
+        </div>
+        <!-- Lateral 2-->
     
     </div>
 
-</body>
+</div>
 
 
 {% endblock %}
