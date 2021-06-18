@@ -2,64 +2,56 @@
 {% load static %}
 {% block content %}
 
-<body id="body_tesicafe">
+<div id="teca_taller_cont_general_taller2"> 
 
-    <div id="tesi_cafe_cont_general_taller3">
+    <div id="teca_tesis_cont1_taller2">
+        <div id="teca_tesis_taller2_cont1_espaciador"></div>
+        <div id="teca_tesis_taller2_cont1_img">
+            <img src="{% static 'core/img/friends/tesicafecolor.png' %}" alt="">
+        </div>
+    </div>
 
-        <div id="tesi_cafe_cont_central_taller3">
+
+
+
+    <div id="teca_tesis_taller2">
+        
+        <!-- Lateral 1-->
+        <div id="teca_tesis_taller2_lateral1">
     
-            <div id="tesi_cafe_central_encabezado_taller3">
-                
-                <h1>Encabezado</h1>
-                <h2>tesicafe taller3</h2>
-
-            </div>
-            
-           
-
-            <div id="tesi_cafe_central_contenido_taller3">
-            
-             <!-- Lateral 1 -->
-
-                <div id="tesi_cafe_central_lateral1_taller3">
+            <div id="teca_tesis_taller2_lateral1_boton1">
     
-                    <div id="tesi_cafe_central_lateral1_boton1_taller3">
+               <a href="{% url 'tesi_cafe_taller2' %}"><p><</p></a>
     
-                        <a href="{% url 'tesi_cafe_taller2' %}"><p><</p></a>
-             
-                    </div>
-    
-                </div>
-
-            <!-- Lateral 1 -->
-
-            <!-- Central -->
-
-                <div id="tesi_cafe_central_central_taller3">
-    
-                </div>
-
-            <!-- Central -->
-            <!-- Lateral 2 -->
-            
-                <div id="tesi_cafe_central_lateral2_taller3">
-
-                    <div id="tesi_cafe_central_lateral2_boton2_taller3">
-    
-                        <a href="{% url 'tesi_cafe_taller4' %}"><p>></p></a>
-                
-                    </div>
-    
-                </div>
-
-            <!-- Lateral 2 -->
             </div>
     
         </div>
+        <!-- Lateral 1-->
+        <!-- central-->
+        <div id="teca_tesis_taller2_central">
+    
+            <h1 id="teca_tesis_taller3_central_h1">¿Cómo elegir un tema de investigación?</h1>
+            <p id="teca_tesis_taller3_central_p">
+                
+                Si aún no tienes un tema de investigación o no sabes cual elegir, es importante delimitarlo para volverlo tu objeto de estudio
+            </p>
+            <h2 id="teca_tesis_taller3_central_h2">¿Qué tengo que hacer?</h2>
+            <p id="teca_tesis_taller3_central_p">
+                Crearemos una lluvia de ideas,  escribe los temas que más te gusten, por cada una de las notas y conviértelos en un problema o tema a investigar. Te dejamos un ejemplo.
+            </p>
+            
+    
+        </div>
+        <!-- central-->
+        <!-- Lateral 2-->
+        <div id="teca_tesis_taller2_lateral2">
+            <div id="teca_tesis_taller2_lateral2_boton2">
+                <a href="{% url 'tesi_cafe_taller4' %}"><p>></p></a>
+            </div>
+        </div>
+        <!-- Lateral 2-->
     
     </div>
 
-</body>
-
-
+</div>
 {% endblock %}
