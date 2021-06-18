@@ -44,3 +44,9 @@ class tesi_cafe_taller11PageView(TemplateView):
 
 class tesi_cafe_taller12PageView(TemplateView):
     template_name = 'tesi_cafe/tesi_cafe_taller12.html'
+
+class tesi_cafe_taller13PageView(TemplateView):
+    template_name = 'tesi_cafe/tesi_cafe_taller13.html'
+
+class tesi_cafe_taller14PageView(TemplateView):
+    template_name = 'tesi_cafe/tesi_cafe_taller14.html'

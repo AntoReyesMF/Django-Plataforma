@@ -2,64 +2,55 @@
 {% load static %}
 {% block content %}
 
-<body id="body_tesicafe">
+<div id="teca_taller_cont_general_taller10"> 
 
-    <div id="tesi_cafe_cont_general_taller10">
+    <div id="teca_tesis_cont1_taller10">
+        <div id="teca_tesis_taller10_cont1_espaciador"></div>
+        <div id="teca_tesis_taller10_cont1_img">
+            <img src="{% static 'core/img/friends/tesicafecolor.png' %}" alt="">
+        </div>
+    </div>
 
-        <div id="tesi_cafe_cont_central_taller10">
+    <div id="teca_tesis_taller10">
+        
+        <!-- Lateral 1-->
+        <div id="teca_tesis_taller10_lateral1">
     
-            <div id="tesi_cafe_central_encabezado_taller10">
-                
-                <h1>Encabezado</h1>
-                <h2>tesicafe taller10</h2>
-
-            </div>
-            
-           
-
-            <div id="tesi_cafe_central_contenido_taller10">
-            
-             <!-- Lateral 1 -->
-
-                <div id="tesi_cafe_central_lateral1_taller10">
+            <div id="teca_tesis_taller10_lateral1_boton1">
     
-                    <div id="tesi_cafe_central_lateral1_boton1_taller10">
+               <a href="{% url 'tesi_cafe_taller9' %}"><p><</p></a>
     
-                        <a href="{% url 'tesi_cafe_taller9' %}"><p><</p></a>
-             
-                    </div>
-    
-                </div>
-
-            <!-- Lateral 1 -->
-
-            <!-- Central -->
-
-                <div id="tesi_cafe_central_central_taller10">
-    
-                </div>
-
-            <!-- Central -->
-            <!-- Lateral 2 -->
-            
-                <div id="tesi_cafe_central_lateral2_taller10">
-
-                    <div id="tesi_cafe_central_lateral2_boton2_taller10">
-    
-                        <a href="{% url 'tesi_cafe_taller11' %}"><p>></p></a>
-                
-                    </div>
-    
-                </div>
-
-            <!-- Lateral 2 -->
             </div>
     
         </div>
+        <!-- Lateral 1-->
+        <!-- central-->
+        <div id="teca_tesis_taller10_central">
+    
+            <h1 id="teca_tesis_taller10_central_h1">¿Cómo construir tu Estrategia Metodológica?</h1>
+            <p id="teca_tesis_taller10_central_p">
+                Llegó el momento de comprobar tus objetivos, preguntas, hipótesis y teorías. ¿Cómo? Mediante tu estrategia metodológica. En este video te mostramos unos tips.
+
+            </p>
+
+            <div id="teca_tesis_taller10_central_video">
+                <iframe width="700" height="400" src="https://www.youtube.com/embed/8zL6age-fNE?controls=0"></iframe>
+            </div>
+    
+        </div>
+        <!-- central-->
+        <!-- Lateral 2-->
+        <div id="teca_tesis_taller10_lateral2">
+            <div id="teca_tesis_taller2_lateral2_boton2">
+                <a href="{% url 'tesi_cafe_taller11' %}"><p>></p></a>
+            </div>
+        </div>
+        <!-- Lateral 2-->
     
     </div>
 
-</body>
+</div>
+
 
 
 {% endblock %}

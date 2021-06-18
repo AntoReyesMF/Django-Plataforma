@@ -1,50 +1,59 @@
-#tesi_cafe_cont_general_taller11{
+#teca_taller_cont_general_taller11{
     width: 100%;
-    height: fit-content;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: aqua;
+    height: auto;
+    background-color: RGB(246,245,245);
 }
-
-#tesi_cafe_cont_central_taller11{
+#teca_tesis_taller11{
+    display: flex;
     width: 80%;
-    height: fit-content;
+    height: auto;
     margin: auto;
-    background-color: lightgoldenrodyellow;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* background-color: cadetblue;  */
 }
 
-#tesi_cafe_central_encabezado_taller11{
-    width: 100%;
-    height: 200px;
-    background-color: lightgreen;
-}
-
-#tesi_cafe_central_contenido_taller11{
+#teca_tesis_cont1_taller11{
     display: flex;
     width: 100%;
-    height: 700px;
-    background-color: lightgray;
+    height:auto;
+    padding-top: 30px;
+    /* background-color: aqua; */
+}
+#teca_tesis_taller11_cont1_espaciador{
+    width: 85%;
+    height: auto;
+    /* background-color: lightcyan; */
+}
+#teca_tesis_taller11_cont1_img{
+    width: 15%;
+    height: auto;
+    /* background-color: lightgreen; */
+}
+#teca_tesis_taller11_cont1_img img{
+    width: 60%;
+    height: auto;
 }
 
 /* ------------------------------Laterl------------------------------ */
-#tesi_cafe_central_lateral1_taller11{
+#teca_tesis_taller11_lateral1{
     width: 10%;
     height: 700px;
-    background-color: oldlace; 
+    /* background-color: lightpink;  */
 }
-#tesi_cafe_central_lateral1_boton1_taller11{
+#teca_tesis_taller11_lateral1_boton1{
     width: 50px;
     height: 50px;
     margin: auto;
-    margin-top: 350px;
+    margin-top: 375px;
     border-radius: 50%;
     background-color: #DE2276;
 }
-#tesi_cafe_central_lateral1_boton1_taller11 a{
+#teca_tesis_taller11_lateral1_boton1 a{
     text-decoration: none;
     color: white;
 }
-#tesi_cafe_central_lateral1_boton1_taller11 a p{
+#teca_tesis_taller11_lateral1_boton1 a p{
     text-align: center;
     line-height: 50px;
     font-size: 40px;    
@@ -52,35 +61,52 @@
 
 /* ------------------------------Lateral1------------------------------ */
 /* ------------------------------Central------------------------------ */
-#tesi_cafe_central_central_taller11{
+#teca_tesis_taller11_central{
     width: 80%;
     height: 700px;
-    background-color: olivedrab;
+    /* background-color: lightskyblue;  */
+}
+#teca_tesis_taller11_central_h1{
+    text-align: center;
+    font-size: 30px;
+    font-family: Montserrat-Bold;
+}
+#teca_tesis_taller11_central_p{
+    text-align: center;
+    font-size: 20px;
+    line-height: 25px;
+    font-family: Montserrat-Regular;
+}
+#teca_tesis_taller11_central_h2{
+    text-align: center;
+    font-size: 25px;
+    font-family: Montserrat-Bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #DE2276;
 }
 /* ------------------------------Central------------------------------ */
-/* ------------------------------Lateral 2------------------------------ */
-
-#tesi_cafe_central_lateral2_taller11{
+/* ------------------------------Lateral2------------------------------ */
+#teca_tesis_taller11_lateral2{
     width: 10%;
     height: 700px;
-    background-color: orangered; 
+    /* background-color: lightgreen;  */
 }
-#tesi_cafe_central_lateral2_boton2_taller11{
+#teca_tesis_taller11_lateral2_boton2{
     width: 50px;
     height: 50px;
     margin: auto;
-    margin-top: 350px;
+    margin-top: 375px;
     border-radius: 50%;
     background-color: #DE2276;
 }
-#tesi_cafe_central_lateral2_boton2_taller11 a{
+#teca_tesis_taller11_lateral2_boton2 a{
     text-decoration: none;
     color: white;
 }
-#tesi_cafe_central_lateral2_boton2_taller11 a p{
+#teca_tesis_taller11_lateral2_boton2 a p{
     text-align: center;
     line-height: 50px;
     font-size: 40px;    
 }
-
-/* ------------------------------Lateral 2------------------------------ */
+/* ------------------------------Lateral2------------------------------ */

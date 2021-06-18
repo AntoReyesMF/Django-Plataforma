@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import tesi_cafePageView, tesi_cafe_inicioPageView, tesi_cafe_taller1PageView, tesi_cafe_taller2PageView, tesi_cafe_taller3PageView, tesi_cafe_taller4PageView, tesi_cafe_taller5PageView, tesi_cafe_taller6PageView, tesi_cafe_taller7PageView, tesi_cafe_taller8PageView, tesi_cafe_taller9PageView, tesi_cafe_taller10PageView, tesi_cafe_taller11PageView, tesi_cafe_taller12PageView
+from .views import tesi_cafePageView, tesi_cafe_inicioPageView, tesi_cafe_taller1PageView, tesi_cafe_taller2PageView, tesi_cafe_taller3PageView, tesi_cafe_taller4PageView, tesi_cafe_taller5PageView, tesi_cafe_taller6PageView, tesi_cafe_taller7PageView, tesi_cafe_taller8PageView, tesi_cafe_taller9PageView, tesi_cafe_taller10PageView, tesi_cafe_taller11PageView, tesi_cafe_taller12PageView, tesi_cafe_taller13PageView, tesi_cafe_taller14PageView
 
 urlpatterns = [
     path('', tesi_cafePageView.as_view(), name="tesi_cafe"),
@@ -16,5 +16,7 @@ urlpatterns = [
     path('tesi_cafe_taller10', tesi_cafe_taller10PageView.as_view(), name="tesi_cafe_taller10"),
     path('tesi_cafe_taller11', tesi_cafe_taller11PageView.as_view(), name="tesi_cafe_taller11"),
     path('tesi_cafe_taller12', tesi_cafe_taller12PageView.as_view(), name="tesi_cafe_taller12"),
+    path('tesi_cafe_taller13', tesi_cafe_taller13PageView.as_view(), name="tesi_cafe_taller13"),
+    path('tesi_cafe_taller14', tesi_cafe_taller14PageView.as_view(), name="tesi_cafe_taller14"),
     
 ]
