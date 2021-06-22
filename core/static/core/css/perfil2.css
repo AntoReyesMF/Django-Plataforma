@@ -129,14 +129,15 @@
 #perfil2_presentacion_username{
   width: 100%;
   min-height: auto;
-  background-color: lightblue;
+  margin: auto;
+  /* background-color: lightblue; */
 }
 #perfil2_presentacion_username_1{
   display: flex;
   width: fit-content;
   min-height: fit-content;
   margin: auto;
-  background-color: lightgoldenrodyellow;
+  /* background-color: lightgoldenrodyellow; */
 }
 #perfil2_username_edit{
   background-color: white;
@@ -181,7 +182,7 @@
   width: 100%;
   min-height: 30px;
   margin-top: 15px;
-  background-color: lawngreen;
+  /* background-color: lawngreen; */
 }
 #perfil2_presentacion_descipcion1{
   display: flex;
@@ -189,7 +190,7 @@
   height: fit-content;
   line-height: 30px;
   margin: auto;
-  background-color: lightcoral;
+  /* background-color: lightcoral; */
 }
 #perfil2_presentacion_edit_1{
   background-color: white;
