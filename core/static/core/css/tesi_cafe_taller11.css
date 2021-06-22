@@ -82,9 +82,102 @@
     font-size: 25px;
     font-family: Montserrat-Bold;
     margin-top: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     color: #DE2276;
+
 }
+
+.teca_taller11_card {
+    background: white;
+    padding: 38px 36px;
+    margin: auto;
+    border-radius: 4px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+  }
+  .teca_taller11_h1 {
+    font-family: montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.2;
+    color:#000;
+    margin-bottom: 20px;
+  }
+  
+  .teca_taller11_h2{
+  font-family: montserrat;
+  font-size: 15px;
+  }
+  
+  .teca_taller11_card details {
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.05);
+    border-left: 5px solid gray;
+    
+  }
+  .teca_taller11_card details:not(:last-of-type) {
+    margin-bottom: 15px;
+  }
+  .teca_taller11_card details .teca_taller11_card1 {
+    border-left: 5px solid var(--color-summary-1-highlight);
+  }
+  .teca_taller11_card details .teca_taller11_card2 {
+    border-left: 5px solid var(--color-summary-2-highlight);
+  }
+  .teca_taller11_card details .teca_taller11_card3 {
+    border-left: 5px solid var(--color-summary-3-highlight);
+  }
+  .teca_taller11_card details summary,
+  .teca_taller11_card details .teca_taller11_p {
+    font-family: montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.4;
+    color:#DE2276;
+  }
+  .teca_taller11_card details summary:not(:last-of-type),
+  .teca_taller11_card details p:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+  .teca_taller11_card details .teca_taller11_p {
+    padding-left: 30px;
+  }
+  .teca_taller11_card details summary {
+    cursor: pointer;
+    margin-bottom: 0;
+    list-style-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.6066 12H1.3934' stroke='%23202842' stroke-width='1.875' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12 1.39343V22.6066' stroke='%23202842' stroke-width='1.875' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  }
+  .teca_taller11_card details summary::-webkit-details-marker {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.6066 12H1.3934' stroke='%23202842' stroke-width='1.875' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12 1.39343V22.6066' stroke='%23202842' stroke-width='1.875' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    color: transparent;
+    background-size: 100% 100%;
+    margin-right: 18px;
+    width: 16px;
+    height: 16px;
+    transform: translateY(2px);
+  }
+  .teca_taller11_card details[open] summary {
+    margin-bottom: 10px;
+    list-style-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.5 16.5L1.5 1.5' stroke='%23202842' stroke-width='1.875' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16.5 1.5L1.5 16.5' stroke='%23202842' stroke-width='1.875' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    font-weight: 700;
+  }
+  .teca_taller11_card details[open] summary::-webkit-details-marker {
+    background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.5 16.5L1.5 1.5' stroke='%23202842' stroke-width='1.875' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16.5 1.5L1.5 16.5' stroke='%23202842' stroke-width='1.875' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    color: transparent;
+    background-size: 100% 100%;
+    margin-right: 20px;
+    width: 12px;
+    height: 12px;
+    transform: translateY(1px);
+  }
+  .teca_taller11_card details[open] .teca_taller11_p{
+    padding-left: 32px;
+  }
 /* ------------------------------Central------------------------------ */
 /* ------------------------------Lateral2------------------------------ */
 #teca_tesis_taller11_lateral2{
