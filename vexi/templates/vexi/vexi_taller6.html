@@ -2,9 +2,68 @@
 {% load static %}
 {% block content %}
 
+<div id="vexi_taller_cont_general_taller6"> 
 
-<h1>hola_mundo taller 6</h1>
+    <div id="vexi_edu_cont1_taller6">
+        <div id="vexi_edu_taller6_cont1_espaciador"></div>
+        <div id="vexi_edu_taller6_cont1_img">
+            <img src="{% static 'core/img/friends/logoVexi.png' %}" alt="">
+        </div>
+    </div>
+    <div id="vexi_edu_taller6">
+        
+        <!-- Lateral 1-->
+        <div id="vexi_edu_taller6_lateral1">
+    
+            <div id="vexi_edu_taller6_lateral1_boton1">
+    
+               <a href="{% url 'vexi_taller5' %}"><p><</p></a>
+    
+            </div>
+    
+        </div>
+        <!-- Lateral 1-->
+        <!-- central-->
+        <div id="vexi_edu_taller6_central">
+    
+            <h1 id="vexi_edu_taller6_central_h1">Cuotas</h1>
+            <p class="vexi_edu_taller6_central_p">Siempre ten encuenta que todas las tarjetas tienen comisiones o cuotas, te presentamos las más importantes.
+            </p>
+            
+            <div class="vexi_taller6_wrap">
+                <ul class="tabs group">
+                  <li><a class="active" href="#/vexi_taller6_one">CAT</a></li>
+                  <li><a href="#/vexi_taller6_two">Cuota Anual</a></li>
+                  <li><a href="#/vexi_taller6_three">Comisiones extra</a></li>
+                </ul>
+                
+                <div id="vexi_taller6_terms">
+                  <p id="vexi_taller6_one">Se trata del Costo Anual Total del crédito de tu tarjeta, no es el mismo para todos, puede variar según el producto que te hayan otorgado y puede mejorar dependiendo de tu comportamiento. <br> <br>
+                      Para calcularlo se incluyen las Tarifa Anual Efectiva, comisiones, las primas de seguro, bonificaciones y descuentos de crédito. 
+                      Es importante recalcar que no todas las comisiones entran en el CAT, se excluyen aquellas por pago tardío, retiro de cajeros automáticos y comisiones por apertura</p>
+  
+                  <p id="vexi_taller6_two">También conocida como anualidad, es una especie de cobro o cargo que hace la empresa que emite la tarjeta por hacer uso de la misma, se hace una vez al año y se realiza de manera automática, pues se carga a tu línea de crédito.
+  </p>
+                  <p id="vexi_taller6_three">Aunque en general puedes disponer del saldo  en tu TDC en efectivo al retirarlo en un cajero automático, esta acción podría generarte una comisión del 5% aproximadamente sobre el monto retirado, esto de acuerdo a la institución emisora. </p>
+                </div>
+                
+              </div>
 
+    
+            
+        </div>
+        <!-- central-->
+        <!-- Lateral 2-->
+        <div id="vexi_edu_taller6_lateral2">
+            <div id="vexi_edu_taller6_lateral2_boton2">
+                <a href="{% url 'vexi_taller7' %}"><p>></p></a>
+            </div>
+        </div>
+        <!-- Lateral 2-->
+    
+    </div>
+
+</div>
 
 
 

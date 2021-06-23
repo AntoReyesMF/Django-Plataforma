@@ -1,0 +1,52 @@
+{% extends 'registration/base_login.html' %}
+{% load static %}
+{% block content %}
+
+<div id="teca_taller_cont_general_taller12"> 
+
+    <div id="teca_tesis_cont1_taller12">
+        <div id="teca_tesis_taller12_cont1_espaciador"></div>
+        <div id="teca_tesis_taller12_cont1_img">
+            <img src="{% static 'core/img/friends/tesicafecolor.png' %}" alt="">
+        </div>
+    </div>
+    <div id="teca_tesis_taller12">
+        
+        <!-- Lateral 1-->
+        <div id="teca_tesis_taller12_lateral1">
+    
+            <div id="teca_tesis_taller12_lateral1_boton1">
+    
+               <a href="{% url 'tesi_cafe_taller11' %}"><p><</p></a>
+    
+            </div>
+    
+        </div>
+        <!-- Lateral 1-->
+        <!-- central-->
+        <div id="teca_tesis_taller12_central">
+    
+            <h1 id="teca_tesis_taller12_central_h1">Así se construye un capítulo de tesis
+            </h1>
+            <p id="teca_tesis_taller12_central_p">
+                
+                Ya casi terminamos, pero ¿Sabes como se realiza un capítulo de tu tesis? si la respuesta es NO, presta atención a estos pasos y si ya tienes contruidos algunos, podrás mejorarlos.            </p>
+
+            
+    
+        </div>
+        <!-- central-->
+        <!-- Lateral 2-->
+        <div id="teca_tesis_taller12_lateral2">
+            <div id="teca_tesis_taller12_lateral2_boton2">
+                <a href="{% url 'tesi_cafe_taller13' %}"><p>></p></a>
+            </div>
+        </div>
+        <!-- Lateral 2-->
+    
+    </div>
+
+</div>
+
+
+{% endblock %}

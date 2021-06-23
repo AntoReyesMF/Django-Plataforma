@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'market',
     'mc',
     'vexi',
+    'tesi_cafe',
     
 ]
 

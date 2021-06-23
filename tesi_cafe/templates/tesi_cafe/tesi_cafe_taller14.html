@@ -1,0 +1,82 @@
+{% extends 'registration/base_login.html' %}
+{% load static %}
+{% block content %}
+
+<div id="teca_taller_cont_general_taller14"> 
+
+    <div id="teca_tesis_cont1_taller14">
+        <div id="teca_tesis_taller14_cont1_espaciador"></div>
+        <div id="teca_tesis_taller14_cont1_img">
+            <img src="{% static 'core/img/friends/tesicafecolor.png' %}" alt="">
+        </div>
+    </div>
+    <div id="teca_tesis_taller14">
+        
+        <!-- Lateral 1-->
+        <div id="teca_tesis_taller14_lateral1">
+    
+            <div id="teca_tesis_taller14_lateral1_boton1">
+    
+               <a href="{% url 'tesi_cafe_taller13' %}"><p><</p></a>
+    
+            </div>
+     
+        </div>
+        <!-- Lateral 1-->
+        <!-- central-->
+        <div id="teca_tesis_taller14_central">
+    
+            <h1 id="teca_tesis_taller14_central_h1">No tienes pretextos para terminar tu tesis</h1>
+            <p class="teca_tesis_taller14_central_p">Ahora podrás empezarla con ayuda de Making Friends y Tesicafé<br>
+            Ahora puedes solicitar una prueba gratuita sobre tu acompamiento para terminar tu tesis
+                </p>
+
+                <div id="teca_tesis_taller14_crear">
+                    <div class="teca_tesis_taller14_centro">
+                        <a href="">
+                           <span class='teca_tesis_taller14_pulse-button'>Terminar mi <br>tesis</span></a>
+                    </div>
+                    
+                    <p class= "teca_tesis_taller14_central_p">
+                        Todo gran maker puede tener dudas sobre los temas vistos. Si tienes dudas puedes consultar toda la información en este BLOG
+                    </p>
+                    <p class="teca_tesis_taller14_central_p">
+                        <br>
+                        Si tienes cosas que no quedan claras puedes preguntarnos en nuestro chat y con gusto te ayudaremos.
+                    </p>
+
+                    <div id="teca_tesis_taller14_central_botones">
+        
+                        <div class="teca_tesis_taller14_central_botones">
+        
+                            <div class="teca_tesis_taller14_boton">
+                                <a href="https://www.messenger.com/t/vexitarjeta"><p>Contactar a Tesicafé</p></a>
+                            </div>
+        
+                        </div>
+                        <div class="teca_tesis_taller14_central_botones">
+        
+                            <div class="teca_tesis_taller14_boton">
+                                <a href="{% url 'tesi_cafe_inicio' %}"><p>Menú Principal</p></a>
+                            </div>
+        
+                        </div>
+                    </div>
+
+        </div>
+        <!-- central-->
+        <!-- Lateral 2
+        <div id="vexi_edu_taller13_lateral2">
+            <div id="vexi_edu_taller13_lateral2_boton2">
+                <a href="{% url 'vexi_taller13' %}"><p>></p></a>
+            </div>
+        </div>
+        Lateral 2-->
+    
+    </div>
+
+</div>
+
+
+
+{% endblock %}

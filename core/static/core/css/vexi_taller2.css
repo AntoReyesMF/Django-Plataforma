@@ -1,0 +1,257 @@
+#vexi_taller_cont_general_taller2{
+    width: 100%;
+    height: auto;
+    background-color: RGB(246,245,245);
+}
+#vexi_edu_taller2{
+    display: flex;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* background-color: cadetblue;  */
+}
+
+#vexi_edu_cont1_taller2{
+  display: flex;
+  width: 100%;
+  height:auto;
+  padding-top: 30px;
+  /* background-color: aqua; */
+}
+#vexi_edu_taller2_cont1_espaciador{
+  width: 85%;
+  height: auto;
+  /* background-color: lightcyan; */
+}
+#vexi_edu_taller2_cont1_img{
+  width: 15%;
+  height: auto;
+  /* background-color: lightgreen; */
+}
+#vexi_edu_taller2_cont1_img img{
+  width: 60%;
+  height: auto;
+}
+
+/* ------------------------------Laterl------------------------------ */
+#vexi_edu_taller2_lateral1{
+    width: 10%;
+    height: 700px;
+    /* background-color: lightpink;  */
+}
+#vexi_edu_taller2_lateral1_boton1{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-top: 375px;
+    border-radius: 50%;
+    background-color: #DE2276;
+}
+#vexi_edu_taller2_lateral1_boton1 a{
+    text-decoration: none;
+    color: white;
+}
+#vexi_edu_taller2_lateral1_boton1 a p{
+    text-align: center;
+    line-height: 50px;
+    font-size: 40px;    
+}
+
+/* ------------------------------Lateral1------------------------------ */
+/* ------------------------------Central------------------------------ */
+#vexi_edu_taller2_central{
+    width: 80%;
+    height: 700px;
+    /* background-color: lightskyblue;  */
+}
+
+#vexi_edu_taller2_central_h1{
+  text-align: center;
+  font-size: 30px;
+  font-family: Montserrat-Bold;
+}
+.vexi_edu_taller2_central_p{
+  text-align: center;
+  font-size: 20px;
+  font-family: Montserrat-Regular;
+}
+#vexi_edu_taller2_central_h2{
+  text-align: center;
+  margin-top: 40px;
+  font-size: 25px;
+  font-family: Montserrat-SemiBold;
+  color: #DE2276;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.vexi_taller2_tarjetas{
+  width: 100%;
+  height: 50%;
+  /* background-color: cadetblue; */
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.vexi_taller2_flip_card_one {
+
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  display: block;
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  left: 63%;
+  top: 65%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.vexi_taller2_front{
+  background-color: red;
+}
+
+.vexi_taller2_flip_card_two {
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  display: block;
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  left: 38%;
+  top: 65%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.vexi_taller2_card, .vexi_taller2_card_two {
+  position: relative;
+  height: 100%;
+  width: 110%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
+  z-index: 20;
+}
+
+.vexi_taller2_card div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(at top left, #5c5c5c, #000);
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 15px;
+}
+
+.vexi_taller2_card .vexi_taller2_back {
+  background: #fff;
+  color: #000;
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+  font-size: 15px;
+}
+
+.vexi_taller2_card_two div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(at top left, #f1f1f1, rgb(93, 188, 252));
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 15px;
+}
+
+.vexi_taller2_card_two .vexi_taller2_back {
+  background: #fff;
+  color: #000;
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+  font-size: 15px;
+}
+
+.vexi_taller2_h1{
+  color: #fff;
+  text-shadow: 2px 2px 2px #000;
+  font-size: 15px;
+  letter-spacing: 4px;
+  padding-top: 90px;
+  margin-right: 63px;
+  font-weight: normal;
+}
+
+.vexi_taller2_h2{
+  color: #fff;
+  text-shadow: 2px 2px 2px #000;
+  font-size: 10px;
+  letter-spacing: 4px;
+  margin-right: 180px;
+  font-weight: normal;
+}
+
+.vexi_taller2_h3{
+  font-size: 15px;
+  font-weight: normal;
+  padding: 10px;
+}
+
+.vexi_taller2_input {
+  display: none;
+}
+
+label:hover :checked + .vexi_taller2_card {
+  transform: rotateX(160deg);
+  -webkit-transform: rotateX(160deg);
+  box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2);
+}
+
+:checked + .vexi_taller2_card_ {
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+}
+
+
+:checked + .vexi_taller2_card_two {
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+}
+
+label:hover :checked + .vexi_taller2_card_two {
+  transform: rotateX(160deg);
+  -webkit-transform: rotateX(160deg);
+  box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* ------------------------------Central------------------------------ */
+/* ------------------------------Lateral2------------------------------ */
+#vexi_edu_taller2_lateral2{
+    width: 10%;
+    height: 700px;
+    /* background-color: lightgreen;   */
+}
+#vexi_edu_taller2_lateral2_boton2{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-top: 375px;
+    border-radius: 50%;
+    background-color: #DE2276;
+}
+#vexi_edu_taller2_lateral2_boton2 a{
+    text-decoration: none;
+    color: white;
+}
+#vexi_edu_taller2_lateral2_boton2 a p{
+    text-align: center;
+    line-height: 50px;
+    font-size: 40px;    
+}
+/* ------------------------------Lateral2------------------------------ */

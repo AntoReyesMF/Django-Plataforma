@@ -1,0 +1,112 @@
+#teca_taller_cont_general_taller8{
+    width: 100%;
+    height: auto;
+    background-color: RGB(246,245,245);
+}
+#teca_tesis_taller8{
+    display: flex;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* background-color: cadetblue;  */
+}
+
+#teca_tesis_cont1_taller8{
+    display: flex;
+    width: 100%;
+    height:auto;
+    padding-top: 30px;
+    /* background-color: aqua; */
+}
+#teca_tesis_taller8_cont1_espaciador{
+    width: 85%;
+    height: auto;
+    /* background-color: lightcyan; */
+}
+#teca_tesis_taller8_cont1_img{
+    width: 15%;
+    height: auto;
+    /* background-color: lightgreen; */
+}
+#teca_tesis_taller8_cont1_img img{
+    width: 60%;
+    height: auto;
+}
+
+/* ------------------------------Laterl------------------------------ */
+#teca_tesis_taller8_lateral1{
+    width: 10%;
+    height: 700px;
+    /* background-color: lightpink;  */
+}
+#teca_tesis_taller8_lateral1_boton1{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-top: 375px;
+    border-radius: 50%;
+    background-color: #DE2276;
+}
+#teca_tesis_taller8_lateral1_boton1 a{
+    text-decoration: none;
+    color: white;
+}
+#teca_tesis_taller8_lateral1_boton1 a p{
+    text-align: center;
+    line-height: 50px;
+    font-size: 40px;    
+}
+
+/* ------------------------------Lateral1------------------------------ */
+/* ------------------------------Central------------------------------ */
+#teca_tesis_taller8_central{
+    width: 80%;
+    height: 700px;
+    /* background-color: lightskyblue;  */
+}
+#teca_tesis_taller8_central_h1{
+    text-align: center;
+    font-size: 30px;
+    font-family: Montserrat-Bold;
+}
+#teca_tesis_taller8_central_p{
+    text-align: center;
+    font-size: 20px;
+    line-height: 25px;
+    font-family: Montserrat-Regular;
+}
+#teca_tesis_taller8_central_h2{
+    text-align: center;
+    font-size: 25px;
+    font-family: Montserrat-Bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #DE2276;
+}
+/* ------------------------------Central------------------------------ */
+/* ------------------------------Lateral2------------------------------ */
+#teca_tesis_taller8_lateral2{
+    width: 10%;
+    height: 700px;
+    /* background-color: lightgreen;  */
+}
+#teca_tesis_taller8_lateral2_boton2{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-top: 375px;
+    border-radius: 50%;
+    background-color: #DE2276;
+}
+#teca_tesis_taller8_lateral2_boton2 a{
+    text-decoration: none;
+    color: white;
+}
+#teca_tesis_taller8_lateral2_boton2 a p{
+    text-align: center;
+    line-height: 50px;
+    font-size: 40px;    
+}
+/* ------------------------------Lateral2------------------------------ */

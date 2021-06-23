@@ -24,20 +24,103 @@
                 </div>
               </div>
             </div>
+    
+    <!-- ######################################################################################################## -->
+
+    <div class="perfil2_presentacion">
+
+        <div id="perfil2_presentacion_username">
+
+          <div id="perfil2_presentacion_username_1">
+
+            <div id="perfil2_username">
+
+              <h1 class="perfil2_h1">{{user.get_username}}</h1>
+
+            </div>
+
+            <div id="perfil2_username_edit">
+
+              <button id="perfil2_username_edit_button" onclick="edit_nickname();"></button>
+
+            </div>
+
+          </div>
+
+          <div id="perfil2_presentacion_username_2">
+
+            <form action="">
+
+              <input type="text" name="descripcion" id="perfil2_username_descripcion_hide">
+
+              <div id="perfil2_username_descripcion_botones">
+
+                <input type="submit" value="Actualizar">
+                <input type="reset" value="Cancelar">
+
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+        <!-- ------------------------------------------------------ -->
+        <div id="perfil2_presentacion_descipcion">
+
+          <div id="perfil2_presentacion_descipcion1">
+
+            <div id="perfil2_presentacion_edit">
+
+              <p class="perfil2_p">Cuentános en una breve descripción sobre quíen eres, qué haces o qué te gusta.</p>
+  
+            </div>
+  
+            <div id="perfil2_presentacion_edit_1">
+  
+              <button id="perfil2_presentacion_edit_button" onclick="edit_descripcion();"></button>
+  
+            </div>
+
+          </div>
           
-     <div class="perfil2_presentacion">
-      <h1 class="perfil2_h1">{{user.get_username}}</h1>
-      <p class="perfil2_p">Cuentános en una breve descripción sobre quíen eres, qué haces o qué te gusta</p>
-      </div>
+
+        </div>
+        
+        <div id="perfil2_presentacion_descripcion_edit">
+
+          <form action="">
+
+            <div id="input_cont_text_edit">
+              <textarea name="" id="input_text_edit" placeholder="Agrega una breve descripción..."></textarea>
+            </div>
+
+            <div id="perfil2_presentacion_descipcion_edit_botones">
+
+              <input type="submit" value="Actualizar">
+              <input type="reset" value="Cancelar">
+
+            </div>
+
+          </form>
+
+        </div>
+
     </div>
 
-      <div class="perfil2_flexslider-controls">
+    <!-- ######################################################################################################## --> 
+
+    <div class="perfil2_flexslider-controls">
+
         <ol class="perfil2_flex-control-nav">
+
             <li>Editar perfil</li>
             <li>Cuenta</li>
             <li>Historial de cursos</li>
             <li>Certificados</li>
+
         </ol>
+
     </div>
 
     <div class="flexslider">
@@ -48,7 +131,8 @@
                 <h2 class="perfil2_h2">Editar mi perfil</h2>    
               </div>
               <div class="perfil2_form">
-                  <form>		
+                  <form>
+                    <input type="text" class="perfil2_col-md-6" >		
                     <h3 class="perfil2_h3">Nombre(s)</h3>
                     <input type="text" class="perfil2_col-md-6" >
                     <h3 class="perfil2_h3">Apellidos</h3>

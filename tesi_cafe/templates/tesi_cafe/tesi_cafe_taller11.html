@@ -1,0 +1,78 @@
+{% extends 'registration/base_login.html' %}
+{% load static %}
+{% block content %}
+
+<div id="teca_taller_cont_general_taller11"> 
+
+    <div id="teca_tesis_cont1_taller11">
+        <div id="teca_tesis_taller11_cont1_espaciador"></div>
+        <div id="teca_tesis_taller11_cont1_img">
+            <img src="{% static 'core/img/friends/tesicafecolor.png' %}" alt="">
+        </div>
+    </div>
+    <div id="teca_tesis_taller11">
+        
+        <!-- Lateral 1-->
+        <div id="teca_tesis_taller11_lateral1">
+    
+            <div id="teca_tesis_taller11_lateral1_boton1">
+    
+               <a href="{% url 'tesi_cafe_taller10' %}"><p><</p></a>
+    
+            </div>
+     
+        </div>
+        <!-- Lateral 1-->
+        <!-- central-->
+        <div id="teca_tesis_taller11_central">
+    
+            <h1 id="teca_tesis_taller11_central_h1">Técnicas para recopilar información
+            </h1>
+            <p id="teca_tesis_taller11_central_p">
+                Es el momento de elegir las técnicas que te permitirán recopilar información para tu proyecto de investigación. En este recuadro podrás encontrar las más utilizadas.
+                <h2 id="teca_tesis_taller11_central_h2"> No todas son adecuadas para todas las investigaciones, debes determinar cual es la más optima para tu tesis.</h2>
+
+            </p>
+            <div class="teca_taller11_card">
+                <h1 class="teca_taller11_h1">Métodos y técnicas</h1>
+                
+                <details class="teca_taller11_card1">
+                  <summary>Cualitativo</summary>
+                  <p class="teca_taller11_p">Se describen e interpretan sentidos, contextos, lenguajes,
+                    significados y prácticas culturales de los sujetos y grupos estudiados. Como el inicio del
+                    propio término lo indican, enfatizamos mucho más las cualidades del objeto a estudiar.</p>
+                    <br>
+                    <h2 class="teca_taller11_h2"> Por ejemplo: Estudios etnográficos o culturales</h2>
+                </details>
+                
+                <details class="teca_taller11_card2">
+                  <summary>Cuantitativo</summary>
+                  <p class="teca_taller11_p">Este metodo hace alucion a las cantidades es generalizable y total, como tendencias o variables dentro de un grupo como edades, estatura o peso.</p>
+                  <br>
+                  <h2 class="teca_taller11_h2">Por ejemplo: Encuestas o investigaciones de mercado</h2>
+              
+                </details>
+                
+                <details class="teca_taller11_card3">
+                  <summary>Mixto</summary>
+                  <p class="teca_taller11_p">Los metodos mixtos presisan de una convinación de los anteriores con el fin de que la investigación sea mucho nás completa y robusta. Integran las caracteristicas cuantitativss y los refuerzan con los datos cuantitativos</p> 
+                </details>
+              </div>
+            
+    
+        </div>
+        <!-- central-->
+        <!-- Lateral 2-->
+        <div id="teca_tesis_taller11_lateral2">
+            <div id="teca_tesis_taller11_lateral2_boton2">
+                <a href="{% url 'tesi_cafe_taller12' %}"><p>></p></a>
+            </div>
+        </div>
+        <!-- Lateral 2-->
+    
+    </div>
+
+</div>
+
+
+{% endblock %}

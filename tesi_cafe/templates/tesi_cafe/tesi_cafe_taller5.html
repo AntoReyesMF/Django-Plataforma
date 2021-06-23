@@ -1,0 +1,60 @@
+{% extends 'registration/base_login.html' %}
+{% load static %}
+{% block content %}
+
+<div id="teca_taller_cont_general_taller2"> 
+
+    <div id="teca_tesis_cont1_taller2">
+        <div id="teca_tesis_taller2_cont1_espaciador"></div>
+        <div id="teca_tesis_taller2_cont1_img">
+            <img src="{% static 'core/img/friends/tesicafecolor.png' %}" alt="">
+        </div>
+    </div>
+
+
+
+
+    <div id="teca_tesis_taller2">
+        
+        <!-- Lateral 1-->
+        <div id="teca_tesis_taller2_lateral1">
+    
+            <div id="teca_tesis_taller2_lateral1_boton1">
+    
+               <a href="{% url 'tesi_cafe_taller4' %}"><p><</p></a>
+    
+            </div>
+    
+        </div>
+        <!-- Lateral 1--> 
+        <!-- central-->
+        <div id="teca_tesis_taller2_central">
+    
+            <h1 id="teca_tesis_taller3_central_h1">¿Cuáles son los objetivos de mi tesis?</h1>
+            <p id="teca_tesis_taller3_central_p">
+                
+                Una vez delimitado tu objeto, es importante determinar hacia dónde caminarás como investigadora (or). Por ello, te enseñamos a hacer objetivos de tesis. <br><br>
+
+                Para tener un buen objetivo, deberá tener estos tres pasos
+            </p>
+            <h2 id="teca_tesis_taller3_central_h2">Marco Epistémico  + Verbo infinitivo  + ¿Para qué?</h2>
+            <p id="teca_tesis_taller3_central_p">
+                Selecciona la opción que contenga los pasos mencionados anteriroemente
+            </p>
+            
+    
+        </div>
+        <!-- central-->
+        <!-- Lateral 2-->
+        <div id="teca_tesis_taller2_lateral2">
+            <div id="teca_tesis_taller2_lateral2_boton2">
+                <a href="{% url 'tesi_cafe_taller6' %}"><p>></p></a>
+            </div>
+        </div>
+        <!-- Lateral 2-->
+    
+    </div>
+
+</div>
+
+{% endblock %}

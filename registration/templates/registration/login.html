@@ -6,9 +6,10 @@
           <p style="color:green;">Usuario registrado correctamente, ya puedes identificarte.</p>
 {% endif %} {% endcomment %}
 <div class="registro2_container" id="registro2_container">
-  <div class="form-container sign-in-container"> 
+  <div class="form-container sign-in-container">
+
       <form action="" method="post">{% csrf_token %}   
-      {% if form.non_field_errors %}
+        {% if form.non_field_errors %}
             <p style="color:red">Usuario o contraseña incorrectos, prueba de nuevo.</p>
         {% endif %} 
         <h1 class="registro2_h1_inicio">Inicia sesión</h1>
@@ -20,16 +21,18 @@
           <button class="registro2_btn" type="submit" name='submit' value="Acceder">Acceder</button>
         </a>
       </form>
-    </div>
 
-    <div class="form-container sign-up-container">   
-<form method="post">
+  </div>
+
+  <div class="form-container sign-up-container">
+
+    <form method="post">
     {% csrf_token %}
     <h1 class="registro2_h1_inicio">Crea tu cuenta</h1>
-  <input type='text' placeholder='Nombre de usuario' required name="username" >
-  <input type='email' placeholder='Email' required name="email">
-  <input type='password' placeholder='Contraseña' required name="password1" id="id_password1">
-  <input type='password' placeholder='Confirma tu contraseña' required name="password2" id="id_password2">
+    <input type='text' placeholder='Nombre de usuario' required name="username" >
+    <input type='email' placeholder='Email' required name="email">
+    <input type='password' placeholder='Contraseña' required name="password1" id="id_password1">
+    <input type='password' placeholder='Confirma tu contraseña' required name="password2" id="id_password2">
 
     
   {% comment %} <form method="post">
@@ -44,7 +47,8 @@
    {{ form.password2}} {% endcomment %}
  
 
-    <button class="registro2_btn" type="submit" name='submit' value="signup">Crear cuenta</button>
+    <button class="registro2_btn"  type="submit" name='submit' value="signup">Crear cuenta</button>
+
   </form> 
 
 </div>
@@ -56,6 +60,7 @@
       <p class="registro2_p">Inicia sesión con tu información personal</p>
       <button class="ghost" id="signIn">Iniciar Sesión</button>
     </div>
+    
     <div class="overlay-panel overlay-right">
       <h1 class="registro2_h1">CREA TU CUENTA</h1>
       <p class="registro2_p">Ingresa tus datos personales y comienza tu viaje con nosotros</p>

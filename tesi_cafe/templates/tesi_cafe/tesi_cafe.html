@@ -1,0 +1,178 @@
+{% extends 'registration/base_login.html' %}
+{% load static %}
+{% block content %}
+
+<div id="teca_inicio_cont_general">
+
+    <div id="teca_inicio_header_img">
+    </div>
+    <div id="teca_inicio_header_menu">
+
+        <div id="teca_inicio_header_menu_cont">
+
+            <div class="teca_inicio_menu">
+                <a href="https://www.tesicafe.com/">Visitanos</a>
+            </div>
+
+            <div class="teca_inicio_menu">
+                <a href="https://www.tesicafe.com/">Contáctanos</a>
+            </div>
+
+            <div class="teca_inicio_menu">
+                <a href="{% url 'tesi_cafe_inicio' %}">Empezar a aprender</a>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="teca_img_tesicafe">
+        <img src="{% static 'core/img/friends/tesicafecolor.png' %}">
+        
+    </div>
+
+    <div id="teca_inicio_cont_central">
+
+        <div id="teca_inicio_cont_central1">
+
+            <div id="teca_inicio_cont_central1_cont1">
+
+                <h1 class="teca_h1_cont_central">¿Quiénes somos?</h1>
+    
+                <p class="teca_cont_central">
+                    Tesicafé en un espacio interdisciplinario para la elaboración y aplicación  de proyectos de investigación, basados en una metodología 4.0. 
+
+                    En este sentido, por las experiencias de los talleres, el 70% de las y los tesicafesistas consiguen sus objetivos. Por otro lado, según datos de la UNAM, con un acompañamiento en tesis se puede mejorar el doble de posibilidades de terminarla.
+                    <br>
+                    <br>
+                    
+                    ​
+                    Dicho lo cual, el objetivo central del proyecto es acompañar en los procesos metodológicos y emocionales al y la tesicafesista. 
+                </p>
+    
+            </div>
+
+            <div id="teca_inicio_cont_central1_cont2">
+
+                <h1 class="teca_h1_cont_central">Nuestro contenido</h1>
+
+                <div id="teca_central_conts">
+
+                    <div id="teca_inicio_cont_central1_cont2_cont1">
+                    
+                        <div class="teca_cont2_contenidos">
+
+                            <div class="teca_cont2_cont1_img">
+                                <a href="{% url 'tesi_cafe_inicio' %}" >
+                                    <img src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80" alt="">
+                                </a>
+                            </div>
+
+                            <div class="teca_cont2_cont1_text">
+                                <h3 class="mc_h3_cont_tex">
+                                    ¿Y cómo empiezo mi tesis?</h3>
+
+                                <p class="teca_p_cont_text">
+                                    Al desarrollar una tesis nos cuestionamos por donde empezar, y quién me puede ayudar, estás en el lugar adecuado.
+                                </p>
+
+                            </div>
+    
+                        </div>
+
+                    </div>
+                    <div id="teca_inicio_cont_central1_cont2_cont2">
+
+                        <div class="teca_cont2_contenidos">
+
+                            <div id="teca_cont2_cont2_img">
+
+                                <a href="#" >
+                                    <img src="https://images.unsplash.com/photo-1585521551675-64daba4ba31e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                                </a>
+                                
+                            </div>
+
+                            <div id="teca_cont2_cont2_text">
+                                <h3 class="mc_h3_cont_tex">Tesitips: Consejos para hacer tu tesis</h3>
+
+                                <p class="teca_p_cont_text"> 
+                                    Los mejores consejos para que empieces tu tesis hoy o la continues, juntos hacemos más que una tesis
+                                </p>
+
+                            </div>
+    
+                        </div>
+    
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+<!------------------------------------------------------------------------------------------------------------------>
+<div id="teca_inicio_cont_final"> 
+
+    <div id="teca_final_cont_central">
+
+        <div id="teca_final_central_cont1">
+            <h2 >Conoce más sobre nosotros</h2>
+        </div>
+
+        <div id="teca_final_central_cont2">
+
+            <div class="teca_final_cont2_datos">
+                <p class="mc_p_datos">dato 1</p>
+                <p class="mc_p_datos_text">En espera</p>
+            </div>
+            <div class="teca_final_cont2_datos">
+                <p class="teca_p_datos">dato 3</p>
+                <p class="mc_p_datos_text">En espera</p>
+            </div>
+            <div class="teca_final_cont2_datos">
+                <p class="teca_p_datos">dato 3</p>
+                <p class="teca_p_datos_text">En espera</p>
+            </div>
+
+        </div>
+
+        <div id="teca_final_central_cont3">
+            <h2 id="teca_h2_cont3">PREGUNTAS FRECUENTES</h2>
+            <p id="teca_p_cont3">﹀</p>
+            <div id="teca_cont3_pf">
+                <div class="teca_cont3_pfs">
+                    <h5 class="teca_h5_cont3_pfs">¿Pregunta 1?</h5>
+                    <p class="teca_p_cont3_ps">REspuesta pendiente</p>
+                </div>
+                <div class="teca_cont3_pfs">
+                    <h5 class="teca_h5_cont3_pfs">¿Pregunta 2?</h5>
+                    <p class="teca_p_cont3_ps">REspuesta pendiente</p>
+                </div>
+                <div class="teca_cont3_pfs">
+                    <h5 class="teca_h5_cont3_pfs">¿Pregunta 3?</h5>
+                    <p class="teca_p_cont3_ps">REspuesta pendiente</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="teca_final_central_cont4">
+            <div id="teca_final_central_cont4_boton">
+                <a id="teca_a_cont4_boton" href="{% url 'tesi_cafe_inicio' %}">
+
+                     <p>Empezar a aprender</p
+
+                ></a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+{% endblock %}

@@ -2,13 +2,85 @@
 {% load static %}
 {% block content %}
 
+<div id="vexi_taller_cont_general_taller7"> 
 
-<h1>hola_mundo taller 7</h1>
+    <div id="vexi_edu_cont1_taller7">
+        <div id="vexi_edu_taller7_cont1_espaciador"></div>
+        <div id="vexi_edu_taller7_cont1_img">
+            <img src="{% static 'core/img/friends/logoVexi.png' %}" alt="">
+        </div>
+    </div>
+    <div id="vexi_edu_taller7">
+        
+        <!-- Lateral 1-->
+        <div id="vexi_edu_taller7_lateral1">
+    
+            <div id="vexi_edu_taller7_lateral1_boton1">
+    
+               <a href="{% url 'vexi_taller6' %}"><p><</p></a>
+    
+            </div>
+    
+        </div>
+        <!-- Lateral 1-->
+        <!-- central-->
+        <div id="vexi_edu_taller7_central">
+    
+            <h1 id="vexi_edu_taller7_central_h1">Intereses </h1>
+            <p class="vexi_edu_taller7_central_p">Los intereses pueden ser definidos como el precio que tienes que pagar por pedirle dinero prestado al banco a través de tu tarjeta. Debes de tener en cuenta estos factores<br><br>
 
+            EL valor de tu compra (v), la Tasa Anual de tu tarjeta (TA) y los meses en los que decidas pagarla (M). Es decir V*TA/12*M (12 son los meses del año)
+    
+            </p>
+            
+            <h2 id="vexi_edu_taller7_central_h2">Es decir, entre más tiempo tardes en pagar tu saldo más se incrementarán los intereses</h2>
 
+            <p class="vexi_edu_taller7_central_p_2"> Si realizas una compra de $3 mil a 6 meses y la tasa anual es del 65%, la operación es la siguiente:
+                3,000 * 0.65 / 12 *6 = 975 </p>
 
+            <div id="calculator" role="application">
 
+                <!-- Screen -->
+                <div class="top">
+                    <div class="screen" aria-labelledby="displayScreen"></div>
+                </div>
+                
+                <div class="keys" aria-labelledby="inputKeys">
+                    <!-- operators and other keys -->
+                    <span tabindex="0">7</span>
+                    <span tabindex="0">8</span>
+                    <span tabindex="0">9</span>
+                    <span tabindex="0" class="operator">+</span>
+                    <span tabindex="0">4</span>
+                    <span tabindex="0">5</span>
+                    <span tabindex="0">6</span>
+                    <span tabindex="0" class="operator">-</span>
+                    <span tabindex="0">1</span>
+                    <span tabindex="0">2</span>
+                    <span tabindex="0">3</span>
+                  <span tabindex="0" class="operator">x</span>
+                <span tabindex="0" class="clear">C</span>
+                    <span tabindex="0">0</span>
+                    <span tabindex="0">.</span>
+                    <span tabindex="0" class="operator">÷</span>
+                <span tabindex="0" class="eval">=</span>
+                <span tabindex="0" class="operator">^</span>
+                </div>
 
+            </div>
+            
+        </div>
+        <!-- central-->
+        <!-- Lateral 2-->
+        <div id="vexi_edu_taller7_lateral2">
+            <div id="vexi_edu_taller7_lateral2_boton2">
+                <a href="{% url 'vexi_taller8' %}"><p>></p></a>
+            </div>
+        </div>
+        <!-- Lateral 2-->
+    
+    </div>
 
+</div>
 
 {% endblock %}

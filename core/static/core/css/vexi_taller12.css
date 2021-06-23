@@ -1,0 +1,333 @@
+#vexi_taller_cont_general_taller12{
+    width: 100%;
+    height: auto;
+    background-color: RGB(246,245,245);
+  }
+  #vexi_edu_taller12{
+    display: flex;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding-bottom: 50px;
+    /* background-color: cadetblue;  */
+  }
+  #vexi_edu_cont1_taller12{
+  display: flex;
+  width: 100%;
+  height:auto;
+  padding-top: 30px;
+  /* background-color: aqua; */
+  }
+  #vexi_edu_taller12_cont1_espaciador{
+  width: 85%;
+  height: auto;
+  /* background-color: lightcyan; */
+  }
+  #vexi_edu_taller12_cont1_img{
+  width: 15%;
+  height: auto;
+  /* background-color: lightgreen; */
+  }
+  #vexi_edu_taller12_cont1_img img{
+  width: 60%;
+  height: auto;
+  }
+  
+  /* ------------------------------Laterl------------------------------ */
+  #vexi_edu_taller12_lateral1{
+    width: 10%;
+    height: 700px;
+    /* background-color: lightpink;  */
+  }
+  #vexi_edu_taller12_lateral1_boton1{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-top: 375px;
+    border-radius: 50%;
+    background-color: #DE2276;
+  }
+  #vexi_edu_taller12_lateral1_boton1 a{
+    text-decoration: none;
+    color: white;
+  }
+  #vexi_edu_taller12_lateral1_boton1 a p{
+    text-align: center;
+    line-height: 50px;
+    font-size: 40px;    
+  }
+  
+  /* ------------------------------Lateral1------------------------------ */
+  /* ------------------------------Central------------------------------ */
+  #vexi_edu_taller12_central{
+  width: 80%;
+  height: 700px;
+  /* background-color: lightskyblue;  */
+  }
+  
+  #vexi_edu_taller12_central_h1{
+  text-align: center;
+  font-size: 30px;
+  font-family: Montserrat-Bold;
+  color: #000;
+  }
+  .vexi_edu_taller12_central_p{
+  text-align: center;
+  font-size: 20px;
+  font-family: Montserrat-Regular;
+  margin-bottom: 2rem;
+  }
+  #vexi_edu_taller12_central_h2{
+  text-align: center;
+  margin-top: 40px;
+  font-size: 25px;
+  font-family: Montserrat-SemiBold;
+  color: #DE2276;
+  }
+  
+  .vexi_taller12_container {
+    position: relative;
+    height: 540px;
+    width: 300px;
+    margin: auto;
+  }
+  
+  .vexi_taller12_phone {
+    height: 100%;
+    width: 100%;
+    background: #000;
+    border-radius: 30px;
+  }
+  
+  .vexi_taller12_screen {
+    top: 2%;
+    left: 3%;
+    height: 96%;
+    width: 94%;
+    border-radius: 17px;
+    overflow: hidden;
+  }
+  
+  .vexi_taller12_screen:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4%;
+    background: #ffffff;
+  }
+  
+  .vexi_taller12_home-screen {
+    top: 4%;
+    height: 96%;
+    width: 100%;
+    background: white;
+  }
+  
+  .vexi_taller12_textoapp{
+  text-align: center;
+  font-family: Montserrat;
+  margin-top: 2rem;
+  }
+  
+  .vexi_taller12_home-button {
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    height: 8%;
+    width: 15%;
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: 10px;
+    z-index: 1
+  }
+  
+  .tweet-screen,
+  .message-screen {
+    top: 110%;
+    height: 100%;
+    width: 100%;
+    background: white;
+  }
+  
+  .vexi_taller12_tweet-icon_img{
+  width: 100%;
+  height: 100%;
+  }
+  
+  .tweet-screen__img{
+    width: 45%;
+    height: 90%;
+    margin-left: 85px;
+    }
+  
+  
+  .tweet-screen {
+    background: white;
+  }
+  .tweet-screen .vexi_taller12_top-bar {
+    height: 10%;
+    width: 100%;
+    background: #000;
+  }
+  
+  .vexi_taller12_tweet-screen_img{
+  width: 40%;
+  height: 65%;
+  margin-left: 84px;
+  margin-top: 8px;
+  }
+  
+  .vexi_taller12_tweet-screen-text{
+  color: #000;
+  margin-top: 2.5rem;
+  text-align: center;
+  font-size: 1rem;
+  font-family: Montserrat;
+  font-weight: 500;
+  }
+  
+  
+  .message-screen {
+    background: white;
+    color: #212F3D;
+  }
+  
+  .message-screen .vexi_taller12_message-person-text {
+    height: 10%;
+    width: 100%;
+    background: #000;
+    padding: 10px 110px 0 110px;
+    color: #ffffff;
+    font-weight: 500;
+  }
+  
+  .message-screen .vexi_taller12_tweet-person-text {
+    height: 10%;
+    width: 100%;
+    background: #f8f6f6;
+    padding: 10px 110px 0 110px;
+    color: #212F3D;
+    font-weight: 500;
+  }
+  
+  .vexi_taller12_tweet-person-text{
+  margin-top: 1rem;
+  text-align: center;
+  color: #DE2276;
+  font-weight: bold;
+  }
+  
+  .vexi_taller12_large-text-bubble {
+    left: 5%;
+    width: %;
+    border-radius: 15px;
+    padding: 15px;
+    font-weight: 200;
+    margin-top: 3rem;
+  }
+  .vexi_taller12_large-text-bubble {
+    height: 25%;
+    text-align: center;
+  }
+  
+  .vexi_taller12_status-bar {
+    height: 4%;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .vexi_taller12_status-bar_img{
+  height: 70%;
+  margin-left: 13rem;
+  }
+  
+  .vexi_taller12_message-icon-back,
+  .vexi_taller12_tweet-icon-back
+   {
+    height: 11%;
+    width: 20%;
+    border-radius: 10px;
+    animation-name: pulse;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+  }
+  
+  .vexi_taller12_message-icon-back {
+    top: 30%;
+    left: 10%;
+    background: #f1c1b4;
+  }
+  
+  .icon {
+    height: 11%;
+    width: 20%;
+    border-radius: 10px;
+  }
+  
+  
+  .message-icon,
+  .tweet-icon,
+  .vexi_taller12_home-button {
+    cursor: pointer;
+  }
+  
+  
+  .message-icon {
+    top: 30%;
+    left: 10%;
+    background: #E07A5F;
+  }
+  
+  .vexi_taller12_speech {
+    top: 30%;
+    left: 15%;
+    height: 50%;
+    width: 70%;
+    color: #ffffff;
+  
+  }
+  
+  .tweet-icon {
+    top: 30%;
+    left: 40%;
+    background: #000;
+    overflow: hidden;
+  }
+  
+  .vexi_taller12_tweet-icon-back {
+    top: 30%;
+    left: 40%;
+    background: #575757;
+  }
+  
+  .vexi_taller12_phone, .vexi_taller12_screen, .icon, .vexi_taller12_home-screen, .message-icon, .tweet-icon, .tweet-screen, .message-screen, .front, .vexi_taller12_speech,.vexi_taller12_status-bar, .vexi_taller12_message-icon-back, .vexi_taller12_tweet-icon-back,.vexi_taller12_large-text-bubble, .vexi_taller12_message-person-text {
+    position: absolute;
+  }
+
+
+  /* ------------------------------Central------------------------------ */
+  /* ------------------------------Lateral2------------------------------ */
+  #vexi_edu_taller12_lateral2{
+    width: 10%;
+    height: 700px;
+    /* background-color: lightgreen;  */
+  }
+  #vexi_edu_taller12_lateral2_boton2{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-top: 375px;
+    border-radius: 50%;
+    background-color: #DE2276;
+  }
+  #vexi_edu_taller12_lateral2_boton2 a{
+    text-decoration: none;
+    color: white;
+  }
+  #vexi_edu_taller12_lateral2_boton2 a p{
+    text-align: center;
+    line-height: 50px;
+    font-size: 40px;    
+  }
+  /* ------------------------------Lateral2------------------------------ */

@@ -124,16 +124,14 @@
     margin-top: 6em;
 }
 
-  .box, .box2, .box3 {
-    width: 150px;
+
+.mc_fin_taller7_dragable {
     height: 50px;
-    left: -webkit-calc( 50% - 250px );
-    top: 20%;
     position: absolute;
-    padding: 20px;
     text-align: center;
     display: flex;
-    justify-content: center;
+    margin: auto;
+
   }
   
   .primero {
@@ -141,6 +139,7 @@
     text-align: center;
     top: 60%;
     left: 35%;
+    padding: 1rem;
   }
   
   .segundo {
@@ -148,6 +147,7 @@
     text-align: center;
     top: 60%;
     left: 45%;
+    padding: 1rem;
   }
   
   .tercero{
@@ -155,13 +155,15 @@
     text-align: center;
     top: 60%;
     left: 55%;
+    padding: 1rem;
   }
   
   
-  .content {
+  .content_mc_fin_taller7 {
     color: white;
     font-size: .8rem;
     text-align: center;
+    font-family: Montserrat;
   }
   
   .calendar__week,

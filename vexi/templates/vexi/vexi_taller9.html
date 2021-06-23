@@ -2,13 +2,81 @@
 {% load static %}
 {% block content %}
 
+<div id="vexi_taller_cont_general_taller9"> 
 
-<h1>hola_mundo taller 9</h1>
+    <div id="vexi_edu_cont1_taller9">
+        <div id="vexi_edu_taller9_cont1_espaciador"></div>
+        <div id="vexi_edu_taller9_cont1_img">
+            <img src="{% static 'core/img/friends/logoVexi.png' %}" alt="">
+        </div>
+    </div>
+    <div id="vexi_edu_taller9">
+        
+        <!-- Lateral 1-->
+        <div id="vexi_edu_taller9_lateral1">
+    
+            <div id="vexi_edu_taller9_lateral1_boton1">
+    
+               <a href="{% url 'vexi_taller8' %}"><p><</p></a>
+    
+            </div>
+    
+        </div>
+        <!-- Lateral 1-->
+        <!-- central-->
+        <div id="vexi_edu_taller9_central">
+    
+            <h1 id="vexi_edu_taller9_central_h1">Beneficios de las TDC  </h1>
+            <p class="vexi_edu_taller9_central_p">El beneficio más evidente de una TDC es la posibilidad de financiarte hasta 45 y ahorrarte una lana, y en caso de no contar con la liquidez (dinero en efectivo) para afrontar cualquier gasto puedes hacer uso de la TDC y la línea de crédito se irá reponiendo según vayas disminuyendo la deuda. Sin embargo, también existen otros tipos de beneficios particulares que te mostraremos a continuación. </p>
+            <div class="vexi_taller9_beneficios">
 
+                <img class="vexi_taller9_beneficios_img" src="{% static 'core/img/vexi_tarjeta.svg' %}" alt="Cute kitten.">
+                
+                <ul class="vexi_taller9_beneficios_ul">
+                  <li class="cute-bit cute-ears grow-left">
+                    <h2 class="vexi_taller9_beneficios_h2">
+                      Recompensas
+                  </h2>
+                  <p class="vexi_taller9_beneficios_p">
+                    Algunas te pueden ofrecer descuentos con ciertos aliados, puntos que puedes convertir en dinero o devuelven un porcentaje de tus compras.
+                  </p>
+                                      </li>
+              
+                  <li class="cute-bit cute-eyes grow-left">
+                    <h2 class="vexi_taller9_beneficios_h2">
+                        Historal
+                    </h2>
+                    <p class="vexi_taller9_beneficios_p">
+                      Es un registro de todos los instrumentos financieros con los que cuentas, es decir a cuanto asciende tu deuda en cada uno y si eres puntual en tus pagos o no. Cada una de estas acciones es evaluada y se te asigna una buena calificación.
+                    </p>
+                  </li>
+              
+                  <li class="cute-bit cute-paws grow-right">
+                    <h2 class="vexi_taller9_beneficios_h2">
+                      Promociones
+                  </h2>
+                  <p class="vexi_taller9_beneficios_p">
+                    Los meses sin intereses, te permite diferir algunas compras que no puedes o no deseas pagar de contado a una cierta cantidad de meses, desde 3 hasta 24  y por las cuales irás pagando una cuota fija mes tras mes.
 
+                  </p>
+                  </li>
+              
+                </ul>
+                
+              </div>
+        </div>
+        <!-- central-->
+        <!-- Lateral 2-->
+        <div id="vexi_edu_taller9_lateral2">
+            <div id="vexi_edu_taller9_lateral2_boton2">
+                <a href="{% url 'vexi_taller10' %}"><p>></p></a>
+            </div>
+        </div>
+        <!-- Lateral 2-->
+    
+    </div>
 
-
-
+</div>
 
 
 {% endblock %}

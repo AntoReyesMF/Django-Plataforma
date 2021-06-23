@@ -1,0 +1,193 @@
+#vexi_taller_cont_general_taller8{
+    width: 100%;
+    height: auto;
+    background-color: RGB(246,245,245);
+  }
+  #vexi_edu_taller8{
+    display: flex;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* background-color: cadetblue;  */
+  }
+  #vexi_edu_cont1_taller8{
+  display: flex;
+  width: 100%;
+  height:auto;
+  padding-top: 30px;
+  /* background-color: aqua; */
+  }
+  #vexi_edu_taller8_cont1_espaciador{
+  width: 85%;
+  height: auto;
+  /* background-color: lightcyan; */
+  }
+  #vexi_edu_taller8_cont1_img{
+  width: 15%;
+  height: auto;
+  /* background-color: lightgreen; */
+  }
+  #vexi_edu_taller8_cont1_img img{
+  width: 60%;
+  height: auto;
+  }
+  
+  /* ------------------------------Laterl------------------------------ */
+  #vexi_edu_taller8_lateral1{
+    width: 10%;
+    height: 700px;
+    /* background-color: lightpink;  */
+  }
+  #vexi_edu_taller8_lateral1_boton1{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-top: 375px;
+    border-radius: 50%;
+    background-color: #DE2276;
+  }
+  #vexi_edu_taller8_lateral1_boton1 a{
+    text-decoration: none;
+    color: white;
+  }
+  #vexi_edu_taller8_lateral1_boton1 a p{
+    text-align: center;
+    line-height: 50px;
+    font-size: 40px;    
+  }
+  
+  /* ------------------------------Lateral1------------------------------ */
+  /* ------------------------------Central------------------------------ */
+  #vexi_edu_taller8_central{
+  width: 80%;
+  height: 700px;
+  /* background-color: lightskyblue;  */
+  }
+  
+  #vexi_edu_taller8_central_h1{
+  text-align: center;
+  font-size: 30px;
+  font-family: Montserrat-Bold;
+  }
+  .vexi_edu_taller8_central_p{
+  text-align: center;
+  font-size: 20px;
+  font-family: Montserrat-Regular;
+  }
+  #vexi_edu_taller8_central_h2{
+  text-align: center;
+  margin-top: 40px;
+  font-size: 25px;
+  font-family: Montserrat-SemiBold;
+  color: #DE2276;
+  }
+  
+  .vexi_taller8_cards {
+    position: relative;
+    list-style-type: none;
+    padding: 0;
+    max-width: 34em;
+    margin: 145px auto 0;
+  }
+  .vexi_taller8_card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: #ccc;
+    border-radius: 30px;
+    padding: 40px;
+    box-shadow: 0 0 40px #000;
+    transform: translateY(0) rotate(4deg) translateX(25px) scale(1);
+    transform-origin: 0 0;
+    transition: transform 0.6s cubic-bezier(0.8, 0.2, 0.1, 0.8) 0.1s, background 0.4s linear;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  .vexi_taller8_card :last-child {
+    margin-bottom: 0;
+  }
+  .vexi_taller8_card--next {
+    z-index: 5;
+    transform: translateY(-25px) rotate(4deg) translateX(25px) scale(1);
+  }
+  .card--out {
+    -webkit-animation: card-out 0.6s cubic-bezier(0.8, 0.2, 0.1, 0.8);
+            animation: card-out 0.6s cubic-bezier(0.8, 0.2, 0.1, 0.8);
+    transform: translateY(-50px) rotate(8deg) translateX(55px) scale(0.95);
+    z-index: 1;
+    background: #bbb;
+  }
+  @-webkit-keyframes card-out {
+    0% {
+      z-index: 20;
+      transform: translateY(0px) rotate(-4deg);
+    }
+    50% {
+      transform: translateY(-120%) rotate(-5deg) translateX(-40px);
+    }
+    80% {
+      z-index: 1;
+    }
+    100% {
+      transform: translateY(-50px) rotate(8deg) translateX(55px) scale(0.95);
+    }
+  }
+  @keyframes card-out {
+    0% {
+      z-index: 20;
+      transform: translateY(0px) rotate(-4deg);
+    }
+    50% {
+      transform: translateY(-120%) rotate(-5deg) translateX(-40px);
+    }
+    80% {
+      z-index: 1;
+    }
+    100% {
+      transform: translateY(-50px) rotate(8deg) translateX(55px) scale(0.95);
+    }
+  }
+  .card--current {
+    cursor: auto;
+    -webkit-user-select: auto;
+       -moz-user-select: auto;
+        -ms-user-select: auto;
+            user-select: auto;
+    position: relative;
+    z-index: 10;
+    opacity: 1;
+    background:#fff;
+    transform: rotate(-1deg) translateX(0%) scale(1);
+  }
+
+  /* ------------------------------Central------------------------------ */
+  /* ------------------------------Lateral2------------------------------ */
+  #vexi_edu_taller8_lateral2{
+    width: 10%;
+    height: 700px;
+    /* background-color: lightgreen;  */
+  }
+  #vexi_edu_taller8_lateral2_boton2{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-top: 375px;
+    border-radius: 50%;
+    background-color: #DE2276;
+  }
+  #vexi_edu_taller8_lateral2_boton2 a{
+    text-decoration: none;
+    color: white;
+  }
+  #vexi_edu_taller8_lateral2_boton2 a p{
+    text-align: center;
+    line-height: 50px;
+    font-size: 40px;    
+  }
+  /* ------------------------------Lateral2------------------------------ */

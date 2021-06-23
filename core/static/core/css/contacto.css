@@ -17,31 +17,13 @@
   }
   
   .contacto-info{
-	  background-color: rgba(222, 215, 215, 0.44);
 	  margin-left: 20rem;
 	  margin-right: 20rem;
 	  margin-bottom:3rem ;
   }
-  .contacto-info ul {
-	  list-style: none;
-	  padding: 2rem;
-	  font-family: montserrat;
-  }
   
-  .contacto-info li {
-	  font-size: 1.5rem;
-	  padding: 2rem;
-	  text-align: center;
-  }
-  
-  .contacto-info a {
+  .chatea{
 	  text-decoration: none;
-	  color: #000;
-  }
-  
-  .contacto-info a :hover {
-	  text-decoration: none;
-	  color: #DE2277;
   }
   
   .contacto_contenedor h1{
@@ -65,6 +47,15 @@
 	  font-size: 1rem;
 	  padding-top: 1rem;
   }
+
+  .contacto h3{
+	text-align: center;
+	color: #000;
+	font-weight: bold;
+	font-size: 1rem;
+	padding-top: 1rem;
+}
+
   
   .contacto_texto{
 	  text-align: center;
@@ -86,3 +77,96 @@
 	  height: 7rem;
 	  margin-top: 1rem;
 	}
+
+	.contacto_container_preguntas {
+		margin: 0 auto;
+		padding: 4rem;
+		width: 48rem;
+	  }
+	  
+	  .contacto_preguntas_item {
+		border-bottom: 1px solid #e5e5e5;
+	  }
+	  .contacto_preguntas_item button[aria-expanded=true] {
+		border-bottom: 1px solid #de2276;
+	  }
+	  .contacto_preguntas button {
+		position: relative;
+		display: block;
+		text-align: left;
+		width: 100%;
+		padding: 1em 0;
+		color: #000;
+		font-size: 1.15rem;
+		font-weight: 400;
+		border: none;
+		background: none;
+		outline: none;
+	  }
+	  .contacto_preguntas button:hover, .contacto_preguntas button:focus {
+		cursor: pointer;
+		color: #de2276;
+	  }
+	  .contacto_preguntas button:hover::after, .contacto_preguntas button:focus::after {
+		cursor: pointer;
+		color: #de2276;
+		border: 1px solid #de2276;
+	  }
+	  .contacto_preguntas button .accordion-title {
+		padding: 1em 1.5em 1em 0;
+	  }
+	  .contacto_preguntas button .contacto_preguntas_icon {
+		display: inline-block;
+		position: absolute;
+		top: 18px;
+		right: 0;
+		width: 22px;
+		height: 22px;
+		border: 1px solid;
+		border-radius: 22px;
+	  }
+	  .contacto_preguntas button .contacto_preguntas_icon::before {
+		display: block;
+		position: absolute;
+		content: "";
+		top: 9px;
+		left: 5px;
+		width: 10px;
+		height: 2px;
+		background: currentColor;
+	  }
+	  .contacto_preguntas button .contacto_preguntas_icon::after {
+		display: block;
+		position: absolute;
+		content: "";
+		top: 5px;
+		left: 9px;
+		width: 2px;
+		height: 10px;
+		background: currentColor;
+	  }
+	  .contacto_preguntas button[aria-expanded=true] {
+		color: #de2276;
+	  }
+	  .contacto_preguntas button[aria-expanded=true] .contacto_preguntas_icon::after {
+		width: 0;
+	  }
+	  .contacto_preguntas button[aria-expanded=true] + .contacto_preguntas_content {
+		opacity: 1;
+		max-height: 9em;
+		transition: all 200ms linear;
+		will-change: opacity, max-height;
+	  }
+	  .contacto_preguntas .contacto_preguntas_content {
+		opacity: 0;
+		max-height: 0;
+		overflow: hidden;
+		transition: opacity 200ms linear, max-height 200ms linear;
+		will-change: opacity, max-height;
+	  }
+	  .contacto_preguntas .contacto_preguntas_content p {
+		font-size: 1rem;
+		font-weight: 300;
+		margin: 2em 0;
+		font-family: montserrat;
+	  }

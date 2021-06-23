@@ -2,13 +2,78 @@
 {% load static %}
 {% block content %}
 
+<div id="vexi_taller_cont_general_taller10"> 
 
-<h1>hola_mundo taller 10</h1>
+    <div id="vexi_edu_cont1_taller10">
+        <div id="vexi_edu_taller10_cont1_espaciador"></div>
+        <div id="vexi_edu_taller10_cont1_img">
+            <img src="{% static 'core/img/friends/logoVexi.png' %}" alt="">
+        </div>
+    </div>
+    <div id="vexi_edu_taller10">
+        
+        <!-- Lateral 1-->
+        <div id="vexi_edu_taller10_lateral1">
+    
+            <div id="vexi_edu_taller10_lateral1_boton1">
+    
+               <a href="{% url 'vexi_taller9' %}"><p><</p></a>
+    
+            </div>
+    
+        </div>
+        <!-- Lateral 1-->
+        <!-- central-->
+        <div id="vexi_edu_taller10_central">
+    
+            <h1 id="vexi_edu_taller10_central_h1">Riesgo de fraudes </h1>
+            <p class="vexi_edu_taller10_central_p"> Con el incremento del uso del e-commerce también aumentaron los intentos de fraudes. Ya sea vía telefónica o a través de páginas fraudulentas los criminales buscan maneras de recabar los datos de tu tarjeta. Para evitar esto, aquí te dejamos los siguientes tips para estar más protegido de los fraudes </p>
+
+            <div id="vexi_taller_10_stack1" class="vexi_taller_10_card-container vexi_taller_10_start">
+                <div class="vexi_taller_10_card vexi_taller_10_card1">
+                     <h1 class="vexi_taller_10_h1">Cuidado con los emails</h1>
+         <a href="#">
+                        <img class="vexi_taller_10_img" src= "{% static 'core/img/vexi_taller10_img2.png' %}" />
+                    </a>
+        
+                    <p class="vexi_taller_10_p"> Antes de contestar o realizar cualquier acción verifica la dirección de correo electrónico y si no sientes desconfianza comunícate directamente con los canales oficiales 
+                        .</p>
+                    </div>
+        
+                <div class="vexi_taller_10_card vexi_taller_10_card2">
+                     <h1 class="vexi_taller_10_h1" >No compres en sitios fraudulentos</h1>
+         <a href="#">
+                        <img class="vexi_taller_10_img" src="{% static 'core/img/vexi_taller10_img3.png' %}" />
+                    </a>
+        
+                    <p class="vexi_taller_10_p">Trata de comprar únicamente en sitios reconocidos, si ves un producto en una oferta prácticamente increíble y cuya tienda no conoces es probable que se trata de un fraude. 
+                    </p>
+                </div>
+                <div class="vexi_taller_10_card vexi_taller_10_card3">
+                     <h1 class="vexi_taller_10_h1">No des tus datos</h1>
+         <a href="#">
+                        <img class="vexi_taller_10_img" src="{% static 'core/img/vexi_taller10_img1.png' %}" />
+                    </a>
+        
+                    <p class="vexi_taller_10_p">Si en algún momento te marcan para decirte que tu tarjeta tiene un cargo no reconocido y que necesitan tus datos para cancelar la compra, mejor cuelga.
+                        </p>
+                    </div>
+            </div>
 
 
 
+        </div>
+        <!-- central-->
+        <!-- Lateral 2-->
+        <div id="vexi_edu_taller10_lateral2">
+            <div id="vexi_edu_taller10_lateral2_boton2">
+                <a href="{% url 'vexi_taller11' %}"><p>></p></a>
+            </div>
+        </div>
+        <!-- Lateral 2-->
+    
+    </div>
 
-
-
+</div>
 
 {% endblock %}

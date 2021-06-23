@@ -1,0 +1,252 @@
+#vexi_taller_cont_general_taller7{
+    width: 100%;
+    height: auto;
+    background-color: RGB(246,245,245);
+  }
+  #vexi_edu_taller7{
+    display: flex;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding-bottom: 50px;
+    /* background-color: cadetblue;  */
+  }
+  #vexi_edu_cont1_taller7{
+  display: flex;
+  width: 100%;
+  height:auto;
+  padding-top: 30px;
+  /* background-color: aqua; */
+  }
+  #vexi_edu_taller7_cont1_espaciador{
+  width: 85%;
+  height: auto;
+  /* background-color: lightcyan; */
+  }
+  #vexi_edu_taller7_cont1_img{
+  width: 15%;
+  height: auto;
+  /* background-color: lightgreen; */
+  }
+  #vexi_edu_taller7_cont1_img img{
+  width: 60%;
+  height: auto;
+  }
+  
+  /* ------------------------------Laterl------------------------------ */
+  #vexi_edu_taller7_lateral1{
+    width: 10%;
+    height: 700px;
+    /* background-color: lightpink;  */
+  }
+  #vexi_edu_taller7_lateral1_boton1{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-top: 375px;
+    border-radius: 50%;
+    background-color: #DE2276;
+  }
+  #vexi_edu_taller7_lateral1_boton1 a{
+    text-decoration: none;
+    color: white;
+  }
+  #vexi_edu_taller7_lateral1_boton1 a p{
+    text-align: center;
+    line-height: 50px;
+    font-size: 40px;    
+  }
+  
+  /* ------------------------------Lateral1------------------------------ */
+  /* ------------------------------Central------------------------------ */
+  #vexi_edu_taller7_central{
+  width: 80%;
+  height: 700px;
+  /* background-color: lightskyblue;  */
+  }
+  
+  #vexi_edu_taller7_central_h1{
+  text-align: center;
+  font-size: 30px;
+  font-family: Montserrat-Bold;
+  }
+  .vexi_edu_taller7_central_p{
+  text-align: center;
+  font-size: 20px;
+  font-family: Montserrat-Regular;
+  }
+
+  .vexi_edu_taller7_central_p_2{
+    text-align: center;
+    font-size: 20px;
+    font-family: Montserrat-bold;
+    display: flex;
+position: relative;
+right: -10%;
+width: 35%;
+top: 25%;
+  }
+
+
+  #vexi_edu_taller7_central_h2{
+  text-align: center;
+  margin-top: 40px;
+  font-size: 25px;
+  font-family: Montserrat-SemiBold;
+  color: #DE2276;
+  }
+ 
+  /* Calculator */
+  #calculator {
+    width: 325px;
+    height: auto;
+    margin: 0px 620px;
+    padding: 20px 20px 9px;
+    /* background: #none; */
+    /* background: linear-gradient(#c9dd84, #9fcb96); */
+    border-radius: 5px;
+    font-family: montserrat;
+  }
+  
+  /* Top */
+  .top  span.clear{
+    float: left;
+  }
+  
+  /* Screen styling */
+  
+  
+  .top .screen {
+    height:90px;
+    width: 100%;
+    padding: 0 10px;
+    background: rgba(154, 185, 188, 0.8);
+    border-radius: 5px;
+    margin-bottom:10px;
+    /* Typography */
+    font-size: 30px;
+    line-height: 90px;
+    color: white;
+    text-align: right;
+    overflow:auto;
+  }
+  
+  /* Clear floats */
+  .keys  {
+    overflow: hidden;
+  }
+  
+  /* Keys */
+  .keys span, .top span.clear {
+    float: left;
+    position: relative;
+    top: 0;
+    background: #DE2277;
+    font-size:27px;
+    cursor: pointer;
+    width: 66px;
+    height: 46px;
+    border-radius: 5px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    margin: 0 7px 11px 0;
+    color: #ffffff;
+    line-height: 46px;
+    text-align: center;
+    user-select: none;
+    outline: 0 solid;
+    /* hover and active state transitions */
+    transition: all 0.2s ease;
+  }
+  
+  /* Unique key styling */
+  .keys span.operator {
+    background: #000;
+    margin-right: 0;
+  }
+  
+  .keys span.operator sup {
+    font-size: 50%;
+    vertical-align: top;
+    color:#ffffff;
+  }
+  
+  .keys span.eval {
+    background: #666666;
+    box-shadow: 0px 4px #474747;
+    color: #fff;
+    width: 212px;
+  }
+  
+  span.clear {
+    background: #DE2277;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* hover effects */
+  .keys span:hover {
+    background: #000;
+    color: white;
+  }
+  
+  .keys span.eval:hover {
+    background: #a3a3a3;
+    box-shadow: 0px 4px #3b3b3b;
+    color: #ffffff;
+  }
+  
+  .keys span.operator:hover {
+    background: #DE2277;
+    color: #ffffff;
+  }
+  
+  .top span.clear:hover {
+    background: #f68991;
+    box-shadow: 0px 4px #d3545d;
+    color: white;
+  }
+  
+  /* Simulating "pressed" effect */
+  .keys span:active {
+    box-shadow: 0px 0px #6b54d3;
+    top: 4px;
+  }
+  
+  .keys span.eval:active {
+    box-shadow: 0px 0px #717a33;
+    top: 4px;
+  }
+  
+  .top span.clear:active {
+    top: 4px;
+    box-shadow: 0px 0px #d3545d;
+  }
+
+  .vexi_edu_taller7_central_h3{
+  
+  }
+   
+  /* ------------------------------Central------------------------------ */
+  /* ------------------------------Lateral2------------------------------ */
+  #vexi_edu_taller7_lateral2{
+    width: 10%;
+    height: 700px;
+    /* background-color: lightgreen;  */
+  }
+  #vexi_edu_taller7_lateral2_boton2{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-top: 375px;
+    border-radius: 50%;
+    background-color: #DE2276;
+  }
+  #vexi_edu_taller7_lateral2_boton2 a{
+    text-decoration: none;
+    color: white;
+  }
+  #vexi_edu_taller7_lateral2_boton2 a p{
+    text-align: center;
+    line-height: 50px;
+    font-size: 40px;    
+  }
+  /* ------------------------------Lateral2------------------------------ */

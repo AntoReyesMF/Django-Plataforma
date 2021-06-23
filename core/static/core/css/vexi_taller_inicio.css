@@ -152,86 +152,138 @@
   line-height: 1.4rem;
   }
   
-  /* numeralia */
+  /* numeralia ----------------------------------------------------------------------*/
   
-  .vexi_numeralia{
-  background-color: #000;
-  }
-  
-  .vexi_h3{
-  color: #fff;
-  font-size: 2rem;
-  padding-top: 4rem;
-  }
-  
-  .vexi_seccion_numeros{
-  padding: 4rem;
-  }
-  
-  .vexi_numeralia_contenido{
-  display: flex;
-  text-align: center;
-  padding-left: 28rem;
-  
-  }
-  
-  .vexi_h4{
-  color: #DE2276;
-  text-align: center;
-  font-size: 2.5rem;
-  margin: 0;
-  }
-  
-  .vexi_h5{
-  color: #fff;
-  text-align: center;
-  font-size: 1.5rem;
-  }
-  
-  .vexi_preguntas{
-  text-align: center;
-  cursor: pointer;
-  padding-left: 1rem;
-  
-  }
-  
-  .vexi_h6{
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 2rem;
-  margin: 0;
-  padding-bottom: 3rem;
-  }
-  
-  #faqs{
-  display: none;
-  }
-  
-  .vexi_pregunta{
-  color: #DE2276;
-  font-weight: bold;
-  }
-  
-  .vexi_respuesta{
-  color: #fff;
-  padding-top: 2rem;
-  padding-right: 20rem;
-  padding-left: 20rem;
-  padding-bottom: 2rem;
-  }
-  
-  .vexi_btn_final{
-    background-color: #DE2276;
-    margin-bottom: 5rem;
-    border-radius: 30px;
-    border: none;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 1.5rem;
+  #vexi_inicio_cont_final{
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: black;
+}
+#vexi_final_cont_central{
+    width: 75%;
+    height: auto;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* background-color: white; */
+}
+/*--------------------------------------*/
+#vexi_final_central_cont1{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 50px;
+    /* background-color: lightcoral; */
+}
+#vexi_final_central_cont1 h2{
+    text-align: center;
+    font-family: Montserrat-SemiBold;
+    font-size: 35px;
+    color: white;
+}
+/*--------------------------------------*/
+#vexi_final_central_cont2{
+    display: flex;
+    width: 100%;
+    height: auto;
+    /* background-color: lightcyan; */
+}
+.vexi_final_cont2_datos{
+    width: 33.33%;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.vexi_p_datos{
+    text-align: center;
+    color: RGB(222,34,118);
+    font-family: Montserrat-Bold;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.vexi_p_datos_text{
+    text-align: center;
+    font-family: Montserrat-SemiBold;
+    font-size: 20px;
+    color: white;
+}
+/*----------------------------------------------------------------------------------------------------------*/
+#vexi_final_central_cont3{
+    width: 85%;
+    margin: auto;
+    min-height: 100px;
+    /* background-color: lightpink; */
+    padding-top: 60px;
     cursor: pointer;
-    }
-  
-  .vexi_btn_final:hover{
-  color: #fff;
-  }
+}
+#vexi_h2_cont3{
+    text-align: center;
+    margin-top: 15px;
+    font-family: Montserrat-SemiBold;
+    font-size: 30px;
+    color: white;
+}
+#vexi_p_cont3{
+    text-align: center;
+    margin-top: 20px;
+    font-family: Montserrat-SemiBold;
+    font-size: 30px;
+    color: RGB(222,34,118);
+}
+
+#vexi_cont3_pf{
+    display: none; 
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding-top: 50px;
+    /* background-color: lightskyblue; */
+    
+}
+#vexi_final_central_cont3:hover #vexi_cont3_pf{
+    display: block;
+    
+}
+.vexi_h5_cont3_pfs{
+    margin-top: 20px;
+    text-align: center;
+    color: RGB(222,34,118);
+    font-family: Montserrat-Medium;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+.vexi_p_cont3_ps{
+    margin-top: 15px;
+    text-align: center;
+    color: white;
+    font-family: Montserrat-Regular;
+    font-size: 15px;
+    letter-spacing: 3px;
+    line-height: 20px;
+}
+/*----------------------------------------------------------------------------------------------------------*/
+#vexi_final_central_cont4{
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* background-color: yellowgreen; */
+}
+#vexi_final_central_cont4_boton{
+    width: 230px;
+    height: 70px;
+    margin: auto;
+    border-radius: 50px;
+    background-color: RGB(222,34,118);
+}
+#vexi_a_cont4_boton{
+    text-decoration: none;
+    text-align: center;
+    margin: auto;
+    color: white;
+    line-height: 70px;
+    font-family: Montserrat-Medium;
+    font-size: 17px;
+}
+/*----------------------------------------------------------------------------------------------------------*/

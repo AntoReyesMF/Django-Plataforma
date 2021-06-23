@@ -100,15 +100,11 @@
     height: auto;
     padding-top: 20px;
     padding-bottom: 20px;
+    cursor:pointer;
     /* background-color: lightblue;
     border: 1px solid black; */
 }
-.mc_taller2_flex_p{
-    text-align: center;
-    font-size: 20px;
-    font-family: Montserrat-Medium;
-    margin-bottom: 50px;
-}
+
 .mc_taller2_flex_img{
     width: 120px;
     height: 120px;
@@ -118,6 +114,25 @@
 .mc_taller2_flex_img img{
     width: 120px;
     height: 120px;
+}
+.mc_taller2_flex_text{
+    display: none;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.mc_fin_taller2_flex:hover .mc_taller2_flex_text {
+    display: block;
+}
+
+.mc_taller2_flex_p{
+    text-align: center;
+    font-size: 25px;
+    font-family: Montserrat-Medium;
+    color: #DE2276;
+    margin-bottom: 50px;
 }
 /* ------------------------------Central------------------------------ */
 /* ------------------------------Lateral2------------------------------ */

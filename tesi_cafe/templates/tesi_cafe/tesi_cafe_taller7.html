@@ -1,0 +1,58 @@
+{% extends 'registration/base_login.html' %}
+{% load static %}
+{% block content %}
+
+<div id="teca_taller_cont_general_taller7"> 
+
+    <div id="teca_tesis_cont1_taller7">
+        <div id="teca_tesis_taller7_cont1_espaciador"></div>
+        <div id="teca_tesis_taller7_cont1_img">
+            <img src="{% static 'core/img/friends/tesicafecolor.png' %}" alt="">
+        </div>
+    </div>
+
+
+
+
+    <div id="teca_tesis_taller7">
+        
+        <!-- Lateral 1-->
+        <div id="teca_tesis_taller7_lateral1">
+    
+            <div id="teca_tesis_taller7_lateral1_boton1">
+    
+               <a href="{% url 'tesi_cafe_taller6' %}"><p><</p></a>
+    
+            </div>
+    
+        </div>
+        <!-- Lateral 1-->
+        <!-- central-->
+        <div id="teca_tesis_taller7_central">
+    
+            <h1 id="teca_tesis_taller7_central_h1">¿Cómo hacer el Marco teórico ?</h1>
+            <p id="teca_tesis_taller7_central_p">
+                Selecciona tus categorías fundamentales para sustentar tus objetivos, preguntas e hipótesis. Después redactarlo en un marco teórico. <br> <br>
+
+Te explicamos los pasos fundamentales para lograr construir un marco teórico
+            </p>
+
+            
+    
+        </div>
+        <!-- central-->
+        <!-- Lateral 2-->
+        <div id="teca_tesis_taller7_lateral2">
+            <div id="teca_tesis_taller7_lateral2_boton2">
+                <a href="{% url 'tesi_cafe_taller8' %}"><p>></p></a>
+            </div>
+        </div>
+        <!-- Lateral 2-->
+    
+    </div>
+
+</div>
+
+
+
+{% endblock %}
