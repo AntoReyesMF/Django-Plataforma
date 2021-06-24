@@ -85,6 +85,52 @@
     margin-bottom: 20px;
     color: #DE2276;
 }
+
+#teca_tesis_taller3_central_op{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* background-color: aquamarine; */
+}
+
+.teca_tesis_taller3_central_ops_green{
+    display: block;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 10px;
+    border-radius: 50px;
+    border: 2px solid #DE2276;
+    cursor: pointer;
+}
+.teca_tesis_taller3_central_ops_red{
+    display: block;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 10px;
+    border-radius: 50px;
+    border: 2px solid #DE2276;
+    cursor: pointer;
+}
+.teca_tesis_taller3_central_ops_p{
+    text-align: center;
+    font-family: Montserrat-Regular;
+    padding: 1rem;
+}
+
+.teca_tesis_taller3_central_ops_red:hover{
+    background-color: red;
+    color: white;
+}
+.teca_tesis_taller3_central_ops_green:hover{
+    background-color: green;
+    color: white;
+}
 /* ------------------------------Central------------------------------ */
 /* ------------------------------Lateral2------------------------------ */
 #teca_tesis_taller2_lateral2{

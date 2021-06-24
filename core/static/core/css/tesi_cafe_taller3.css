@@ -85,6 +85,171 @@
     margin-bottom: 20px;
     color: #DE2276;
 }
+
+.teca_tesis_taller3_stick {
+    position:absolute;
+    display:inline-block;
+   width: 12em;
+    height: 12em;
+    font-family: Montserrat;
+    margin:15px;
+    cursor: all-scroll;
+    z-index:600;
+    overflow:hidden;
+  /* 	box-shadow: 0px 0px 10px 2px #00000010; */
+  }
+  .teca_tesis_taller3_stick input[type="checkbox"] {
+    position:absolute;
+    z-index:0;
+    width:12em;
+    height:12em;
+    opacity:0;
+    cursor:pointer;
+    margin: 0;
+    padding:0;
+  }
+  .teca_tesis_taller3_nota {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    background: #f8ef7e;;
+    overflow: hidden;
+    padding:0;
+    font-size:16px;
+  }
+  
+  .teca_tesis_taller3_nota:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-width: 0 16px 16px 0;
+    border-style: solid;
+    border-color: #fff0 #fff0 #ffffffe6 #ffffffe6;
+    background: #fff;
+    box-shadow: 0px 0px 15px 4px #0c0f4180;
+    /* Firefox 3.0 damage limitation */
+    display: block; 
+    width: 0;
+  }
+  .teca_tesis_taller3_nota .nota-rounded {
+    border-radius: 5px 36px 5px 5px;
+  }
+  
+  .teca_tesis_taller3_nota .nota-rounded:before {
+    border-width: 12px;
+    border-color: #fff #fff transparent transparent;
+    border-radius: 0 0 0 5px;
+    transition: border .4s ease-in;
+  }
+  #fold1:checked + .teca_tesis_taller3_nota .nota-rounded::before
+  {
+    border-width: 100px;
+    box-shadow:none;
+    -webkit-animation: folding .4s;
+            animation: folding .4s;
+    -webkit-animation-delay: .4s;
+            animation-delay: .4s;
+  }
+  /* @keyframes folding{
+    0%{
+      border-color: #fff #fff transparent transparent;
+    }
+    40%{
+      border-color: #fff #fff #fff transparent;
+    }
+    100%{
+      border-color: #fff;
+    }
+  } */
+  .teca_tesis_taller3_nota textarea
+  {
+    border:none;
+    background-color:transparent;
+    width:100%;
+    height:100%;
+    resize: none;
+    font-family: montserrat;
+    margin:0px;
+    padding:10px;
+    color: #000;
+    font-size:14px;
+  }
+  .teca_tesis_taller3_nota textarea:focus
+  {
+    outline:none;
+  }
+  .teca_tesis_taller3_btn
+  {
+    box-shadow:none;
+    cursor:pointer;
+  }
+  .teca_tesis_taller3_btn:focus
+  {
+    outline:none;
+  }
+  
+  .teca_tesis_taller3_btn-del
+  {
+    background-color:#fff;
+    border:none;
+    color:#fd1f1f;
+    padding:0px;
+    margin: 5px 2px;
+    width:30px;
+    height:30px;
+    border-radius:50%;
+      box-shadow: 0px 0px 10px 5px #0c0f411a;
+  }
+  .teca_tesis_taller3_stick .teca_tesis_taller3_action
+  {
+    position: absolute;
+    right: 0px;
+    left: 0;
+    bottom: 0px;
+    text-align:right;
+    padding: 0 5px;
+    transition: all  .4s;
+  }
+  
+  .teca_tesis_taller3_btn-add
+  {
+      width:50px;
+      height:50px;
+      border-radius:50%;
+      border:none;
+      background-color:#193768;
+      color:#fff;
+      position:absolute;
+      right: 800px;
+      bottom:20px;
+      box-shadow: 0px 0px 0px 4px #290a9166;
+      -webkit-animation: pulse 2s infinite;
+              animation: pulse 2s infinite;
+  }
+  @-webkit-keyframes pulse {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(96,57,224, 0.4);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px rgba(96,57,224, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(96,57,224, 0);
+    }
+  }
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(96,57,224, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(96,57,224, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(96,57,224, 0);
+    }
+  }
 /* ------------------------------Central------------------------------ */
 /* ------------------------------Lateral2------------------------------ */
 #teca_tesis_taller2_lateral2{
