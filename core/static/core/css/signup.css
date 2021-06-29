@@ -1,0 +1,34 @@
+#signup_cont_g{
+    
+    width: 100%;
+    height: 55vh;
+    padding-top: 105px;
+    background-color: aquamarine;
+}
+
+#signup_cont_central{
+    display: flex;
+    width: 50%;
+    height: 50vh;
+    margin: auto;
+    background-color: lightcoral;
+}
+
+
+#signup_cont_g_1{
+    width: 50%;
+    height: 100%;
+    background-color: lawngreen;
+}
+
+#signup_cont_g_2{
+    width: 50%;
+    height: 100%;
+    background-color: lightblue;
+}
+#signup_form{
+    width: 100px;
+    height: 200px;
+    background-color: burlywood;
+}
+
