@@ -2,6 +2,10 @@
 {% load static %}
 {% block content %}
 
+{% if request.user.is_authenticated %}
+  <script>window.location.href = '/accounts/perfil/'; </script>
+{% endif %}
+
 <div id="signup_cont_g">
 
   <div id="signup_cont_central">
@@ -10,12 +14,21 @@
 
     <div id="signup_cont_g_1">
 
+      <h1> YA TENGO UNA CUENTA</h1>
+
+      <p>Inicia sesión con tu información personal</p>
+
+      <div id="signup_cont_g_1_boton">
+        <a href="{% url 'login' %}" id="p_signup_boton">INICIAR SESIÓN</a>
+      </div>
     </div>
 
     <!-- .................................................................................... -->
     <!-- .................................................................................... -->
 
     <div id="signup_cont_g_2">
+
+      <H2>Crea tu cuenta</H2>
 
       <form id="signup_form" method="post">
 
@@ -32,7 +45,7 @@
             {% endfor %}
           </p>
         {% endfor %}
-        <button type="submit">Sign up</button>
+        <button type="submit" id="signup_cont_g_2_boton">CREAR CUENTA</button>
 
       </form>
 
@@ -52,3 +65,6 @@
 
 
 {% endblock %}
+
+
+
