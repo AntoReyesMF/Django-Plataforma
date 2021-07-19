@@ -160,19 +160,19 @@
 /* editar nickname */
 #perfil2_presentacion_username_2{
   display: none;
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
 }
 
 #perfil2_presentacion_username_2 form{
   width: fit-content;
   height: fit-content;
   margin: auto;
-  background-color: lightgrey;
+  /* background-color: lightgrey; */
 }
 #perfil2_username_descripcion_botones{
   width: fit-content;
   height: fit-content;
-  background-color: lightpink;
+  /* background-color: lightpink; */
   margin: auto;
   margin-top: 10px;
 }
@@ -215,7 +215,7 @@
   width: 100%;
   height: fit-content;
   margin-top: 20px;
-  background-color: lightpink;
+  /* background-color: lightpink; */
 }
 #input_cont_text_edit{
   width: 80%;
@@ -232,7 +232,7 @@
   height: fit-content;
   margin: auto;
   margin-top: 10px;
-  background-color: lightgoldenrodyellow;
+  /* background-color: lightgoldenrodyellow; */
 }
 /* edit flex none*/
 /* Cuentanos sobre ti */
