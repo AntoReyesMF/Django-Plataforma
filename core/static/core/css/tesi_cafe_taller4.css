@@ -85,6 +85,127 @@
     margin-bottom: 20px;
     color: #DE2276;
 }
+
+.teca_tesis_taller4_ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  #teca_tesis_taller4_wrapper {
+    width: 900px;
+    height: 400px;
+    position: absolute;
+    top: 42%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    overflow: hidden;
+  }
+  
+  #teca_tesis_taller4_left {
+    height: 70%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #teca_tesis_taller4_left ul li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    line-height: 34px;
+    color: rgba(51, 51, 51, 0.5);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+  }
+  #teca_tesis_taller4_left ul li:hover {
+    color: #333333;
+    transition: all 0.2s ease-out;
+  }
+  
+  #teca_tesis_taller4_left ul li.active {
+    color: #de2276;
+  }
+  
+  
+  #teca_tesis_taller4_border {
+    height: 288px;
+    width: 1px;
+    background-color: rgba(51, 51, 51, 0.2);
+  }
+  #teca_tesis_taller4_border #line.one {
+    width: 5px;
+    height: 54px;
+    background-color: #de2276;
+    margin-left: -2px;
+    margin-top: 35px;
+    transition: all 0.4s ease-in-out;
+  }
+  #teca_tesis_taller4_border #line.two {
+    width: 5px;
+    height: 54px;
+    background-color: #de2276;
+    margin-left: -2px;
+    margin-top: 89px;
+    transition: all 0.4s ease-in-out;
+  }
+  #teca_tesis_taller4_border #line.three {
+    width: 5px;
+    height: 54px;
+    background-color: #de2276;
+    margin-left: -2px;
+    margin-top: 143px;
+    transition: all 0.4s ease-in-out;
+  }
+  #teca_tesis_taller4_border #line.four {
+    width: 5px;
+    height: 54px;
+    background-color: #de2276;
+    margin-left: -2px;
+    margin-top: 197px;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  #teca_tesis_taller4_right{
+    height: 300px;
+    width: 75%;
+    overflow: hidden;
+  }
+  #teca_tesis_taller4_right #teca_tesis_taller4_first, #teca_tesis_taller4_right #teca_tesis_taller4_second, #teca_tesis_taller4_right #teca_tesis_taller4_third, #teca_tesis_taller4_right #teca_tesis_taller4_fourth {
+    position: absolute;
+    height: 300px;
+    width: 75%;
+    transition: all 0.6s ease-in-out;
+    margin-top: -350px;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #teca_tesis_taller4_right #teca_tesis_taller4_first h1, #teca_tesis_taller4_right #teca_tesis_taller4_second h1, #teca_tesis_taller4_right #teca_tesis_taller4_third h1, #teca_tesis_taller4_right #teca_tesis_taller4_fourth h1 {
+    font-weight: 800;
+    color: #de2276;
+  }
+  #teca_tesis_taller4_right #teca_tesis_taller4_first p, #teca_tesis_taller4_right #teca_tesis_taller4_second p, #teca_tesis_taller4_right #teca_tesis_taller4_third p, #teca_tesis_taller4_right #teca_tesis_taller4_fourth p {
+    color: #000;
+    font-weight: 500;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  #teca_tesis_taller4_right #teca_tesis_taller4_first.active, #teca_tesis_taller4_right #teca_tesis_taller4_second.active, #teca_tesis_taller4_right #teca_tesis_taller4_third.active, #teca_tesis_taller4_right #teca_tesis_taller4_fourth.active {
+    margin-top: 0px;
+    opacity: 1;
+    transition: all 0.6s ease-in-out;
+  }
 /* ------------------------------Central------------------------------ */
 /* ------------------------------Lateral2------------------------------ */
 #teca_tesis_taller4_lateral2{

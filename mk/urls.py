@@ -22,7 +22,9 @@ urlpatterns = [
     path('', include('core.urls')),
     # Path de Auth
     #path('accounts/', include('django.contrib.auth.urls')),
-    path('registration/', include('registration.urls')),
+    path('accounts/', include('registration.urls')),
+    path('accounts/', include('django.contrib.auth.urls')),
+
     path('mc/',include('mc.urls')),
     path('market/', include('market.urls')),
     path('vexi/', include('vexi.urls')),

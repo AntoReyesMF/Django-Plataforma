@@ -8,7 +8,6 @@
     width: 80%;
     height: auto;
     margin: auto;
-    padding-top: 50px;
     padding-bottom: 50px;
     /* background-color: cadetblue;  */
 }
@@ -84,6 +83,81 @@
     margin-top: 30px;
     margin-bottom: 20px;
     color: #DE2276;
+}
+
+/*===== DRAG and DROP =====*/
+.teca_tesis_taller7_container,
+.teca_tesis_taller7_drop {
+  display: grid;
+}
+
+.teca_tesis_taller7_container {
+ margin-top: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.teca_tesis_taller7_drop{
+  row-gap: 1rem;
+  padding: 2rem;
+  box-shadow: 4px 4px 16px #e1e1e1;
+  box-shadow: 0px 4px 12px -1px rgba(0, 0, 0, 0.35);
+}
+.teca_tesis_taller7_drop > div:nth-child(1) {
+  background: #ffdd99;
+}
+.teca_tesis_taller7_drop > div:nth-child(2) {
+  background: #bfc1ff;
+}
+.teca_tesis_taller7_drop > div:nth-child(3) {
+  background: #fcb8b3;
+}
+.teca_tesis_taller7_drop > div:nth-child(4) {
+  background: #bfffc5;
+}
+.teca_tesis_taller7_drop > div:nth-child(5) {
+  background: #d8bfff;
+}
+
+
+.teca_tesis_taller7_card,
+.teca_tesis_taller7_data {
+  display: flex;
+  align-items: center;
+}
+
+.teca_tesis_taller7_card {
+  width: 360px;
+  justify-content: space-between;
+  padding: 0.75rem 1.25rem 0.75rem 0.75rem;
+  background-color: #f8f8fc;
+  box-shadow: 4px 4px 16px #e1e1e1, -2px -2px 16px #fff;
+  border-radius: 2.5rem;
+}
+
+.teca_tesis_taller7_img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-right: 1rem;
+  object-fit: cover;
+  background-color: #ffff;
+}
+
+.teca_tesis_taller7_name {
+  font-size: 1rem;
+  color: #000;
+  font-weight: 500;
+}
+
+/* Class name for the chosen item */
+.sortable-chosen {
+  box-shadow: 8px 8px 32px #e1e1e1;
+}
+
+/* Class name for the dragging item */
+.sortable-drag {
+  opacity: 0;
 }
 /* ------------------------------Central------------------------------ */
 /* ------------------------------Lateral2------------------------------ */

@@ -10,25 +10,36 @@
       <div class="inicio_bienvenida">¡Nos alegra verte {{user.get_username}}!</div>
          <h1 class="inicio_h1">¿EMPEZAMOS?</h1>
 
-<div class="inicio_card" >                         
-        <div class="inicio_card_frente">   
-                <a class= "inicio_a" href="{% url 'perfil2' %}">                                                                     
-                    <h2 class="inicio_h2">Crea tu perfil</h2>
-                </a>
-       
-      </div>
-        <div class="inicio_card_frente">
-                <a class= "inicio_a" href="{% url 'preferencias' %}">                              
-                      <h2 class="inicio_h2" >Cuentanos sobre ti</h2>
-                </a>
-        
-       </div>
-        <div class="inicio_card_frente">
-                  <a class= "inicio_a" href="{% url 'market' %}">
-                      <h2 class="inicio_h2" >Empieza a explorar</h2>
-                  </a>
-                </div>
-              </div>   
+         <div class="inicio_cards-list"> 
+           <a class="inicio_a" href= "{% url 'perfil2' %}">
+          <div class="inicio_card 1">
+            <div class="inicio_card_image"> <img src=https://media.giphy.com/media/5UutpfMIjPbZGI4van/giphy.gif /> </div>
+            <div class="inicio_card_title">
+              <p>Crea tu perfil</p>
+            </div></a>
+          
+          </div>
+          
+          <a class="inicio_a" href= "{% url 'preferencias' %}">
+            <div class="inicio_card 2">
+            <div class="inicio_card_image">
+              <img src=https://media.giphy.com/media/39m8amsRQCP2hxEPZq/giphy.gif />
+              </div>
+            <div class="inicio_card_title">
+              <p>Cuéntanos sobre ti</p>
+            </div></a>
+          </div>
+          
+          <a class="inicio_a" href= "{% url 'market' %}">
+          <div class="inicio_card 3">
+            <div class="inicio_card_image">
+              <img src=https://media.giphy.com/media/pqnY0eDsO7nvgHvjSv/giphy.gif />
+            </div>
+            <div class="inicio_card_title">
+              <p>Empieza a explorar</p>
+            </div></a>
+          </div>
+          </div>  
                           
 </html>
 {% endblock %}s
