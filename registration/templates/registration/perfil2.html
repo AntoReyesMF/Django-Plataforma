@@ -107,104 +107,116 @@
         </div>
 
     </div>
+  </div>
+
 
     <!-- ######################################################################################################## --> 
-
-    <div class="perfil2_flexslider-controls">
-
-        <ol class="perfil2_flex-control-nav">
-
-            <li>Editar perfil</li>
-            <li>Cuenta</li>
-            <li>Historial de cursos</li>
-            <li>Certificados</li>
-
-        </ol>
-
-    </div>
-
-    <div class="flexslider">
-      <ul class="slides">
-          <li>
-            <div class="perfil2_perfil" width="800" height="504">
-              <div id="title">
-                <h2 class="perfil2_h2">Editar mi perfil</h2>    
-              </div>
-              <div class="perfil2_form">
-                  <form>
-                    <input type="text" class="perfil2_col-md-6" >		
-                    <h3 class="perfil2_h3">Nombre(s)</h3>
-                    <input type="text" class="perfil2_col-md-6" >
-                    <h3 class="perfil2_h3">Apellidos</h3>
-                    <input type="text" class="perfil2_col-md-6" >
-                    <h3 class="perfil2_h3">Fecha de nacimiento</h3>
-                    <input type="date" class="perfil2_col-md-3" >
-                    <h3 class="perfil2_h3">Género</h3>
-                    <input type="checkbox" class="gen"  name="hm" value="h" required> Hombre
-                    <input type="checkbox"  name="hm" value="m" required> Mujer
-                    <input type="text1" class="otro" placeholder="Otro">
-                    <br> <br>
-                    <input class="perfil2_btn" type="submit" value="Guardar" >		
-                  </form>
-                </div>
-              </div>
-          </li>
-          <li>
-            <div class="perfil2_perfil" width="800" height="504">
-              <div id="title">
-                <h2 class="perfil2_h2">Información de inicio de sesión</h2>    
-              </div>
-              <div class="perfil2_cuenta">
-                  <form>		
-                    <h3 class="perfil2_h3">Correo electronico</h3>
-                    <input type="text" class="perfil2_col-md-6" >
-                    <h3 class="perfil2_h3">Contraseña</h3>
-                    <h4 class="perfil2_h4">La contraseña debe contener al menos seis caracteres</h4>
-                    <input type="text" class="perfil2_col-md-6" >
-                    <h3 class="perfil2_h3">Confirma tu contraseña</h3>
-                    <input type="text" class="perfil2_col-md-6" >
-                    <br> <br>
-                    <input class="perfil2_btn" type="submit" value="Guardar" >	
-          </li>
-          <li>
-            <div class="perfil2_perfil" width="800" height="504">
-              <div id="title">
-                <h2 class="perfil2_h2">Visto recientemente</h2>    
-              </div>
-                 <div class="perfil2_historial_no">
-                  <h5 class="perfil2_h5">Todavía no haz iniciado algun curso</h5>
-                  <img class="perfil2_img_hist" src="{% static 'core/img/undraw_empty_xct9.png' %}">
-                 </div>
-                </li>
-                <li>
-<!-- En caso de tener historial -->
-             <!-- <div class="perfil2_historial_si">
-            <div class="perfil2_wrapper">
-              <div class="perfil2_wrapper_inner"> 
-                <section class="perfil2_gallery">
-                  <div class="perfil2_gallery_item">
-                    <span class="perfil2_gallery_item_preview">
-                      <a href="#" data-js="1">
-                        <img src="https://25.media.tumblr.com/1adc4029ef3a31124f222add70fa3553/tumblr_n2k1499dIp1st5lhmo1_1280.jpg" alt="" /><span>
-                        <h3>Exmaple photo</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit.</p>
-                        </span>
-                      </a>
-          </li>
-          <li>-->
-
-            <div class="perfil2_perfil" width="800" height="504">
-              <div id="title">
-                <h2 class="perfil2_h2">Mis Certificados</h2>    
-              </div>
-                 <div class="perfil2_certificados">
-                  <h5 class="perfil2_h5">Aún no cuentas con certificados</h5>
-                  <img class="perfil2_img_cert" src="{% static 'core/img/undraw_No_data_re_kwbl.png' %}">
-                 </div>
-
-          </li>
+    <div class="perfil2_wrapper_datos">
+      <ul class="perfil2_tabs">
+        <li class="perfil2_tab_active">Editar Perfil</li>
+        <li>Cuenta</li>
+        <li>Historial</li>
+        <li>Certificados</li>
       </ul>
+    
+      <ul class="perfil2_tab_content">
+        <li class="perfil2_tab_active">
+          <div class="perfil2_content_wrapper">
+            <h2 class="text-color">Actualizar mis datos</h2>
+            
+            <form class="perfil2_form">
+              <div class="perfil2_group -ionic">
+                <input class="perfil2_field" type="text" required>
+                <label class="perfil2_title_label">Nombre</label>
+              </div>
+              <div class="perfil2_group -ionic">
+                <input class="perfil2_field" type="text" required>
+                <label class="perfil2_title_label">Apellidos</label>
+              </div>
+        
+              <div class="perfil2_group -ionic">
+                <input class="perfil2_field" type="date" required>
+                <label class="perfil2_title_label">Fecha de nacimiento</label>
+              </div>
+        
+              <div class="perfil2_group -ionic">
+                <input class="perfil2_field" type="select" required>
+                <label class="perfil2_title_label">Genero</label>
+              </div>
+              
+              <button class="perfil2_form_button">
+               Guardar
+              </button>
+              
+              </form>
+          </div>
+        </li>
+        <li>
+          <div class="perfil2_content_wrapper">
+            <h2 class="text-color">Información de inicio de sesión</h2>
+            <form class="perfil2_form">
+              <div class="perfil2_group -ionic">
+                <input class="perfil2_field" type="mail" required>
+                <label class="perfil2_title_label">Correo electronico</label>
+              </div>
+              <div class="perfil2_group -ionic">
+                <input class="perfil2_field" type="password" required>
+                <label class="perfil2_title_label">Contraseña</label>
+              </div>
+        
+              <div class="perfil2_group -ionic">
+                <input class="perfil2_field" type="password" required>
+                <label class="perfil2_title_label">Confirma tu contraseña</label>
+              </div>
+              
+              <button class="perfil2_form_button">
+                Guardar
+              </button>
+              
+              </form>
+          </div>
+        </li>
+        <li>
+          <div class="perfil2_content_wrapper">
+            <h2 class="text-color">Visto recientemente</h2>
+            
+            <div class="perfil2_historial_no">
+              <h5 class="perfil2_h5">Todavía no haz iniciado algun curso</h5>
+              <img class="perfil2_img_hist" src="{% static 'core/img/undraw_empty_xct9.png' %}">
+    
+            </div>
+            <!-- En caso de tener historial -->
+                 <!-- <div class="perfil2_historial_si">
+                <div class="perfil2_wrapper">
+                  <div class="perfil2_wrapper_inner"> 
+                    <section class="perfil2_gallery">
+                      <div class="perfil2_gallery_item">
+                        <span class="perfil2_gallery_item_preview">
+                          <a href="#" data-js="1">
+                            <img src="https://25.media.tumblr.com/1adc4029ef3a31124f222add70fa3553/tumblr_n2k1499dIp1st5lhmo1_1280.jpg" alt="" /><span>
+                            <h3>Exmaple photo</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                              elit.</p>
+                            </span>
+                          </a>
+              </li>
+              <li>-->
+            
+          </div>
+        </li>
+        <li>
+        <div class="perfil2_content_wrapper">
+          <h2 class="text-color">Mis certificados</h2>
+          <div class="perfil2_certificados">
+            <h5 class="perfil2_h5">Aún no cuentas con certificados</h5>
+            <img class="perfil2_img_cert" src="{% static 'core/img/undraw_No_data_re_kwbl.png' %}">
+             </div>
+          </div>
+        </div>
+      </li>
+      </ul>
+    </div>
   </div>
 </div>
+   
 {% endblock %}
