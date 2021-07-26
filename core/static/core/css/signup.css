@@ -21,7 +21,7 @@
 #signup_cont_g_1{
     width: 50%;
     height: 100%;
-    background: url(https://images.unsplash.com/photo-1518821703881-9da5a9f42038?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjR8fHBpbmslMjBkZWZlbmNlfGVufDB8fDB8&auto=format&fit=crop&w=600&q=60);
+    background: url(https://media.giphy.com/media/7uUETGAySHma0Vh9ls/giphy.gif);
 	background-repeat: no-repeat;
 	background-size: cover;
     border-radius: 25px 0px 0px 25px;
@@ -51,18 +51,17 @@
     margin: auto;
     margin-top: 10%;
     border-radius: 25px;
-    border: 1px solid white; 
+    background: #fff;
 }
 
 #p_signup_boton{
     display: block;
-    color: white;
+    color: #DE2276;
     font-family: Montserrat-Medium;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 16px;
-    text-shadow: 3px 3px 3px grey;
     text-decoration: none;
 }
 
@@ -75,12 +74,12 @@
     /* background-color: lightblue; */
 }
 #signup_cont_g_2 h2{
-    color: #DE2276;
+    color: #000;
     text-align: center;
     font-family: Montserrat-Bold;
     font-size: 28px;
     margin-top: 10%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 #signup_form{
     width: 75%;
@@ -89,20 +88,16 @@
     /* background-color: burlywood; */
 }
 #signup_cont_g_2_boton{
-    width: 50%;
-    height: fit-content;
-    background-color: #DE2276;
-    margin: auto;
-    margin-top: 10%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 25px;
-    border: 1px solid #DE2276;
-    color: white;
-    font-family: Montserrat-Medium;
-    text-align: center;
-    font-size: 16px;
-    text-shadow: 3px 3px 3px grey; 
-    cursor: pointer;
+width: 80%;
+height: 55px;
+background: #de2276;
+border: none;
+border-radius: 5px;
+font-size: 15px;
+font-weight: 500;
+font-family: montserrat;
+color: #fff;
+margin-top: 20px;
+cursor: pointer;
 }
 /* ---------------Contenedor 2--------------*/
