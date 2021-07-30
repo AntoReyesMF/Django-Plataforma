@@ -140,6 +140,7 @@
     top: 60%;
     left: 35%;
     padding: 1rem;
+    position: relative;
   }
   
   .segundo {
@@ -148,6 +149,7 @@
     top: 60%;
     left: 45%;
     padding: 1rem;
+    position: relative;
   }
   
   .tercero{
@@ -156,6 +158,7 @@
     top: 60%;
     left: 55%;
     padding: 1rem;
+    position: relative;
   }
   
   

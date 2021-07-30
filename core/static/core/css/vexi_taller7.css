@@ -199,32 +199,7 @@ top: 25%;
     color: #ffffff;
   }
   
-  .top span.clear:hover {
-    background: #f68991;
-    box-shadow: 0px 4px #d3545d;
-    color: white;
-  }
-  
-  /* Simulating "pressed" effect */
-  .keys span:active {
-    box-shadow: 0px 0px #6b54d3;
-    top: 4px;
-  }
-  
-  .keys span.eval:active {
-    box-shadow: 0px 0px #717a33;
-    top: 4px;
-  }
-  
-  .top span.clear:active {
-    top: 4px;
-    box-shadow: 0px 0px #d3545d;
-  }
 
-  .vexi_edu_taller7_central_h3{
-  
-  }
-   
   /* ------------------------------Central------------------------------ */
   /* ------------------------------Lateral2------------------------------ */
   #vexi_edu_taller7_lateral2{
