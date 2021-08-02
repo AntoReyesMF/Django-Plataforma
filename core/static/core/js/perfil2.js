@@ -14,7 +14,6 @@ function close_edit_nickname(){
     var nickname1 = document.querySelector("#perfil2_presentacion_username_2");
     console.log("Cerraste el editor de presentacion.");
     nickname1.style.display = "none";
-    
 }
 /*----------------------------  Editar nickname ---------------------------- */ 
 
