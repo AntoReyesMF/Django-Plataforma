@@ -216,17 +216,20 @@ margin: auto;
   width: 100%;
   height: fit-content;
   margin-top: 20px;
-  /* background-color: lightpink; */
+  /* background-color: lightpink;  */
 }
 #input_cont_text_edit{
   width: 80%;
   height: fit-content;
   margin: auto;
+  
 }
 #input_text_edit{
   width: 100%;
   min-height: 100px;
   margin: auto;
+  border: 1px solid #DE2276 ;
+  background-color: white;
 }
 #perfil2_presentacion_descipcion_edit_botones{
   width: fit-content;
