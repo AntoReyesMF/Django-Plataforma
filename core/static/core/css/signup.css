@@ -21,7 +21,7 @@
 #signup_cont_g_1{
     width: 50%;
     height: 100%;
-    background: url(https://media.giphy.com/media/7uUETGAySHma0Vh9ls/giphy.gif);
+    background: url(https://media.giphy.com/media/QUzHGAtszztjq/source.gif);
 	background-repeat: no-repeat;
 	background-size: cover;
     border-radius: 25px 0px 0px 25px;
@@ -49,20 +49,21 @@
     width: 50%;
     height: fit-content;
     margin: auto;
-    margin-top: 10%;
-    border-radius: 25px;
+    margin-top: 20px;
+    border-radius: 5px;
     background: #fff;
 }
 
 #p_signup_boton{
     display: block;
     color: #DE2276;
-    font-family: Montserrat-Medium;
+    font-family: Montserrat;
+    font-weight: 500;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 16px;
+    padding: 15px;
+    font-size: 15px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 

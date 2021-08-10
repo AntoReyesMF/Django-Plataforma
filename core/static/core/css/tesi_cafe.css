@@ -87,7 +87,6 @@
     width: 100%;
     height: auto;
     padding-top: 20px;
-    padding-bottom: 20px;
     background-color: RGB(246,245,245);
 }
 #teca_inicio_cont_central1{
@@ -335,8 +334,10 @@
     width: 230px;
     height: 70px;
     margin: auto;
-    border-radius: 50px;
+    border-radius: 5px;
     background-color: RGB(222,34,118);
+    font-weight: 500;
+    cursor: pointer;
 }
 #teca_a_cont4_boton{
     text-decoration: none;

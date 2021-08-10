@@ -170,3 +170,17 @@
 		margin: 2em 0;
 		font-family: montserrat;
 	  }
+
+	  .chatea_btn{
+		width: 80%;
+		height: 55px;
+		background: #de2276;
+		border: none;
+		border-radius: 5px;
+		font-size: 15px;
+		font-weight: 500;
+		font-family: montserrat;
+		color: #fff;
+		margin-top: 20px;
+		cursor: pointer;
+	  }

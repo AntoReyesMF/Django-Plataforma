@@ -15,8 +15,4 @@ $(document).ready(function() {
     $('.vexi_taller_10_card').removeClass('hover');
   });
   
-  $('.vexi_taller_10_card').hammer().on('tap', function(event) {
-      $('.vexi_taller_10_card').removeClass('hover');
-      $(this).addClass('hover');
-  });
 });

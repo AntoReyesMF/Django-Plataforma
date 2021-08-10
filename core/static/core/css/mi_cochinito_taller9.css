@@ -8,7 +8,6 @@
     width: 80%;
     height: auto;
     margin: auto;
-    padding-top: 50px;
     padding-bottom: 50px;
     /* background-color: rgb(31, 78, 62);  */
 }
@@ -110,11 +109,13 @@
 }
 .mc_fin_taller9_boton{
     display: block;
-    width: 40%;
-    height: 40px;
+    width: 50%;
+    height: 45px;
     margin: auto;
-    border-radius: 25px;
+    border-radius: 5px;
     background-color: #DE2276;
+    cursor: pointer;
+    font-weight: 500;
 }
 .mc_fin_taller9_boton p{
     text-align: center;
@@ -127,7 +128,9 @@
     width: 40%;
     height: 40px;
     margin: auto;
-    padding-bottom: 10rem;
+    padding-bottom: 14rem;
+    font-family: montserrat;
+    text-align: center;
 }
 .mc_fin_taller9_boton p{
     text-align: center;
@@ -135,26 +138,29 @@
     line-height: 40px;
 }
 
-.pulse-button {
-    font-family: montserrat;
+.pulse-button_mc {
     position: relative;
     top: 50%;
-    left: 50%;
+    left: 40%;
     margin-left: -50px;
     margin-top: -40px;
     display: block;
-    width: 130px;
-    height: 130px;
-    font-weight: normal;
-    text-align: center;
-    color: white;
+    width: 200px;
+    height: 185px;
     border: none;
     border-radius: 50%;
-    background: #DE2276;
+    background-image: url(https://media.giphy.com/media/3fioqpehGxsddDzqxe/giphy.gif);
+    background-position: center;
+    background-size: contain;
     cursor: pointer;
     box-shadow: 0 0 0 0 rgba(241, 73, 205, 0.5);
     -webkit-animation: pulse 1.5s infinite;
-    padding-top: 45px;
+    
+
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 1.5rem;
+
   }
   
   .pulse-button:hover {
@@ -189,6 +195,9 @@
     height: 200px;
     margin-top: 5rem;
     /* background-color: aqua; */
+}
+a{
+    text-decoration: none;
 }
 /* ------------------------------Central------------------------------ */
 /* ------------------------------Lateral2------------------------------ */

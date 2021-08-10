@@ -87,7 +87,7 @@
   }
   
   .vexi_taller11_generator {
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 2rem;
     text-align: center;
   }
@@ -99,8 +99,9 @@
     font-family: montserrat;
     font-size: 1.5rem;
     color: #fff;
-    width: 200px;
-    height: 100px;
+    width: 300px;
+    height: 110px;
+    border-radius: 10px;
   }
   
   .vexi_taller11_wrapper {
@@ -111,9 +112,8 @@
   .quotes {
     font-family: montserrat;
     border-radius: 10px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: #de2276;
+    background-color: #fff;
+    padding: 1.5rem;
   }
   .quote{
     font-family: montserrat;
@@ -130,8 +130,6 @@
   
   .vexi_taller11_generate:hover{
     cursor:pointer;
-    background-color: black;
-    color: #de2276;
     
   }
 
