@@ -98,30 +98,9 @@
     width: 40%;
     height: 40px;
     margin: auto;
-    padding-bottom: 10rem;
+    padding-bottom: 13rem;
 }
 
-.vexi_edu_taller13_pulse-button{
-    font-family: montserrat;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    margin-left: -50px;
-    margin-top: -40px;
-    display: block;
-    width: 130px;
-    height: 130px;
-    font-weight: normal;
-    text-align: center;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    background: #DE2276;
-    cursor: pointer;
-    box-shadow: 0 0 0 0 rgba(241, 73, 205, 0.5);
-    -webkit-animation: pulse 1.5s infinite;
-    padding-top: 45px;
-  }
   
   .vexi_edu_taller13_pulse-button:hover {
     -webkit-animation: none;
@@ -176,8 +155,10 @@
     width: 40%;
     height: 40px;
     margin: auto;
-    border-radius: 25px;
+    border-radius: 5px;
     background-color: #DE2276;
+    cursor: pointer;
+    font-weight: 500;
 }
 .vexi_edu_taller13_boton p{
     text-align: center;
@@ -185,6 +166,30 @@
     line-height: 40px;
 }
   
+.pulse-button_vexi {
+  position: relative;
+  top: 50%;
+  left: 40%;
+  margin-left: -50px;
+  margin-top: -40px;
+  display: block;
+  width: 200px;
+  height: 185px;
+  border: none;
+  border-radius: 50%;
+  background-image: url(https://media.giphy.com/media/3o6ZtiA67229ANxT1u/source.gif);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  box-shadow: 0 0 0 0 rgba(241, 73, 205, 0.5);
+  -webkit-animation: pulse 1.5s infinite;
+  
+
+  font-weight: bold;
+  color: #DE2276;
+  font-size: 1.5rem;
+
+}
   /* ------------------------------Central------------------------------ */
   /* ------------------------------Lateral2------------------------------ */
   #vexi_edu_taller12_lateral2{

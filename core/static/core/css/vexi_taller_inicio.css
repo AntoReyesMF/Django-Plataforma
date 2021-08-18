@@ -70,6 +70,7 @@
   
   .vexi_bar_content{
     margin-left: 33rem;
+    
   }
   
   .vexi_btn_bar{
@@ -82,7 +83,9 @@
     cursor: pointer;
   }
   .vexi_btn_bar:hover{
-    color: #DE2276;
+    color: #DE2276; 
+    transform: scale(1.2,1.2);
+    transition: all 300ms;
   }
   
   /* Contenido general */
@@ -335,8 +338,10 @@
     width: 230px;
     height: 70px;
     margin: auto;
-    border-radius: 50px;
+    border-radius: 5px;
     background-color: RGB(222,34,118);
+    font-weight: 500;
+    cursor: pointer;
 }
 #vexi_a_cont4_boton{
     text-decoration: none;

@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    alert("Menu Login");
+    // alert("Menu Login");
 
     var mostrar = $("#mostrar");
     var ocultar = $("#ocultar");
@@ -7,13 +7,13 @@ $(document).ready(function () {
     var menu2 = $("#menu2");
 
     mostrar.click(function(){
-        menu2.show("slow");
-        mostrar.hide("slow");
+        menu2.toggle("slide");
+        mostrar.hide();
     });
 
     ocultar.click(function(){
-        menu2.hide("slow");
-        mostrar.show("slow");
+        menu2.toggle("slide");
+        mostrar.show();
     });
 
 

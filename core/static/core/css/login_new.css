@@ -80,7 +80,7 @@
 #login_cont_g_2{
     width: 50%;
     height: 100%;
-    background: url(https://media.giphy.com/media/7uUETGAySHma0Vh9ls/giphy.gif);
+    background: url(https://media.giphy.com/media/QUzHGAtszztjq/source.gif);
     background-repeat: no-repeat;
 	background-size: cover;
     border-radius: 0px 25px 25px 0px;
@@ -107,7 +107,7 @@
     height: fit-content;
     margin: auto;
     margin-top: 10%;
-    border-radius: 25px;
+    border-radius: 5px;
    background: #fff; 
 }
 /* ---------------Contenedor 2--------------*/
