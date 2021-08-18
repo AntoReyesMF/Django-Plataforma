@@ -51,17 +51,17 @@
 
         <h4>EL PRIMER PASO PARA UNIRTE</h4>
 
-        <form action="" id="form_friends">
+        <form action="" id="form_friends" method="post">{% csrf_token %}
 
-          <input class="friends_input" type="text" name="" id="nombre" placeholder="Nombre">
+          <input class="friends_input" type="text" name="nombre" id="nombre" placeholder="Nombre">
   
-          <input type="text" name="" id="apellidos" placeholder="Apellidos">
+          <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
   
-          <input type="email" name="" id="email" placeholder="Correo electronico">
+          <input type="email" name="email" id="email" placeholder="Correo electronico">
   
-          <input type="text" name="" id="startup" placeholder="Nombre de tu StartUp">
+          <input type="text" name="startup" id="startup" placeholder="Nombre de tu StartUp">
   
-          <textarea name="" id="cuentanos" cols="30" rows="10" placeholder="Cuentanos sobre tu StartUp"></textarea>
+          <textarea name="message" id="cuentanos" cols="30" rows="10" placeholder="Cuentanos sobre tu StartUp"></textarea>
 
           <input type="submit" id="friends_enviar" value="Enviar">
         </form>
