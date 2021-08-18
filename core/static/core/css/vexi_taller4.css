@@ -85,70 +85,39 @@ color: #DE2276;
 }
 
 .vexi_contenedor_timeline{
-  height: 100%;
-  width: 100%;
-  margin-left: 5rem;
+  margin-left: 15rem;
+  margin-top: 5rem;
 }
 
-.vexi_timeline{
-  position: relative;
-  width: 40%;
-  margin: auto;
-  font-family: montserrat;
-/*-------------------------------------------------------------->*/
-
-}
-
-
-/* -------------------------------------
- * timeline
- * ------------------------------------- */
-#timeline {
+/*-------------timeline------------------------------------- */
+#timeline_vexi{
   list-style: none;
   margin: 50px 0 30px 120px;
-  border-left: 10px solid #DE2276;
- /*------------------------------------>*/
-
+  padding-left: 35px;
+  border-left: 8px solid #de2276;
 }
-#timeline li {
+#timeline_vexi li {
   margin: 40px 0;
   position: relative;
 }
-#timeline p {
+#timeline_vexi p {
   margin: 0 0 15px;
 }
 
-.content-left, .content-left_3{
-  right: 120%;
-}
-
-.circle, .circle_2{
+.timeline_vexi_circle {
   margin-top: -10px;
-  top: 50%;
-  left: -30px;
-  width: 10px;
-  height: 10px;
-  background: #DE2276;
-  border: 25px solid #DE2276;
+  top: 30%;
+  left: -60px;
+  width: 40px;
+  height: 40px;
+  background: #de2276;
+  border: 5px solid #de2276;
   border-radius: 50%;
   display: block;
   position: absolute;
 }
 
-.circle-right, .circle-right_3{
-  margin-top: -10px;
-  top: 50%;
-  left: 330px;
-  width: 10px;
-  height: 10px;
-  background: #DE2276;
-  border: 25px solid #DE2276;
-  border-radius: 50%;
-  display: block;
-  position: absolute;
-}
-
-.vexi_taller4_content, .vexi_taller4_content_2, .vexi_taller4_contnet_3 {
+.timeline_vexi_content {
   max-height: 20px;
   padding: 50px 20px 0;
   border-color: transparent;
@@ -157,29 +126,32 @@ color: #DE2276;
   border-radius: 0.5em;
   position: relative;
 }
+.timeline_vexi_content:before, .timeline_vexi_content:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  position: absolute;
+  pointer-events: none;
+  right: 100%;
+}
+.timeline_vexi_content:before {
+  border-right-color: inherit;
+  border-width: 20px;
+  top: 50%;
+  margin-top: -20px;
+}
 
-.vexi_taller4_content p,.vexi_taller4_content_2 p{
+.timeline_vexi_content p {
   max-height: 0;
   color: transparent;
   text-align: justify;
   word-break: break-word;
   hyphens: auto;
   overflow: hidden;
-  color: #DE2276;
 }
 
-
-.vexi_taller4_content_3 p{
-  max-height: 0;
-  color: transparent;
-  text-align: justify;
-  word-break: break-word;
-  hyphens: auto;
-  overflow: hidden;
-  color: #DE2276;
-}
-
-.vexi_edu_taller4_label1, .vexi_edu_taller4_label2, .vexi_edu_taller4_label3, .vexi_edu_taller4_label4 {
+.timeline_vexi_label {
   font-size: 1.3em;
   position: absolute;
   z-index: 100;
@@ -187,71 +159,32 @@ color: #DE2276;
   top: 20px;
   transition: transform 0.2s linear;
   color: #000;
+  font-weight: bold;
 }
 
-.vexi_edu_taller4_label1, .vexi_edu_taller4_label3{
-  margin-left: 25px;
-}
-
-.vexi_taller4_radio, .radio_2, .radio_3 {
+.radio_vexi {
   display: none;
 }
 
-.vexi_taller4_radio:checked + .relative label {
+.radio_vexi:checked + .relative_vexi .timeline_vexi_label {
   cursor: auto;
   transform: translateX(42px);
 }
-.vexi_taller4_radio:checked ~ .vexi_taller4_content {
+.radio_vexi:checked + .relative_vexi .timeline_vexi_circle {
+  background: #fff;
+}
+.radio_vexi:checked ~ .timeline_vexi_content {
   max-height: 180px;
-  margin-right: 20px;
+  margin-right: 15rem;
   transform: translateX(20px);
   transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
 }
-.vexi_taller4_radio:checked ~ .vexi_taller4_content p {
+.radio_vexi:checked ~ .timeline_vexi_content p {
   max-height: 200px;
+  color: #de2276;
   transition: color 0.3s linear 0.3s;
 }
 
-/* label right 2 */
-
-.radio_2:checked + .relative_2 .vexi_edu_taller4_label3 {
-  cursor: auto;
-  transform: translateX(42px);
-}
-
-.radio_2:checked ~ .vexi_taller4_content_2 {
-  max-height: 180px;
-  margin-right: 20px;
-  transform: translateX(20px);
-  transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
-}
-
-.radio_2:checked ~ .vexi_taller4_content_2 p {
-  max-height: 200px;
-  transition: color 0.3s linear 0.3s;
-}
-
-/* label left 2 */
-
-.radio_3:checked + .relative_3 .label_3 {
-  cursor: auto;
-  transform: translateX(42px);
-}
-
-
-.radio_3:checked ~ .vexi_taller4_content_3 {
-  max-height: 180px;
-  margin-right: 20px;
-  transform: translateX(20px);
-  transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
-}
-
-.radio_3:checked ~ .vexi_taller4_content_3 p {
-  max-height: 200px;
-  transition: color 0.3s linear 0.3s;
-  padding-top: 3.5rem;
-  
-}
 
 
 /* ------------------------------Central------------------------------ */

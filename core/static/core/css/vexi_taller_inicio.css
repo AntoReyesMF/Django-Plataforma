@@ -70,6 +70,7 @@
   
   .vexi_bar_content{
     margin-left: 33rem;
+    
   }
   
   .vexi_btn_bar{
@@ -82,7 +83,9 @@
     cursor: pointer;
   }
   .vexi_btn_bar:hover{
-    color: #DE2276;
+    color: #DE2276; 
+    transform: scale(1.2,1.2);
+    transition: all 300ms;
   }
   
   /* Contenido general */
@@ -106,50 +109,111 @@
   font-size: 1.2rem;
   }
   
-  .vexi_cursos{
-  display: flex;
-    text-align: center;
-    justify-content: space-evenly;
+  .vexi_cursos_cards-wrapper {
+    display: flex;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4rem;
+    padding: 4rem;
+    margin: auto;
+    width: max-content;
+    text-align: left;
+
   }
   
-.vexi_card {
-  width: 320px;
-  background-color: #fff;
-  border-radius: 6px;
-  overflow: hidden;
-  margin-top: 4rem;
-  margin-bottom: 3rem;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  .vexi_cursos_card {
+    font-family: montserrat;
+    --bg-filter-opacity: 0.5;
+    background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img);
+    height: 20em;
+    width: 15em;
+    font-size: 1.5em;
+    color: white;
+    border-radius: 1em;
+    padding: 1em;
+    /*margin: 2em;*/
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 5em -1em black;
+    transition: all, var(--transition-time);
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+  }
   
+  .vexi_cursos_card:hover {
+    transform: rotate(0);
+  }
+  
+  .vexi_cursos_card h3 {
+    margin: 0;
+    font-size: 1.5em;
+    line-height: 1em;
+    font-weight: bold;
+  }
+  
+  .vexi_cursos_card p {
+    font-size: 0.7em;
+    font-family: Montserrat;
+    margin-top: 0.5em;
+    line-height: 1em;
+    margin-bottom: 15px;
+  }
+  
+  .vexi_cursos_card .vexi_cursos_tags {
+    display: flex;
+  }
+  
+  .vexi_cursos_card .vexi_cursos_tags .vexi_cursos_tag {
+    font-size: 0.75em;
+    background: rgba(255,255,255,0.5);
+    border-radius: 0.3rem;
+    padding: 0 0.5em;
+    margin-right: 0.5em;
+    line-height: 1.5em;
+    transition: all, var(--transition-time);
+  }
+  
+  .vexi_cursos_card:hover .vexi_cursos_tags .vexi_cursos_tag {
+    background: #de2276;
+    color: white;
+  }
+  
+  .vexi_cursos_card:before, .vexi_cursos_card:after {
+    content: '';
+    transform: scale(0);
+    transform-origin: top left;
+    border-radius: 50%;
+    position: absolute;
+    left: -50%;
+    top: -50%;
+    z-index: -5;
+    transition: all, var(--transition-time);
+    transition-timing-function: ease-in-out;
+  }
+  
+  .vexi_cursos_card:before {
+    background: #ddd;
+    width: 250%;
+    height: 250%;
+  }
+  
+  .vexi_cursos_card:after {
+    background: white;
+    width: 200%;
+    height: 200%;
+  }
+  
+  .vexi_cursos_card:hover {
+    color:#000 ;
   }
   
   
-.vexi_card_image {
-  height: 200px;
-  }
   
-  .vexi_card_image img {
-  display: block;
-  width: 100%;
-  height: inherit;
-  object-fit: cover;
-  }
-  
-  .vexi_card_content {
-  padding: 2rem 1.8rem;
-  
-  }
-  
-  .vexi_h2 {
-  margin: 0 0 1rem;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  font-weight: bold;
-  }
-  
-  .vexi_card_description{
-  font-size: 1rem;
-  line-height: 1.4rem;
+  .vexi_cursos_card:hover:before, .vexi_cursos_card:hover:after {
+    transform: scale(1);
   }
   
   /* numeralia ----------------------------------------------------------------------*/
@@ -274,8 +338,10 @@
     width: 230px;
     height: 70px;
     margin: auto;
-    border-radius: 50px;
+    border-radius: 5px;
     background-color: RGB(222,34,118);
+    font-weight: 500;
+    cursor: pointer;
 }
 #vexi_a_cont4_boton{
     text-decoration: none;

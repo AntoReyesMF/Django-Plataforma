@@ -99,7 +99,7 @@ form {
 .registro2_container.right-panel-active .overlay {
   	transform: translateX(50%);
 }
-
+ 
 .overlay-panel {
 	position: absolute;
 	display: flex;
@@ -225,14 +225,14 @@ form {
 	text-align: center;
 }
 
-input {
-	background-color: #ffffff;
-	border-radius: 30px;
-	border-color: #DE2276;
-    border-style: solid;
-	padding: 12px 15px;
-	margin: 8px 0;
-	width: 75%;
-	text-align: center;
+.form-control, .col-md-6 {
+	font-family: Montserrat;
+	height: 2.4rem;
+	width: 17rem;
+	text-indent: 12px;
+	border-radius: 6px;
+	border: 1px solid #DDD;
+	position: relative;
+margin-bottom: 1.5rem;
 }
 

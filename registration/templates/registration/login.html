@@ -2,76 +2,75 @@
 {% load static %}
 {% block content %}
 
-{% comment %} {% if 'password2' in request.POST %}
+<div id="login_cont_g">
+
+  <div id="login_cont_central">
+
+    <!-- .................................................................................... -->
+
+    <div id="login_cont_g_1">
+
+      {% if request.user.is_authenticated %}
+      <script>window.location.href = '/accounts/perfil/'; </script>
+      {% endif %}
+      {% comment %} <style>.errorlist{color:red;}</style> {% endcomment %}
+      {% comment %} {% if 'register' in request.GET %}
           <p style="color:green;">Usuario registrado correctamente, ya puedes identificarte.</p>
-{% endif %} {% endcomment %}
-<div class="registro2_container" id="registro2_container">
-  <div class="form-container sign-in-container">
+      {% endif %} {% endcomment %}
 
-      <form action="" method="post">{% csrf_token %}   
+      <form action="" method="post" id="login_form">{% csrf_token %}
+
+        <h2  id="login_cont_g_1_h2">Iniciar sesión</h2>
+
         {% if form.non_field_errors %}
-            <p style="color:red">Usuario o contraseña incorrectos, prueba de nuevo.</p>
-        {% endif %} 
-        <h1 class="registro2_h1_inicio">Inicia sesión</h1>
-        <input type='text' placeholder='Nombre de usuario' required name="username">
-        <input type='password' placeholder='Contraseña' required name="password" id="id_password">
-        <h2 class="registro2_h2">Olvidé mi contraseña</h2>
-        </a>
-        <a href=""> 
-          <button class="registro2_btn" type="submit" name='submit' value="Acceder">Acceder</button>
-        </a>
+          <p style="color:blue">Usuario o contraseña incorrectos, prueba de nuevo.</p>
+        {% endif %}
+
+        <p>
+          
+          <input type="text" name="username" autofocus maxlength="254" required
+            id="id_username" class="form-control" placeholder="Nombre de usuario"/>
+        </p>
+        <p>
+          <input type="password" name="password" required
+            id="id_password" class="form-control" placeholder="Contraseña"/>
+        </p>
+
+        <input type="submit" class="btn btn-primary btn-block" value="Acceder" id="login_boton_acceder">
+
       </form>
+        <p id="login_p_recuperar">
+          ¿Ha olvidado su clave? Puede restaurarla <a href="{% url 'password_reset' %}">aquí</a>.
+        </p>
+
+    </div>
+
+    <!-- .................................................................................... -->
+    <!-- .................................................................................... -->
+
+    <div id="login_cont_g_2">
+
+      <h1>CREA TU CUENTA</h1>
+
+      <p id="login_cont_g_2_p">Ingresa tus datos y comienza tu viaje con nosotros.</p>
+
+      <div id="login_cont_g_2_boton">
+        <a href="{% url 'signup' %}" id="p_signup_boton">CREAR CUENTA</a>
+      </div>
+
+    </div>
+
+    <!-- .................................................................................... -->
+
+
+
 
   </div>
+  
+</div>
+  
 
-  <div class="form-container sign-up-container">
-
-    <form method="post">
-    {% csrf_token %}
-    <h1 class="registro2_h1_inicio">Crea tu cuenta</h1>
-    <input type='text' placeholder='Nombre de usuario' required name="username" >
-    <input type='email' placeholder='Email' required name="email">
-    <input type='password' placeholder='Contraseña' required name="password1" id="id_password1">
-    <input type='password' placeholder='Confirma tu contraseña' required name="password2" id="id_password2">
-
-    
-  {% comment %} <form method="post">
-    {% csrf_token %}
-  <label>username</label>
-   {{ form.username}}
-   <label>email</label>
-   {{ form.email}}
-   <label>password</label>
-   {{ form.password1}}
-   <label>confirma pasword</label>
-   {{ form.password2}} {% endcomment %}
+        
+     
  
-
-    <button class="registro2_btn"  type="submit" name='submit' value="signup">Crear cuenta</button>
-
-  </form> 
-
-</div>
-
-<div class="overlay-container">
-  <div class="overlay">
-    <div class="overlay-panel overlay-left">
-      <h1 class="registro2_h1">YA TENGO UNA CUENTA</h1>
-      <p class="registro2_p">Inicia sesión con tu información personal</p>
-      <button class="ghost" id="signIn">Iniciar Sesión</button>
-    </div>
-    
-    <div class="overlay-panel overlay-right">
-      <h1 class="registro2_h1">CREA TU CUENTA</h1>
-      <p class="registro2_p">Ingresa tus datos personales y comienza tu viaje con nosotros</p>
-      <button class="ghost" id="signUp">Crear Cuenta</button>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-</div>
-<script  src= "{% static 'core/js/registro.js' %}"></script>
-
-
 {% endblock %}

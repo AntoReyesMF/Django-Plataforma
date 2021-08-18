@@ -1,0 +1,113 @@
+#login_cont_g{
+    
+    width: 100%;
+    height: 60vh;
+    padding-top: 105px;
+    background-color: #f6f5f7;; 
+}
+
+#login_cont_central{
+    display: flex;
+    width: 50%;
+    height: 50vh;
+    border-radius: 25px;
+    margin: auto;
+    box-shadow: 3px 3px 3px grey;
+
+    /* background-color: lightcoral; */
+}
+
+/* ---------------Contenedor 1--------------*/
+#login_form{
+    width: 75px;
+    height: 70%;
+    margin-top: 20%;
+    margin: auto;
+    background-color:transparent; 
+    border-radius: 25px 0px 0px 25px;
+}
+#login_form{
+    width: 75%;
+    height: 70%;
+    margin: auto;
+    
+    /* background-color: burlywood;  */
+}
+#login_cont_g_1{
+    width: 50%;
+    height: 100%;
+    background-color:#fff; 
+    border-radius: 25px 0px 0px 25px;
+}
+#login_cont_g_1_h2{
+    color: #000;
+    text-align: center;
+    font-family: Montserrat-Bold;
+    font-size: 28px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#login_boton_acceder{
+    width: 80%;
+    height: 55px;
+    background: #de2276;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: montserrat;
+    color: #fff;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#login_p_recuperar{
+    text-align: center;
+    margin-top: 40px;
+    font-family: Montserrat-Regular;
+}
+#login_p_recuperar a{
+    color: #DE2276;
+    font-family: Montserrat-SemiBold;
+}
+ 
+
+
+/* ---------------Contenedor 1--------------*/
+
+/* ---------------Contenedor 2--------------*/
+#login_cont_g_2{
+    width: 50%;
+    height: 100%;
+    background: url(https://media.giphy.com/media/QUzHGAtszztjq/source.gif);
+    background-repeat: no-repeat;
+	background-size: cover;
+    border-radius: 0px 25px 25px 0px;
+}
+#login_cont_g_2 h1{
+    color: white;
+    font-family: Montserrat-ExtraBold;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 25%;
+    text-shadow: 3px 3px 3px grey;
+    margin-bottom: 10%;
+}
+#login_cont_g_2 p{
+    color: white;
+    font-family: Montserrat-Regular;
+    text-align: center;
+    font-size: 18px;
+    text-shadow: 3px 3px 3px grey;
+}
+#login_cont_g_2_boton{
+    display: block;
+    width: 50%;
+    height: fit-content;
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 5px;
+   background: #fff; 
+}
+/* ---------------Contenedor 2--------------*/
