@@ -2,123 +2,233 @@
 {% load static %}
 {% block content %}
 
-
-   <!-- hero
-    ================================================== -->
-<div class="home_cont_ background" data-parallax="scroll" data-image-src="{% static 'core/img/desarmador.jpg' %}" data-natural-width=4000 data-natural-height=3500 data-position-y=top>
-
-        <div class="home_cont_principal">
-          <img src="{% static 'core/img/Logobn.png' %}"><br><br>
-            <h1 class="home_h1">
-              Te enseñamos lo que no aprendes en la escuela
-            </h1> 
-            <p class="home_p_principal">Somos un hub de educación que en colaboración con una red de organizaciones te brinda conocimiento y herramientas que te sirven en la vida diaria </p>
-           <div>
-              <a class="home_a" href="{% url 'signup' %}">
-               <button class="home_btn">Comenzar</button></a>
+<main class="home_content  js-content">
+  <div class="home_block home_seccion-landing">
+    <figure class="home_item-parallax-media">
+      <div class="home_area_circulos" >
+        <ul class="home_circulos">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+      </div >
+    </figure>
+        <div class="home_item-parallax-content home_flex-container">
+          <div class="home_centered-content">
+           <!-- cambiar url de django-->
+            <img  class="home_landing_logo_img" src="{% static 'core/img/Logobn.png' %}"/>
+              <h1 class="home_h1">Qué ser adulto te sea más sencillo</h1> 
+              <p class="home_p_principal">Nos enseñarona despejar X, pero jamás a sobrevivir a la vida adulta. Te lo explicamos con bolitas y palitos. </p>
+                <div class="contenedor_home_btn">
+                    <a class="home_a" href="/accounts/signup/">
+                      <button class="home_btn">Comenzar</button></a>
+                </div>
+                <div id="home_flecha_scroll"></div>
+           </div>
           </div>
         </div>  
-        <div class="home-scroll">
-              Scroll para más
-        </div>
-</div> 
-
-     <!-- info
-      ================================================== -->
-<div class="home_info">
-  <div class="home_row_info">
-            <div class="home_col-md-6">
-                 <h2 class="home_h2">
-                    ¿Qué hacemos?
-                    <img class="home_img" src="{% static 'core/img/perico.jpg' %}"  height="600" width="700">
-                </h2>
-             </div>
-
-  <div class="home_cont_info">
-            <div class="home_col-md-6">
-               <div class="home_card_info">
-                    <h3 class="home_h3"> DEMOCRATIZAMOS EL CONOCIMIENTO</h3>
-                       <p class="home_txt-centro">Contenido digital, multidisciplinario que busca el desarrollo para generar proyectos con enfoque social y tecnológico.</p>
-                 </div>
-                </div>
-              
-  <div class="home_cont_info">           
-            <div class="home_col-md-6">
-              <div class="home_card_info">    
-                    <h3 class="home_h3">FOMENTAMOS EL PENSAMIENTO CREATIVO</h3>
-                      <p class="home_txt-centro">Talleres que detonan la creatividad para encontrar soluciones a problemas actuales </p>
-                 </div>
-                </div>
-  
-  <div class="home_cont_info">
-          <div class="home_col-md-6">
-            <div class="home_card_info">
-                  <h3 class="home_h3">CREAMOS ESPACIOS ABIERTOS</h3>
-                    <p class="home_txt-centro">Eventos, festivales y exposiciones que llevan las herramientas y el conocimiento a donde se encuentra la creatividad mexicana </p>
-                 </div>
-                </div>   
+      </div>
+    </div>
   </div>
-</div>
-</div>
-</div>
   
-<!-- -------------Formar Parte-------------- -->
-<div class="home_parte">
-    <h2 class="home_h2">¿Quieres formar parte? </h2>
-      <div class="home_row_parte">
-          <div class="home_col-md-6">
-            <div class="home_maker">
-              <div class="content_colores">
-                <div class="content__container">
-                  <h4 class="content__container__texto">
-                    Makers para
-                  </h4>
-                  <ul class="content__container__list">
-                    <li class="content__container__list__item">crear</li>
-                    <li class="content__container__list__item">ayudar</li>
-                    <li class="content__container__list__item">imaginar</li>
-                    <li class="content__container__list__item">el fututo</li>
-                  </ul>
+  <div class="home_block">
+    <div id="home_wrapper_bubbles">
+      <div id="home_burbujas-lvl-0">
+          <div id="b0-2" class="bubble size2 rosa">&nbsp;</div>    
+          <div id="b0-3" class="bubble size3 rosa">&nbsp;</div>
+          <div id="b0-5" class="bubble size2 blanco">&nbsp;</div>
+          <div id="b0-6" class="bubble size2 blanco">&nbsp;</div>  
+      </div>  
+      <div id="home_burbujas-lvl-1">
+          <div id="b1-1" class="bubble size2 rosa">&nbsp;</div>
+      </div>
+      <div id="home_burbujas-lvl-2">
+          <div id="b2-1" class="bubble size1 blanco">&nbsp;</div>
+      </div>
+      <div id="home_burbujas-lvl-3">
+          <div id="b3-1" class="bubble size3 blanco">&nbsp;</div>
+      </div>
+      <div id="home_burbujas-lvl-3">
+          <div id="b4-1" class="bubble size1 rosa">&nbsp;</div>
+          <div id="b4-2" class="bubble size3 blanco">&nbsp;</div>
+          <div id="b4-3" class="bubble size2 blanco">&nbsp;</div>
+          <div id="b4-4" class="bubble size4 rosa">&nbsp;</div>
+          <div id="b4-5" class="bubble size1 rosa">&nbsp;</div>
+      </div>
+      <div id="home_burbujas-lvl-3">
+          <div id="b5-1" class="bubble size2 rosa">&nbsp;</div>
+          <div id="b5-2" class="bubble size4 blanco">&nbsp;</div>
+          <div id="b5-3" class="bubble size2 rosa">&nbsp;</div>
+      </div>
+  </div>
+
+  <div class="home_item-parallax-content home_flex-container ">
+      <div class="home_carousel">
+        <div class="home_carousel_nav">
+            <span id="moveLeft" class="home_carousel_arrow">
+              <svg class="home_carousel_icon" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+              </svg>
+            </span>
+            <span id="moveRight" class="home_carousel_arrow" >
+              <svg class="home_carousel_icon"  width="24" height="24" viewBox="0 0 24 24">
+                <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+              </svg>    
+            </span>
+      </div>
+
+        <div class="home_carousel-item home_carousel-item--1 home_active">
+            <div class="home_carousel-item__image"></div>
+              <div class="home_carousel-item__info">
+                <div class="home_carousel-item__container">
+                  <h2 class="home_carousel-item__subtitle">QUIERES SABER </h2>
+                    <h1 class="home_carousel-item__title">¿CÓMO FUNCIONA?</h1>
+                       <p class="home_carousel-item__description">En tres sencillos pasos, sobrevivirás al mundo adulto. Crea tu cuenta y dejate guiar por nosotros.  </p>
+                      <a href="#" class="home_carousel-item__btn">Es totalmente GRATIS</a>
                 </div>
               </div>
-                       <h5 class="home_h5">Jóvenes con interés en la creación de soluciones y proyectos que requieren orientación y desarrollo de habilidades.</h5>
-                          <a href="{% url 'signup' %}">
-                             <button class="home_btn">Sé un Maker</button> 
-                               </a>
-                         </div>
-                        </div>
+            </div>
 
- <div class="home_col-md-6">
-    <div class="home_friend">
-      <div class="content_colores_friends">
-        <div class="content__container_friends">
-          <h4 class="content__container__texto_friends">
-            Friends para
-          </h4>
-          <ul class="content__container__list_friends">
-            <li class="content__container__list__item">compartir</li>
-            <li class="content__container__list__item">apoyar</li>
-            <li class="content__container__list__item">cooperar</li>
-            <li class="content__container__list__item">todos</li>
-          </ul>
+        <div class="home_carousel-item home_carousel-item--2">
+          <div class="home_carousel-item__image"></div>
+            <div class="home_carousel-item__info">
+              <div class="home_carousel-item__container">
+                <h2 class="home_carousel-item__subtitle">PASO 1</h2>
+                  <h1 class="home_carousel-item__title">CREA TU CUENTA</h1>
+                    <p class="home_carousel-item__description">Necesitamos conocerte. Al crear tu cuenta puedes elegir los temas que te gusten o que estés búscando.</p>
+              </div>
+            </div>
+        </div>
+
+          <div class="home_carousel-item home_carousel-item--3">
+            <div class="home_carousel-item__image"></div>
+              <div class="home_carousel-item__info">
+                <div class="home_carousel-item__container">
+                  <h2 class="home_carousel-item__subtitle">PASO 2</h2>
+                    <h1 class="home_carousel-item__title">EMPIEZA A EXPLORAR</h1>
+                      <p class="home_carousel-item__description">Hemos creado un algoritmo que los analizará y te mostrará los mejores cursos para ti, así podrás aprender lo que más necesitas.</p>
+                </div>
+              </div>
+          </div>
+        
+         <div class="home_carousel-item home_carousel-item--4">
+            <div class="home_carousel-item__image"></div>
+              <div class="home_carousel-item__info">
+                <div class="home_carousel-item__container">
+                  <h2 class="home_carousel-item__subtitle">Paso 3</h2>
+                    <h1 class="home_carousel-item__title">APLICA LO APRENDIDO</h1>
+                      <p class="home_carousel-item__description">Una vez aprendido el tema, encontrarás los productos o servicios de nuestros aliados que podrías requerir para emplear las nuevas habilidades adquiridas. </p>
+                </div>
+              </div>
+          </div>
+        
+       <div class="home_carousel-item home_carousel-item--5">
+          <div class="home_carousel-item__info--5">
+            <div class="home_carousel-item__container">
+              <h2 class="home_carousel-item__subtitle">¿Te gustó? </h2>
+                <h1 class="home_carousel-item__title">VE MÁS ALLÁ Y APLICA LO APRENDIDO</h1>
+                  <p class="home_carousel-item__description">Descubre que neceistas aprender, sin tener te pagar</p>
+                    <a href="#" class="home_carousel-item__btn">Crear cuenta</a>
+            </div>
+          </div>
         </div>
       </div>
-              <h5 class="home_h5">Alianzas especializadas que ayudan a la construcción de estos proyectos a través de un acuerdo de beneficio mutuo.</h5>
-                 <a href="{% url 'friend' %}">
-                    <button class="home_btn">Sé un Friend</button> 
-                       </a>
+    </div>
+  </div>
+  
+  <div class="home_block">
+    <div class="home_item-parallax-content home_flex-container">
+      <div class="home_texto_categorias">Podrás aprender entre estas categorías
+        <p class="home_texto_p_categorias">Actualmente MF ofrece disitntos tipos de herramientas tanto académicas como de inclusión financiera</p>
+        <div class="home_hovervideo">
+            <div class="home_hovervideo_wrapper">
+              <div class="home_hovervideo_videobox">
+                <video class="home_video" loop preload="yes" muted>
+                    <source src="https://media.giphy.com/media/KiGMzfSIrNf0s/giphy.mp4" type="video/mp4">
+                </video>
+                <div class="home_video_card_title">
+                    <p>Educación financiera</p>
                 </div>
-</div></div></div>
+              </div>
 
-<!-- -------------Aliados-------------- 
-<div class="home_aliados" style="background-color:#000000">
-<h2 class="home_h2">Conoce a nuestros aliados </h2>
+              <div class="home_hovervideo_videobox">
+                <video class="home_video" loop preload="yes" muted>
+                    <source src="https://media.giphy.com/media/3fioqpehGxsddDzqxe/giphy.mp4" type="video/mp4">
+                </video>
+                  <div class="home_video_card_title">
+                    <p>Financiamiento colectivo</p>
+                  </div>
+              </div>
 
-<ul class="home_partners">
-  <a><img class="home_img_aliados" src="{% static 'core/img/friends/vexi.png' %}" ></a>
-  <a><img class="home_img_aliados"src="{% static 'core/img/friends/cochinitob.png' %}"  height="150" width="150"></a>
-  <a><img class="home_img_aliados" src="{% static 'core/img/friends/tesicafe.png' %}"  height="150" width="150"></a>
-</ul>-->
+            <div class="home_hovervideo_videobox">
+                <video class="home_video" loop preload="yes" muted>
+                    <source src="https://media.giphy.com/media/qQRfz2VfUbDeebczif/giphy.mp4" type="video/mp4">
+                </video>
+                  <div class="home_video_card_title">
+                    <p>Desarollo de tesis</p>
+                  </div>
+              </div>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+  
+  <div class="home_text_recompensas">
+    <div class="home_wrapper_recompensas">
+      <div class="home_title_recompensas" id="home_recompensas">
+          <h2 class="home_h2_1">Por cada tema aprendido obtienes recompensas </h2>
+      </div>
+
+      <div class="home_scroll_recompensas">
+          <div class="home_scroll_recompensas_content">
+              <h2 class="home_h2_2">Tu primera tarjeta de crédito</h2>
+          </div>
+          <div class="home_scroll_recompensas_content">
+              <h2 class="home_h2_2">Fondos para tu proyecto o idea</h2>
+          </div>
+          <div class="home_scroll_recompensas_content">
+              <h2 class="home_h2_2">Asesorías para tu tesis</h2>
+          </div>
+      </div>
+    </div>
+  </div>
+
+   <div class="home_block">
+      <div class="home_item-parallax-content home_flex-container home_img-grid">
+        <figure class="home_img-griditem home_type-right">
+          <img src="https://media.giphy.com/media/fqUcTjmFeF0DB4h3qN/source.gif" alt="" />
+            <figcaption class="home_img-caption">
+              <h2 class="home_head-small">Se un Friend</h2>
+                <p class="home_copy home_copy-white">Al convertite en nuestro alido, formarás parte de nuestra comunidad y recibirás sus beneficios además de mostrar tus productos </p>
+                  <a class="home_a" href="/accounts/signup/">
+                    <button class="home_btn_friends">Comenzar</button></a>
+            </figcaption>
+        </figure>
+
+        <figure class="home_img-griditem home_type-left">
+          <img src="https://media.giphy.com/media/RiiZXYcs9dbkZS9xDx/source.gif" alt="" />
+            <figcaption class="home_img-caption">
+              <h2 class="home_head-small">Se un Maker</h2>
+                <p class="home_copy home_copy-white">Tendrás a tu alcance todos nuestros cursos totalmente gratis, además podrás obtener recompensas por cada tema aprendido</p>
+                  <a class="home_a" href="/accounts/signup/">
+                    <button class="home_btn_friends">Comenzar</button></a>
+            </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    
+</main>
 
 
 {% endblock %}
+
+
