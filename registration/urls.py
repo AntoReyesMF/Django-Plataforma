@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import SingUpView, preferenciasView, perfilView, perfil2View
+from .views import SingUpView, preferenciasView, perfilView, perfil2View2
 
 urlpatterns = [
     
@@ -9,5 +9,6 @@ urlpatterns = [
     # path('profile/', ProfileUpdate.as_view(), name="profile"),
     path('preferencias/' , preferenciasView.as_view(), name ='preferencias'),
     path('perfil/' , perfilView.as_view(), name ='perfil'),
-    path('perfil2/' , perfil2View.as_view(), name ='perfil2'),
+    #path('perfil2/' , perfil2View.as_view(), name ='perfil2'),
+    path('perfil2/' , perfil2View2, name ='perfil2'),
 ]

@@ -49,9 +49,9 @@
 
           <div id="perfil2_presentacion_username_2">
 
-            <form action="">
+            <form action="" method="post">{% csrf_token %}
 
-              <input type="text" name="descripcion" id="perfil2_username_descripcion_hide">
+              <input type="text" name="usernamet" id="perfil2_username_descripcion_hide">
 
               <div id="perfil2_username_descripcion_botones">
 
@@ -124,31 +124,31 @@
           <div class="perfil2_content_wrapper">
             <h2 class="text-color">Actualizar mis datos</h2>
             
-            <form class="perfil2_form">
+            <form class="perfil2_form" method="post">{% csrf_token %}
               <div class="perfil2_group -ionic">
-                <input class="perfil2_field" type="text" required>
+                <input class="perfil2_field" type="text" name='nombre' value="{{ pro.nombre }}" required>
                 <label class="perfil2_title_label">Nombre</label>
               </div>
               <div class="perfil2_group -ionic">
-                <input class="perfil2_field" type="text" required>
+                <input class="perfil2_field" type="text" name='apellido' required>
                 <label class="perfil2_title_label">Apellidos</label>
               </div>
         
               <div class="perfil2_group -ionic">
-                <input class="perfil2_field" type="date" required>
+                <input class="perfil2_field" type="date" name='fecha' required>
                 <label class="perfil2_title_label">Fecha de nacimiento</label>
               </div>
         
               <div class="perfil2_group -ionic">
-                <input class="perfil2_field" type="select" required>
+                <input class="perfil2_field" type="select"  name='genero'required>
                 <label class="perfil2_title_label">Genero</label>
               </div>
               
-              <button class="perfil2_form_button">
+              <button type='submit' class="perfil2_form_button">
                Guardar
               </button>
               
-              </form>
+            </form>
           </div>
         </li>
         <li>

@@ -21,13 +21,13 @@ class UserCreationFormWithEmail(UserCreationForm):
 class ProfileForm(forms.ModelForm):
     class Meta:
         model = Profile
-        fields = ['nombre', 'apellido', 'fecha', 'genero', 'direcccion']
-        widgets = {
-            'nombre': forms.TextInput(attrs={'class':'col-md-6'}),
-            'apellido': forms.TextInput(attrs={'class':'col-md-6'}),
-            'fecha': forms.DateInput(attrs={'class':'col-md-6','type':"date"}),
-            'direcccion': forms.Textarea(attrs={'class':'col-md-6','rows': 4}),
-        }
+        fields = ['nombre', 'apellido', 'fecha', 'genero']
+        # widgets = {
+        #     'nombre': forms.TextInput(attrs={'class':'col-md-6'}),
+        #     'apellido': forms.TextInput(attrs={'class':'col-md-6'}),
+        #     'fecha': forms.DateInput(attrs={'class':'col-md-6','type':"date"}),
+        #     'direcccion': forms.Textarea(attrs={'class':'col-md-6','rows': 4}),
+        # }
 
 
 
