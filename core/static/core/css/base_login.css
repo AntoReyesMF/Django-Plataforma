@@ -128,10 +128,9 @@ table {
 /*------------------------ Inicia Menu ------------------------*/
 
 #menus{
-    
     display: flex;
     position: fixed;
-    min-width: 8%;
+    min-width: 10%;
     height: 100vh;
     /* background-color: aquamarine; */
 }
@@ -142,7 +141,7 @@ table {
 }
 #menu2{
     display: none;
-    width: 60%;
+    width: 80%;
     height: 100%;
     background-color: rgba(245, 245, 245, 0.4);
 }
@@ -153,6 +152,7 @@ table {
     width: 100%;
     height: 8%;
     /* background-color: lightpink; */
+    background-color: #fff;
 }
 .menu_cuerpo{
     width: 100%;
@@ -160,6 +160,9 @@ table {
     /* background-color: lightgreen; */
     display: flex;
     align-items: center;
+    background-color: #fff;
+    font-family: montserrat;
+    font-weight:700;
 }
 /*menu1*/
 #menu_hamburguer_img{
@@ -181,6 +184,7 @@ table {
     margin: auto;
     /* background-color: white; */
     cursor: pointer;
+    padding-left: 15px;
 }
 #menu_x_img img{
     width: 30px;
@@ -204,8 +208,8 @@ table {
 }
 
 .menu_img_central_conts img{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
 }
 
 .menu_img_central_logout{
@@ -235,14 +239,21 @@ table {
     text-decoration: none;
     text-align: center;
     line-height: 30px;
-    color: #DE2276;
+    color: #000;
+}
+.menu_text_central_conts a:hover{
+    color: #de2276;
 }
 
 .menu_text_central_logout a{
     text-decoration: none;
     text-align: end;
     line-height: 30px;
-    color: #DE2276;
+    color: #000;
+}
+
+.menu_text_central_logout a:hover{
+    color: #de2276;
 }
 
 /*----cuerpo----*/
