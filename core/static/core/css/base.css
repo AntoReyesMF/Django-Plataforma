@@ -189,9 +189,10 @@ table {
  footer{
     width: 100%;
     height: auto;
-    padding-top: 20px;
-    padding-bottom: 5px;
+    padding-top: 100px;
+    padding-bottom: 35px;
     background-color: black;
+    bottom: 0%;
 }
 #footer_central{
     width: 60%;
