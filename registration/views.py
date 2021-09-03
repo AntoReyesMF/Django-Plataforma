@@ -12,6 +12,7 @@ from django.urls import reverse_lazy, reverse
 from django import forms
 from .forms import UserCreationFormWithEmail, ProfileForm
 from .models import Profile
+from django.db.models import F
 
 # Create your views here.
 
@@ -68,7 +69,46 @@ class perfilView(TemplateView):
     template_name = "registration/perfil.html"
 
 
-class perfil2View(TemplateView):
-    template_name = "registration/perfil2.html"
+def perfil2View2(request):
+    if request.method == "POST":
+        if request.POST.get('usernamet'):
+            print(request.POST.get('usernamet'))
+            owner = request.user
+            print(request)
+            print(owner)
+            owner.username = request.POST.get('usernamet')
+            owner.save()   
+            #savest = 
+            return render(request,'registration/perfil2.html') 
+        if request.POST.get('nombre'):
+            form = ProfileForm(request.POST)
+            pro = Profile.objects.all()  
+            print(request.POST.get('nombre'))
+            print(request.POST.get('fecha'))
+            print(form)
+            if form.is_valid():  
+                try:  
+                    profile, created = Profile.objects.get_or_create(
+                                user=request.user)
+                    print(profile)     
+                    profile.nombre = request.POST.get('nombre')
+                    profile.apellido = request.POST.get('apellido')
+                    profile.fecha = request.POST.get('fecha')
+                    profile.genero = request.POST.get('genero')
+                    profile.save()
+                    #form.save()  
+                    render(request,'registration/perfil2.html',{'pro':pro})  
+                except:  
+                    print('No pude jeje')
+                    
+
+            #savem =
+            return render(request,'registration/perfil2.html')
+    else:
+        return render(request,'registration/perfil2.html')         
+
+
+# class perfil2View(TemplateView):
+#     template_name = "registration/perfil2.html"
 
 
