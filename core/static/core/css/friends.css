@@ -6,9 +6,10 @@
 	height: auto;
 	padding-top: 20px;
 	padding-bottom: 75px;
-	background-image:linear-gradient(rgba(0, 0, 0, 0.6),
-	rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1503791774117-08c379dd7f7c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1336&q=80') ;
+	background-size: cover;
+	background-repeat: no-repeat;
 	background-position: -50px -150px;
+	background-color: black;
 }
 #friends_t_cont_central{
 width: 40%;
