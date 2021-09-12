@@ -11,7 +11,7 @@ from django.shortcuts import render, redirect
 from django.urls import reverse_lazy, reverse
 from django import forms
 from .forms import UserCreationFormWithEmail, ProfileForm
-from .models import Profile
+from .models import Profile ,Profile_Portada
 from django.db.models import F
 
 # Create your views here.
@@ -70,6 +70,7 @@ class perfilView(TemplateView):
 
 
 def perfil2View2(request):
+    portadas = Profile_Portada.objects.get(user_id=request.user) 
     if request.method == "POST":
         if request.POST.get('usernamet'):
             print(request.POST.get('usernamet'))
@@ -100,12 +101,24 @@ def perfil2View2(request):
                     render(request,'registration/perfil2.html',{'pro':pro})  
                 except:  
                     print('No pude jeje')
-                    
-
+        ###portada            
+        if request.POST.get('luna'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('luna'))
+            try:
+                profileportada, created = Profile_Portada.objects.get_or_create(
+                                    user=request.user)
+                print(profileportada) 
+                profileportada.direct_imgs3 = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/img/Karma_0.jpg'#request.POST.get('luna')
+                profileportada.save()    
+                #savest = 
+                return render(request,'registration/perfil2.html')             
+            except:  
+                    print('No pude jeje')
             #savem =
-            return render(request,'registration/perfil2.html')
+            
     else:
-        return render(request,'registration/perfil2.html')         
+        return render(request,'registration/perfil2.html',{'portadas':portadas})         
 
 
 # class perfil2View(TemplateView):

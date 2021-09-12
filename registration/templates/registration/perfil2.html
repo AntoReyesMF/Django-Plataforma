@@ -24,7 +24,32 @@
                 </div>
               </div>
             </div>
-    
+
+<!-- portadaaaaa -->
+  <div class="perfil2_btn_cover">
+    <div class="perfil2_btn_upload">
+
+      <form action="" method="post">{% csrf_token %}
+
+              <input type="text" name="luna" id="perfil2_username_descripcion_hide">
+
+              <div id="perfil2_username_descripcion_botones">
+
+                <input type="submit" value="Actualizar">
+                <input type="reset" value="Cancelar" id="perfil2_descripcion_cancel" onclick="close_edit_nickname();">
+                
+                {% comment %} {% for portada in portadas %}  
+                <img clas="perfil2_img"src="{{ portada.direct_imgs3 }}">
+                <!-- ##### {{ portada.direct_imgs3 }} -->
+                {% endfor %}  {% endcomment %}
+                <img clas="perfil2_img"src="{{ portadas.direct_imgs3 }}">
+              </div>
+
+      </form>   
+
+    </div>
+  </div>
+
     <!-- ######################################################################################################## -->
 
     <div class="perfil2_presentacion">

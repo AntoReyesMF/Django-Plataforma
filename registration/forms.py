@@ -1,7 +1,7 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
-from .models import Profile
+from .models import Profile, Profile_Portada
 
 
 class UserCreationFormWithEmail(UserCreationForm):
@@ -29,5 +29,8 @@ class ProfileForm(forms.ModelForm):
         #     'direcccion': forms.Textarea(attrs={'class':'col-md-6','rows': 4}),
         # }
 
-
+class PortadaForm(forms.ModelForm):  
+    class Meta:  
+        model = Profile_Portada 
+        fields = "__all__"  
 
