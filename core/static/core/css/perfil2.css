@@ -126,6 +126,55 @@
 width: 59%;
 margin: auto;
 }
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/* Fotos perfil*/
+
+#imagenesPerfil{
+  width: 80%;
+  height: min-content 200px;
+  margin: auto;
+  background-color: #DE2276;
+}
+
+.inputsImgP{
+  width: 300px;
+  height: 190px;
+  cursor: pointer;
+}
+
+
+#diana{
+  background-image: url(../img/Diana_12.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#diana26{
+  background-image: url(../img/Diana_26.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#diana27{
+  background-image: url(../img/Diana_27.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#karma{
+  background-image: url(../img/Karma_0.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#karma8{
+  background-image: url(../img/Karma_8.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /* nickname */
 #perfil2_presentacion_username{
   width: 100%;
