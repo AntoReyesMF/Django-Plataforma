@@ -23,6 +23,7 @@
     width: 100%;
     height: 300px;
     object-fit: cover;
+    background-color: #000;
   }
   
   .perfil2_cover_page .perfil2_btn_cover .perfil2_btn_upload{
@@ -118,6 +119,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-color: #000;
 }
 .perfil2_presentacion{
   background-color: #fff;
@@ -130,6 +132,9 @@ margin: auto;
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 /* Fotos perfil*/
+.perfil2_img{
+  background-color: #000;
+}
 
 #imagenesPerfil{
   width: 80%;

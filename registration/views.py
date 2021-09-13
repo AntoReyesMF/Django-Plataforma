@@ -71,7 +71,13 @@ class perfilView(TemplateView):
 
 
 def perfil2View2(request):
-    portadas = Profile_Portada.objects.get(user_id=request.user) 
+    try:
+
+        portadas = Profile_Portada.objects.get(user_id=request.user) 
+    except:
+        portadas = 0
+
+    print(portadas)
     if request.method == "POST":
         if request.POST.get('usernamet'):
             print(request.POST.get('usernamet'))
