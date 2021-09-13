@@ -72,7 +72,6 @@ class perfilView(TemplateView):
 
 def perfil2View2(request):
     try:
-
         portadas = Profile_Portada.objects.get(user_id=request.user) 
     except:
         portadas = 0
@@ -179,7 +178,28 @@ def perfil2View2(request):
                 #savest = 
                 return render(request,'registration/perfil2.html',{'portadas':portadas})               
             except:  
-                    print('No pude jeje')                        
+                    print('No pude jeje') 
+        #
+        #
+        #
+        #### FOTOS DE PERFIL
+        # 
+        # 
+        #          
+        if request.POST.get('imguser1'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('imguser1'))
+            try:
+                profileportada, created = Profile_Portada.objects.get_or_create(
+                                    user=request.user)
+                print(profileportada) 
+                profileportada.profile_photo = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/img/Karma_8.jpg'#request.POST.get('luna')
+                profileportada.save()    
+                portadas = Profile_Portada.objects.get(user_id=request.user) 
+                #savest = 
+                return render(request,'registration/perfil2.html',{'portadas':portadas})               
+            except:  
+                    print('No pude jeje')                                    
             
     else:
         return render(request,'registration/perfil2.html',{'portadas':portadas})         
