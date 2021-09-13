@@ -30,10 +30,11 @@ class Profilephoto(models.Model):
 class Profile_Portada(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     direct_imgs3 = models.CharField(null=True, blank=True, max_length=500) 
+    profile_photo = models.CharField(null=True, blank=True, max_length=500)
 
     class Meta:
         db_table = "imgPortada"  
-        
+
 """ Conflicto authUser """
 # class RegistrationProfile(models.Model):
 #     avatar = models.CharField(max_length=100, blank=True, null=True)

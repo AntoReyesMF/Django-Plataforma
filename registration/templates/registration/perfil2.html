@@ -5,7 +5,7 @@
 
 <div class="perfil2_contenedor">
     <div class="perfil2_cover_page">
-      <img clas="perfil2_img"src="{% static 'core/img/fondo.jpg' %}">
+      <img clas="perfil2_img"src="{{ portadas.direct_imgs3 }}">
       <div class="perfil2_btn_cover">
         <div class="perfil2_btn_upload">
           <label for="InpUploadCoverPage" class="perfil2_btn_accion"><span>Editar </span></label>
@@ -21,42 +21,21 @@
                 
             </div>
             <div class="perfil2_avatar_preview">
-                <div id="imagePreview" style="background-image: url({% static 'core/img/perfilH.png' %})">
+                <div id="imagePreview" style="background-image: url({{ portadas.profile_photo }})">
                 </div>
               </div>
             </div>
 
 <!-- portadaaaaa -->
-  <div class="perfil2_btn_cover">
-    <div class="perfil2_btn_upload">
-
-      <form action="" method="post">{% csrf_token %}
-
-              <input type="text" name="luna" id="perfil2_username_descripcion_hide">
-
-              <div id="perfil2_username_descripcion_botones">
-
-                <input type="submit" value="Actualizar">
-                <input type="reset" value="Cancelar" id="perfil2_descripcion_cancel" onclick="close_edit_nickname();">
-                
-                {% comment %} {% for portada in portadas %}  
-                <img clas="perfil2_img"src="{{ portada.direct_imgs3 }}">
-                <!-- ##### {{ portada.direct_imgs3 }} -->
-                {% endfor %}  {% endcomment %}
-                <img clas="perfil2_img"src="{{ portadas.direct_imgs3 }}">
-              </div>
-
-      </form>   
-
-    </div>
-  </div>
         
             <div id="imagenesPerfil">
-              <input type="submit" value="" name="diana" id="diana" class="inputsImgP">
-              <input type="submit" value="" name="diana26" id="diana26" class="inputsImgP">
-              <input type="submit" value="" name="diana27" id="diana27" class="inputsImgP">
-              <input type="submit" value="" name="karma" id="karma" class="inputsImgP">
-              <input type="submit" value="" name="karma8" id="karma8" class="inputsImgP">
+              <form action="" method="post">{% csrf_token %}
+                <input type="submit"  name="port1" id="diana" class="inputsImgP">
+                <input type="submit"  name="port2" id="diana26" class="inputsImgP">
+                <input type="submit"  name="port3" id="diana27" class="inputsImgP">
+                <input type="submit"  name="port4" id="karma" class="inputsImgP">
+                <input type="submit"  name="port5" id="karma8" class="inputsImgP">
+              </form>  
             </div>
     
     <!-- ######################################################################################################## -->

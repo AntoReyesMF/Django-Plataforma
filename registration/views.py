@@ -13,6 +13,7 @@ from django import forms
 from .forms import UserCreationFormWithEmail, ProfileForm
 from .models import Profile ,Profile_Portada
 from django.db.models import F
+from time import sleep
 
 # Create your views here.
 
@@ -102,20 +103,77 @@ def perfil2View2(request):
                 except:  
                     print('No pude jeje')
         ###portada            
-        if request.POST.get('luna'):
+        if request.POST.get('port1'):
             form = Profile_Portada(request.POST)
-            print(request.POST.get('luna'))
+            print(request.POST.get('port1'))
+            try:
+                profileportada, created = Profile_Portada.objects.get_or_create(
+                                    user=request.user)
+                print(profileportada) 
+                profileportada.direct_imgs3 = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/img/Diana_12.jpg'#request.POST.get('luna')
+                profileportada.save()   
+                
+                portadas = Profile_Portada.objects.get(user_id=request.user) 
+                #savest = 
+                return render(request,'registration/perfil2.html',{'portadas':portadas})             
+            except:  
+                    print('No pude jeje')
+        if request.POST.get('port2'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('port2'))
+            try:
+                profileportada, created = Profile_Portada.objects.get_or_create(
+                                    user=request.user)
+                print(profileportada) 
+                profileportada.direct_imgs3 = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/img/Diana_26.jpg'#request.POST.get('luna')
+                profileportada.save()    
+                portadas = Profile_Portada.objects.get(user_id=request.user) 
+                #savest = 
+                return render(request,'registration/perfil2.html',{'portadas':portadas})               
+            except:  
+                    print('No pude jeje')
+        if request.POST.get('port3'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('port3'))
+            try:
+                profileportada, created = Profile_Portada.objects.get_or_create(
+                                    user=request.user)
+                print(profileportada) 
+                profileportada.direct_imgs3 = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/img/Diana_27.jpg'#request.POST.get('luna')
+                profileportada.save()    
+                portadas = Profile_Portada.objects.get(user_id=request.user) 
+                #savest = 
+                return render(request,'registration/perfil2.html',{'portadas':portadas})             
+            except:  
+                    print('No pude jeje')
+        if request.POST.get('port4'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('port4'))
             try:
                 profileportada, created = Profile_Portada.objects.get_or_create(
                                     user=request.user)
                 print(profileportada) 
                 profileportada.direct_imgs3 = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/img/Karma_0.jpg'#request.POST.get('luna')
                 profileportada.save()    
+                portadas = Profile_Portada.objects.get(user_id=request.user) 
                 #savest = 
-                return render(request,'registration/perfil2.html')             
+                return render(request,'registration/perfil2.html',{'portadas':portadas})               
             except:  
                     print('No pude jeje')
-            #savem =
+        if request.POST.get('port5'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('port5'))
+            try:
+                profileportada, created = Profile_Portada.objects.get_or_create(
+                                    user=request.user)
+                print(profileportada) 
+                profileportada.direct_imgs3 = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/img/Karma_8.jpg'#request.POST.get('luna')
+                profileportada.save()    
+                portadas = Profile_Portada.objects.get(user_id=request.user) 
+                #savest = 
+                return render(request,'registration/perfil2.html',{'portadas':portadas})               
+            except:  
+                    print('No pude jeje')                        
             
     else:
         return render(request,'registration/perfil2.html',{'portadas':portadas})         
