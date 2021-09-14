@@ -125,22 +125,221 @@
   background-color: #fff;
   padding: 2.5rem;
   height: 60%;
-width: 59%;
-margin: auto;
+  width: 59%;
+  margin: auto;
 }
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/* imagenes perfil*/
+#imagenesPerfil{
+  width: 70%;
+  min-height: 200px;
+  margin: auto;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 5px gray;
+}
+
+.imgs_Perfil_cont{
+  display: flex;
+  width: 100%;
+  height: 100px;
+  /* background-color: palevioletred; */
+
+}
+
+.marco_imgPerfil{
+  width: 10%;
+  height: 100%;
+  display: flex;
+}
+
+/* #marco_Perfil1,#marco_Perfil3,#marco_Perfil5,#marco_Perfil7,#marco_Perfil9{
+  background-color: palegreen;
+}
+#marco_Perfil2,#marco_Perfil4,#marco_Perfil6,#marco_Perfil8,#marco_Perfil10{
+  background-color: lightblue;
+} */
+
+.border_imgPerfil{
+  width: 90px;
+  height: 90px;
+  margin: auto;
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+  border: 3px solid #DE2276;
+  box-shadow: 2px 3px 2px 2px gray;
+  cursor: pointer;
+}
+.perfil2_formImgP{
+  margin: auto;
+}
+#perfil2_p1{
+  background-image: url(https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p1.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#perfil2_p2{
+  background-image: url(https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p2.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#perfil2_p3{
+  background-image: url(https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p3.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#perfil2_p4{
+  background-image: url(https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p4.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#perfil2_p5{
+  background-image: url(https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p5.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#perfil2_p6{
+  background-image: url(https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p6.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#perfil2_p7{
+  background-image: url(https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p7.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#perfil2_p8{
+  background-image: url(https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p8.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#perfil2_p9{
+  background-image: url(https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p9.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#perfil2_p10{
+  background-image: url(https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p10.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#perfil2_p11{
+  background-image: url(https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p11.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#perfil2_p12{
+  background-image: url(https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p12.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#perfil2_p13{
+  background-image: url(https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p13.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#perfil2_p14{
+  background-image: url(https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p14.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#perfil2_p15{
+  background-image: url(https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p15.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#perfil2_p16{
+  background-image: url(https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p16.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#perfil2_p17{
+  background-image: url(https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p17.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#perfil2_p18{
+  background-image: url(https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p18.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#perfil2_p19{
+  background-image: url(https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p19.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#perfil2_p20{
+  background-image: url(https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p20.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#perfil2_p21{
+  background-image: url(https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p21.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#perfil2_p22{
+  background-image: url(https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p22.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#perfil2_p23{
+  background-image: url(https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p23.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#perfil2_p24{
+  background-image: url(https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p24.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#perfil2_p25{
+  background-image: url(https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p25.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#perfil2_p26{
+  background-image: url(https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p26.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#perfil2_p27{
+  background-image: url(https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p27.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#perfil2_p28{
+  background-image: url(https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p28.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#perfil2_p29{
+  background-image: url(https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p29.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#perfil2_p30{
+  background-image: url(https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p30.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+
+
 
 /* Fotos perfil*/
 .perfil2_img{
   background-color: #000;
 }
 
-#imagenesPerfil{
+#imagenesP{
   width: 80%;
   height: min-content 200px;
   margin: auto;
-  background-color: #DE2276;
+  background-color: #DE2276; 
 }
 
 .inputsImgP{
