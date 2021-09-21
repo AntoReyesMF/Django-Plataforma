@@ -34,7 +34,6 @@
     font-family: Montserrat-Medium;
     font-size: 15px;
     color: white;
-    letter-spacing: 3px;
     transition: all 300ms;
 }
 .mc_inicio_menu a:hover{
@@ -65,9 +64,11 @@
 .mc_cont_central{
     text-align: center;
     font-family: Montserrat-Medium;
-    letter-spacing: 1px;
     font-size: 20px;
     line-height: 30px;
+    width: 80%;
+display: flex;
+margin: auto;
 }
 .mc_h3_cont_tex{
     text-align: center;

@@ -5,25 +5,326 @@
 
 <div class="perfil2_contenedor">
     <div class="perfil2_cover_page">
-      <img clas="perfil2_img"src="{% static 'core/img/fondo.jpg' %}">
+      <img clas="perfil2_img"src="{{ portadas.direct_imgs3 }}">
       <div class="perfil2_btn_cover">
         <div class="perfil2_btn_upload">
           <label for="InpUploadCoverPage" class="perfil2_btn_accion"><span>Editar </span></label>
-          <input type="file" id="InpUploadCoverPage" class="perfil_control_hidden">          
+          <input type="submit" id="InpUploadCoverPage" class="perfil_control_hidden" onclick="editar_fotoFondo()">          
         </div>
       </div>
     </div>    
       <div class="perfil2_avatar">
         <div class="perfil2_avatar_upload">
+
             <div class="perfil2avatar_edit">
-                <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+
+                <input type="submit" id="imageUpload" accept=".png, .jpg, .jpeg" onclick="editar_fotoPerfil()"/>
                 <label for="imageUpload" style="background-image: url({% static 'core/img/lapiz.png' %}); background-repeat: no-repeat; background-position: center" ></label>
+                
+                
             </div>
             <div class="perfil2_avatar_preview">
-                <div id="imagePreview" style="background-image: url({% static 'core/img/perfilH.png' %})">
+                <div id="imagePreview" style="background-image: url({{ portadas.profile_photo }})">
                 </div>
               </div>
             </div>
+
+<!-- portadaaaaa -->
+
+<!--Imagenes de Fondo-->
+
+            <div id="perfil2_imagenesFondo">
+              
+              <div class="perfil2_ImagenesFondo">
+                <!--cont_internos-->
+                <div class="perfil2_ImagenesFondo_1_internos" id="f001">
+                  <form class="perfil2_formImgfondo" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil2_F1" class="perfil2_imgFondos_borde" id="perfil2_fondo_img_1">
+                  </form>
+                </div>
+                <!--cont_internos-->
+                <div class="perfil2_ImagenesFondo_1_internos" id="f002">
+                  <form class="perfil2_formImgfondo" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil2_F2" class="perfil2_imgFondos_borde" id="perfil2_fondo_img_2">
+                  </form> 
+                </div>
+                <!--cont_internos-->
+                <div class="perfil2_ImagenesFondo_1_internos" id="f003">
+                  <form class="perfil2_formImgfondo" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil2_F3" class="perfil2_imgFondos_borde" id="perfil2_fondo_img_3">
+                  </form> 
+                </div>
+                <!--cont_internos-->
+                <div class="perfil2_ImagenesFondo_1_internos" id="f004">
+                  <form class="perfil2_formImgfondo" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil2_F4" class="perfil2_imgFondos_borde" id="perfil2_fondo_img_4">
+                  </form> 
+                </div>
+                <!--cont_internos-->
+                <div class="perfil2_ImagenesFondo_1_internos" id="f005">
+                  <form class="perfil2_formImgfondo" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil2_F5" class="perfil2_imgFondos_borde" id="perfil2_fondo_img_5">
+                  </form> 
+                </div>
+                <!--cont_internos-->
+              </div>
+
+              <!----------------------------------------------------------------------------------------------------------------------------->
+              <!----------------------------------------------------------------------------------------------------------------------------->
+              <!----------------------------------------------------------------------------------------------------------------------------->
+
+              <div class="perfil2_ImagenesFondo">
+                <!--cont_internos-->
+                <div class="perfil2_ImagenesFondo_1_internos" id="f006">
+                  <form class="perfil2_formImgfondo" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil2_F6" class="perfil2_imgFondos_borde" id="perfil2_fondo_img_6">
+                  </form>
+                </div>
+                <!--cont_internos-->
+                <div class="perfil2_ImagenesFondo_1_internos" id="f007">
+                  <form class="perfil2_formImgfondo" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil2_F7" class="perfil2_imgFondos_borde" id="perfil2_fondo_img_7">
+                  </form> 
+                </div>
+                <!--cont_internos-->
+                <div class="perfil2_ImagenesFondo_1_internos" id="f008">
+                  <form class="perfil2_formImgfondo" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil2_F8" class="perfil2_imgFondos_borde" id="perfil2_fondo_img_8">
+                  </form> 
+                </div>
+                <!--cont_internos-->
+                <div class="perfil2_ImagenesFondo_1_internos" id="f009">
+                  <form class="perfil2_formImgfondo" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil2_F9" class="perfil2_imgFondos_borde" id="perfil2_fondo_img_9">
+                  </form> 
+                </div>
+                <!--cont_internos-->
+                <div class="perfil2_ImagenesFondo_1_internos" id="f0010">
+                  <form class="perfil2_formImgfondo" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil2_F10" class="perfil2_imgFondos_borde" id="perfil2_fondo_img_10">
+                  </form> 
+                </div>
+                <!--cont_internos-->
+              </div>
+
+              <div id="imgPerfilBotonCont">
+                <div id="imgPerfilBotonCerrar" onclick="cerrar_editarFotoFondo()">
+                  <h4>Cerrar</h4>
+                </div>
+              </div>
+              
+            </div>
+            
+
+
+<!--Imagenes de Fondo-->
+
+<!--Imagenes de Perfil-->
+            <div id="imagenesPerfil">
+
+              <div class="imgs_Perfil_cont">
+
+                <div class="marco_imgPerfil" id="marco_Perfil1">
+                  <form class="perfil2_formImgP" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil2_Pp1" class="border_imgPerfil" id="perfil2_p1">
+                  </form>  
+                </div>
+                <!----------------------------------------->
+                <div class="marco_imgPerfil" id="marco_Perfil2">
+                  <form class="perfil2_formImgP" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil_Pp2" class="border_imgPerfil" id="perfil2_p2">
+                  </form>  
+                </div>
+                <!----------------------------------------->
+                <div class="marco_imgPerfil" id="marco_Perfil3">
+                  <form class="perfil2_formImgP" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil_Pp3" class="border_imgPerfil" id="perfil2_p3">
+                  </form>  
+                </div>
+                <!----------------------------------------->
+                <div class="marco_imgPerfil" id="marco_Perfil4">
+                  <form class="perfil2_formImgP" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil_Pp4" class="border_imgPerfil" id="perfil2_p4">
+                  </form>  
+                </div>
+                <!----------------------------------------->
+                <div class="marco_imgPerfil" id="marco_Perfil5">
+                  <form class="perfil2_formImgP" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil_Pp5" class="border_imgPerfil" id="perfil2_p5">
+                  </form>  
+                </div>
+                <!----------------------------------------->
+                <div class="marco_imgPerfil" id="marco_Perfil6">
+                  <form class="perfil2_formImgP" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil_Pp6" class="border_imgPerfil" id="perfil2_p6">
+                  </form>  
+                </div>
+                <!----------------------------------------->
+                <div class="marco_imgPerfil" id="marco_Perfil7">
+                  <form class="perfil2_formImgP" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil_Pp7" class="border_imgPerfil" id="perfil2_p7">
+                  </form>  
+                </div>
+                <!----------------------------------------->
+                <div class="marco_imgPerfil" id="marco_Perfil8">
+                  <form class="perfil2_formImgP" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil_Pp8" class="border_imgPerfil" id="perfil2_p8">
+                  </form>  
+                </div>
+                <!----------------------------------------->
+                <div class="marco_imgPerfil" id="marco_Perfil9">
+                  <form class="perfil2_formImgP" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil_Pp9" class="border_imgPerfil" id="perfil2_p9">
+                  </form>  
+                </div>
+                <!----------------------------------------->
+                <div class="marco_imgPerfil" id="marco_Perfil10">
+                  <form class="perfil2_formImgP" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil_Pp10" class="border_imgPerfil" id="perfil2_p10">
+                  </form>  
+                </div>
+                  
+              </div>
+              <!--###-->
+              <!--###-->
+              <div class="imgs_Perfil_cont">
+
+                <div class="marco_imgPerfil" id="marco_Perfil1">
+                  <form class="perfil2_formImgP" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil2_Pp11" class="border_imgPerfil" id="perfil2_p11">
+                  </form>  
+                </div>
+                <!----------------------------------------->
+                <div class="marco_imgPerfil" id="marco_Perfil2">
+                  <form class="perfil2_formImgP" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil_Pp12" class="border_imgPerfil" id="perfil2_p12">
+                  </form>  
+                </div>
+                <!----------------------------------------->
+                <div class="marco_imgPerfil" id="marco_Perfil3">
+                  <form class="perfil2_formImgP" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil_Pp13" class="border_imgPerfil" id="perfil2_p13">
+                  </form>  
+                </div>
+                <!----------------------------------------->
+                <div class="marco_imgPerfil" id="marco_Perfil4">
+                  <form class="perfil2_formImgP" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil_Pp14" class="border_imgPerfil" id="perfil2_p14">
+                  </form>  
+                </div>
+                <!----------------------------------------->
+                <div class="marco_imgPerfil" id="marco_Perfil5">
+                  <form class="perfil2_formImgP" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil_Pp15" class="border_imgPerfil" id="perfil2_p15">
+                  </form>  
+                </div>
+                <!----------------------------------------->
+                <div class="marco_imgPerfil" id="marco_Perfil6">
+                  <form class="perfil2_formImgP" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil_Pp16" class="border_imgPerfil" id="perfil2_p16">
+                  </form>  
+                </div>
+                <!----------------------------------------->
+                <div class="marco_imgPerfil" id="marco_Perfil7">
+                  <form class="perfil2_formImgP" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil_Pp17" class="border_imgPerfil" id="perfil2_p17">
+                  </form>  
+                </div>
+                <!----------------------------------------->
+                <div class="marco_imgPerfil" id="marco_Perfil8">
+                  <form class="perfil2_formImgP" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil_Pp18" class="border_imgPerfil" id="perfil2_p18">
+                  </form>  
+                </div>
+                <!----------------------------------------->
+                <div class="marco_imgPerfil" id="marco_Perfil9">
+                  <form class="perfil2_formImgP" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil_Pp19" class="border_imgPerfil" id="perfil2_p19">
+                  </form>  
+                </div>
+                <!----------------------------------------->
+                <div class="marco_imgPerfil" id="marco_Perfil20">
+                  <form class="perfil2_formImgP" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil_Pp20" class="border_imgPerfil" id="perfil2_p20">
+                  </form>  
+                </div>
+                  
+              </div>
+              <!--###-->
+              <!--###-->
+              <div class="imgs_Perfil_cont">
+
+                <div class="marco_imgPerfil" id="marco_Perfil21">
+                  <form class="perfil2_formImgP" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil2_Pp21" class="border_imgPerfil" id="perfil2_p21">
+                  </form>  
+                </div>
+                <!----------------------------------------->
+                <div class="marco_imgPerfil" id="marco_Perfil22">
+                  <form class="perfil2_formImgP" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil_Pp22" class="border_imgPerfil" id="perfil2_p22">
+                  </form>  
+                </div>
+                <!----------------------------------------->
+                <div class="marco_imgPerfil" id="marco_Perfil23">
+                  <form class="perfil2_formImgP" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil_Pp23" class="border_imgPerfil" id="perfil2_p23">
+                  </form>  
+                </div>
+                <!----------------------------------------->
+                <div class="marco_imgPerfil" id="marco_Perfil24">
+                  <form class="perfil2_formImgP" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil_Pp24" class="border_imgPerfil" id="perfil2_p24">
+                  </form>  
+                </div>
+                <!----------------------------------------->
+                <div class="marco_imgPerfil" id="marco_Perfil25">
+                  <form class="perfil2_formImgP" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil_Pp25" class="border_imgPerfil" id="perfil2_p25">
+                  </form>  
+                </div>
+                <!----------------------------------------->
+                <div class="marco_imgPerfil" id="marco_Perfil26">
+                  <form class="perfil2_formImgP" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil_Pp26" class="border_imgPerfil" id="perfil2_p26">
+                  </form>  
+                </div>
+                <!----------------------------------------->
+                <div class="marco_imgPerfil" id="marco_Perfil27">
+                  <form class="perfil2_formImgP" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil_Pp27" class="border_imgPerfil" id="perfil2_p27">
+                  </form>  
+                </div>
+                <!----------------------------------------->
+                <div class="marco_imgPerfil" id="marco_Perfil28">
+                  <form class="perfil2_formImgP" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil_Pp28" class="border_imgPerfil" id="perfil2_p28">
+                  </form>  
+                </div>
+                <!----------------------------------------->
+                <div class="marco_imgPerfil" id="marco_Perfil29">
+                  <form class="perfil2_formImgP" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil_Pp29" class="border_imgPerfil" id="perfil2_p29">
+                  </form>  
+                </div>
+                <!----------------------------------------->
+                <div class="marco_imgPerfil" id="marco_Perfil30">
+                  <form class="perfil2_formImgP" action="" method="post">{% csrf_token %}
+                    <input type="submit" value="Seleccionar" name="perfil_Pp30" class="border_imgPerfil" id="perfil2_p30">
+                  </form>  
+                </div>
+                  
+              </div>
+              <div id="imgPerfilBotonCont">
+                <div id="imgPerfilBotonCerrar" onclick="cerrar_editarFotoPeril()">
+                  <h4>Cerrar</h4>
+                </div>
+              </div>
+
+            </div>
+        
+            
+            
     
     <!-- ######################################################################################################## -->
 
@@ -72,7 +373,7 @@
 
             <div id="perfil2_presentacion_edit">
 
-              <p class="perfil2_p">Cuentános en una breve descripción sobre quíen eres, qué haces o qué te gusta.</p>
+              <p class="perfil2_p">Cuéntanos en una breve descripción sobre quién eres, qué haces o qué te gusta.</p>
   
             </div>
   
@@ -98,7 +399,7 @@
             <div id="perfil2_presentacion_descipcion_edit_botones">
 
               <input type="submit" value="Actualizar">
-              <input type="reset" value="Cancelar" onclick="close_edit_descripcion();">
+              <input type="reset" value="Cancelar" onclick="close_edit_descripcion()">
 
             </div>
 
@@ -157,7 +458,7 @@
             <form class="perfil2_form">
               <div class="perfil2_group -ionic">
                 <input class="perfil2_field" type="mail" required>
-                <label class="perfil2_title_label">Correo electronico</label>
+                <label class="perfil2_title_label">correo electrónico</label>
               </div>
               <div class="perfil2_group -ionic">
                 <input class="perfil2_field" type="password" required>
@@ -181,7 +482,7 @@
             <h2 class="text-color">Visto recientemente</h2>
             
             <div class="perfil2_historial_no">
-              <h5 class="perfil2_h5">Todavía no haz iniciado algun curso</h5>
+              <h5 class="perfil2_h5">Todavía no has iniciado algún curso</h5>
               <img class="perfil2_img_hist" src="{% static 'core/img/undraw_empty_xct9.png' %}">
     
             </div>
@@ -206,9 +507,9 @@
         </li>
         <li>
         <div class="perfil2_content_wrapper">
-          <h2 class="text-color">Mis certificados</h2>
+          <h2 class="text-color">Mis recompensas</h2>
           <div class="perfil2_certificados">
-            <h5 class="perfil2_h5">Aún no cuentas con certificados</h5>
+            <h5 class="perfil2_h5">Aún no cuentas con recompensas</h5>
             <img class="perfil2_img_cert" src="{% static 'core/img/undraw_No_data_re_kwbl.png' %}">
              </div>
           </div>

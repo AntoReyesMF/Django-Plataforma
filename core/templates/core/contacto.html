@@ -9,13 +9,21 @@
 	Flavicon
 <link rel="icon" type="image/png" sizes="16x16" href="images/favicon16.png">>-->
 
-<div class="contacto_contenedor">
-	  <h1>Contacto Making Friends</h1>
-	  <hr style="width:20%;text-align:left;margin-left: 191px; border:2.5px solid #fff; position: relative;">
-	  
+<div id="contacto_titulo" style="background-image: url({% static 'core/img/fondo.jpg' %});">
+
+	<div id="contacto_t_cont_central">
+  
+	  <div>
+		<h1>CONTACTO<BR> MAKING FRIENDS </BR></h1>
+	  </div>
+  
+	  <div id="contacto_t_cont_central_linea"></div>
+  
+	</div>
+  
   </div>
   <div class="contacto_info_contenedor">
-	  ¿Tienes alguna duda? seguro la podemos contestar a través de:
+	  ¿Tienes alguna duda? seguro la podemos contestar a través de :
   
 	  <div class="contacto-row">
 				  <div class="contacto_col1">
@@ -23,9 +31,10 @@
 					  <button class="chatea_btn">MakingFriends.MX</button>
 				  </div>
 				  <div class="contacto_col2">
+					<a href="mailto:rafa@gmail.com?Subject=Hola%20Making%20Friends">
 					  <img class="contacto_ilustr" src="{% static 'core/img/mail.png' %}"> 
 					  <button class="chatea_btn">contacto@makingfriends.com.mx</button>      
-				  </div>
+				  </div></a>
 				  <div class="contacto_col3">
 					  <a class="chatea" href="https://wa.me/message/TZMKISVDXP4AF1">
 					  <img class="contacto_ilustr" src="{% static 'core/img/chat.png' %}">
@@ -37,36 +46,36 @@
 	  </div>
   </div>
   
-  <h3 class="contacto_texto">Preguntas Frecuentes</h3>
+  <h3 class="contacto_texto">Preguntas frecuentes</h3>
   <div class="contacto-info"> 
 	<div class="contacto_container_preguntas">
 		<div class="contacto_preguntas">
 		  <div class="contacto_preguntas_item">
 	  
-			<button id="contacto_preguntas-button-1" aria-expanded="false"><span class="accordion-title">Cómo funciona Making Friends? </span><span class="contacto_preguntas_icon" aria-hidden="true"></span></button>
+			<button id="contacto_preguntas-button-1" aria-expanded="false"><span class="accordion-title">¿Cómo funciona Making Friends? </span><span class="contacto_preguntas_icon" aria-hidden="true"></span></button>
 			<div class="contacto_preguntas_content">
-			  <p>MF es un hub de educación que en colaboración con una red de organizaciones, brinda conocimiento y herramientas que sirven en la vida diaria y contribuyen al desarrollo personal. En la plataforma es posible crear un perfil destacando preferencias e intereses que posteriormente serán utilizados por un algoritmo que muestra en un marketplace las opciones de cursos más afines a cada persona, así como los productos o servicios de nuestros aliados que podrían requerir para emplear las nuevas habilidades adquiridas.</p>
+			  <p>MF es un hub de educación que en colaboración con una red de organizaciones, brinda conocimiento y herramientas que sirven en la vida diaria y contribuyen al desarrollo personal. En la plataforma es posible crear un perfil destacando preferencias e intereses que posteriormente serán utilizados por un algoritmo que muestra en un marketplace las opciones de cursos más afines a cada persona, así como los productos o servicios de nuestros aliados que podrían requerir para emplear las nuevas habilidades adquiridas</p>
 			</div>
 		  </div>
 	  
 		  <div class="contacto_preguntas_item">
-			<button id="contacto_preguntas-button-2" aria-expanded="false"><span class="accordion-title">Qué necesito para empezar?</span><span class="contacto_preguntas_icon" aria-hidden="true"></span></button>
+			<button id="contacto_preguntas-button-2" aria-expanded="false"><span class="accordion-title">¿Qué necesito para empezar?</span><span class="contacto_preguntas_icon" aria-hidden="true"></span></button>
 			<div class="contacto_preguntas_content">
-			  <p>Es necesario tener una cuenta Making Friends y completar los primeros 3 pasos para identificar los herramientas y aliados que necesitas </p>
+			  <p>Es necesario tener una cuenta Making Friends y completar los primeros 3 pasos para identificar las herramientas y aliados que necesitas </p>
 			</div>
 		  </div>
 	  
 		  <div class="contacto_preguntas_item">
-			<button id="contacto_preguntas-button-3" aria-expanded="false"><span class="accordion-title">Necesito pagar una suscripción? </span><span class="contacto_preguntas_icon" aria-hidden="true"></span></button>
+			<button id="contacto_preguntas-button-3" aria-expanded="false"><span class="accordion-title">¿Necesito pagar una suscripción? </span><span class="contacto_preguntas_icon" aria-hidden="true"></span></button>
 			<div class="contacto_preguntas_content">
 			  <p>Para nada, es totalmente gratis</p>
 			</div>
 		  </div>
 		  
 		  <div class="contacto_preguntas_item">
-			<button id="contacto_preguntas-button-4" aria-expanded="false"><span class="accordion-title">Es necesario tener un proyecto? </span><span class="contacto_preguntas_icon" aria-hidden="true"></span></button>
+			<button id="contacto_preguntas-button-4" aria-expanded="false"><span class="accordion-title">¿Es necesario tener un proyecto? </span><span class="contacto_preguntas_icon" aria-hidden="true"></span></button>
 			<div class="contacto_preguntas_content">
-			  <p>Making friends te ayuda a concectarte a con lo que necesita tu proyecto, pero no es obligatorio tener uno, ya que tienes la libertad de aprender lo que más te interese</p>
+			  <p>Making friends te ayuda a conectarte con lo que necesita tu proyecto, pero no es obligatorio tener uno, ya que tienes la libertad de aprender lo que más te interese</p>
 			</div>
 		  </div>
 		</div>
