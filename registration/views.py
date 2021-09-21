@@ -107,15 +107,20 @@ def perfil2View2(request):
                     render(request,'registration/perfil2.html',{'pro':pro})  
                 except:  
                     print('No pude jeje')
-        ###portada            
-        if request.POST.get('port1'):
+
+
+                    
+        ###portada   
+        ###
+        ###         
+        if request.POST.get('perfil2_F1'):
             form = Profile_Portada(request.POST)
-            print(request.POST.get('port1'))
+            print(request.POST.get('perfil2_F1'))
             try:
                 profileportada, created = Profile_Portada.objects.get_or_create(
                                     user=request.user)
                 print(profileportada) 
-                profileportada.direct_imgs3 = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/img/Diana_12.jpg'#request.POST.get('luna')
+                profileportada.direct_imgs3 = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/portada/f1.png'#request.POST.get('luna')
                 profileportada.save()   
                 
                 portadas = Profile_Portada.objects.get(user_id=request.user) 
@@ -123,62 +128,144 @@ def perfil2View2(request):
                 return render(request,'registration/perfil2.html',{'portadas':portadas})             
             except:  
                     print('No pude jeje')
-        if request.POST.get('port2'):
+
+        if request.POST.get('perfil2_F2'):
             form = Profile_Portada(request.POST)
-            print(request.POST.get('port2'))
+            print(request.POST.get('perfil2_F2'))
             try:
                 profileportada, created = Profile_Portada.objects.get_or_create(
                                     user=request.user)
                 print(profileportada) 
-                profileportada.direct_imgs3 = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/img/Diana_26.jpg'#request.POST.get('luna')
-                profileportada.save()    
-                portadas = Profile_Portada.objects.get(user_id=request.user) 
-                #savest = 
-                return render(request,'registration/perfil2.html',{'portadas':portadas})               
-            except:  
-                    print('No pude jeje')
-        if request.POST.get('port3'):
-            form = Profile_Portada(request.POST)
-            print(request.POST.get('port3'))
-            try:
-                profileportada, created = Profile_Portada.objects.get_or_create(
-                                    user=request.user)
-                print(profileportada) 
-                profileportada.direct_imgs3 = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/img/Diana_27.jpg'#request.POST.get('luna')
-                profileportada.save()    
+                profileportada.direct_imgs3 = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/portada/f2.jpg'#request.POST.get('luna')
+                profileportada.save()   
+                
                 portadas = Profile_Portada.objects.get(user_id=request.user) 
                 #savest = 
                 return render(request,'registration/perfil2.html',{'portadas':portadas})             
             except:  
                     print('No pude jeje')
-        if request.POST.get('port4'):
+
+        if request.POST.get('perfil2_F3'):
             form = Profile_Portada(request.POST)
-            print(request.POST.get('port4'))
+            print(request.POST.get('perfil2_F3'))
             try:
                 profileportada, created = Profile_Portada.objects.get_or_create(
                                     user=request.user)
                 print(profileportada) 
-                profileportada.direct_imgs3 = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/img/Karma_0.jpg'#request.POST.get('luna')
-                profileportada.save()    
+                profileportada.direct_imgs3 = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/portada/f3.jpg'#request.POST.get('luna')
+                profileportada.save()   
+                
                 portadas = Profile_Portada.objects.get(user_id=request.user) 
                 #savest = 
-                return render(request,'registration/perfil2.html',{'portadas':portadas})               
+                return render(request,'registration/perfil2.html',{'portadas':portadas})             
             except:  
                     print('No pude jeje')
-        if request.POST.get('port5'):
+        if request.POST.get('perfil2_F4'):
             form = Profile_Portada(request.POST)
-            print(request.POST.get('port5'))
+            print(request.POST.get('perfil2_F4'))
             try:
                 profileportada, created = Profile_Portada.objects.get_or_create(
                                     user=request.user)
                 print(profileportada) 
-                profileportada.direct_imgs3 = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/img/Karma_8.jpg'#request.POST.get('luna')
-                profileportada.save()    
+                profileportada.direct_imgs3 = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/portada/f4.jpg'#request.POST.get('luna')
+                profileportada.save()   
+                
                 portadas = Profile_Portada.objects.get(user_id=request.user) 
                 #savest = 
-                return render(request,'registration/perfil2.html',{'portadas':portadas})               
+                return render(request,'registration/perfil2.html',{'portadas':portadas})             
             except:  
-                    print('No pude jeje') 
+                    print('No pude jeje')
+        if request.POST.get('perfil2_F5'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('perfil2_F5'))
+            try:
+                profileportada, created = Profile_Portada.objects.get_or_create(
+                                    user=request.user)
+                print(profileportada) 
+                profileportada.direct_imgs3 = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/portada/f5.jpg'#request.POST.get('luna')
+                profileportada.save()   
+                
+                portadas = Profile_Portada.objects.get(user_id=request.user) 
+                #savest = 
+                return render(request,'registration/perfil2.html',{'portadas':portadas})             
+            except:  
+                    print('No pude jeje')
+        if request.POST.get('perfil2_F6'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('perfil2_F6'))
+            try:
+                profileportada, created = Profile_Portada.objects.get_or_create(
+                                    user=request.user)
+                print(profileportada) 
+                profileportada.direct_imgs3 = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/portada/f6.jpg'#request.POST.get('luna')
+                profileportada.save()   
+                
+                portadas = Profile_Portada.objects.get(user_id=request.user) 
+                #savest = 
+                return render(request,'registration/perfil2.html',{'portadas':portadas})             
+            except:  
+                    print('No pude jeje')
+        if request.POST.get('perfil2_F7'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('perfil2_F7'))
+            try:
+                profileportada, created = Profile_Portada.objects.get_or_create(
+                                    user=request.user)
+                print(profileportada) 
+                profileportada.direct_imgs3 = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/portada/f7.jpg'#request.POST.get('luna')
+                profileportada.save()   
+                
+                portadas = Profile_Portada.objects.get(user_id=request.user) 
+                #savest = 
+                return render(request,'registration/perfil2.html',{'portadas':portadas})             
+            except:  
+                    print('No pude jeje')
+        if request.POST.get('perfil2_F8'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('perfil2_F8'))
+            try:
+                profileportada, created = Profile_Portada.objects.get_or_create(
+                                    user=request.user)
+                print(profileportada) 
+                profileportada.direct_imgs3 = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/portada/f8.jpg'#request.POST.get('luna')
+                profileportada.save()   
+                
+                portadas = Profile_Portada.objects.get(user_id=request.user) 
+                #savest = 
+                return render(request,'registration/perfil2.html',{'portadas':portadas})             
+            except:  
+                    print('No pude jeje')
+        if request.POST.get('perfil2_F9'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('perfil2_F9'))
+            try:
+                profileportada, created = Profile_Portada.objects.get_or_create(
+                                    user=request.user)
+                print(profileportada) 
+                profileportada.direct_imgs3 = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/portada/f9.jpg'#request.POST.get('luna')
+                profileportada.save()   
+                
+                portadas = Profile_Portada.objects.get(user_id=request.user) 
+                #savest = 
+                return render(request,'registration/perfil2.html',{'portadas':portadas})             
+            except:  
+                    print('No pude jeje')
+        if request.POST.get('perfil2_F10'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('perfil2_F10'))
+            try:
+                profileportada, created = Profile_Portada.objects.get_or_create(
+                                    user=request.user)
+                print(profileportada) 
+                profileportada.direct_imgs3 = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/portada/f10.jpg'#request.POST.get('luna')
+                profileportada.save()   
+                
+                portadas = Profile_Portada.objects.get(user_id=request.user) 
+                #savest = 
+                return render(request,'registration/perfil2.html',{'portadas':portadas})             
+            except:  
+                    print('No pude jeje')
+
         #
         #
         #
@@ -187,19 +274,456 @@ def perfil2View2(request):
         # 
         #          
         if request.POST.get('perfil2_Pp1'):
-            # form = Profile_Portada(request.POST)
+            form = Profile_Portada(request.POST)
             print(request.POST.get('perfil2_Pp1'))
-            # try:
-            #     profileportada, created = Profile_Portada.objects.get_or_create(
-            #                         user=request.user)
-            #     print(profileportada) 
-            #     profileportada.profile_photo = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p1.jpg'#request.POST.get('luna')
-            #     profileportada.save()    
-            #     portadas = Profile_Portada.objects.get(user_id=request.user) 
-            #     #savest = 
-            #     return render(request,'registration/perfil2.html',{'portadas':portadas})               
-            # except:  
-            #         print('No pude jeje')                                    
+            try:
+                 profileportada, created = Profile_Portada.objects.get_or_create(
+                                     user=request.user)
+                 print(profileportada) 
+                 profileportada.profile_photo = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p1.jpg'#request.POST.get('luna')
+                 profileportada.save()    
+                 portadas = Profile_Portada.objects.get(user_id=request.user) 
+                 #savest = 
+                 return render(request,'registration/perfil2.html',{'portadas':portadas})               
+            except:  
+                     print('No pude jeje')  
+
+        if request.POST.get('perfil_Pp2'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('perfil_Pp2'))
+            try:
+                 profileportada, created = Profile_Portada.objects.get_or_create(
+                                     user=request.user)
+                 print(profileportada) 
+                 profileportada.profile_photo = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p2.jpg'#request.POST.get('luna')
+                 profileportada.save()    
+                 portadas = Profile_Portada.objects.get(user_id=request.user) 
+                 #savest = 
+                 return render(request,'registration/perfil2.html',{'portadas':portadas})               
+            except:  
+                     print('No pude jeje')
+
+        if request.POST.get('perfil_Pp3'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('perfil_Pp3'))
+            try:
+                 profileportada, created = Profile_Portada.objects.get_or_create(
+                                     user=request.user)
+                 print(profileportada) 
+                 profileportada.profile_photo = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p3.jpg'#request.POST.get('luna')
+                 profileportada.save()    
+                 portadas = Profile_Portada.objects.get(user_id=request.user) 
+                 #savest = 
+                 return render(request,'registration/perfil2.html',{'portadas':portadas})               
+            except:  
+                     print('No pude jeje')
+
+        if request.POST.get('perfil_Pp4'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('perfil_Pp4'))
+            try:
+                 profileportada, created = Profile_Portada.objects.get_or_create(
+                                     user=request.user)
+                 print(profileportada) 
+                 profileportada.profile_photo = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p4.jpg'#request.POST.get('luna')
+                 profileportada.save()    
+                 portadas = Profile_Portada.objects.get(user_id=request.user) 
+                 #savest = 
+                 return render(request,'registration/perfil2.html',{'portadas':portadas})               
+            except:  
+                     print('No pude jeje') 
+
+        if request.POST.get('perfil_Pp5'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('perfil_Pp5'))
+            try:
+                 profileportada, created = Profile_Portada.objects.get_or_create(
+                                     user=request.user)
+                 print(profileportada) 
+                 profileportada.profile_photo = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p5.jpg'#request.POST.get('luna')
+                 profileportada.save()    
+                 portadas = Profile_Portada.objects.get(user_id=request.user) 
+                 #savest = 
+                 return render(request,'registration/perfil2.html',{'portadas':portadas})               
+            except:  
+                     print('No pude jeje')
+
+        if request.POST.get('perfil_Pp6'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('perfil_Pp6'))
+            try:
+                 profileportada, created = Profile_Portada.objects.get_or_create(
+                                     user=request.user)
+                 print(profileportada) 
+                 profileportada.profile_photo = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p6.jpg'#request.POST.get('luna')
+                 profileportada.save()    
+                 portadas = Profile_Portada.objects.get(user_id=request.user) 
+                 #savest = 
+                 return render(request,'registration/perfil2.html',{'portadas':portadas})               
+            except:  
+                     print('No pude jeje')
+
+        if request.POST.get('perfil_Pp7'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('perfil_Pp7'))
+            try:
+                 profileportada, created = Profile_Portada.objects.get_or_create(
+                                     user=request.user)
+                 print(profileportada) 
+                 profileportada.profile_photo = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p7.jpg'#request.POST.get('luna')
+                 profileportada.save()    
+                 portadas = Profile_Portada.objects.get(user_id=request.user) 
+                 #savest = 
+                 return render(request,'registration/perfil2.html',{'portadas':portadas})               
+            except:  
+                     print('No pude jeje') 
+
+        if request.POST.get('perfil_Pp8'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('perfil_Pp8'))
+            try:
+                 profileportada, created = Profile_Portada.objects.get_or_create(
+                                     user=request.user)
+                 print(profileportada) 
+                 profileportada.profile_photo = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p8.jpg'#request.POST.get('luna')
+                 profileportada.save()    
+                 portadas = Profile_Portada.objects.get(user_id=request.user) 
+                 #savest = 
+                 return render(request,'registration/perfil2.html',{'portadas':portadas})               
+            except:  
+                     print('No pude jeje')
+
+        if request.POST.get('perfil_Pp9'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('perfil_Pp9'))
+            try:
+                 profileportada, created = Profile_Portada.objects.get_or_create(
+                                     user=request.user)
+                 print(profileportada) 
+                 profileportada.profile_photo = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p9.jpg'#request.POST.get('luna')
+                 profileportada.save()    
+                 portadas = Profile_Portada.objects.get(user_id=request.user) 
+                 #savest = 
+                 return render(request,'registration/perfil2.html',{'portadas':portadas})               
+            except:  
+                     print('No pude jeje')  
+
+        if request.POST.get('perfil_Pp10'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('perfil_Pp10'))
+            try:
+                 profileportada, created = Profile_Portada.objects.get_or_create(
+                                     user=request.user)
+                 print(profileportada) 
+                 profileportada.profile_photo = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p10.jpg'#request.POST.get('luna')
+                 profileportada.save()    
+                 portadas = Profile_Portada.objects.get(user_id=request.user) 
+                 #savest = 
+                 return render(request,'registration/perfil2.html',{'portadas':portadas})               
+            except:  
+                     print('No pude jeje')
+
+        if request.POST.get('perfil2_Pp11'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('perfil2_Pp11'))
+            try:
+                 profileportada, created = Profile_Portada.objects.get_or_create(
+                                     user=request.user)
+                 print(profileportada) 
+                 profileportada.profile_photo = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p11.jpg'#request.POST.get('luna')
+                 profileportada.save()    
+                 portadas = Profile_Portada.objects.get(user_id=request.user) 
+                 #savest = 
+                 return render(request,'registration/perfil2.html',{'portadas':portadas})               
+            except:  
+                     print('No pude jeje')
+
+        if request.POST.get('perfil_Pp12'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('perfil_Pp12'))
+            try:
+                 profileportada, created = Profile_Portada.objects.get_or_create(
+                                     user=request.user)
+                 print(profileportada) 
+                 profileportada.profile_photo = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p12.jpg'#request.POST.get('luna')
+                 profileportada.save()    
+                 portadas = Profile_Portada.objects.get(user_id=request.user) 
+                 #savest = 
+                 return render(request,'registration/perfil2.html',{'portadas':portadas})               
+            except:  
+                     print('No pude jeje') 
+
+        if request.POST.get('perfil_Pp13'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('perfil_Pp13'))
+            try:
+                 profileportada, created = Profile_Portada.objects.get_or_create(
+                                     user=request.user)
+                 print(profileportada) 
+                 profileportada.profile_photo = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p13.jpg'#request.POST.get('luna')
+                 profileportada.save()    
+                 portadas = Profile_Portada.objects.get(user_id=request.user) 
+                 #savest = 
+                 return render(request,'registration/perfil2.html',{'portadas':portadas})               
+            except:  
+                     print('No pude jeje')
+
+        if request.POST.get('perfil_Pp14'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('perfil_Pp14'))
+            try:
+                 profileportada, created = Profile_Portada.objects.get_or_create(
+                                     user=request.user)
+                 print(profileportada) 
+                 profileportada.profile_photo = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p14.jpg'#request.POST.get('luna')
+                 profileportada.save()    
+                 portadas = Profile_Portada.objects.get(user_id=request.user) 
+                 #savest = 
+                 return render(request,'registration/perfil2.html',{'portadas':portadas})               
+            except:  
+                     print('No pude jeje')
+
+        if request.POST.get('perfil_Pp15'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('perfil_Pp15'))
+            try:
+                 profileportada, created = Profile_Portada.objects.get_or_create(
+                                     user=request.user)
+                 print(profileportada) 
+                 profileportada.profile_photo = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p15.jpg'#request.POST.get('luna')
+                 profileportada.save()    
+                 portadas = Profile_Portada.objects.get(user_id=request.user) 
+                 #savest = 
+                 return render(request,'registration/perfil2.html',{'portadas':portadas})               
+            except:  
+                     print('No pude jeje') 
+
+        if request.POST.get('perfil_Pp16'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('perfil_Pp16'))
+            try:
+                 profileportada, created = Profile_Portada.objects.get_or_create(
+                                     user=request.user)
+                 print(profileportada) 
+                 profileportada.profile_photo = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p16.jpg'#request.POST.get('luna')
+                 profileportada.save()    
+                 portadas = Profile_Portada.objects.get(user_id=request.user) 
+                 #savest = 
+                 return render(request,'registration/perfil2.html',{'portadas':portadas})               
+            except:  
+                     print('No pude jeje')  
+
+        if request.POST.get('perfil_Pp17'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('perfil_Pp17'))
+            try:
+                 profileportada, created = Profile_Portada.objects.get_or_create(
+                                     user=request.user)
+                 print(profileportada) 
+                 profileportada.profile_photo = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p17.jpg'#request.POST.get('luna')
+                 profileportada.save()    
+                 portadas = Profile_Portada.objects.get(user_id=request.user) 
+                 #savest = 
+                 return render(request,'registration/perfil2.html',{'portadas':portadas})               
+            except:  
+                     print('No pude jeje')  
+
+        if request.POST.get('perfil_Pp18'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('perfil_Pp18'))
+            try:
+                 profileportada, created = Profile_Portada.objects.get_or_create(
+                                     user=request.user)
+                 print(profileportada) 
+                 profileportada.profile_photo = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p18.jpg'#request.POST.get('luna')
+                 profileportada.save()    
+                 portadas = Profile_Portada.objects.get(user_id=request.user) 
+                 #savest = 
+                 return render(request,'registration/perfil2.html',{'portadas':portadas})               
+            except:  
+                     print('No pude jeje')
+
+        if request.POST.get('perfil_Pp19'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('perfil_Pp19'))
+            try:
+                 profileportada, created = Profile_Portada.objects.get_or_create(
+                                     user=request.user)
+                 print(profileportada) 
+                 profileportada.profile_photo = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p19.jpg'#request.POST.get('luna')
+                 profileportada.save()    
+                 portadas = Profile_Portada.objects.get(user_id=request.user) 
+                 #savest = 
+                 return render(request,'registration/perfil2.html',{'portadas':portadas})               
+            except:  
+                     print('No pude jeje')
+
+        if request.POST.get('perfil_Pp20'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('perfil_Pp20'))
+            try:
+                 profileportada, created = Profile_Portada.objects.get_or_create(
+                                     user=request.user)
+                 print(profileportada) 
+                 profileportada.profile_photo = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p20.jpg'#request.POST.get('luna')
+                 profileportada.save()    
+                 portadas = Profile_Portada.objects.get(user_id=request.user) 
+                 #savest = 
+                 return render(request,'registration/perfil2.html',{'portadas':portadas})               
+            except:  
+                     print('No pude jeje') 
+
+        if request.POST.get('perfil2_Pp21'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('perfil2_Pp21'))
+            try:
+                 profileportada, created = Profile_Portada.objects.get_or_create(
+                                     user=request.user)
+                 print(profileportada) 
+                 profileportada.profile_photo = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p21.jpg'#request.POST.get('luna')
+                 profileportada.save()    
+                 portadas = Profile_Portada.objects.get(user_id=request.user) 
+                 #savest = 
+                 return render(request,'registration/perfil2.html',{'portadas':portadas})               
+            except:  
+                     print('No pude jeje')
+
+        if request.POST.get('perfil_Pp22'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('perfil_Pp22'))
+            try:
+                 profileportada, created = Profile_Portada.objects.get_or_create(
+                                     user=request.user)
+                 print(profileportada) 
+                 profileportada.profile_photo = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p22.jpg'#request.POST.get('luna')
+                 profileportada.save()    
+                 portadas = Profile_Portada.objects.get(user_id=request.user) 
+                 #savest = 
+                 return render(request,'registration/perfil2.html',{'portadas':portadas})               
+            except:  
+                     print('No pude jeje')
+
+        if request.POST.get('perfil_Pp23'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('perfil_Pp23'))
+            try:
+                 profileportada, created = Profile_Portada.objects.get_or_create(
+                                     user=request.user)
+                 print(profileportada) 
+                 profileportada.profile_photo = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p23.jpg'#request.POST.get('luna')
+                 profileportada.save()    
+                 portadas = Profile_Portada.objects.get(user_id=request.user) 
+                 #savest = 
+                 return render(request,'registration/perfil2.html',{'portadas':portadas})               
+            except:  
+                     print('No pude jeje') 
+
+        if request.POST.get('perfil_Pp24'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('perfil_Pp24'))
+            try:
+                 profileportada, created = Profile_Portada.objects.get_or_create(
+                                     user=request.user)
+                 print(profileportada) 
+                 profileportada.profile_photo = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p24.jpg'#request.POST.get('luna')
+                 profileportada.save()    
+                 portadas = Profile_Portada.objects.get(user_id=request.user) 
+                 #savest = 
+                 return render(request,'registration/perfil2.html',{'portadas':portadas})               
+            except:  
+                     print('No pude jeje')   
+
+        if request.POST.get('perfil_Pp25'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('perfil_Pp25'))
+            try:
+                 profileportada, created = Profile_Portada.objects.get_or_create(
+                                     user=request.user)
+                 print(profileportada) 
+                 profileportada.profile_photo = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p25.jpg'#request.POST.get('luna')
+                 profileportada.save()    
+                 portadas = Profile_Portada.objects.get(user_id=request.user) 
+                 #savest = 
+                 return render(request,'registration/perfil2.html',{'portadas':portadas})               
+            except:  
+                     print('No pude jeje')  
+
+        if request.POST.get('perfil_Pp26'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('perfil_Pp26'))
+            try:
+                 profileportada, created = Profile_Portada.objects.get_or_create(
+                                     user=request.user)
+                 print(profileportada) 
+                 profileportada.profile_photo = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p26.jpg'#request.POST.get('luna')
+                 profileportada.save()    
+                 portadas = Profile_Portada.objects.get(user_id=request.user) 
+                 #savest = 
+                 return render(request,'registration/perfil2.html',{'portadas':portadas})               
+            except:  
+                     print('No pude jeje')
+
+        if request.POST.get('perfil_Pp27'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('perfil_Pp27'))
+            try:
+                 profileportada, created = Profile_Portada.objects.get_or_create(
+                                     user=request.user)
+                 print(profileportada) 
+                 profileportada.profile_photo = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p27.jpg'#request.POST.get('luna')
+                 profileportada.save()    
+                 portadas = Profile_Portada.objects.get(user_id=request.user) 
+                 #savest = 
+                 return render(request,'registration/perfil2.html',{'portadas':portadas})               
+            except:  
+                     print('No pude jeje')
+
+        if request.POST.get('perfil_Pp28'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('perfil_Pp28'))
+            try:
+                 profileportada, created = Profile_Portada.objects.get_or_create(
+                                     user=request.user)
+                 print(profileportada) 
+                 profileportada.profile_photo = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p28.jpg'#request.POST.get('luna')
+                 profileportada.save()    
+                 portadas = Profile_Portada.objects.get(user_id=request.user) 
+                 #savest = 
+                 return render(request,'registration/perfil2.html',{'portadas':portadas})               
+            except:  
+                     print('No pude jeje') 
+
+        if request.POST.get('perfil_Pp29'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('perfil_Pp29'))
+            try:
+                 profileportada, created = Profile_Portada.objects.get_or_create(
+                                     user=request.user)
+                 print(profileportada) 
+                 profileportada.profile_photo = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p29.jpg'#request.POST.get('luna')
+                 profileportada.save()    
+                 portadas = Profile_Portada.objects.get(user_id=request.user) 
+                 #savest = 
+                 return render(request,'registration/perfil2.html',{'portadas':portadas})               
+            except:  
+                     print('No pude jeje')
+
+        if request.POST.get('perfil_Pp30'):
+            form = Profile_Portada(request.POST)
+            print(request.POST.get('perfil_Pp30'))
+            try:
+                 profileportada, created = Profile_Portada.objects.get_or_create(
+                                     user=request.user)
+                 print(profileportada) 
+                 profileportada.profile_photo = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p30.jpg'#request.POST.get('luna')
+                 profileportada.save()    
+                 portadas = Profile_Portada.objects.get(user_id=request.user) 
+                 #savest = 
+                 return render(request,'registration/perfil2.html',{'portadas':portadas})               
+            except:  
+                     print('No pude jeje')
+
+                                 
             
     else:
         return render(request,'registration/perfil2.html',{'portadas':portadas})         
