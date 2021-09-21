@@ -1,5 +1,6 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import PasswordResetForm
 from django.contrib.auth.models import User
 from .models import Profile, Profile_Portada
 
@@ -34,3 +35,13 @@ class PortadaForm(forms.ModelForm):
         model = Profile_Portada 
         fields = "__all__"  
 
+class UserPasswordResetForm(PasswordResetForm):
+    def __init__(self, *args, **kwargs):
+        super(UserPasswordResetForm, self).__init__(*args, **kwargs)
+
+    email = forms.EmailField(label='', widget=forms.EmailInput(attrs={
+        'class': 'your class',
+        'placeholder': 'correo',
+        'type': 'email',
+        'name': 'email'
+        }))

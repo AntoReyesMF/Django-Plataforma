@@ -187,23 +187,23 @@ def perfil2View2(request):
         # 
         #          
         if request.POST.get('perfil2_Pp1'):
-            # form = Profile_Portada(request.POST)
+            print('entre aqui')
+            #return render(request,'registration/perfil2.html',{'portadas':portadas})
             print(request.POST.get('perfil2_Pp1'))
-            # try:
-            #     profileportada, created = Profile_Portada.objects.get_or_create(
-            #                         user=request.user)
-            #     print(profileportada) 
-            #     profileportada.profile_photo = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p1.jpg'#request.POST.get('luna')
-            #     profileportada.save()    
-            #     portadas = Profile_Portada.objects.get(user_id=request.user) 
-            #     #savest = 
-            #     return render(request,'registration/perfil2.html',{'portadas':portadas})               
-            # except:  
-            #         print('No pude jeje')                                    
+            try:
+                profileportada, created = Profile_Portada.objects.get_or_create(
+                                    user=request.user)
+                print(profileportada) 
+                profileportada.profile_photo = 'https://makingfriedsimgpublic.s3.us-west-1.amazonaws.com/usuarios/perfil/p1.jpg'#request.POST.get('luna')
+                profileportada.save()    
+                portadas = Profile_Portada.objects.get(user_id=request.user) 
+                #savest = 
+                return render(request,'registration/perfil2.html',{'portadas':portadas})               
+            except:  
+                    print('No pude jeje')                                    
             
     else:
         return render(request,'registration/perfil2.html',{'portadas':portadas})         
-
 
 # class perfil2View(TemplateView):
 #     template_name = "registration/perfil2.html"
