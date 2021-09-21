@@ -33,3 +33,27 @@ function close_edit_descripcion(){
     descripcion.style.display = "none";
 }
 /*----------------------------  Editar descripcion ---------------------------- */ 
+
+/*----------------------------  Editar Foto de fondo ---------------------------- */ 
+var fotos_fondo = document.querySelector("#perfil2_imagenesFondo")
+
+function editar_fotoFondo() {
+    fotos_fondo.style.display = "block";
+}
+
+function cerrar_editarFotoFondo() {
+    fotos_fondo.style.display = "none";
+}
+/*----------------------------  Editar Foto de fondo ---------------------------- */ 
+
+/*----------------------------  Editar Foto de Perfil ---------------------------- */ 
+var fotos_perfil = document.querySelector("#imagenesPerfil")
+
+function editar_fotoPerfil() {
+    fotos_perfil.style.display = "block";
+}
+
+function cerrar_editarFotoPeril() {
+    fotos_perfil.style.display = "none";
+}
+/*----------------------------  Editar Foto de Perfil ---------------------------- */ 
